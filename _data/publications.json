@@ -1,0 +1,67 @@
+[ { "key"       : "Limberger2012",
+    "bibtex"    : "limberger2012.bib",
+    "title"     : "Single-Pass Rendering of Day and Night Sky Phenomena",
+    "date"      : "2012-11-01",
+    "authors"   : [ "Daniel Limberger", "Juri Engel", "Jürgen Döllner" ],
+    "published" : "In Proceedings of the Vision, Modeling, and Visualization Workshop",
+    "caption"   : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et ...",
+    "thumbnail" : "/img/2012-vmv-day-and-night-sky.jpg",
+    "gallery"   : [
+      { "src"   : "http://placehold.it/350x150",
+        "title" : "Peter & Paul fortress in SPB"
+      },
+      { "src"   : "http://placehold.it/250x850",
+        "title" : "Fuck Yeah & Paul fortress in SPB"
+      },
+      { "src"   : "http://placehold.it/1050x550",
+        "title" : "Peter & Paul fortress in SPB"
+      } ],
+    "downloads" : [
+      { "href"  : "https://hpi.de/fileadmin/hpi/FG_Doellner/publications/2012/MED12/paper_1056_cr.pdf",
+        "desc"  : "Paper (PDF, 5.78 MiB)"
+      },
+      { "href"  : "https://www.youtube.com/watch?v=t8ibsEl0kAI",
+        "desc"  : "Video (YouTube)",
+        "popup" : "youtube"
+      },
+      { "href"  : "https://code.google.com/p/osghimmel/",
+        "desc"  : "Project Website (google code)"
+      },
+      { "href"  : "http://dx.doi.org/10.2312/PE/VMV/VMV12/055-062",
+        "desc"  : "DOI"
+      } ],
+    },
+
+    { "key"     : "Limberger2013",
+    "bibtex"    : "limberger2013.bib",
+    "title"     : "Interactive Software Maps for Web-Based Source Code Analysis",
+    "date"      : "2013-05-01",
+    "authors"   : [ "Daniel Limberger", "Benjamin Wasty", "Jonas Trümper", "Jürgen Döllner" ],
+    "published" : "In Proceedings of the International Web3D Conference",
+    "caption"   : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et ...",
+    "thumbnail" : "/img/2013-web3d-interactive-software-maps.jpg",
+    "downloads" : [
+      { "href"  : "https://hpi.de/fileadmin/hpi/FG_Doellner/publications/2013/LWTD2013/web3d2013-treemaps-limberger.pdf",
+        "desc"  : "Paper (PDF, 3.00 MiB)"
+      },
+      { "href"  : "https://www.youtube.com/watch?v=AaHJRVQ3Z1E",
+        "desc"  : "Video (YouTube)",
+        "popup" : "youtube"
+      },
+      { "href"  : "http://dx.doi.org/10.2312/PE/VMV/VMV12/055-062",
+        "desc"  : "DOI TODO"
+      } ],
+    },
+
+    { "key"     : "Limberger2014",
+    "title"     : "Painting Per-Pixel Parametrization for Interactive Image Filtering",
+    "date"      : "2014-08-01",
+    "authors"   : [ "Daniel Limberger", "Jürgen Döllner" ],
+    "published" : "In Expressive Poster Session",
+    "caption"   : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et ...",
+    "thumbnail" : "/img/2014-expressive-painting-per-pixel-parametrization.jpg",
+    "downloads" : [
+      { "href"  : "https://hpi.de/fileadmin/hpi/FG_Doellner/publications/2014/LD2014/expressive_2014_limberger.pdf",
+        "desc"  : "Poster (PDF, 19.1 MiB)"
+      } ],
+  } ]

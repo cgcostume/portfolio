@@ -1,0 +1,106 @@
+[ { "term" : "2015 : Summer Term",
+    "courses" : 
+    [ { "course" : "Automated Visual Software Analytics",
+        "type"   : "lecture (massive open online course)",
+        "role"   : "tutor" 
+      },
+      { "course" : "Visualization of System Evolution",
+        "type"   : "seminar (MA)",
+        "role"   : "tutor"
+      },
+      { "course" : "Programming Technique II",
+        "type"   : "lecture (BA)",
+        "role"   : "tutor & co-lecturer"
+      },
+      { "course" : "Software Analysis and Visualization",
+        "type"   : "project (BA)",
+        "role"   : "supervisor"
+      } ]
+  },
+  { "term" : "2014/15 : Winter Term",
+    "courses" : 
+    [ { "course" : "Visualization for Interactive Software Analytics",
+        "type"   : "seminar (MA)",
+        "role"   : "tutor"
+      },
+      { "course" : "Introduction to Programming C++",
+        "type"   : "lecture (MA Geo)",
+        "role"   : "lecturer"
+      },
+      { "course" : "Game Programming",
+        "type"   : "lecture/seminar (BA)",
+        "role"   : "tutor & co-lecturer"
+      },
+      { "course" : "Introduction to 3D Computergraphics",
+        "type"   : "Youth Academy",
+        "role"   : "lecturer"
+      } ]
+  },
+  { "term" : "2014 : Summer Term",
+    "courses" : 
+    [ { "course" : "Information Visualization",
+        "type"   : "seminar (MA)",
+        "role"   : "tutor"
+      },
+      { "course" : "Graphics Programming with OpenGL and C++",
+        "type"   : "lecture/seminar (BA)",
+        "role"   : "tutor & lecturer"
+      },
+      { "course" : "Software Analysis and Visualization",
+        "type"   : "project (BA)",
+        "role"   : "supervisor"
+      } ]
+  },
+  { "term" : "2013/14 : Winter Term",
+    "courses" : 
+    [ { "course" : "Software Analytics",
+        "type"   : "seminar (MA)",
+        "role"   : "tutor"
+      },
+      { "course" : "Game Programming",
+        "type"   : "lecture/seminar (BA)",
+        "role"   : "tutor & co-lecturer"
+      },
+      { "course" : "Computergraphics II",
+        "type"   : "lecture (BA)",
+        "role"   : "tutor & co-lecturer"
+      },
+      { "course" : "Introduction to 3D Computergraphics",
+        "type"   : "youth academy",
+        "role"   : "lecturer"
+      } ]
+  },
+  { "term" : "2013 : Summer Term",
+    "courses" : 
+    [ { "course" : "Software Visualization Techniques",
+        "type"   : "seminar (MA)",
+        "role"   : "tutor"
+      },
+      { "course" : "Graphics Programming with OpenGL and C++",
+        "type"   : "lecture/seminar (BA)",
+        "role"   : "tutor & lecturer"
+      },
+      { "course" : "Computergraphics I",
+        "type"   : "lecture (BA)",
+        "role"   : "tutor & co-lecturer"
+      } ]
+  },
+  { "term" : "2012/13 : Winter Term",
+    "courses" : 
+    [ { "course" : "Concepts and Techniques for 3D Visualization",
+        "type"   : "seminar (MA)",
+        "role"   : "tutor"
+      },
+      { "course" : "Game Programming",
+        "type"   : "lecture/seminar (BA)",
+        "role"   : "tutor & co-lecturer"
+      },
+      { "course" : "Computergraphics II",
+        "type"   : "lecture (BA)",
+        "role"   : "tutor & co-lecturer"
+      },
+      { "course" : "Introduction to 3D Computergraphics",
+        "type"   : "youth academy",
+        "role"   : "lecturer"
+      } ]
+  } ]

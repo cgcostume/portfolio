@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-    {% include header.html %}
+{% include navbar.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
+{% include header.html %}
 
-    {% include footer.html %}
+{% include publications.html %}
 
-  </body>
+{% include talks.html %}
+
+{% include teaching.html %}
+
+{% include footer.html %}
+
+</body>
 
 </html>

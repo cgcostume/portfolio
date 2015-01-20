@@ -1,0 +1,46 @@
+header {
+  padding: 12em 0 4em;
+}
+
+footer { 
+  background-color: #ffffff;
+  border-color: #eeeeee;
+  border-width: 1px 0 0;
+  border-style: solid;
+  border-radius: 0;
+  padding: 11px 0;
+  width: auto;
+  min-height: 40px;
+  margin-top: 18px;
+}
+
+header h1 {
+  font-size: 3em;
+}
+
+.portrait {
+  padding: 2em 0;
+}
+
+section {
+  margin-top: 2em;
+}
+
+ul.list-of-links li {
+  float: left;
+  padding: 0 15px 0 0;
+}
+
+section#talks .date {
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+
+section#teaching ul {
+  list-style: none;
+  padding-left: 1em;
+}
+
+section#teaching li {
+  padding: 0 0 9px;
+}
