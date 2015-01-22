@@ -16,7 +16,7 @@
       </div>
       <div class="col-sm-8">
         <h4>{{ t.title}}</h4>
-        <p class="text-info">{{ t.location }}</p>
+        <p class="text-success">{{ t.location }}</p>
         {% if t.downloads %}
         <p>{% for download in t.downloads %}
           <a href="{{ download.href }}" target="_blank">{{ download.desc }}</a>{% if download != t.downloads.last %}, {% endif %}{% endfor %}{% endif %}

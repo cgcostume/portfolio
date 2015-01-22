@@ -13,7 +13,7 @@ phone: "(+49) 0331 5509 3907"
 description: > # this means to ignore newlines until "baseurl:"
     Interactive graphics engineer and phd student in the Computer Graphics Systems group at the Hasso Plattner Institute, Potsdam, Germany.
 subheading: > # this means to ignore newlines until "baseurl:"
-    <span class="text-info">Interactive graphics engineer</span> and <span class="text-info">phd student</span> in the Computer Graphics Systems group at the <a href="http://www.hpi.de" target="_blank">Hasso Plattner Institute</a>, Potsdam, Germany.
+    <span class="text-success">Interactive graphics engineer</span> and <span class="text-success">phd student</span> in the Computer Graphics Systems group at the <a href="http://www.hpi.de" target="_blank">Hasso Plattner Institute</a>, Potsdam, Germany.
 # twitter_username: jekyllrb
 github_username:  cgcostume
 
