@@ -11,9 +11,9 @@ email: daniel.limberger@hpi.de
 phone: "(+49) 0331 5509 3907"
 
 description: > # this means to ignore newlines until "baseurl:"
-    Berlin-based interactive graphics engineer and phd student in the Computer Graphics Systems group at the Hasso Plattner Institute, University of Potsdam.
+    Interactive graphics engineer and phd student in the Computer Graphics Systems group at the Hasso Plattner Institute, Potsdam, Germany.
 subheading: > # this means to ignore newlines until "baseurl:"
-    Berlin-based <span class="text-info">interactive graphics engineer</span> and <span class="text-info">phd student</span> in the Computer Graphics Systems group at the <a href="http://www.hpi.de" target="_blank">Hasso Plattner Institute</a>, University of Potsdam.
+    <span class="text-info">Interactive graphics engineer</span> and <span class="text-info">phd student</span> in the Computer Graphics Systems group at the <a href="http://www.hpi.de" target="_blank">Hasso Plattner Institute</a>, Potsdam, Germany.
 # twitter_username: jekyllrb
 github_username:  cgcostume
 
