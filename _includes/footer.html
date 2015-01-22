@@ -2,25 +2,29 @@
 <!-- Footer -->
 <footer>
   <div class="col-md-12 text-center">
-    Datafolio by {{ site.author }} : Created using Jekyll and Bootstrap, generated (last updated on <span class="text-info">{{ site.time | date: "%x" }}</span>) and hosted via gh-pages. 
+    <span class="text-info">Datafolio</span> by {{ site.author }} : Created using <a href="http://jekyllrb.com/" target="blank">Jekyll</a> and <a href="http://getbootstrap.com/" target="blank">Bootstrap</a>, generated (last updated on <span class="text-info">{{ site.time | date: "%x" }}</span>) and hosted via <a href="https://pages.github.com/" target="blank">gh-pages</a>. 
     <a href="https://github.com/cgcostume/cgcostume.github.io">Fork me on GitHub</a>.
   </div>
 </footer>
 
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
 <!-- Scrolling Nav JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 <script src="js/scrolling-nav.js"></script>
 
 <!--  Magnific Popup JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/0.9.9/jquery.magnific-popup.min.js"></script>
 
 <script>
+
+$('[data-toggle="tooltip"]').tooltip({ container: 'body', placement : 'right', title : 'moep i can make that', trigger : 'manual' });
+
 $(document).ready(function() 
 { 
   $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({ type: 'iframe' });
@@ -34,5 +38,26 @@ $(document).ready(function()
     }, {% endfor %}],
     gallery: { enabled: true }, type: 'image' });
   {% endif %}{% endfor %}
+
 });
+
+// contact form validation
+$("#contact-form").validate(
+{ rules :
+  { input_name    : { required : true },
+    input_email   : { required : true, email : true },
+    input_message : { required : true, maxlength : 1024 } 
+  }, 
+
+  errorClass:'error form-control-static text-primary',
+  errorElement:'div',
+
+  highlight  : function(label) 
+  { $(label).closest('.form-group').addClass('has-error'); },
+
+  success    : function(label) 
+  { $(label).closest('.form-group').removeClass('has-error');
+    $(label).remove(); }
+});
+
 </script>
