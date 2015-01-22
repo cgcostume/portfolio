@@ -20,14 +20,14 @@
             <div class="form-group">
               <label for="inputName" class="col-lg-2 control-label">Email</label>
               <div class="col-lg-10">
-                <p class="form-control-static"><span class="text-info">daniel.limberger@hpi.de</span> (<a href="mailto:daniel.limberger@hpi.de">mailto</a>)</p>
+                <p class="form-control-static"><span class="text-info">{{ site.email }}</span> (<a href="mailto:{{ site.email }}">mailto</a>)</p>
               </div>
             </div>
 
             <div class="form-group">
               <label for="inputName" class="col-lg-2 control-label">Phone</label>
               <div class="col-lg-10">
-                <p class="form-control-static text-info">(+49) 0331 5509 3907</p>
+                <p class="form-control-static text-info">{{ site.phone }}</p>
               </div>
             </div>
 
@@ -40,7 +40,7 @@
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
         
-        <form id="contact-form" class="form-horizontal" role="form" action="//formspree.io/daniel.limberger@hpi.de" method="POST">
+        <form id="contact-form" class="form-horizontal" role="form" action="//formspree.io/{{ site.email }}" method="POST">
           <fieldset>
 
             <legend>Drop Me a Line</legend>
@@ -48,21 +48,21 @@
             <div class="form-group">
               <label for="inputEmail" class="col-lg-2 control-label">Name</label>
               <div class="col-lg-10">
-                <input type="text" class="form-control" id="input_name" name="input_name" placeholder="Name">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Name">
               </div>
             </div>
 
             <div class="form-group">
               <label for="inputEmail" class="col-lg-2 control-label">Email</label>
               <div class="col-lg-10">
-                <input type="text" class="form-control" id="input_email" name="_replyto" placeholder="Email">
+                <input type="text" class="form-control" id="_replyto" name="_replyto" placeholder="Email">
               </div>
             </div>
 
             <div class="form-group">
               <label for="textArea" class="col-lg-2 control-label">Textarea</label>
               <div class="col-lg-10">
-                <textarea class="form-control" rows="3" id="input_message" name="input_message"></textarea>
+                <textarea class="form-control" rows="3" id="message" name="message"></textarea>
               </div>
             </div>
 

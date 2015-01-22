@@ -44,20 +44,28 @@ $(document).ready(function()
 // contact form validation
 $("#contact-form").validate(
 { rules :
-  { input_name    : { required : true },
-    input_email   : { required : true, email : true },
-    input_message : { required : true, maxlength : 1024 } 
+  { name     : { required : true },
+    _replyto : { required : true, email : true },
+    message  : { required : true, maxlength : 1024 } 
   }, 
 
-  errorClass:'error form-control-static text-primary',
-  errorElement:'div',
+  errorClass   : 'error form-control-static text-primary',
+  errorElement : 'div',
 
-  highlight  : function(label) 
+  highlight : function(label) 
   { $(label).closest('.form-group').addClass('has-error'); },
 
-  success    : function(label) 
+  success : function(label) 
   { $(label).closest('.form-group').removeClass('has-error');
-    $(label).remove(); }
+    $(label).remove(); },
+
+  submitHandler : function(form) 
+  { $.ajax(
+  	{ url  : form.action,
+      type : form.method,
+      data : $(form).serializeJSON()
+	});
+  }
 });
 
 </script>
