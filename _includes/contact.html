@@ -10,7 +10,7 @@
     </div>
 
     <div class="row">
-      <div class="col-md-6 col-md-offset-3">
+      <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
 
         <form class="form-horizontal">
           <fieldset>
@@ -18,15 +18,15 @@
             <legend>Office</legend>
 
             <div class="form-group">
-              <label for="inputName" class="col-lg-2 control-label">Email</label>
-              <div class="col-lg-10">
+              <label for="inputName" class="col-sm-2 control-label">Email</label>
+              <div class="col-sm-10">
                 <p class="form-control-static"><span class="text-info">{{ site.email }}</span> (<a href="mailto:{{ site.email }}">mailto</a>)</p>
               </div>
             </div>
 
             <div class="form-group">
-              <label for="inputName" class="col-lg-2 control-label">Phone</label>
-              <div class="col-lg-10">
+              <label for="inputName" class="col-sm-2 control-label">Phone</label>
+              <div class="col-sm-10">
                 <p class="form-control-static text-info">{{ site.phone }}</p>
               </div>
             </div>
@@ -38,7 +38,7 @@
     </div>
     
     <div class="row">
-      <div class="col-md-6 col-md-offset-3">
+      <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
         
         <form id="contact-form" class="form-horizontal" role="form" action="//formspree.io/{{ site.email }}" method="POST">
           <fieldset>
@@ -46,33 +46,32 @@
             <legend>Drop Me a Line</legend>
 
             <div class="form-group">
-              <label for="inputEmail" class="col-lg-2 control-label">Name</label>
-              <div class="col-lg-10">
+              <label for="inputEmail" class="col-sm-2 control-label">Name</label>
+              <div class="col-sm-10">
                 <input type="text" class="form-control" id="name" name="name" placeholder="Name">
               </div>
             </div>
 
             <div class="form-group">
-              <label for="inputEmail" class="col-lg-2 control-label">Email</label>
-              <div class="col-lg-10">
+              <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+              <div class="col-sm-10">
                 <input type="text" class="form-control" id="_replyto" name="_replyto" placeholder="Email">
               </div>
             </div>
 
             <div class="form-group">
-              <label for="textArea" class="col-lg-2 control-label">Textarea</label>
-              <div class="col-lg-10">
+              <label for="textArea" class="col-sm-2 control-label">Textarea</label>
+              <div class="col-sm-10">
                 <textarea class="form-control" rows="3" id="message" name="message"></textarea>
               </div>
             </div>
 
             <div class="form-group">
-              <div class="col-lg-2 col-lg-offset-2">
+              <div class="col-sm-2 col-sm-offset-2 col-xs-2">
                 <button type="submit" class="btn btn-primary">Submit</button>
               </div>
-              <div class="col-lg-8 text-right">
+              <div class="col-sm-8 col-xs-10 text-right">
                 <p class="form-control-static"><span class="text-info">Send via  Functional HTML forms by <a href="http://formspree.io/" target="blank">Formspree</a>.</p>
-                
               </div>
             </div>
 

@@ -1,46 +1,36 @@
 header {
-  padding: 12em 0 4em;
-}
-
-footer { 
-  background-color: #ffffff;
-  border-color: #eeeeee;
-  border-width: 1px 0 0;
-  border-style: solid;
-  border-radius: 0;
-  padding: 11px 0;
-  width: auto;
-  min-height: 40px;
-  margin-top: 18px;
-}
+  padding: 12em 0 4em; }
 
 header h1 {
-  font-size: 3em;
-}
+  font-size: 3em; }
 
 .portrait {
-  padding: 2em 0;
-}
+  padding: 2em 0; }
+
+footer div {
+  margin: 21px 0 0;
+  padding: 9.5px 0; }
 
 section {
-  margin-top: 2em;
-}
+  margin-top: 2em; }
 
 ul.list-of-links li {
   float: left;
-  padding: 0 15px 0 0;
-}
+  padding: 0 15px 0 0; }
+
+section#publications .not-last {
+  padding-bottom: 30px; }
+
+section#publications .thumbnail {
+  margin-top: 9px; }
 
 section#talks .date {
   margin-top: 9px;
-  margin-bottom: 9px;
-}
+  margin-bottom: 9px; }
 
 section#teaching ul {
   list-style: none;
-  padding-left: 1em;
-}
+  padding-left: 1em; }
 
 section#teaching li {
-  padding: 0 0 9px;
-}
+  padding: 0 0 9px; }

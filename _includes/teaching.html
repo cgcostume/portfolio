@@ -12,7 +12,7 @@
     <div class="row">
     {% assign terms = site.data.teaching | sort:"term" %} 
     {% for t in terms reversed %}
-      <div class="col-md-5 {% cycle 'col-md-offset-1', '' %}">
+      <div class="col-md-5 {% cycle 'col-md-offset-1', 'col-md-offset-0' %} col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
         <div class="panel panel-default">
           <div class="panel-heading">{{ t.term }}</div>
           <div class="panel-body">

@@ -2,7 +2,7 @@
 <!-- Footer -->
 <footer>
   <div class="col-md-12 text-center">
-    <span class="text-info">Datafolio</span> by {{ site.author }} : Created using <a href="http://jekyllrb.com/" target="blank">Jekyll</a> and <a href="http://getbootstrap.com/" target="blank">Bootstrap</a>, generated (last updated on <span class="text-info">{{ site.time | date: "%x" }}</span>) and hosted via <a href="https://pages.github.com/" target="blank">gh-pages</a>. 
+    <span class="text-info">Datafolio</span> by {{ site.author }} : Created using <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> and <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>, generated (last updated on <span class="text-info">{{ site.time | date: "%x" }}</span>) and hosted via <a href="https://pages.github.com/" target="_blank">gh-pages</a>. 
     <a href="https://github.com/cgcostume/cgcostume.github.io">Fork me on GitHub</a>.
   </div>
 </footer>
@@ -25,6 +25,29 @@
 
 $('[data-toggle="tooltip"]').tooltip({ container: 'body', placement : 'right', title : 'moep i can make that', trigger : 'manual' });
 
+jQuery.fn.selectInner = function()
+{
+  var doc = document;
+  var element = this[0];
+
+  if (doc.body.createTextRange) 
+  {
+  	var range = document.body.createTextRange();
+  	range.moveToElementText(element);
+  	range.select();
+  } 
+  else if (window.getSelection) 
+  {
+  	var selection = window.getSelection();
+  	selection.removeAllRanges();
+
+    var range = document.createRange();
+    range.selectNodeContents(element);
+
+    selection.addRange(range);
+  }
+};
+
 $(document).ready(function() 
 { 
   $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({ type: 'iframe' });
@@ -37,6 +60,12 @@ $(document).ready(function()
       title : '{{ item.title }}'
     }, {% endfor %}],
     gallery: { enabled: true }, type: 'image' });
+  {% endif %}{% endfor %}
+
+  // assign bibtex select scripts
+  {% for p in publications %}{% if p.bibtex %}
+  $('#bibtex-select-{{ p.key }}').on('click', function(event) 
+  { $('#bibtex-tex-{{ p.key }}').selectInner(); });
   {% endif %}{% endfor %}
 
 });

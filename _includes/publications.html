@@ -10,25 +10,40 @@
     </div>
     {% assign publications = site.data.publications | sort:"date" %}
     {% for p in publications reversed %}
-    <div class="row">
-      <div class="col-sm-2 col-md-offset-1">
+    <div class="row{% if p != publications.first %} not-last{% endif %}">
+      <div class="col-md-2 col-md-offset-1 col-sm-4">
         {% if p.gallery %}<a href="#" class="thumbnail" id="thumbnail-{{ p.key }}">
-          <img class="img-responsive" src="{{ p.thumbnail }}" alt="">
+          <img src="{{ p.thumbnail }}" alt="">
         </a>{% else %}<div class="thumbnail">
-          <img class="img-responsive" src="{{ p.thumbnail }}" alt="">
+          <img src="{{ p.thumbnail }}" alt="">
         </div>{% endif %}
       </div>
-      <div class="col-md-8">
+      <div class="col-sm-8">
         <h3>{{ p.title }}</h3>
-        <p>{% for author in p.authors %}{% if author == p.authors.last %}and {% endif %}{{ author }}, {% endfor %}<br><span class="text-info">{{ p.published }} {{ p.date | date: '%Y' }}</span></p>
+        <p>{% for author in p.authors %}{% if author == p.authors.last %}and {% endif %}{{ author }}{% if p.authors.size > 2 %},{% endif %} {% endfor %}<br><span class="text-info">{{ p.published }} {{ p.date | date: '%Y' }}</span></p>
         <p>{{ p.caption }}</p>
         <p>
-          {% if p.bibtex %}<a data-toggle="collapse" href="#{{ p.key }}-bibtex">BibTex</a>{% if p.downloads %}, {% endif %}{% endif %}
-          {% if p.downloads %}{% for download in p.downloads %}<a {% if download.popup %}class="popup-{{ download.popup }}" {% endif %}href="{{ download.href }}" target="blank">{{ download.desc }}</a>{% if download != p.downloads.last %}, {% endif %}{% endfor %}{% endif %}
+          {% if p.bibtex %}<a data-toggle="modal" href="#bibtex-{{ p.key }}">BibTex</a>{% if p.downloads %}, {% endif %}{% endif %}
+          {% if p.downloads %}{% for download in p.downloads %}<a {% if download.popup %}class="popup-{{ download.popup }}" {% endif %}href="{{ download.href }}" target="_blank">{{ download.desc }}</a>{% if download != p.downloads.last %}, {% endif %}{% endfor %}{% endif %}
         </p>
         {% if p.bibtex %}<p>
-          <div class="collapse" id="{{ p.key }}-bibtex">
-            <pre>{% include {{ p.bibtex }} %}</pre>
+          <div class="modal fade" id="bibtex-{{ p.key }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title">BibTex : {{ p.key }}</h4>
+                </div>
+                <div class="modal-body">
+                  <pre id="bibtex-tex-{{ p.key }}">{% include {{ p.bibtex }} %}</pre>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <a href="/bib/{{ p.bibtex }}" class="btn btn-primary">Download as Bib</a>
+                  <button id="bibtex-select-{{ p.key }}" type="button" class="btn btn-primary">Select Tex</button>
+                </div>
+              </div>
+            </div>
           </div>
         </p>{% endif %}
       </div>

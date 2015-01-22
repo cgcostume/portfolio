@@ -18,7 +18,7 @@
         <h4>{{ t.title}}</h4>
         <p>
           {{ t.location }}{% if t.downloads %} : {% for download in t.downloads %}
-          <a href="{{ download.href }}" target="blank">{{ download.desc }}</a>{% if download != t.downloads.last %}, {% endif %}{% endfor %}{% endif %}
+          <a href="{{ download.href }}" target="_blank">{{ download.desc }}</a>{% if download != t.downloads.last %}, {% endif %}{% endfor %}{% endif %}
         </p>
       </div>
     </div>
