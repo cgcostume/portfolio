@@ -14,10 +14,6 @@ footer div {
 section {
   margin-top: 2em; }
 
-ul.list-of-links li {
-  float: left;
-  padding: 0 15px 0 0; }
-
 section#publications .not-last {
   padding-bottom: 15px; }
 
@@ -30,3 +26,6 @@ section#teaching ul {
 
 section#teaching li {
   padding: 0 0 9px; }
+
+.blueimp-gallery>.close, .blueimp-gallery>.title {
+  top: 8px; }
