@@ -6,23 +6,52 @@
   </div>
 </footer>
 
+<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+<div id="blueimp-gallery" class="blueimp-gallery">
+  <!-- The container for the modal slides -->
+  <div class="slides"></div>
+  <!-- Controls for the borderless lightbox -->
+  <h3 class="title"></h3>
+  <a class="prev">‹</a><a class="next">›</a><a class="close">×</a><a class="play-pause"></a>
+  <ol class="indicator"></ol>
+  <!-- The modal dialog, which will be used to wrap the lightbox content -->
+  <div class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" aria-hidden="true">&times;</button>
+          <h4 class="modal-title"></h4>
+        </div>
+        <div class="modal-body next"></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default pull-left prev">
+            <i class="glyphicon glyphicon-chevron-left"></i>
+            Previous
+          </button>
+          <button type="button" class="btn btn-primary next">
+            Next
+            <i class="glyphicon glyphicon-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- jQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+<script src="js/bootstrap-image-gallery.min.js"></script>
 
 <!-- Scrolling Nav JavaScript -->
-<script src="js/scrolling-nav.js"></script>
-
-<!--  Magnific Popup JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/0.9.9/jquery.magnific-popup.min.js"></script>
+<script src="{{ "/js/scrolling-nav.js" | prepend: site.baseurl }}"></script>
 
 <script>
-
-$('[data-toggle="tooltip"]').tooltip({ container: 'body', placement : 'right', title : 'moep i can make that', trigger : 'manual' });
 
 jQuery.fn.selectInner = function()
 {
@@ -49,16 +78,31 @@ jQuery.fn.selectInner = function()
 
 $(document).ready(function() 
 { 
-  $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({ type: 'iframe' });
 
-  // assign gallery images to thumbnail-triggered magnific popups
+//  $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({ type: 'iframe' });
+
+  // assign gallery images to thumbnail-triggered gallery groups
   {% for p in publications %}{% if p.gallery %}
-  $('#thumbnail-{{ p.key }}').magnificPopup(
-  { items: [ {% for item in p.gallery %}
+  $('#thumbnail-{{ p.key }}').on('click', function(event)
+  {
+    event.preventDefault();
+
+  	var links = [ {% for item in p.gallery %}
+    { href  : '{{ item.src }}',
+      title : '{{ item.title }}'
+    }, {% endfor %}];
+
+    var options = { useBootstrapModal : false, event : event, container: '#blueimp-gallery' };
+
+  	blueimp.Gallery(links, options);
+  });
+
+  /* items: [ {% for item in p.gallery %}
     { src   : '{{ item.src }}',
       title : '{{ item.title }}'
     }, {% endfor %}],
     gallery: { enabled: true }, type: 'image' });
+*/
   {% endif %}{% endfor %}
 
   // assign bibtex select scripts

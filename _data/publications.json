@@ -4,7 +4,7 @@
     "date"      : "2012-11-01",
     "authors"   : [ "Daniel Limberger", "Juri Engel", "Jürgen Döllner" ],
     "published" : "In Proceedings of the Vision, Modeling, and Visualization Workshop",
-    "caption"   : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et ...",
+    "caption"   : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et.",
     "thumbnail" : "/img/2012-vmv-day-and-night-sky.jpg",
     "gallery"   : [
       { "src"   : "http://placehold.it/350x150",
@@ -38,8 +38,18 @@
     "date"      : "2013-05-01",
     "authors"   : [ "Daniel Limberger", "Benjamin Wasty", "Jonas Trümper", "Jürgen Döllner" ],
     "published" : "In Proceedings of the International Web3D Conference",
-    "caption"   : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et ...",
+    "caption"   : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et.",
     "thumbnail" : "/img/2013-web3d-interactive-software-maps.jpg",
+    "gallery"   : [
+      { "src"   : "/img/2012-vmv-day-and-night-sky.jpg",
+        "title" : "Peter & Paul fortress in SPB"
+      },
+      { "src"   : "/img/2013-web3d-interactive-software-maps.jpg",
+        "title" : "Fuck Yeah & Paul fortress in SPB"
+      },
+      { "src"   : "/img/2014-expressive-painting-per-pixel-parametrization.jpg",
+        "title" : "Peter & Paul fortress in SPB"
+      } ],
     "downloads" : [
       { "href"  : "https://hpi.de/fileadmin/hpi/FG_Doellner/publications/2013/LWTD2013/web3d2013-treemaps-limberger.pdf",
         "desc"  : "Paper (PDF, 3.00 MiB)"
@@ -58,7 +68,7 @@
     "date"      : "2014-08-01",
     "authors"   : [ "Daniel Limberger", "Jürgen Döllner" ],
     "published" : "In Expressive Poster Session",
-    "caption"   : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et ...",
+    "caption"   : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et.",
     "thumbnail" : "/img/2014-expressive-painting-per-pixel-parametrization.jpg",
     "downloads" : [
       { "href"  : "https://hpi.de/fileadmin/hpi/FG_Doellner/publications/2014/LD2014/expressive_2014_limberger.pdf",
