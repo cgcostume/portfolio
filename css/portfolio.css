@@ -14,6 +14,11 @@ footer div {
 section {
   margin-top: 2em; }
 
+.label.top-right {
+  position: absolute;
+  right: 16px;
+  bottom: 46px; }
+
 section#publications .not-last {
   padding-bottom: 15px; }
 
@@ -29,3 +34,7 @@ section#teaching li {
 
 .blueimp-gallery>.close, .blueimp-gallery>.title {
   top: 8px; }
+
+.blueimp-gallery>.prev, .blueimp-gallery>.next {
+  background: transparent;
+  border: none; }

@@ -14,6 +14,7 @@
       <div class="col-md-2 col-md-offset-1 col-sm-4">
         {% if p.gallery %}<a href="#" class="thumbnail" id="thumbnail-{{ p.key }}">
           <img src="{{ p.thumbnail }}" alt="">
+          <span class="label label-primary top-right">Gallery ({{ p.gallery.size }})</span>  
         </a>{% else %}<div class="thumbnail">
           <img src="{{ p.thumbnail }}" alt="">
         </div>{% endif %}
