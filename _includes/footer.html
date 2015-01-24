@@ -72,6 +72,19 @@ $(document).ready(function()
   });
   {% endif %}{% endfor %}
 
+  // assign gallery images to thumbnail-triggered gallery groups
+  {% for p in projects %}{% if p.gallery %}
+  $('#thumbnail-{{ p.key }}').on('click', function(event)
+  {
+    event.preventDefault();
+    blueimp.Gallery([ {% for item in p.gallery %}
+      { href  : '{{ item.src }}',
+        title : '{{ item.title }}'
+      }, {% endfor %}],
+      { useBootstrapModal : false, event : event, container: '#blueimp-gallery' });
+  });
+  {% endif %}{% endfor %}
+
   // assign bibtex select scripts
   {% for p in publications %}{% if p.bibtex %}
   $('#bibtex-select-{{ p.key }}').on('click', function(event) 

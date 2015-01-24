@@ -11,15 +11,15 @@
     {% assign publications = site.data.publications | sort:"date" %}
     {% for p in publications reversed %}
     <div class="row{% if p != publications.first %} not-last{% endif %}">
-      <div class="col-md-2 col-md-offset-1 col-sm-4">
+      <div class="col-sm-3">
         {% if p.gallery %}<a href="#" class="thumbnail" id="thumbnail-{{ p.key }}">
-          <img src="{{ p.thumbnail }}" alt="">
-          <span class="label label-primary top-right">Gallery ({{ p.gallery.size }})</span>  
+          <span class="label label-danger top-right">Gallery ({{ p.gallery.size }})</span>  
+          <img src="{{ p.thumbnail }}" alt="thumbnail">
         </a>{% else %}<div class="thumbnail">
           <img src="{{ p.thumbnail }}" alt="">
         </div>{% endif %}
       </div>
-      <div class="col-sm-8">
+      <div class="col-sm-9">
         <h3>{{ p.title }}</h3>
         <p>{% for author in p.authors %}{% if author == p.authors.last %}and {% endif %}{{ author }}{% if p.authors.size > 2 %},{% endif %} {% endfor %}<br><span class="text-danger">{{ p.published }} {{ p.date | date: '%Y' }}</span></p>
         <p>{{ p.caption }}</p>

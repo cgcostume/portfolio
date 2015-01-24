@@ -4,7 +4,7 @@
     "date"      : "2012-11-01",
     "authors"   : [ "Daniel Limberger", "Juri Engel", "Jürgen Döllner" ],
     "published" : "In Proceedings of the Vision, Modeling, and Visualization Workshop",
-    "caption"   : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et.",
+    "caption"   : "This paper presents astronomical based rendering of skies as seen from low altitudes on earth, in respect to location, date, and time. The technique allows to compose an atmosphere with sun, multiple cloud layers, moon, bright stars, and Milky Way, into a holistic sky with unprecedented high level of detail and diversity. GPU generated, viewpoint-aligned billboards are used to render stars with approximated color, brightness, and scintillations. A similar approach is used to synthesize the moon considering lunar phase, earthshine, shading, and lunar eclipses. Atmosphere and clouds are rendered using existing methods adapted to our needs. Rendering is done in a single pass supporting interactive ...",
     "thumbnail" : "/img/2012-vmv-day-and-night-sky.jpg",
     "gallery"   : [
       { "src"   : "http://placehold.it/350x150",
@@ -22,7 +22,7 @@
         "popup" : "youtube"
       },
       { "href"  : "https://code.google.com/p/osghimmel/",
-        "desc"  : "Project Website (google code)"
+        "desc"  : "Google Code"
       },
       { "href"  : "http://dx.doi.org/10.2312/PE/VMV/VMV12/055-062",
         "desc"  : "DOI"
@@ -35,7 +35,7 @@
     "date"      : "2013-05-01",
     "authors"   : [ "Daniel Limberger", "Benjamin Wasty", "Jonas Trümper", "Jürgen Döllner" ],
     "published" : "In Proceedings of the International Web3D Conference",
-    "caption"   : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et.",
+    "caption"   : "This paper presents astronomical based rendering of skies as seen from low altitudes on earth, in respect to location, date, and time. The technique allows to compose an atmosphere with sun, multiple cloud layers, moon, bright stars, and Milky Way, into a holistic sky with unprecedented high level of detail and diversity. GPU generated, viewpoint-aligned billboards are used to render stars with approximated color, brightness, and scintillations. A similar approach is used to synthesize the moon considering lunar phase, earthshine, shading, and lunar eclipses. Atmosphere and clouds are rendered using existing methods adapted to our needs. Rendering is done in a single pass supporting interactive ...",
     "thumbnail" : "/img/2013-web3d-interactive-software-maps.jpg",
     "gallery"   : [
       { "src"   : "/img/2012-vmv-day-and-night-sky.jpg",
@@ -56,7 +56,7 @@
         "popup" : "youtube"
       },
       { "href"  : "http://dx.doi.org/10.2312/PE/VMV/VMV12/055-062",
-        "desc"  : "DOI TODO"
+        "desc"  : "DOI"
       } ],
     },
 
@@ -65,7 +65,7 @@
     "date"      : "2014-08-01",
     "authors"   : [ "Daniel Limberger", "Jürgen Döllner" ],
     "published" : "In Expressive Poster Session",
-    "caption"   : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et.",
+    "caption"   : "This paper presents astronomical based rendering of skies as seen from low altitudes on earth, in respect to location, date, and time. The technique allows to compose an atmosphere with sun, multiple cloud layers, moon, bright stars, and Milky Way, into a holistic sky with unprecedented high level of detail and diversity. GPU generated, viewpoint-aligned billboards are used to render stars with approximated color, brightness, and scintillations. A similar approach is used to synthesize the moon considering lunar phase, earthshine, shading, and lunar eclipses. Atmosphere and clouds are rendered using existing methods adapted to our needs. Rendering is done in a single pass supporting interactive ...",
     "thumbnail" : "/img/2014-expressive-painting-per-pixel-parametrization.jpg",
     "downloads" : [
       { "href"  : "https://hpi.de/fileadmin/hpi/FG_Doellner/publications/2014/LD2014/expressive_2014_limberger.pdf",

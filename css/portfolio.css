@@ -16,11 +16,16 @@ section {
 
 .label.top-right {
   position: absolute;
-  right: 16px;
-  bottom: 46px; }
+  right: 15px;
+  top: 25px; }
 
 section#publications .not-last {
   padding-bottom: 15px; }
+
+section#publications .label.top-right {
+  position: absolute;
+  right: 15px;
+  top: 46px; }
 
 section#publications .thumbnail {
   margin-top: 21px; }
