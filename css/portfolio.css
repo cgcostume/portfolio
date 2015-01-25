@@ -22,13 +22,13 @@ section {
 section#publications .not-last {
   padding-bottom: 15px; }
 
-section#publications .label.top-right {
+section#publications .badge.top-right {
   position: absolute;
   right: 15px;
   top: 46px; }
 
-section#publications .thumbnail {
-  margin-top: 21px; }
+section#projects div.project {
+  padding-bottom: 15px; }
 
 section#teaching ul {
   list-style: none;

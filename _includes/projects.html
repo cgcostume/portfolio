@@ -5,13 +5,13 @@
   
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h1 class="page-header">Projects</h1>
+        <h2 class="page-header">Projects</h2>
       </div>
     </div>
     {% assign projects = site.data.projects | sort:"date" %}
     {% for p in projects reversed %}{% capture rowmode %}{% cycle 0, 1, 1, 2 %}{% endcapture %}
     {% if rowmode == '0' %}<div class="row">{% endif %}
-      <div class="col-sm-3">
+      <div class="col-sm-3 col-xs-6 project">
         {% if p.gallery %}<a href="#" class="thumbnail" id="thumbnail-{{ p.key }}">
           <span class="label label-danger top-right">Gallery ({{ p.gallery.size }})</span>
           <img src="{{ p.thumbnail }}" alt="thumbnail">

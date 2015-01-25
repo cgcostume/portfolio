@@ -5,7 +5,7 @@
   
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h1 class="page-header">Publications</h1>
+        <h2 class="page-header">Publications</h2>
       </div>
     </div>
     {% assign publications = site.data.publications | sort:"date" %}
@@ -20,33 +20,33 @@
         </div>{% endif %}
       </div>
       <div class="col-sm-9">
-        <h3>{{ p.title }}</h3>
+        <h4>{{ p.title }}</h4>
         <p>{% for author in p.authors %}{% if author == p.authors.last %}and {% endif %}{{ author }}{% if p.authors.size > 2 %},{% endif %} {% endfor %}<br><span class="text-danger">{{ p.published }} {{ p.date | date: '%Y' }}</span></p>
         <p>{{ p.caption }}</p>
         <p>
           {% if p.bibtex %}<a data-toggle="modal" href="#bibtex-{{ p.key }}">BibTex</a>{% if p.downloads %}, {% endif %}{% endif %}
           {% if p.downloads %}{% for download in p.downloads %}<a {% if download.popup %}class="popup-{{ download.popup }}" {% endif %}href="{{ download.href }}" target="_blank">{{ download.desc }}</a>{% if download != p.downloads.last %}, {% endif %}{% endfor %}{% endif %}
         </p>
-        {% if p.bibtex %}<p>
-          <div class="modal fade" id="bibtex-{{ p.key }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h4 class="modal-title">BibTex : {{ p.key }}</h4>
-                </div>
-                <div class="modal-body">
-                  <pre id="bibtex-tex-{{ p.key }}">{% include {{ p.bibtex }} %}</pre>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  <button id="bibtex-select-{{ p.key }}" type="button" class="btn btn-primary">Select</button>
-                  <a href="/bib/{{ p.bibtex }}" class="btn btn-primary">Download</a>
-                </div>
+        {% if p.bibtex %}
+        <div class="modal fade" id="bibtex-{{ p.key }}" tabindex="-1" role="dialog" aria-labelledby="bibtex-{{ p.key }}" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">BibTex : {{ p.key }}</h4>
+              </div>
+              <div class="modal-body">
+                <pre id="bibtex-tex-{{ p.key }}">{% include {{ p.bibtex }} %}</pre>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button id="bibtex-select-{{ p.key }}" type="button" class="btn btn-primary">Select</button>
+                <a href="/bib/{{ p.bibtex }}" class="btn btn-primary">Download</a>
               </div>
             </div>
           </div>
-        </p>{% endif %}
+        </div>
+        {% endif %}
       </div>
     </div>
     {% endfor %}
