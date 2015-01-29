@@ -9,8 +9,10 @@ title: Interactive Graphics Engineer
 author: Daniel Limberger
 email: daniel.limberger@hpi.de
 phone: "(+49) 0331 5509 3907"
-work_handle: "<span class='text-danger'>cgcostume</span> (github, bitbucket, ...)"
-private_handle: "<span class='text-danger'>costumebrother</span> (vimeo, youtube, steam, spotify, ...)"
+work_handle: "cgcostume"
+work_handle_info: "GitHub, Bitbuket, ..."
+private_handle: "costumebrother"
+private_handle_info: "Google Code, Vimeo, YouTube, Steam, ..."
 
 description: > # this means to ignore newlines until "baseurl:"
     Interactive graphics engineer and phd student in the Computer Graphics Systems group at the Hasso Plattner Institute, Potsdam, Germany.
