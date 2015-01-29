@@ -21,5 +21,4 @@ keep_files: [ ../_includes ]
 encoding: utf-8
 
 # Build settings
-highlighter: false
 markdown: kramdown
