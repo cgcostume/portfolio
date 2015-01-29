@@ -8,8 +8,15 @@
 
 <!-- Bootstrap Core JavaScript -->
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+<!-- blueimp gallery -->
 <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
 <script src="js/bootstrap-image-gallery.min.js"></script>
+
+<!-- spin.js -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/spin.js/2.0.1/spin.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/spin.js/2.0.1/jquery.spin.min.js"></script>
+
 
 <!-- Scrolling Nav JavaScript -->
 <script src="{{ "/js/scrolling-nav.js" | prepend: site.baseurl }}"></script>
@@ -68,6 +75,8 @@ function flickr_photosets(photoset_id)
     return;
   }
 
+  $('#' + photoset_id).spin( { zIndex : 1 } );
+
   $.getJSON(flickr_api, 
     {
       method : "flickr.photosets.getPhotos",
@@ -91,7 +100,12 @@ function flickr_photosets(photoset_id)
   {
     alert("flickr.photosets.getPhotos as json failed, status: " + textStatus + ", error: " + error);
   })
-
+  .always( function()
+  {
+    var spinner = $('#' + photoset_id).data().spinner;
+    if(spinner)
+      spinner.stop();
+  });
 }
 
 $(document).ready(function() 

@@ -37,9 +37,13 @@ section#teaching ul {
 section#teaching li {
   padding: 0 0 9px; }
 
-.blueimp-gallery>.close, .blueimp-gallery>.title {
+a.thumbnail {
+  color: #fff;
+}
+
+.blueimp-gallery > .close, .blueimp-gallery > .title {
   top: 8px; }
 
-.blueimp-gallery>.prev, .blueimp-gallery>.next {
+.blueimp-gallery > .prev, .blueimp-gallery > .next {
   background: transparent;
   border: none; }
