@@ -52,21 +52,22 @@ function flickr_photo_url(photo)
     + photo.id + "_" + photo.secret + "_b.jpg";
 }
 
-function flickr_blueimp(photoset)
-{
-  var gallery = [];
-  
-  $.each(photoset.photo, function(i, photo) 
-    {
-      gallery.push( { href  : flickr_photo_url(photo), title : photo.title } ) 
-    });
+var blueimp_gallery_cache = [];
 
-  blueimp.Gallery(gallery,
-    { useBootstrapModal : false, event : event, container: '#blueimp-gallery' });
+function blueimp_gallery(photoset_id)
+{
+  blueimp.Gallery(blueimp_gallery_cache[photoset_id]
+    , { useBootstrapModal : false, event : event, container: '#blueimp-gallery' });  
 }
 
 function flickr_photosets(photoset_id) 
 {
+  if(photoset_id in blueimp_gallery_cache)
+  {
+    blueimp_gallery(photoset_id);
+    return;
+  }
+
   $.getJSON(flickr_api, 
     {
       method : "flickr.photosets.getPhotos",
@@ -75,14 +76,22 @@ function flickr_photosets(photoset_id)
       format : "json",
       nojsoncallback : 1
     })
+
   .done(function(data) 
   {
-    flickr_blueimp(data.photoset);
+    var blueimpl_gallery = [];
+
+    $.each(data.photoset.photo, function(i, photo) {
+      blueimpl_gallery.push( { href  : flickr_photo_url(photo), title : photo.title } ) });
+
+    blueimp_gallery_cache[photoset_id] = blueimpl_gallery;
+    blueimp_gallery(photoset_id);
   })
   .fail( function(data, textStatus, error) 
   {
-    console.error("flickr.photosets.getPhotos as json failed, status: " + textStatus + ", error: " + error)
-  });
+    alert("flickr.photosets.getPhotos as json failed, status: " + textStatus + ", error: " + error);
+  })
+
 }
 
 $(document).ready(function() 
