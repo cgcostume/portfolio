@@ -7,19 +7,14 @@ url: "http://daniellimberger.de" # the base hostname & protocol for your site
 
 title: Interactive Graphics Engineer
 author: Daniel Limberger
-email: daniel.limberger@hpi.de
-phone: "(+49) 0331 5509 3907"
-work_handle: "cgcostume"
-work_handleinfo: "GitHub, Bitbuket, ..."
-private_handle: "costumebrother"
-private_handleinfo: "Google Code, Vimeo, YouTube, Steam, ..."
+portrait: "/img/daniel-limberger-aug-2014.jpg"
+
+flickr_api_key: adb4be93419edab991522b4fa92b7029
 
 description: > # this means to ignore newlines until "baseurl:"
     Interactive graphics engineer and phd student in the Computer Graphics Systems group at the Hasso Plattner Institute, Potsdam, Germany.
 subheading: > # this means to ignore newlines until "baseurl:"
     <span class="text-danger">Interactive graphics engineer</span> and <span class="text-danger">phd student</span> in the Computer Graphics Systems group at the <a href="http://www.hpi.de" target="_blank">Hasso Plattner Institute</a>, Potsdam, Germany.
-# twitter_username: jekyllrb
-github_username:  cgcostume
 
 # Build settings
 highlighter: false

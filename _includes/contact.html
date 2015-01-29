@@ -8,7 +8,7 @@
         <h2 class="page-header">Contact</h2>
       </div>
     </div>
-
+    {% assign contact = site.data.contact %}
     <div class="row">
       <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
 
@@ -20,21 +20,21 @@
             <div class="form-group">
               <label class="col-sm-2 control-label">Email</label>
               <div class="col-sm-10">
-                <p class="form-control-static"><span class="text-danger">{{ site.email }}</span> (<a href="mailto:{{ site.email }}">mailto</a>)</p>
+                <p class="form-control-static"><span class="text-danger">{{ contact.email }}</span> (<a href="mailto:{{ contact.email }}">mailto</a>)</p>
               </div>
             </div>
 
             <div class="form-group">
               <label class="col-sm-2 control-label">Phone</label>
               <div class="col-sm-10">
-                <p class="form-control-static text-danger">{{ site.phone }}</p>
+                <p class="form-control-static text-danger">{{ contact.phone }}</p>
               </div>
             </div>
 
             <div class="form-group">
               <label class="col-sm-2 control-label">Handle</label>
               <div class="col-sm-10">
-                <p class="form-control-static"><span class="text-danger">{{ site.work_handle }}</span> ({{ site.work_handleinfo }})</p>
+                <p class="form-control-static"><span class="text-danger">{{ contact.work_handle }}</span> ({{ contact.work_handle_info }})</p>
               </div>
             </div>
 
@@ -49,7 +49,7 @@
             <div class="form-group">
               <label class="col-sm-2 control-label">Handle</label>
               <div class="col-sm-10">
-                <p class="form-control-static"><span class="text-danger">{{ site.private_handle }}</span> ({{ site.private_handleinfo }})</p>
+                <p class="form-control-static"><span class="text-danger">{{ contact.private_handle }}</span> ({{ contact.private_handle_info }})</p>
               </div>
             </div>
 
@@ -63,7 +63,7 @@
     <div class="row">
       <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
         
-        <form id="contact-form" class="form-horizontal" role="form" action="//formspree.io/{{ site.email }}" method="POST">
+        <form id="contact-form" class="form-horizontal" role="form" action="//formspree.io/{{ contact.email }}" method="POST">
           <fieldset>
 
             <legend>Drop Me a Line</legend>
