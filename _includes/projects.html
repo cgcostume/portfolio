@@ -12,9 +12,9 @@
     {% for p in projects reversed %}{% capture rowmode %}{% cycle 0, 1, 1, 2 %}{% endcapture %}
     {% if rowmode == '0' %}<div class="row">{% endif %}
       <div class="col-sm-3 col-xs-6 project">
-        {% if p.gallery %}<a href="#" class="thumbnail" id="thumbnail-{{ p.key }}">
-          <span class="label label-danger top-right">Gallery ({{ p.gallery.size }})</span>
-          <img src="{{ p.thumbnail }}" alt="thumbnail">
+        {% if p.flickr %}<a href="#" class="thumbnail flickr" id="{{ p.flickr }}">
+          <span class="label label-danger top-right">Flickr</span>  
+          <img src="{{ p.thumbnail }}" alt="">
         </a>{% else %}<div class="thumbnail">
           <img src="{{ p.thumbnail }}" alt="">
         </div>{% endif %}

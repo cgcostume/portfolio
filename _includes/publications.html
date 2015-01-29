@@ -12,9 +12,9 @@
     {% for p in publications reversed %}
     <div class="row{% if p != publications.first %} not-last{% endif %}">
       <div class="col-sm-3">
-        {% if p.gallery %}<a href="#" class="thumbnail" id="thumbnail-{{ p.key }}">
-          <span class="label label-danger top-right">Gallery ({{ p.gallery.size }})</span>  
-          <img src="{{ p.thumbnail }}" alt="thumbnail">
+        {% if p.flickr %}<a href="#" class="thumbnail flickr" id="{{ p.flickr }}">
+          <span class="label label-danger top-right">Flickr</span>
+          <img src="{{ p.thumbnail }}" alt="">
         </a>{% else %}<div class="thumbnail">
           <img src="{{ p.thumbnail }}" alt="">
         </div>{% endif %}
@@ -24,7 +24,7 @@
         <p>{% for author in p.authors %}{% if author == p.authors.last %}and {% endif %}{{ author }}{% if p.authors.size > 2 %},{% endif %} {% endfor %}<br><span class="text-danger">{{ p.published }} {{ p.date | date: '%Y' }}</span></p>
         <p>{{ p.caption }}</p>
         <p>
-          {% if p.bibtex %}<a data-toggle="modal" href="#bibtex-{{ p.key }}">BibTex</a>{% if p.downloads %}, {% endif %}{% endif %}
+          {% if p.bibtex %}<a data-toggle="modal" href="#bibtex-{{ p.key }}">BibTeX</a>{% if p.downloads %}, {% endif %}{% endif %}
           {% if p.downloads %}{% for download in p.downloads %}<a {% if download.popup %}class="popup-{{ download.popup }}" {% endif %}href="{{ download.href }}" target="_blank">{{ download.desc }}</a>{% if download != p.downloads.last %}, {% endif %}{% endfor %}{% endif %}
         </p>
         {% if p.bibtex %}
@@ -33,7 +33,7 @@
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">BibTex : {{ p.key }}</h4>
+                <h4 class="modal-title">BibTeX : {{ p.key }}</h4>
               </div>
               <div class="modal-body">
                 <pre id="bibtex-tex-{{ p.key }}">{% include {{ p.bibtex }} %}</pre>
@@ -41,7 +41,7 @@
               <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 <button id="bibtex-select-{{ p.key }}" type="button" class="btn btn-primary">Select</button>
-                <a href="/bib/{{ p.bibtex }}" class="btn btn-primary">Download</a>
+                <a href="/{{ p.bibtex }}" class="btn btn-primary">Download</a>
               </div>
             </div>
           </div>

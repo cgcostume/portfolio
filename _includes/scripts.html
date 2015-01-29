@@ -1,0 +1,131 @@
+
+<!-- Scripts -->
+
+<!-- jQuery -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+<script src="js/bootstrap-image-gallery.min.js"></script>
+
+<!-- Scrolling Nav JavaScript -->
+<script src="{{ "/js/scrolling-nav.js" | prepend: site.baseurl }}"></script>
+
+<script>
+
+jQuery.fn.selectInner = function()
+{
+  var doc = document;
+  var element = this[0];
+
+  if (doc.body.createTextRange) 
+  {
+  	var range = document.body.createTextRange();
+  	range.moveToElementText(element);
+  	range.select();
+  } 
+  else if (window.getSelection) 
+  {
+  	var selection = window.getSelection();
+  	selection.removeAllRanges();
+
+    var range = document.createRange();
+    range.selectNodeContents(element);
+
+    selection.addRange(range);
+  }
+};
+
+// since there is currently no way to use custom plugins on gh-pages
+// flickr integration is done on demand via javascript
+
+var flickr_api = "https://api.flickr.com/services/rest/";
+var flickr_api_key = "{{ site.flickr_api_key }}";
+
+function flickr_photo_url(photo)
+{
+  return "https://farm" + photo.farm 
+    + ".staticflickr.com/" + photo.server + "/" 
+    + photo.id + "_" + photo.secret + "_b.jpg";
+}
+
+function flickr_blueimp(photoset)
+{
+  var gallery = [];
+  
+  $.each(photoset.photo, function(i, photo) 
+    {
+      gallery.push( { href  : flickr_photo_url(photo), title : photo.title } ) 
+    });
+
+  blueimp.Gallery(gallery,
+    { useBootstrapModal : false, event : event, container: '#blueimp-gallery' });
+}
+
+function flickr_photosets(photoset_id) 
+{
+  $.getJSON(flickr_api, 
+    {
+      method : "flickr.photosets.getPhotos",
+      api_key : flickr_api_key, 
+      photoset_id : photoset_id,
+      format : "json",
+      nojsoncallback : 1
+    })
+  .done(function(data) 
+  {
+    flickr_blueimp(data.photoset);
+  })
+  .fail( function(data, textStatus, error) 
+  {
+    console.error("flickr.photosets.getPhotos as json failed, status: " + textStatus + ", error: " + error)
+  });
+}
+
+$(document).ready(function() 
+{ 
+  // assign flickr photosets to thumbnails
+  $('.flickr').on('click', function(event) 
+    { 
+      event.preventDefault();
+      flickr_photosets($(this).attr("id")); 
+    });
+
+  // assign bibtex select scripts
+  {% for p in publications %}{% if p.bibtex %}
+  $('#bibtex-select-{{ p.key }}').on('click', function(event) 
+    { $('#bibtex-tex-{{ p.key }}').selectInner(); });
+  {% endif %}{% endfor %}
+});
+
+// contact form validation
+$("#contact-form").validate(
+{ rules :
+  { name     : { required : true },
+    _replyto : { required : true, email : true },
+    message  : { required : true, maxlength : 1024 } 
+  }, 
+
+  errorClass   : 'error form-control-static text-danger',
+  errorElement : 'div',
+
+  highlight : function(label) 
+  { $(label).closest('.form-group').addClass('has-error'); },
+
+  success : function(label) 
+  { $(label).closest('.form-group').removeClass('has-error');
+    $(label).remove(); },
+
+  submitHandler : function(form) 
+  { $.ajax(
+    { url  : form.action,
+      type : form.method,
+      data : $(form).serializeJSON()
+    });
+  }
+});
+
+</script>

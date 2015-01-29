@@ -1,5 +1,4 @@
 # Site settings
-encoding: utf-8
 timezone: Europe/Berlin
 
 baseurl: "" # the subpath of your site, e.g. /blog/
@@ -15,6 +14,11 @@ description: > # this means to ignore newlines until "baseurl:"
     Interactive graphics engineer and phd student in the Computer Graphics Systems group at the Hasso Plattner Institute, Potsdam, Germany.
 subheading: > # this means to ignore newlines until "baseurl:"
     <span class="text-danger">Interactive graphics engineer</span> and <span class="text-danger">phd student</span> in the Computer Graphics Systems group at the <a href="http://www.hpi.de" target="_blank">Hasso Plattner Institute</a>, Potsdam, Germany.
+
+# Handling Reading
+safe: true
+keep_files: [ ../_includes ]
+encoding: utf-8
 
 # Build settings
 highlighter: false

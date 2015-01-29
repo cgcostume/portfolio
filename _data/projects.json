@@ -4,22 +4,6 @@
     "caption"   : "Cross-platform C++ binding for OpenGL, solely based on the xml-based OpenGL API specification.",
     "authors"   : [ "Daniel Limberger", "Willy Scheibel", "Roland Lux" ],
     "thumbnail" : "/img/thumb-glbinding.jpg",
-    "gallery"   : [
-      { "src"   : "https://github.com/hpicgs/glbinding/wiki/examples/cubescape-8.png",
-        "title" : "Basic Test Example: cubescape with  8² cubes"
-      },
-      { "src"   : "https://github.com/hpicgs/glbinding/wiki/examples/cubescape-16.png",
-        "title" : "Basic Test Example: cubescape with 16² cubes (default)"
-      },
-      { "src"   : "https://github.com/hpicgs/glbinding/wiki/examples/cubescape-64.png",
-        "title" : "Basic Test Example: cubescape with 64² cubes"
-      },
-      { "src"   : "https://github.com/hpicgs/glbinding/wiki/examples/cubescape-2048.png",
-        "title" : "Basic Test Example: cubescape with 2048² cubes"
-      },
-      { "src"   : "https://github.com/hpicgs/glbinding/wiki/examples/qt-cubescape.png",
-        "title" : "Basic Test Example: cubescape-Qt"
-      } ],
     "downloads" : [
       { "href"  : "https://github.com/hpicgs/glbinding",
         "desc"  : "GitHub"
@@ -56,39 +40,17 @@
     "caption"   : "Progressive path tracing of trinagle-based meshes, running completely on the GPU using OpenGL.",
     "authors"   : [ "Daniel Limberger" ],
     "thumbnail" : "/img/thumb-pathgl.jpg",
-    "gallery"   : [
-      { "src"   : "https://raw.githubusercontent.com/wiki/cgcostume/pathgl/pathgl_v1_accum.gif",
-        "title" : "Progressive path tracing: each iteration reducing the noise."
-      } ],
     "downloads" : [
       { "href"  : "https://github.com/cgcostume/pathgl",
         "desc"  : "GitHub"
       } ]
    },
-
-
    { "key"       : "glbinding20142",
     "title"     : "glbinding",
     "date"      : "2004-05-02",
     "caption"   : "Cross-platform C++ binding for OpenGL, solely based on the xml-based OpenGL API specification.",
     "authors"   : [ "Daniel Limberger", "Willy Scheibel", "Roland Lux" ],
     "thumbnail" : "/img/thumb-glbinding.jpg",
-    "gallery"   : [
-      { "src"   : "https://github.com/hpicgs/glbinding/wiki/examples/cubescape-8.png",
-        "title" : "Basic Test Example: cubescape with  8² cubes"
-      },
-      { "src"   : "https://github.com/hpicgs/glbinding/wiki/examples/cubescape-16.png",
-        "title" : "Basic Test Example: cubescape with 16² cubes (default)"
-      },
-      { "src"   : "https://github.com/hpicgs/glbinding/wiki/examples/cubescape-64.png",
-        "title" : "Basic Test Example: cubescape with 64² cubes"
-      },
-      { "src"   : "https://github.com/hpicgs/glbinding/wiki/examples/cubescape-2048.png",
-        "title" : "Basic Test Example: cubescape with 2048² cubes"
-      },
-      { "src"   : "https://github.com/hpicgs/glbinding/wiki/examples/qt-cubescape.png",
-        "title" : "Basic Test Example: cubescape-Qt"
-      } ],
     "downloads" : [
       { "href"  : "https://github.com/hpicgs/glbinding",
         "desc"  : "GitHub"
@@ -125,10 +87,6 @@
     "caption"   : "Progressive path tracing of trinagle-based meshes, running completely on the GPU using OpenGL.",
     "authors"   : [ "Daniel Limberger" ],
     "thumbnail" : "/img/thumb-pathgl.jpg",
-    "gallery"   : [
-      { "src"   : "https://raw.githubusercontent.com/wiki/cgcostume/pathgl/pathgl_v1_accum.gif",
-        "title" : "Progressive path tracing: each iteration reducing the noise."
-      } ],
     "downloads" : [
       { "href"  : "https://github.com/cgcostume/pathgl",
         "desc"  : "GitHub"
