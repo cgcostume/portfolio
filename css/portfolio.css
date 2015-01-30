@@ -22,11 +22,6 @@ section {
 section#publications .not-last {
   padding-bottom: 15px; }
 
-section#publications .badge.top-right {
-  position: absolute;
-  right: 15px;
-  top: 46px; }
-
 section#projects div.project {
   padding-bottom: 15px; }
 
