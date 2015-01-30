@@ -1,7 +1,9 @@
 
-Portfolio optimized for simple, file-based content management (**Datafolio**).
-The complete site's content is based on a json/xml file per section (e.g., ```contact.json```, ```projects.json```, ```publications.json```, ```talks.json```, and ```teaching.json```) and the pages ```_config.yml``` information. 
+Portfolio optimized for researchers and those who strive for a minimal, file-based "content management" (**Datafolio**).
+The complete site's content is based on a json/xml file per section (e.g., ```contact.json```, ```projects.json```, ```publications.json```, ```talks.json```, and ```teaching.json```) as well as the pages ```_config.yml``` information. 
 It uses [Jekyll](http://jekyllrb.com/), [Bootstrap](http://getbootstrap.com/), [Bootswatch](http://bootswatch.com/) themes, [spin.js](http://fgnass.github.io/spin.js/), [blueimp-gallery](https://github.com/blueimp/Bootstrap-Image-Gallery), and accesses the [flickr API](https://www.flickr.com/services/api/).
+
+Example: http://www.daniellimberger.de
 
 #### Features
 
@@ -17,14 +19,3 @@ It uses [Jekyll](http://jekyllrb.com/), [Bootstrap](http://getbootstrap.com/), [
 * simple source code and structure that can be modified or extended easily
 * supports vimeo and youtube video playback
 * yields valid html5
-
-#### Notes
-
-##### Win10 Setup Log:
-
-* https://help.github.com/articles/using-jekyll-with-pages/
-* http://jekyll-windows.juthilo.com/1-ruby-and-devkit/
-* got yajl error ...
-  * installed python27 trying to fix yajl error
-  * setting "highlighter: false" in _config.yml helped for yajl error for now (http://stackoverflow.com/questions/16498287/jekyll-liquid-exception-cannot-load-such-file-yajl-2-0-yajl)
-* set up some CNAME for my domain as shown here: https://help.github.com/articles/adding-a-cname-file-to-your-repository/
