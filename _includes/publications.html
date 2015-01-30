@@ -12,12 +12,7 @@
     {% for p in publications reversed %}
     <div class="row{% if p != publications.first %} not-last{% endif %}">
       <div class="col-sm-3">
-        {% if p.flickr %}<a href="#" class="thumbnail flickr" id="{{ p.flickr }}">
-          <span class="label label-danger top-right">Flickr</span>
-          <img src="{{ p.thumbnail }}" alt="">
-        </a>{% else %}<div class="thumbnail">
-          <img src="{{ p.thumbnail }}" alt="">
-        </div>{% endif %}
+        {% include thumbnail.html %}
       </div>
       <div class="col-sm-9">
         <h4>{{ p.title }}</h4>
@@ -25,7 +20,7 @@
         <p>{{ p.caption }}</p>
         <p>
           {% if p.bibtex %}<a data-toggle="modal" href="#bibtex-{{ p.key }}">BibTeX</a>{% if p.downloads %}, {% endif %}{% endif %}
-          {% if p.downloads %}{% for download in p.downloads %}<a {% if download.popup %}class="popup-{{ download.popup }}" {% endif %}href="{{ download.href }}" target="_blank">{{ download.desc }}</a>{% if download != p.downloads.last %}, {% endif %}{% endfor %}{% endif %}
+          {% if p.downloads %}{% for download in p.downloads %}<a {% if download.video %}class="video-{{ download.video }}" {% endif %}href="{{ download.href }}" target="_blank">{{ download.desc }}</a>{% if download != p.downloads.last %}, {% endif %}{% endfor %}{% endif %}
         </p>
         {% if p.bibtex %}
         <div class="modal fade" id="bibtex-{{ p.key }}" tabindex="-1" role="dialog" aria-labelledby="bibtex-{{ p.key }}" aria-hidden="true">

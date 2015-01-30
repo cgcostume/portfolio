@@ -12,17 +12,12 @@
     {% for p in projects reversed %}{% capture rowmode %}{% cycle 0, 1, 1, 2 %}{% endcapture %}
     {% if rowmode == '0' %}<div class="row">{% endif %}
       <div class="col-sm-3 col-xs-6 project">
-        {% if p.flickr %}<a href="#" class="thumbnail flickr" id="{{ p.flickr }}">
-          <span class="label label-danger top-right">Flickr</span>  
-          <img src="{{ p.thumbnail }}" alt="">
-        </a>{% else %}<div class="thumbnail">
-          <img src="{{ p.thumbnail }}" alt="">
-        </div>{% endif %}
+        {% include thumbnail.html %}
         <h4>{{ p.title }}</h4>
         <p>{{ p.caption }}</p>
         <p>
           {% if p.bibtex %}<a data-toggle="modal" href="#bibtex-{{ p.key }}">BibTex</a>{% if p.downloads %}, {% endif %}{% endif %}
-          {% if p.downloads %}{% for download in p.downloads %}<a {% if download.popup %}class="popup-{{ download.popup }}" {% endif %}href="{{ download.href }}" target="_blank">{{ download.desc }}</a>{% if download != p.downloads.last %}, {% endif %}{% endfor %}{% endif %}
+          {% if p.downloads %}{% for download in p.downloads %}<a {% if download.video %}class="video-{{ download.video }}" {% endif %}href="{{ download.href }}" target="_blank">{{ download.desc }}</a>{% if download != p.downloads.last %}, {% endif %}{% endfor %}{% endif %}
         </p>
       </div>
     {% if rowmode == '2' or p == projects.first %}</div>{% endif %}

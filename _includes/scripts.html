@@ -67,6 +67,12 @@ function blueimp_gallery(photoset_id)
     , { useBootstrapModal : false, event : event, container: '#blueimp-gallery' });  
 }
 
+function blueimp_video(photoset_id)
+{
+  blueimp.Gallery(blueimp_gallery_cache[photoset_id]
+    , { useBootstrapModal : false, event : event, container: '#blueimp-gallery' });  
+}
+
 function flickr_photosets(photoset_id) 
 {
   if(photoset_id in blueimp_gallery_cache)

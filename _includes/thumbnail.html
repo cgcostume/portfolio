@@ -1,0 +1,6 @@
+        {% if p.flickr %}<a href="#" class="thumbnail flickr" id="{{ p.flickr }}">
+          <span class="label label-danger top-right">Flickr</span>  
+          <img src="{{ p.thumbnail }}" alt="">
+        </a>{% else %}<div class="thumbnail">
+          <img src="{{ p.thumbnail }}" alt="">
+        </div>{% endif %}

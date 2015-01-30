@@ -36,7 +36,7 @@
       },
       { "href"    : "https://www.youtube.com/watch?v=AaHJRVQ3Z1E",
         "desc"    : "Video (YouTube)",
-        "popup"   : "youtube"
+        "video"   : "youtube"
       },
       { "href"    : "http://dx.doi.org/10.2312/PE/VMV/VMV12/055-062",
         "desc"    : "DOI"
