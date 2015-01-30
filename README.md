@@ -1,9 +1,10 @@
 
 Portfolio optimized for researchers and those who strive for a minimal, file-based "content management" (**Datafolio**).
 The complete site's content is based on a json/xml file per section (e.g., ```contact.json```, ```projects.json```, ```publications.json```, ```talks.json```, and ```teaching.json```) as well as the pages ```_config.yml``` information. 
-It uses [Jekyll](http://jekyllrb.com/), [Bootstrap](http://getbootstrap.com/), [Bootswatch](http://bootswatch.com/) themes, [spin.js](http://fgnass.github.io/spin.js/), [blueimp-gallery](https://github.com/blueimp/Bootstrap-Image-Gallery), and accesses the [flickr API](https://www.flickr.com/services/api/).
 
-Example: http://www.daniellimberger.de
+#### Examples
+
+* [Daniel Limberger](http://www.daniellimberger.de)
 
 #### Features
 
@@ -19,3 +20,7 @@ Example: http://www.daniellimberger.de
 * simple source code and structure that can be modified or extended easily
 * supports vimeo and youtube video playback
 * yields valid html5
+
+#### Dependencies
+
+Datafolio uses [Jekyll](http://jekyllrb.com/), [Bootstrap](http://getbootstrap.com/), [Bootswatch](http://bootswatch.com/) themes, [spin.js](http://fgnass.github.io/spin.js/), [blueimp-gallery](https://github.com/blueimp/Bootstrap-Image-Gallery), and accesses the [flickr API](https://www.flickr.com/services/api/).
