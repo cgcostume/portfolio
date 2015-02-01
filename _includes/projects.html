@@ -8,6 +8,14 @@
         <h2 class="page-header">Projects</h2>
       </div>
     </div>
+
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <div class="alert alert-warning" role="alert">The contents of this section will be supplemented in the following days.
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+      </div>
+    </div>
     {% assign projects = site.data.projects | sort:"date" %}
     {% for p in projects reversed %}{% capture rowmode %}{% cycle 0, 1, 1, 2 %}{% endcapture %}
     {% if rowmode == '0' %}<div class="row">{% endif %}

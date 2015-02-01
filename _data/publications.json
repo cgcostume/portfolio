@@ -22,23 +22,27 @@
       } ],
     },
 
-    { "key"       : "Limberger2013",
-      "bibtex"    : "bib/limberger2013.bib",
+    { "key"       : "lwtd2013-web-based-swmaps",
+      "bibtex"    : "bib/lwtd2013-web-based-swmaps.bib",
       "title"     : "Interactive Software Maps for Web-Based Source Code Analysis",
       "date"      : "2013-05-01",
       "authors"   : [ "Daniel Limberger", "Benjamin Wasty", "Jonas Trümper", "Jürgen Döllner" ],
       "published" : "In Proceedings of the International Web3D Conference",
-      "caption"   : "This paper presents astronomical based rendering of skies as seen from low altitudes on earth, in respect to location, date, and time. The technique allows to compose an atmosphere with sun, multiple cloud layers, moon, bright stars, and Milky Way, into a holistic sky with unprecedented high level of detail and diversity. GPU generated, viewpoint-aligned billboards are used to render stars with approximated color, brightness, and scintillations. A similar approach is used to synthesize the moon considering lunar phase, earthshine, shading, and lunar eclipses. Atmosphere and clouds are rendered using existing methods adapted to our needs. Rendering is done in a single pass supporting interactive ...",
+      "caption"   : "Software maps -- linking rectangular 3D-Treemaps, software system structure, and performance indicators -- are commonly used to support informed decision making in software-engineering processes. We present a web-based rendering system for software maps that achieves both fast client-side page load time and interactive frame rates even with large software maps. We significantly reduce page load time by efficiently encoding hierarchy and geometry data for the net transport. Apart from that, appropriate interaction, layouting, and labeling techniques as well as common image enhancements aid evaluation of project-related quality aspects.",
       "thumbnail" : "/img/2013-web3d-interactive-software-maps.jpg",
+      "flickr"    : "72157650179270797",
       "downloads"   : [
-      { "href"    : "https://hpi.de/fileadmin/hpi/FG_Doellner/publications/2013/LWTD2013/web3d2013-treemaps-limberger.pdf",
-        "desc"    : "Paper (PDF, 3.00 MiB)"
+      { "href"    : "https://drive.google.com/file/d/0B9sUajZRijJAYTQwM3NlajlRZEE/view",
+        "desc"    : "Paper (PDF, 3.0 MiB)"
+      },
+      { "href"    : "https://drive.google.com/file/d/0B9sUajZRijJAU2ZqbENPN3BFUXc/view",
+        "desc"    : "Talk (PDF, 14.9 MiB)"
       },
       { "href"    : "https://www.youtube.com/watch?v=AaHJRVQ3Z1E",
         "desc"    : "Video (YouTube)",
         "video"   : "youtube"
-      },
-      { "href"    : "http://dx.doi.org/10.2312/PE/VMV/VMV12/055-062",
+      },      
+      { "href"    : "http://doi.acm.org/10.1145/2466533.2466550",
         "desc"    : "DOI"
       } ],
     },
@@ -53,7 +57,7 @@
       "thumbnail" : "/img/2014-expressive-painting-per-pixel-parametrization.jpg",
       "flickr"    : "72157650124474077",
       "downloads" : [
-      { "href"    : "https://hpi.de/fileadmin/hpi/FG_Doellner/publications/2014/LD2014/expressive_2014_limberger.pdf",
+      { "href"    : "https://drive.google.com/file/d/0B9sUajZRijJAZm1GSHhKdHNvdjg/view",
         "desc"    : "Poster (PDF, 19.1 MiB)"
       } ],
   } ]
