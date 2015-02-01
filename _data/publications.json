@@ -1,14 +1,18 @@
-[ { "key"       : "Limberger2012",
-    "bibtex"    : "bib/limberger2012.bib",
+[ { "key"       : "led2012-sky-phenomena",
+    "bibtex"    : "bib/led2012-sky-phenomena.bib",
     "title"     : "Single-Pass Rendering of Day and Night Sky Phenomena",
     "date"      : "2012-11-01",
     "authors"   : [ "Daniel Limberger", "Juri Engel", "Jürgen Döllner" ],
     "published" : "In Proceedings of the Vision, Modeling, and Visualization Workshop",
     "caption"   : "This paper presents astronomical based rendering of skies as seen from low altitudes on earth, in respect to location, date, and time. The technique allows to compose an atmosphere with sun, multiple cloud layers, moon, bright stars, and Milky Way, into a holistic sky with unprecedented high level of detail and diversity. GPU generated, viewpoint-aligned billboards are used to render stars with approximated color, brightness, and scintillations. A similar approach is used to synthesize the moon considering lunar phase, earthshine, shading, and lunar eclipses. Atmosphere and clouds are rendered using existing methods adapted to our needs. Rendering is done in a single pass supporting interactive ...",
     "thumbnail" : "/img/2012-vmv-day-and-night-sky.jpg",
+    "flickr"    : "72157650186586300",
     "downloads" : [
-      { "href"  : "https://hpi.de/fileadmin/hpi/FG_Doellner/publications/2012/MED12/paper_1056_cr.pdf",
-        "desc"  : "Paper (PDF, 5.78 MiB)"
+      { "href"  : "http://dx.doi.org/10.2312/PE/VMV/VMV12/055-062",
+        "desc"  : "DOI"
+      },
+      { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAb1Fvbk1sSlAtNjA/view",
+        "desc"  : "Paper (PDF, 5.7 MiB)"
       },
       { "href"  : "https://www.youtube.com/watch?v=t8ibsEl0kAI",
         "desc"  : "Video (YouTube)",
@@ -16,9 +20,6 @@
       },
       { "href"  : "https://code.google.com/p/osghimmel/",
         "desc"  : "Google Code"
-      },
-      { "href"  : "http://dx.doi.org/10.2312/PE/VMV/VMV12/055-062",
-        "desc"  : "DOI"
       } ],
     },
 
@@ -32,18 +33,18 @@
       "thumbnail" : "/img/2013-web3d-interactive-software-maps.jpg",
       "flickr"    : "72157650179270797",
       "downloads"   : [
+      { "href"    : "http://doi.acm.org/10.1145/2466533.2466550",
+        "desc"    : "DOI"
+      },
       { "href"    : "https://drive.google.com/file/d/0B9sUajZRijJAYTQwM3NlajlRZEE/view",
         "desc"    : "Paper (PDF, 3.0 MiB)"
       },
       { "href"    : "https://drive.google.com/file/d/0B9sUajZRijJAU2ZqbENPN3BFUXc/view",
-        "desc"    : "Talk (PDF, 14.9 MiB)"
+        "desc"    : "Slides (PDF, 14.9 MiB)"
       },
       { "href"    : "https://www.youtube.com/watch?v=AaHJRVQ3Z1E",
         "desc"    : "Video (YouTube)",
         "video"   : "youtube"
-      },      
-      { "href"    : "http://doi.acm.org/10.1145/2466533.2466550",
-        "desc"    : "DOI"
       } ],
     },
 
