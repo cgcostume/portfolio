@@ -11,8 +11,11 @@
       { "href"  : "http://dx.doi.org/10.2312/PE/VMV/VMV12/055-062",
         "desc"  : "DOI"
       },
-      { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAb1Fvbk1sSlAtNjA/view",
+      { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAMi1maGtNOV9GTU0/view",
         "desc"  : "Paper (PDF, 5.7 MiB)"
+      },
+      { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAeEg2NGtKV3NLWk0/view",
+        "desc"  : "Slides (PDF, 3.0 MiB)"
       },
       { "href"  : "https://www.youtube.com/watch?v=t8ibsEl0kAI",
         "desc"  : "Video (YouTube)",

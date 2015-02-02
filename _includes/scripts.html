@@ -81,7 +81,15 @@ function flickr_photosets(photoset_id)
     return;
   }
 
-  $('#' + photoset_id).spin( { zIndex : 1 } );
+  var spin_attributes = {
+    lines   : 12,
+    length  : 15,
+    width   :  4,
+    radius  : 16,
+    corners :  1,
+    zIndex  : 1 };
+
+  $('#' + photoset_id).spin( spin_attributes);
 
   $.getJSON(flickr_api, 
     {
