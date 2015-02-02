@@ -3,10 +3,11 @@
     "date"      : "2014-05-02",
     "caption"   : "Cross-platform C++ binding for OpenGL, solely based on the xml-based OpenGL API specification.",
     "authors"   : [ "Daniel Limberger", "Willy Scheibel", "Roland Lux" ],
-    "thumbnail" : "/img/thumb-glbinding.jpg",
+    "thumbnail" : "/img/2014-glbinding.jpg",
+    "flickr"    : "72157650197067747",
     "downloads" : [
       { "href"  : "https://github.com/hpicgs/glbinding",
-        "desc"  : "GitHub"
+        "desc"  : "Project (GitHub)"
       } ],
   },
   { "key"       : "globjects2013",
