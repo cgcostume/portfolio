@@ -1,29 +1,21 @@
 
-<!-- Page Header -->
-<header class="intro-header">
-  <div class="container">
+  {% assign header = site.data.header %}
+  <header class="jumbotron">
+    <div class="container">
 
-    <div class="row portrait">
-      <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
-        <img class="img-responsive img-thumbnail center-block" src="{{ site.portrait }}" alt="portrait">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2 text-center">
-        <h1>{{ site.author }}</h1>
-        <hr class="small">
-        <p class="lead">{{ site.subheading }}</p>
-      </div>
-    </div>
-
-    <noscript>
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2 text-center">
-          <div class="alert alert-danger" role="alert">Enable JavaScript to unlock Galleries, BibTeXs, and the Contact Form.</div>
+      <div class="row text-xs-center">
+        <div class="col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+          <img class="img-fluid img-rounded center-block" src="/img/{{ header.picture }}" alt="solution">
         </div>
       </div>
-    </noscript>
 
-  </div>
-</header>
+      <div class="row text-xs-center">
+        <div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
+          <h1>{{ header.heading.[page.lang] }}</h1>
+          <p class="lead">{{ header.lead.[page.lang] }}</p>
+          <p class="text-justify">{{ header.about.[page.lang] }}</p>
+        </div>
+      </div>
+
+    </div>
+  </header>

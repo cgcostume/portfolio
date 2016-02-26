@@ -1,8 +1,62 @@
-{ "email" : "daniel.limberger@hpi.de",
-  "phone" : "(+49) 0331 5509 3907",
+{ 
+  "heading" : {
+    "en" : "Contact",
+  	"de" : "Kontakt" },
 
-  "work_handle" : "cgcostume",
-  "work_handle_info" : "GitHub, Bitbuket, ...",
-  "private_handle" : "costumebrother",
-  "private_handle_info" : "YouTube, Flickr, Steam, ...",
+  "email" : "cgdaniel@outlook.com", 
+
+  "email_label" : {
+    "en" : "E-Mail",
+    "de" : "E-Mail" },
+
+  "alternative_emails" : [ 
+  	"daniel.limberger@hpi.de", 
+  	"limberger@cginternals.com" ],
+
+  "alternative_label" : {
+    "en" : "Other",
+    "de" : "Alternativ" },
+
+  "phone" : { 
+    "en" : "+49 163 568 2818",
+    "de" : "0163 568 2818" },
+
+  "phone_label" : {
+    "en" : "Phone",
+    "de" : "Telefon" },
+
+  "refs" : [ 
+  	{ "name" : "LinkedIn", "href" : "https://www.linkedin.com/in/daniellimberger" },
+  	{ "name" : "GitHub", "href" : "https://github.com/cgcostume" },
+  	{ "name" : "Flickr", "href" : "https://www.flickr.com/photos/131006004@N06/albums" },
+  	{ "name" : "YouTube", "href" : "https://www.youtube.com/user/costumebrother" },
+  	{ "name" : "Vimeo", "href" : "https://vimeo.com/user2011768" },
+  	],
+
+  "refs_label" : {
+    "en" : "More",
+    "de" : "Weitere" },
+
+  "formspree" : "cgdaniel@outlook.com",
+
+  "form_legend" : {
+    "en" : "Drop Me a Line",
+    "de" : "Sende mir eine Nachricht" },
+
+  "name_label" : {
+    "en" : "Name",
+    "de" : "Name" },
+
+  "message_label" : {
+    "en" : "Message",
+    "de" : "Nachricht" },
+
+  "submit_button" : {
+    "en" : "Submit",
+    "de" : "Absenden" },
+
+   "submit_info" : {
+   	"en" : "To cgdaniel@outlook.com via <a href='http://formspree.io/' target='_blank'>Formspree</a>.",
+   	"de" : "Via <a href='http://formspree.io/' target='_blank'>Formspree</a> an cgdaniel@outlook.com." },
+
 }

@@ -1,33 +1,25 @@
 
-<!-- Teaching -->
-<section id="teaching">
+  {% assign teaching = site.data.teaching %}
   <div class="container">
 
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="page-header">Teaching</h2>
-      </div>
+    <div class="row text-xs-center">
+      <h1 class="page-header">{{ teaching.heading.[page.lang] }}</h1>
     </div>
 
-    <div class="row">
-    {% assign terms = site.data.teaching | sort:"term" %} 
+    {% assign terms = teaching.terms | sort:"term" %} 
     {% for t in terms reversed %}
-      <div class="col-md-5 {% cycle 'col-md-offset-1', 'col-md-offset-0' %} col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
-        <div class="panel panel-default">
-          <div class="panel-heading">{{ t.term }}</div>
-          <div class="panel-body">
-            <ul>{% for c in t.courses %}
-              <li>
-                <h4>{{ c.course }}</h4>
-                <span class="text-danger">{{ c.type }}</span>, {{ c.role }}
-              </li>{% endfor %}
-            </ul>
-          </div>
-        </div>
-      </div>
-    {% endfor %}
+      
+      {% capture i %}{% cycle 0, 1 %}{% endcapture %}
+      {% if i == '0' %}<div class="row">{% endif %}
 
-    </div>
+      <div class="col-lg-5 {% cycle 'col-lg-offset-1 text-lg-right text-xs-left', 'col-lg-offset-0' %} col-xs-10 col-xs-offset-1">
+        <h4>{{ t.term }}</h4>
+        {% for c in t.courses %}
+        <p>{{ c.course }}<br><span class="text-muted">{{ c.type }}, {{ c.role }}</span></p>
+        {% endfor %}
+      </div>
+      {% if i == '1' || t != terms.first %}</div>{% endif %}
+    {% endfor %}
 
   </div>
 </section>

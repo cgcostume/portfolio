@@ -1,0 +1,121 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+@charset "utf-8";
+
+// variables override
+
+$brand-color-0: rgb(  0,  85, 124);
+$brand-color-1: rgb( 24, 109, 148);
+$brand-color-2: rgb( 52, 136, 173);
+$brand-color-3: rgb(129, 193, 220);
+$brand-color-4: rgb(187, 229, 243);
+$brand-color-5: rgb(238, 246, 254);
+
+$code-color: $brand-color-2;
+
+$enable-rounded: true;
+
+$font-family-sans-serif: 'Source Sans Pro', sans-serif;
+$font-family-monospace: 'Source Code Pro', monospace;
+
+$headings-font-weight: 300;
+
+$brand-dark: $brand-color-1;
+$brand-light: $brand-color-4;
+$brand-primary: $brand-color-2;
+
+$jumbotron-bg: transparent;
+$jumbotron-padding: 0rem;
+
+$link-color: $brand-color-1;
+$link-hover-color: $brand-color-3;
+$link-hover-decoration: none;
+
+// Import customized bootstrap from `sass_dir` (defaults to `_sass`)
+@import
+  "bootstrap-4.0.0-alpha.2/bootstrap"
+;
+
+// common
+
+p {
+  hyphens: auto;
+}
+
+h1 {
+  padding-top: 2rem;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.row {
+  margin-top: 2rem;
+}
+
+@media (min-width: 75em) {
+.container {
+    max-width: 60rem;
+}}
+
+section {
+  padding: 4rem 0 0;
+}
+
+label {
+  text-align: right;
+}
+
+form .row {
+  margin-top: 0rem;
+}
+
+/*
+header {
+  padding: 12em 0 4em; }
+
+header h1 {
+  font-size: 3em; }
+
+.portrait {
+  padding: 2em 0; }
+
+footer div {
+  margin: 21px 0 0;
+  padding: 9.5px 0; }
+
+section {
+  margin-top: 2em; }
+
+.label.top-right {
+  position: absolute;
+  right: 15px;
+  top: 25px; }
+
+section#publications .not-last {
+  padding-bottom: 15px; }
+
+section#projects div.project {
+  padding-bottom: 15px; }
+
+section#teaching ul {
+  list-style: none;
+  padding-left: 1em; }
+
+section#teaching li {
+  padding: 0 0 9px; }
+
+a.thumbnail {
+  color: #fff;
+}
+
+.blueimp-gallery > .close, .blueimp-gallery > .title {
+  top: 8px; }
+
+.blueimp-gallery > .prev, .blueimp-gallery > .next {
+  background: transparent;
+  border: none; }
+
+*/

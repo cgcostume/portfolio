@@ -1,28 +1,9 @@
 
-<!-- Scripts -->
-
-<!-- jQuery -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-
-<!-- blueimp gallery -->
-<script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
-<script src="js/bootstrap-image-gallery.min.js"></script>
-
-<!-- spin.js -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/spin.js/2.0.1/spin.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/spin.js/2.0.1/jquery.spin.min.js"></script>
-
-
-<!-- Scrolling Nav JavaScript -->
-<script src="{{ "/js/scrolling-nav.js" | prepend: site.baseurl }}"></script>
+<script src="https://cdn.jsdelivr.net/g/jquery@2.2.1,tether@1.2.0,jquery.validation@1.15.0"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
 
 <script>
-
+/*
 jQuery.fn.selectInner = function()
 {
   var doc = document;
@@ -138,14 +119,16 @@ $(document).ready(function()
     { $('#bibtex-tex-{{ p.key }}').selectInner(); });
   {% endif %}{% endfor %}
 });
-
+*/
 // contact form validation
-$("#contact-form").validate(
-{ rules :
-  { name     : { required : true },
+$("#contact-form").validate({
+
+  lang : '{{ page.lang }}',
+
+  rules : {
+    name     : 'required',
     _replyto : { required : true, email : true },
-    message  : { required : true, maxlength : 1024 } 
-  }, 
+    message  : { required : true, maxlength : 1024 } }, 
 
   errorClass   : 'error form-control-static text-danger',
   errorElement : 'div',
