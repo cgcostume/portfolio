@@ -41,6 +41,7 @@ $link-hover-decoration: none;
 
 p {
   hyphens: auto;
+  @hyphenation-resource
 }
 
 h1 {
