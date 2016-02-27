@@ -10,7 +10,7 @@
 
 // Reset and dependencies
 @import "bootstrap-4.0.0-alpha.2/normalize";
-@import "bootstrap-4.0.0-alpha.2/print";
+//@import "bootstrap-4.0.0-alpha.2/print";
 
 // Core CSS
 @import "bootstrap-4.0.0-alpha.2/reboot";
@@ -26,7 +26,7 @@
 @import "bootstrap-4.0.0-alpha.2/animation";
 //@import "bootstrap-4.0.0-alpha.2/dropdown";
 //@import "bootstrap-4.0.0-alpha.2/button-group";
-@import "bootstrap-4.0.0-alpha.2/input-group";
+//@import "bootstrap-4.0.0-alpha.2/input-group";
 //@import "bootstrap-4.0.0-alpha.2/custom-forms";
 @import "bootstrap-4.0.0-alpha.2/nav";
 @import "bootstrap-4.0.0-alpha.2/navbar";
@@ -35,22 +35,22 @@
 //@import "bootstrap-4.0.0-alpha.2/pagination";
 //@import "bootstrap-4.0.0-alpha.2/pager";
 @import "bootstrap-4.0.0-alpha.2/labels";
-@import "bootstrap-4.0.0-alpha.2/jumbotron";
+//@import "bootstrap-4.0.0-alpha.2/jumbotron";
 //@import "bootstrap-4.0.0-alpha.2/alert";
 //@import "bootstrap-4.0.0-alpha.2/progress";
 //@import "bootstrap-4.0.0-alpha.2/media";
-@import "bootstrap-4.0.0-alpha.2/list-group";
-@import "bootstrap-4.0.0-alpha.2/responsive-embed";
+//@import "bootstrap-4.0.0-alpha.2/list-group";
+//@import "bootstrap-4.0.0-alpha.2/responsive-embed";
 @import "bootstrap-4.0.0-alpha.2/close";
 
 // Components w/ JavaScript
 @import "bootstrap-4.0.0-alpha.2/modal";
-@import "bootstrap-4.0.0-alpha.2/tooltip";
+//@import "bootstrap-4.0.0-alpha.2/tooltip";
 //@import "bootstrap-4.0.0-alpha.2/popover";
 //@import "bootstrap-4.0.0-alpha.2/carousel";
 
 // Utility classes
 @import "bootstrap-4.0.0-alpha.2/utilities";
-@import "bootstrap-4.0.0-alpha.2/utilities-background";
-@import "bootstrap-4.0.0-alpha.2/utilities-spacing";
+//@import "bootstrap-4.0.0-alpha.2/utilities-background";
+//@import "bootstrap-4.0.0-alpha.2/utilities-spacing";
 @import "bootstrap-4.0.0-alpha.2/utilities-responsive";

@@ -92,21 +92,21 @@ footer div {
   margin-bottom: .5rem;
 }
 
-.label.top-right {
+.label.top-left {
   position: absolute;
-  text-align: right;
-  right: .9375rem;
-  top: 1rem; 
 }
 
 .thumbnail {
   margin-bottom: 1rem;
 }
 
-.no-radius{
+.partial-radius {
   border: none;
-  border-radius: 0;
-}   
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+}
 
 .blueimp-gallery-controls {
 
