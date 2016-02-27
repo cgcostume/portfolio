@@ -1,20 +1,18 @@
 # Site settings
 timezone: Europe/Berlin
 
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://daniellimberger.de" # the base hostname & protocol for your site
+baseurl: '' # the subpath of your site, e.g. /blog/
+url: 'http://daniellimberger.de' # the base hostname & protocol for your site
 
-title: Interactive Graphics Engineer
-author: Daniel Limberger
-portrait: "/img/daniel-limberger-aug-2014.jpg"
+title: 'Daniel Limberger'
+author: 'Daniel Limberger'
 
-flickr_user: "131006004@N06"
+languages: [ 'en', 'de' ]
+
+google_font_sans_serif: 'Source+Sans+Pro:600,300'
+
+flickr_user: '131006004@N06'
 flickr_api_key: adb4be93419edab991522b4fa92b7029
-
-description: > # this means to ignore newlines until "baseurl:"
-    Interactive graphics engineer and phd student in the Computer Graphics Systems group at the Hasso Plattner Institute, Potsdam, Germany.
-subheading: > # this means to ignore newlines until "baseurl:"
-    <span class="text-danger">Interactive graphics engineer</span> and <span class="text-danger">phd student</span> in the Computer Graphics Systems group at the <a href="http://www.hpi.de" target="_blank">Hasso Plattner Institute</a>, Potsdam, Germany.
 
 # Handling Reading
 safe: true
@@ -22,3 +20,24 @@ encoding: utf-8
 
 # Build settings
 markdown: kramdown
+
+# Outputting
+exclude: [
+  'Gemfile',
+  'Gemfile.lock',
+  'package.json',
+  'README.md']
+
+defaults:
+  - scope:
+      path: 'de'
+    values:
+      lang: de
+  - scope:
+      path: 'en'
+    values:
+      lang: en
+
+# CSS Minification
+sass:
+  style: compressed

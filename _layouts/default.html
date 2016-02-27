@@ -1,27 +1,43 @@
+---
+layout: compress
+---
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ page.lang }}">
 
 {% include head.html %}
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-{% include ga.html %}
-
 {% include navbar.html %}
 
+<section id="header" class="container">
 {% include header.html %}
+</section>
 
+<section id="publications" class="container">
 {% include publications.html %}
+</section>
 
+<section id="projects" class="container">
 {% include projects.html %}
+</section>
 
+<section id="talks" class="container">
 {% include talks.html %}
+</section>
 
+<section id="teaching" class="container">
 {% include teaching.html %}
+</section>
 
+<section id="contact" class="container">
 {% include contact.html %}
+</section>
 
+<section id="footer">
 {% include footer.html %}
+</section>
 
 {% include scripts.html %}
 

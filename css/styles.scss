@@ -1,0 +1,134 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+@charset "utf-8";
+
+// variables override
+
+$brand-color-0: rgb(  0,  85, 124);
+$brand-color-1: rgb( 24, 109, 148);
+$brand-color-2: rgb( 52, 136, 173);
+$brand-color-3: rgb(129, 193, 220);
+$brand-color-4: rgb(187, 229, 243);
+$brand-color-5: rgb(238, 246, 254);
+
+$code-color: $brand-color-2;
+
+$enable-rounded: true;
+
+$font-family-sans-serif: 'Source Sans Pro', sans-serif;
+$font-family-monospace: 'Source Code Pro', monospace;
+
+$headings-font-weight: 300;
+
+$brand-dark: $brand-color-1;
+$brand-light: $brand-color-4;
+$brand-primary: $brand-color-2;
+
+$jumbotron-bg: transparent;
+$jumbotron-padding: 0rem;
+
+$link-color: $brand-color-1;
+$link-hover-color: $brand-color-3;
+$link-hover-decoration: none;
+
+// Import customized bootstrap from `sass_dir` (defaults to `_sass`)
+@import
+  "bootstrap-custom"
+;
+
+// common
+
+p {
+  hyphens: auto;
+}
+
+h1 {
+  padding-top: 2rem;
+}
+
+.navbar {
+
+  padding: 0;
+  background-color: $body-bg;
+  opacity: 0.92;
+
+  #lang-select {
+
+    margin-left: 1rem;
+
+    > li.nav-item + .nav-item {
+      margin-left: 0.25rem;
+    }
+  }
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.row {
+  margin-top: 2rem;
+}
+
+@media (min-width: 75em) {
+.container {
+    max-width: 60rem;
+}}
+
+section {
+  padding: 4rem 0 0;
+}
+
+label {
+  text-align: right;
+}
+
+form .row {
+  margin-top: 0rem;
+}
+
+footer div {
+  margin-bottom: .5rem;
+}
+
+.label.top-right {
+  position: absolute;
+  text-align: right;
+  right: .9375rem;
+  top: 1rem; 
+}
+
+.thumbnail {
+  margin-bottom: 1rem;
+}
+
+.no-radius{
+  border: none;
+  border-radius: 0;
+}   
+
+.blueimp-gallery-controls {
+
+  > .prev, > .next {
+    background: transparent;
+    border: none; 
+  }
+}
+
+.label.animate {
+  -webkit-animation: sk-scaleout 0.66s infinite ease-in-out;
+  animation: sk-scaleout 0.66s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+    0% { opacity: 1.00; }
+   50% { opacity: 0.66; }
+  100% { opacity: 1.00; }
+}
+
+@keyframes sk-scaleout {
+    0% { opacity: 1.00; }
+   50% { opacity: 0.66; }
+  100% { opacity: 1.00; }
+}

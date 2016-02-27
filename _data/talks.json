@@ -1,32 +1,44 @@
-[ { "date"      : "2013-11-20 00:00:00",
-    "title"     : "Rendering of Day and Night Sky Phenomena in Interactive 3D Geovirtual Environments",
-    "location"  : "DGKF & DGPF Workshop \"3D-Stadmodelle\", Bonn, Germany",
-    "downloads" :
-    [ { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAZ0ZjcXpQT0s1Yzg/view",
-        "desc"  : "Slides (PDF, 4.5 MiB)"
-      } ] 
-  },
-  { "date"      : "2013-06-20 00:00:00",
-    "title"     : "Interactive Software Maps for Web-Based Source Code Analysis",
-    "location"  : "Web3D2013, San Sebastian, Spain",
-    "downloads" : [
-    { "href"    : "https://drive.google.com/file/d/0B9sUajZRijJAU2ZqbENPN3BFUXc/view",
-      "desc"    : "Slides (PDF, 14.9 MiB)"
+{ 
+  "heading" : {
+    "en" : "Talks",
+    "de" : "Vorträge" },
+
+  "talks" : [
+
+    { "date"      : "2015-05-07 00:00:00",
+      "title"     : "Monitoring Software Quality Aspects using Software Maps",
+      "location"  : "SAPPHIRE NOW 2015, Orlando, FL, USA",
+    },
+    { "date"      : "2013-11-20 00:00:00",
+      "title"     : "Rendering of Day and Night Sky Phenomena in Interactive 3D Geovirtual Environments",
+      "location"  : "DGKF & DGPF Workshop \"3D-Stadmodelle\", Bonn, Germany",
+      "downloads" :
+      [ { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAZ0ZjcXpQT0s1Yzg/view",
+          "desc"  : "Slides (PDF, 4.5 MiB)"
+        } ] 
+    },
+    { "date"      : "2013-06-20 00:00:00",
+      "title"     : "Interactive Software Maps for Web-Based Source Code Analysis",
+      "location"  : "Web3D2013, San Sebastian, Spain",
+      "downloads" : [
+      { "href"    : "https://drive.google.com/file/d/0B9sUajZRijJAU2ZqbENPN3BFUXc/view",
+        "desc"    : "Slides (PDF, 14.9 MiB)"
+      } ]
+    },
+    { "date"      : "2013-06-20 00:00:00",
+      "title"     : "Annotating 3D Content in Interactive, Virtual Worlds",
+      "location"  : "Web3D2013, San Sebastian, Spain"
+    },
+    { "date"      : "2012-11-12 00:00:00",
+      "title"     : "Single-Pass Rendering of Day and Night Sky Phenomena",
+      "location"  : "VMV2012, Magdeburg, Germany",
+      "downloads" : [
+      { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAeEg2NGtKV3NLWk0/view",
+        "desc"  : "Slides (PDF, 3.0 MiB)"
+      } ]
+    },
+    { "date"      : "2010-06-08 00:00:00",
+      "title"     : "Semantic-Based, Non-Photorealisitc Visualization of 3D Geovirtual Environments",
+      "location"  : "58. Deutscher Kartographentag, Berlin, Germany"
     } ]
-  },
-  { "date"      : "2013-06-20 00:00:00",
-    "title"     : "Annotating 3D Content in Interactive, Virtual Worlds",
-    "location"  : "Web3D2013, San Sebastian, Spain"
-  },
-  { "date"      : "2012-11-12 00:00:00",
-    "title"     : "Single-Pass Rendering of Day and Night Sky Phenomena",
-    "location"  : "VMV2012, Magdeburg, Germany",
-    "downloads" : [
-    { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAeEg2NGtKV3NLWk0/view",
-      "desc"  : "Slides (PDF, 3.0 MiB)"
-    } ]
-  },
-  { "date"      : "2010-06-08 00:00:00",
-    "title"     : "Semantic-Based, Non-Photorealisitc Visualization of 3D Geovirtual Environments",
-    "location"  : "58. Deutscher Kartographentag, Berlin, Germany"
-  } ]
+}
