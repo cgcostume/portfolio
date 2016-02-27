@@ -8,23 +8,22 @@ The complete site's content is based on a json/xml file per section (e.g., ```co
 
 #### Features
 
-* responsive, one-page design with scroll navigation
+* responsive single-page using bootstrap 4
+* multi-language support
 * sections for publications, projects, talks/keynotes, teaching, contact, and more
 * section contents loaded from json data-files (_data)
 * unique, distinguishable layouts per section
-* easy BibTeX provisioning (show, select, and copy, as well as download .bib)
+* easy BibTeX provisioning (show, select, and copy to clipboard, as well as download .bib)
 * php free contact form using [Formspree](http://formspree.io/)
-* dynamic integration of Flickr photo sets (with simple caching)
+* dynamic integration of Flickr photo sets (with basic caching)
 * optimized for [gh-pages](https://pages.github.com/) deployment (uses no unsupported plugins)
-* minimizes html and css (e.g., using uncss and mincss)
-* source code and structure that is easy to modify or extend
-* vimeo and youtube video playback
+* minimizes html and css (currently using compress layout method)
+* takes advantage of jsdelivr
 * valid html5
 
 #### Dependencies
 
 Datafolio uses [Jekyll](http://jekyllrb.com/), [Bootstrap](http://getbootstrap.com/), [Bootswatch](http://bootswatch.com/) themes, [spin.js](http://fgnass.github.io/spin.js/), [blueimp-gallery](https://github.com/blueimp/Bootstrap-Image-Gallery), and accesses the [flickr API](https://www.flickr.com/services/api/).
-
 
 #### Setting up the Build Environment (on Windows)
 
@@ -61,27 +60,3 @@ npm install -g svgo
 jekyll serve
 ```
 With the server running, the website should be available at http://localhost:4000.
-
-### Deploying the Website (any platform)
-
-Website deployment is usually done automatically by the server, whenever any repository changes occur. The deployment procedure can be performed locally as well (e.g., for testing) by either running ```update.sh``` or ```update.bat```, or manually running (in that specific order):
-* Check for new or latest packages:
-```
-npm update
-```
-* (in progress, please update manually for now) Download readme.md files for open-source projects (download target _includes/raw is ignored by git):
-```node rawup.js```
-* Provide git revision to jekyll:
-```
-node gitrev.js
-```
-* Rebuild static website(s)
-```
-jekyll clean
-jekyll build
-```
-* Optimize used style sheets and svg graphics:
-```
-node uncssmin.js
-svgo -f _site/img --disable removeViewBox
-```
