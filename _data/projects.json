@@ -47,7 +47,7 @@
       "authors"   : [ "Daniel Limberger" ],
       "thumbnail" : "2011-osghimmel.jpg",
       "downloads" : [
-        { "href"  : "https://osghimmel.googlecode.com/files/Daniel_Limberger_Poster.pdf",
+        { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAQ24tTk9YUFdlblE/view",
           "desc"  : "Poster (PDF, 5.51MiB)"
         },
         { "href"  : "https://code.google.com/p/osghimmel/",
@@ -59,8 +59,8 @@
       "date"      : "2013-07-05",
 
       "caption"   : {
-        "en" : "Basic test for progressive path tracing of trinagle-based meshes, running on the GPU using OpenGL.",
-        "de" : "Test test for progressive path tracing of trinagle-based meshes, running on the GPU using OpenGL." },
+        "en" : "Basic test for progressive path tracing of triangle-based meshes, running on the GPU using OpenGL.",
+        "de" : "Test test for progressive path tracing of triangle-based meshes, running on the GPU using OpenGL." },
 
       "authors"   : [ "Daniel Limberger" ],
       "thumbnail" : "2013-pathgl.jpg",
