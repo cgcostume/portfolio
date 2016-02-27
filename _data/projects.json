@@ -1,49 +1,73 @@
-[ { "key"       : "glbinding2014",
-    "title"     : "glbinding",
-    "date"      : "2014-05-02",
-    "caption"   : "Cross-platform C++ binding for OpenGL, solely based on the xml-based OpenGL API specification.",
-    "authors"   : [ "Daniel Limberger", "Willy Scheibel", "Roland Lux" ],
-    "thumbnail" : "/img/2014-glbinding.jpg",
-    "flickr"    : "72157650197067747",
-    "downloads" : [
-      { "href"  : "https://github.com/hpicgs/glbinding",
-        "desc"  : "Project (GitHub)"
-      } ],
-  },
-  { "key"       : "globjects2013",
-    "title"     : "globjects",
-    "date"      : "2013-05-07",
-    "caption"   : "Cross-platform library providing an object oriented C++ interface for OpenGL's programmable pipeline.",
-    "authors"   : [ "Willy Scheibel", "Roland Lux", "Daniel Limberger" ],
-    "thumbnail" : "/img/2013-globjects.jpg",
-    "downloads" : [
-      { "href"  : "https://github.com/hpicgs/globjects",
-        "desc"  : "Project (GitHub)"
-      } ],
-  },
-  { "key"       : "osghimmel2011",
-    "title"     : "osgHimmel",
-    "date"      : "2011-08-29",
-    "caption"   : "OSG library featuring dynamic, immersive, textured or date-time and location based, procedural skies.",
-    "authors"   : [ "Daniel Limberger" ],
-    "thumbnail" : "/img/2011-osghimmel.jpg",
-    "downloads" : [
-      { "href"  : "https://osghimmel.googlecode.com/files/Daniel_Limberger_Poster.pdf",
-        "desc"  : "Poster (PDF, 5.51MiB)"
-      },
-      { "href"  : "https://code.google.com/p/osghimmel/",
-        "desc"  : "Project (Google Code)"
-      } ],
-  },
-  { "key"      : "pathgl2013",
-    "title"     : "Path Tracing Test",
-    "date"      : "2013-07-05",
-    "caption"   : "Basic test for progressive path tracing of trinagle-based meshes, running on the GPU using OpenGL.",
-    "authors"   : [ "Daniel Limberger" ],
-    "thumbnail" : "/img/2013-pathgl.jpg",
-    "flickr"    : "72157648293674913",
-    "downloads" : [
-      { "href"  : "https://github.com/cgcostume/pathgl",
-        "desc"  : "Project (GitHub)"
-      } ]
-   } ]
+{
+  "heading" : {
+    "en" : "Projects",
+    "de" : "Projekte" },
+
+  "projects" : [ 
+
+    { "key"       : "glbinding2014",
+      "title"     : "glbinding",
+      "date"      : "2014-05-02",
+     
+      "caption"   : {
+        "en" : "Cross-platform C++ binding for OpenGL, solely based on the xml-based OpenGL API specification.",
+        "de" : "Cross-platform C++ binding for OpenGL, solely based on the xml-based OpenGL API specification." },
+
+      "authors"   : [ "Daniel Limberger", "Willy Scheibel", "Roland Lux" ],
+      "thumbnail" : "2014-glbinding.jpg",
+      "flickr"    : "72157650197067747",
+      "downloads" : [
+        { "href"  : "https://github.com/hpicgs/glbinding",
+          "desc"  : "Project (GitHub)"
+        } ],
+    },
+    { "key"       : "globjects2013",
+      "title"     : "globjects",
+      "date"      : "2013-05-07",
+
+      "caption"   : {
+        "en" : "Cross-platform library providing an object oriented C++ interface for OpenGL's programmable pipeline.",
+        "de" : "Cross-platform library providing an object oriented C++ interface for OpenGL's programmable pipeline." },
+
+      "authors"   : [ "Willy Scheibel", "Roland Lux", "Daniel Limberger" ],
+      "thumbnail" : "2013-globjects.jpg",
+      "downloads" : [
+        { "href"  : "https://github.com/hpicgs/globjects",
+          "desc"  : "Project (GitHub)"
+        } ],
+    },
+    { "key"       : "osghimmel2011",
+      "title"     : "osgHimmel",
+      "date"      : "2011-08-29",
+      
+      "caption"   : {
+        "en" : "OSG library featuring dynamic, immersive, textured or date-time and location based, procedural skies.",
+        "de" : "OSG library featuring dynamic, immersive, textured or date-time and location based, procedural skies." },
+
+      "authors"   : [ "Daniel Limberger" ],
+      "thumbnail" : "2011-osghimmel.jpg",
+      "downloads" : [
+        { "href"  : "https://osghimmel.googlecode.com/files/Daniel_Limberger_Poster.pdf",
+          "desc"  : "Poster (PDF, 5.51MiB)"
+        },
+        { "href"  : "https://code.google.com/p/osghimmel/",
+          "desc"  : "Project (Google Code)"
+        } ],
+    },
+    { "key"      : "pathgl2013",
+      "title"     : "Path Tracing Test",
+      "date"      : "2013-07-05",
+
+      "caption"   : {
+        "en" : "Basic test for progressive path tracing of trinagle-based meshes, running on the GPU using OpenGL.",
+        "de" : "Test test for progressive path tracing of trinagle-based meshes, running on the GPU using OpenGL." },
+
+      "authors"   : [ "Daniel Limberger" ],
+      "thumbnail" : "2013-pathgl.jpg",
+      "flickr"    : "72157648293674913",
+      "downloads" : [
+        { "href"  : "https://github.com/cgcostume/pathgl",
+          "desc"  : "Project (GitHub)"
+        } ]
+     } ]
+}

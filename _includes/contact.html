@@ -1,75 +1,71 @@
 
-  {% assign contact = site.data.contact %}
-  <div class="container">
-
+    {% assign contact = site.data.contact %}
     <div class="row text-xs-center">
       <h1 class="page-header">{{ contact.heading.[page.lang] }}</h1>
     </div>
 
-    <div class="row">
-      <form>
-        <div class="form-group row">
-          <label class="col-sm-2 col-sm-offset-2 col-xs-10 col-xs-offset-1 form-control-label text-sm-right text-xs-left">{{ contact.email_label.[page.lang] }}:</label>
-          <div class="col-sm-6 col-sm-offset-0 col-sm-offset-0 col-xs-10 col-xs-offset-1">
-            <p class="form-control-static">{{ contact.email }} (<a href="mailto:{{ contact.email }}">mailto</a>)</p>
-            <p class="form-control-static text-muted">
-            {{ contact.alternative_label.[page.lang] }}:  
-            {% for email in contact.alternative_emails %}{{ email }}{% if email != contact.alternative_emails.last %}, {% endif %}
-            {% endfor %}
-            </p>
-          </div>
+    <form>
+      <div class="form-group row">
+        <label class="col-sm-2 col-sm-offset-1 form-control-label text-sm-right text-xs-left">{{ contact.email_label.[page.lang] }}:</label>
+        <div class="col-sm-7">
+          <p class="form-control-static">{{ contact.email }} (<a href="mailto:{{ contact.email }}">mailto</a>)</p>
+          <p class="form-control-static text-muted">
+          {{ contact.alternative_label.[page.lang] }}:  
+          {% for email in contact.alternative_emails %}{{ email }}{% if email != contact.alternative_emails.last %}, {% endif %}
+          {% endfor %}
+          </p>
         </div>
-        <div class="form-group row">
-          <label class="col-sm-2 col-sm-offset-2 col-xs-10 col-xs-offset-1 form-control-label text-sm-right text-xs-left">{{ contact.phone_label.[page.lang] }}:</label>
-          <div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
-            <p class="form-control-static">{{ contact.phone[page.lang] }}</p>
-          </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-2 col-sm-offset-1 form-control-label text-sm-right text-xs-left">{{ contact.phone_label.[page.lang] }}:</label>
+        <div class="col-sm-7">
+          <p class="form-control-static">{{ contact.phone[page.lang] }}</p>
         </div>
-        <div class="form-group row">
-          <label class="col-sm-2 col-sm-offset-2 col-xs-10 col-xs-offset-1 form-control-label text-sm-right text-xs-left">{{ contact.refs_label.[page.lang] }}:</label>
-          <div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
-            <p class="form-control-static">
-            {% for ref in contact.refs %}
-            <a href="{{ ref.href }}" target="_blank">{{ ref.name }}</a>{% if ref != contact.refs.last %}, {% endif %}
-            {% endfor %}
-            </p>
-          </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-2 col-sm-offset-1 form-control-label text-sm-right text-xs-left">{{ contact.refs_label.[page.lang] }}:</label>
+        <div class="col-sm-7">
+          <p class="form-control-static">
+          {% for ref in contact.refs %}
+          <a href="{{ ref.href }}" target="_blank">{{ ref.name }}</a>{% if ref != contact.refs.last %}, {% endif %}
+          {% endfor %}
+          </p>
         </div>
-      </form>
+      </div>
+    </form>
 
-      <form id="contact-form" class="form-horizontal" role="form" action="//formspree.io/{{ contact.email }}" method="POST">
-        <legend class="col-sm-6 col-sm-offset-0 col-sm-offset-4 col-xs-10 col-xs-offset-1 form-control-legend">{{ contact.form_legend.[page.lang] }}:</legend>
-
-        <div class="form-group row">
-          <label for="name" class="col-sm-2 col-sm-offset-2 col-xs-10 col-xs-offset-1 form-control-label text-sm-right text-xs-left">{{ contact.name_label.[page.lang] }}:</label>
-          <div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
-            <input type="text" class="form-control" id="name" name="name" placeholder="{{ contact.name_label.[page.lang] }}">
-          </div>
+    <form id="contact-form" class="form-horizontal" action="//formspree.io/{{ contact.email }}" method="POST">
+      <div class="form-group row">
+        <div class="col-sm-7 col-sm-offset-3">
+          <h4>{{ contact.form_legend.[page.lang] }}:</h4>
+          <span class="text-muted">{{ contact.submit_info.[page.lang] }}</span>
         </div>
+      </div>
 
-        <div class="form-group row">
-          <label for="_replyto" class="col-sm-2 col-sm-offset-2 col-xs-10 col-xs-offset-1 form-control-label text-sm-right text-xs-left">{{ contact.email_label.[page.lang] }}:</label>
-          <div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
-            <input type="text" class="form-control" id="_replyto" name="_replyto" placeholder="{{ contact.email_label.[page.lang] }}">
-          </div>
+      <div class="form-group row">
+        <label for="name" class="col-sm-2 col-sm-offset-1 form-control-label text-sm-right text-xs-left">{{ contact.name_label.[page.lang] }}:</label>
+        <div class="col-sm-7">
+          <input type="text" class="form-control" id="name" name="name" placeholder="{{ contact.name_label.[page.lang] }}">
         </div>
+      </div>
 
-        <div class="form-group row">
-          <label for="message" class="col-sm-2 col-sm-offset-2 col-xs-10 col-xs-offset-1 form-control-label text-sm-right text-xs-left">{{ contact.message_label.[page.lang] }}:</label>
-          <div class="col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
-            <textarea class="form-control" rows="3" id="message" name="{{ contact.message_label.[page.lang] }}"></textarea>
-          </div>
+      <div class="form-group row">
+        <label for="_replyto" class="col-sm-2 col-sm-offset-1 form-control-label text-sm-right text-xs-left">{{ contact.email_label.[page.lang] }}:</label>
+        <div class="col-sm-7">
+          <input type="text" class="form-control" id="_replyto" name="_replyto" placeholder="{{ contact.email_label.[page.lang] }}">
         </div>
+      </div>
 
-        <div class="form-group row">
-          <div class="col-sm-2 col-sm-offset-4 col-xs-10 col-xs-offset-1">
-            <button type="submit" class="btn btn-primary">{{ contact.submit_button.[page.lang] }}</button>
-          </div>
-          <div class="col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1 text-lg-right">
-            <p class="form-control-static text-muted">{{ contact.submit_info.[page.lang] }}</p>
-          </div>
+      <div class="form-group row">
+        <label for="message" class="col-sm-2 col-sm-offset-1 form-control-label text-sm-right text-xs-left">{{ contact.message_label.[page.lang] }}:</label>
+        <div class="col-sm-7">
+          <textarea class="form-control" rows="3" id="message" name="{{ contact.message_label.[page.lang] }}"></textarea>
         </div>
-      </form>
-    </div>
+      </div>
 
-  </div>
+      <div class="form-group row">
+        <div class="col-sm-2 col-sm-offset-3">
+          <button type="submit" class="btn btn-primary">{{ contact.submit_button.[page.lang] }}</button>
+        </div>
+      </div>
+    </form>

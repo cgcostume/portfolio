@@ -1,6 +1,7 @@
-        {% if p.flickr %}<a href="https://www.flickr.com/photos/{{ site.flickr_user }}/sets/{{ p.flickr }}/" target="_blank" class="thumbnail flickr" id="{{ p.flickr }}">
-          <span class="label label-danger top-right">Flickr</span>  
-          <img src="{{ p.thumbnail }}" alt="">
-        </a>{% else %}<div class="thumbnail">
-          <img src="{{ p.thumbnail }}" alt="">
-        </div>{% endif %}
+
+  <div class="thumbnail">
+    {% if p.flickr %}<a href="https://www.flickr.com/photos/{{ site.flickr_user }}/sets/{{ p.flickr }}/" target="_blank" class="thumbnail flickr" id="{{ p.flickr }}">
+      <span class="label label-primary top-right no-radius">Flickr</span>{% endif %}
+    <img class="img-fluid img-rounded center-block" src="/img/{{ p.thumbnail }}" alt="">
+    {% if p.flickr %}</a>{% endif %}
+  </div>

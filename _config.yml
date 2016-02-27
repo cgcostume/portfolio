@@ -7,6 +7,8 @@ url: 'http://daniellimberger.de' # the base hostname & protocol for your site
 title: 'Daniel Limberger'
 author: 'Daniel Limberger'
 
+languages: [ 'en', 'de' ]
+
 google_font_sans_serif: 'Source+Sans+Pro:600,300'
 
 flickr_user: '131006004@N06'
@@ -21,8 +23,8 @@ markdown: kramdown
 
 # Outputting
 exclude: [
-  '_assets',
-  'gitrev.js',
+  'Gemfile',
+  'Gemfile.lock',
   'package.json',
   'README.md']
 

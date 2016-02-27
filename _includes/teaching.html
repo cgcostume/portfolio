@@ -1,18 +1,15 @@
 
-  {% assign teaching = site.data.teaching %}
-  <div class="container">
-
     <div class="row text-xs-center">
-      <h1 class="page-header">{{ teaching.heading.[page.lang] }}</h1>
+      <h1 class="page-header">{{ site.data.teaching.heading.[page.lang] }}</h1>
     </div>
 
-    {% assign terms = teaching.terms | sort:"term" %} 
+    {% assign terms = site.data.teaching.terms | sort:"term" %} 
     {% for t in terms reversed %}
       
       {% capture i %}{% cycle 0, 1 %}{% endcapture %}
       {% if i == '0' %}<div class="row">{% endif %}
 
-      <div class="col-md-5 {% cycle 'col-md-offset-1 text-md-right text-xs-left', 'col-md-offset-0' %} col-xs-10 col-xs-offset-1">
+      <div class="col-md-5 {% cycle 'col-md-offset-1 text-md-right text-xs-left', 'col-md-offset-0' %} col-sm-10 col-sm-offset-1">
         <h4>{{ t.term }}</h4>
         {% for c in t.courses %}
         <p>{{ c.course }}<br><span class="text-muted">{{ c.type }}, {{ c.role }}</span></p>
@@ -20,6 +17,3 @@
       </div>
       {% if i == '1' || t != terms.first %}</div>{% endif %}
     {% endfor %}
-
-  </div>
-</section>

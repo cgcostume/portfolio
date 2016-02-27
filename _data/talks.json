@@ -7,7 +7,7 @@
 
     { "date"      : "2015-05-07 00:00:00",
       "title"     : "Monitoring Software Quality Aspects using Software Maps",
-      "location"  : "SAPPHIRE NOW 2015, Orlando, Florida, United States",
+      "location"  : "SAPPHIRE NOW 2015, Orlando, FL, USA",
     },
     { "date"      : "2013-11-20 00:00:00",
       "title"     : "Rendering of Day and Night Sky Phenomena in Interactive 3D Geovirtual Environments",
@@ -41,5 +41,4 @@
       "title"     : "Semantic-Based, Non-Photorealisitc Visualization of 3D Geovirtual Environments",
       "location"  : "58. Deutscher Kartographentag, Berlin, Germany"
     } ]
-
 }

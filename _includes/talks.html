@@ -1,20 +1,16 @@
 
-  {% assign talks = site.data.talks %}
-  <div class="container">
-
     <div class="row text-xs-center">
-      <h1 class="page-header">{{ talks.heading.[page.lang] }}</h1>
+      <h1 class="page-header">{{ site.data.talks.heading.[page.lang] }}</h1>
     </div>
 
-    {% assign T = talks.talks | sort:"date" %}
-    {% for t in T reversed %}
+    {% assign talks = site.data.talks.talks | sort:"date" %}
+    {% for t in talks reversed %}
     <div class="row">
-      <div class="col-lg-1 col-lg-offset-1 col-xs-10 col-xs-offset-1 text-right">
+      <div class="col-md-2 col-md-offset-1 text-md-right">
         {{ t.date | date : "%x" }}
       </div>
-      <div class="col-lg-9 col-lg-offset-0 col-xs-10 col-xs-offset-1">
-        <p>{{ t.location }}</p>
-        <h4>{{ t.title}}</h4>
+      <div class="col-md-7">
+        <p>{{ t.title}}<br><span class="text-muted">{{ t.location }}</span></p>
         {% if t.downloads %}
         <p>{% for download in t.downloads %}
           <a href="{{ download.href }}" target="_blank">{{ download.desc }}</a>{% if download != t.downloads.last %}, {% endif %}{% endfor %}
@@ -22,5 +18,3 @@
       </div>
     </div>
     {% endfor %}
-  </div>
-</section>

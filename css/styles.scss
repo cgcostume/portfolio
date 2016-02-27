@@ -34,7 +34,7 @@ $link-hover-decoration: none;
 
 // Import customized bootstrap from `sass_dir` (defaults to `_sass`)
 @import
-  "bootstrap-4.0.0-alpha.2/bootstrap"
+  "bootstrap-custom"
 ;
 
 // common
@@ -45,6 +45,22 @@ p {
 
 h1 {
   padding-top: 2rem;
+}
+
+.navbar {
+
+  padding: 0;
+  background-color: $body-bg;
+  opacity: 0.92;
+
+  #lang-select {
+
+    margin-left: 1rem;
+
+    > li.nav-item + .nav-item {
+      margin-left: 0.25rem;
+    }
+  }
 }
 
 .text-justify {
@@ -72,50 +88,47 @@ form .row {
   margin-top: 0rem;
 }
 
-/*
-header {
-  padding: 12em 0 4em; }
-
-header h1 {
-  font-size: 3em; }
-
-.portrait {
-  padding: 2em 0; }
-
 footer div {
-  margin: 21px 0 0;
-  padding: 9.5px 0; }
-
-section {
-  margin-top: 2em; }
+  margin-bottom: .5rem;
+}
 
 .label.top-right {
   position: absolute;
-  right: 15px;
-  top: 25px; }
-
-section#publications .not-last {
-  padding-bottom: 15px; }
-
-section#projects div.project {
-  padding-bottom: 15px; }
-
-section#teaching ul {
-  list-style: none;
-  padding-left: 1em; }
-
-section#teaching li {
-  padding: 0 0 9px; }
-
-a.thumbnail {
-  color: #fff;
+  text-align: right;
+  right: .9375rem;
+  top: 1rem; 
 }
 
-.blueimp-gallery > .close, .blueimp-gallery > .title {
-  top: 8px; }
+.thumbnail {
+  margin-bottom: 1rem;
+}
 
-.blueimp-gallery > .prev, .blueimp-gallery > .next {
-  background: transparent;
-  border: none; }
+.no-radius{
+  border: none;
+  border-radius: 0;
+}   
 
-*/
+.blueimp-gallery-controls {
+
+  > .prev, > .next {
+    background: transparent;
+    border: none; 
+  }
+}
+
+.label.animate {
+  -webkit-animation: sk-scaleout 0.66s infinite ease-in-out;
+  animation: sk-scaleout 0.66s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+    0% { opacity: 1.00; }
+   50% { opacity: 0.66; }
+  100% { opacity: 1.00; }
+}
+
+@keyframes sk-scaleout {
+    0% { opacity: 1.00; }
+   50% { opacity: 0.66; }
+  100% { opacity: 1.00; }
+}
