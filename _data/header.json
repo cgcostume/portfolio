@@ -9,11 +9,11 @@
 
   "about" : {
   	"en" : "I'm designing, developing, implementing, and maintaining mostly interactive computer graphics techniques and systems.
-  	As a PhD student in the <a href='http://hpi.de/doellner/index.html' target='_blank'>Computer Graphics Systems group</a> at the <a href='http://hpi.de/' target='_blank'>Hasso Plattner Institute</a> I study, teach, supervise, and publish in the fields of massive, multivariate data visualization, human-computer interaction, as well as programming and computer graphics fundamentals.
-  	As a co-founder and manager of <a href='https://www.cginternals.com' target='_blank'>CG Internals</a>, I offer graphics engineering related products, services, and solutions to the industry.",
+  	As a PhD student in the <a href='https://hpi.de/doellner/index.html'>Computer Graphics Systems group</a> at the <a href='https://hpi.de/'>Hasso Plattner Institute</a> I study, teach, supervise, and publish in the fields of massive, multivariate data visualization, human-computer interaction, as well as programming and computer graphics fundamentals.
+  	As a co-founder and manager of <a href='https://www.cginternals.com'>CG Internals</a>, I offer graphics engineering related products, services, and solutions to the industry.",
   	"de" : "Ich entwerfe, entwickle, implementiere und warte vorrangig interaktive, computergrafische Verfahren und Systeme.
-  	Als Promotionsstudent am <a href='http://hpi.de/doellner/index.html' target='_blank'>Fachgebiet für Computergrafische Systeme</a> des <a href='http://hpi.de/' target='_blank'>Hasso-Plattner-Instituts</a> studiere, lehre, betreue, and veröffentliche ich in Bereichen der Visualisierung massiver, mehrdimensionaler Daten, Mensch-Computer-Interaktion, sowie Computergrafik.
-  	Als Gründer und Geschäftsführer der <a href='https://www.cginternals.com' target='_blank'>CG Internals GmbH</a> biete ich Produkte, Dienstleistungen und Lösungen für computergrafische Anwendungen." },
+  	Als Promotionsstudent am <a href='http://hpi.de/doellner/index.html'>Fachgebiet für Computergrafische Systeme</a> des <a href='https://hpi.de/'>Hasso-Plattner-Instituts</a> studiere, lehre, betreue, and veröffentliche ich in Bereichen der Visualisierung massiver, mehrdimensionaler Daten, Mensch-Computer-Interaktion, sowie Computergrafik.
+  	Als Gründer und Geschäftsführer der <a href='https://www.cginternals.com'>CG Internals GmbH</a> biete ich Produkte, Dienstleistungen und Lösungen für computergrafische Anwendungen." },
 
-  "picture" : "daniel-limberger-feb-2016.jpg",
+  "picture" : "daniel-limberger-feb-2016.jpg"
 }

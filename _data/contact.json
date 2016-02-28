@@ -56,7 +56,7 @@
     "de" : "Absenden" },
 
    "submit_info" : {
-   	"en" : "To cgdaniel@outlook.com via <a href='http://formspree.io/' target='_blank'>Formspree</a>.",
-   	"de" : "Via <a href='http://formspree.io/' target='_blank'>Formspree</a> an cgdaniel@outlook.com." },
+   	"en" : "To cgdaniel@outlook.com via <a href='https://formspree.io/'>Formspree</a>.",
+   	"de" : "Via <a href='https://formspree.io/'>Formspree</a> an cgdaniel@outlook.com." },
 
 }

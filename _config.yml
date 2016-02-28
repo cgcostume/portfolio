@@ -9,10 +9,13 @@ author: 'Daniel Limberger'
 
 languages: [ 'en', 'de' ]
 
-google_font_sans_serif: 'Source+Sans+Pro:600,300'
+google_font_sans_serif: 'Source+Sans+Pro:300'
 
 flickr_user: '131006004@N06'
 flickr_api_key: adb4be93419edab991522b4fa92b7029
+
+default_header_img_dimensions: 'width="1024" height="1024"'
+default_thubmnail_img_dimensions: 'width="768" height="768"'
 
 # Handling Reading
 safe: true

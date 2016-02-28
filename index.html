@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-      <meta http-equiv="refresh" content="0;url=/en">
-        <script type="text/javascript">
-            window.location.href = "/en"
-        </script>
-    </head>
-    <body>
-        <!-- Note: don't tell people to `click` the link, just tell them that it is a link. -->
-        If you are not redirected automatically, follow the <a href='/en'>link to example</a>
-    </body>
-</html>
+---
+layout: compress
+---
+<!DOCTYPE html><html lang="{{ page.lang }}"><head><meta charset="{{ site.encoding }}"><meta http-equiv="refresh" content="0;url=https://www.daniellimberger.de/en"><title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title><meta name="description" content="{{ site.description }}"><script>window.location.href = "https://www.daniellimberger.de/en"</script></head><body>If you are not redirected automatically, please manually continue to <a href='https://www.daniellimberger.de/en'>daniellimberger.de/en</a>.</body></html>

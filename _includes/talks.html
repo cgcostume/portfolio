@@ -1,20 +1,19 @@
+<div class="row text-xs-center">
+  <h1>{{ site.data.talks.heading.[page.lang] }}</h1>
+</div>
 
-    <div class="row text-xs-center">
-      <h1 class="page-header">{{ site.data.talks.heading.[page.lang] }}</h1>
-    </div>
-
-    {% assign talks = site.data.talks.talks | sort:"date" %}
-    {% for t in talks reversed %}
-    <div class="row">
-      <div class="col-md-2 col-md-offset-1 text-md-right">
-        {{ t.date | date : "%x" }}
-      </div>
-      <div class="col-md-7">
-        <p>{{ t.title}}<br><span class="text-muted">{{ t.location }}</span></p>
-        {% if t.downloads %}
-        <p>{% for download in t.downloads %}
-          <a href="{{ download.href }}" target="_blank">{{ download.desc }}</a>{% if download != t.downloads.last %}, {% endif %}{% endfor %}
-        </p>{% endif %}
-      </div>
-    </div>
-    {% endfor %}
+{% assign talks = site.data.talks.talks | sort:"date" %}
+{% for t in talks reversed %}
+<div class="row">
+  <div class="col-md-2 col-md-offset-1 text-md-right">
+    {{ t.date | date : "%x" }}
+  </div>
+  <div class="col-md-7">
+    <p>{{ t.title}}<br><span class="text-muted">{{ t.location }}</span></p>
+    {% if t.downloads %}
+    <p>{% for download in t.downloads %}
+      <a href="{{ download.href }}">{{ download.desc }}</a>{% if download != t.downloads.last %}, {% endif %}{% endfor %}
+    </p>{% endif %}
+  </div>
+</div>
+{% endfor %}

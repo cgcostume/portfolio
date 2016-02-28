@@ -1,9 +1,8 @@
-
 {% assign header = site.data.header %}
 <header>
   <div class="row text-xs-center">
     <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
-      <img class="img-fluid img-rounded center-block" src="/img/{{ header.picture }}" alt="solution">
+      <img class="img-fluid img-rounded center-block" {{ site.default_header_img_dimensions }} src="/img/{{ header.picture }}">
     </div>
   </div>
   <div class="row text-xs-center">

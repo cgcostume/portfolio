@@ -19,7 +19,7 @@
       "thumbnail" : "2012-vmv-day-and-night-sky.jpg",
       "flickr"    : "72157650186586300",
       "downloads" : [
-        { "href"  : "http://dx.doi.org/10.2312/PE/VMV/VMV12/055-062",
+        { "href"  : "https://dx.doi.org/10.2312/PE/VMV/VMV12/055-062",
           "desc"  : "DOI"
         },
         { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAMi1maGtNOV9GTU0/view",
@@ -50,7 +50,7 @@
       "thumbnail" : "2013-web3d-interactive-software-maps.jpg",
       "flickr"    : "72157650179270797",
       "downloads"   : [
-        { "href"    : "http://doi.acm.org/10.1145/2466533.2466550",
+        { "href"    : "https://doi.acm.org/10.1145/2466533.2466550",
           "desc"    : "DOI"
         },
         { "href"    : "https://drive.google.com/file/d/0B9sUajZRijJAYTQwM3NlajlRZEE/view",
