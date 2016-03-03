@@ -5,7 +5,7 @@
 
   "publications" : [ 
 
-    { "key"       : "led2012-sky-phenomena",
+    { "key"       : "2012-sky-phenomena",
       "bibtex"    : "led2012-sky-phenomena.bib",
       "title"     : "Single-Pass Rendering of Day and Night Sky Phenomena",
       "date"      : "2012-11-01",
@@ -13,8 +13,14 @@
       "published" : "In Proceedings of the Vision, Modeling, and Visualization Workshop",
       
       "caption"   : {
-        "en" : "This paper presents astronomical based rendering of skies as seen from low altitudes on earth, in respect to location, date, and time. The technique allows composing an atmosphere with sun, multiple cloud layers, moon, bright stars, and Milky Way, into a holistic sky with unprecedented high level of detail and diversity. GPU generated, viewpoint-aligned billboards are used to render stars with approximated color, brightness, and scintillations. A similar approach is used to synthesize the moon considering lunar phase, earthshine, shading, and lunar eclipses. Atmosphere and clouds are rendered using existing methods adapted to our needs. Rendering is done in a single pass supporting interactive ...",
-        "de" : "This paper presents astronomical based rendering of skies as seen from low altitudes on earth, in respect to location, date, and time. The technique allows composing an atmosphere with sun, multiple cloud layers, moon, bright stars, and Milky Way, into a holistic sky with unprecedented high level of detail and diversity. GPU generated, viewpoint-aligned billboards are used to render stars with approximated color, brightness, and scintillations. A similar approach is used to synthesize the moon considering lunar phase, earthshine, shading, and lunar eclipses. Atmosphere and clouds are rendered using existing methods adapted to our needs. Rendering is done in a single pass supporting interactive ..." },
+        "en" : "This paper presents techniques for astronomical based, real-time rendering of skies as seen from low altitudes on earth, in respect to location, date, and time.
+                The techniques allow for composing an atmosphere with sun, multiple cloud layers, moon, bright stars, and Milky Way, into a holistic sky with unprecedented level of detail and diversity.
+                GPU generated, viewpoint-aligned billboards are used to render stars with approximated color, brightness, and scintillations. 
+                A similar approach is used to synthesize the moon considering lunar phase, earthshine, shading, and lunar eclipses.",
+        "de" : "In dieser Arbeit werden echtzeitfähige Renderingtechniken zur astronomisch basierten Darstellung von Himmelsphänomenen für beliebige Standorte und Zeitpunkte vorgestellt.
+                Sie erlauben eine Komposition von Sonne, Wolkenschichten, Mond, Sternen sowie der Milchstraße zu einem ganzheitlichen Himmelsabbild mit hohem Detailgrad.
+                GPU generierte, dem Betrachter zugeneigte Billboards werden zum Rendern von Sternen mit korrekter Farbe, Helligkeit und Szintillationen verwendet. 
+                Ähnlich wird der Mond unter Einbeziehung der Mondphase, dem Erdschein, der Beleuchtung sowie Mondfinsternisse synthetisiert." },
 
       "thumbnail" : "2012-vmv-day-and-night-sky.jpg",
       "flickr"    : "72157650186586300",
@@ -36,7 +42,7 @@
           "desc"  : "Google Code"
         } ],
     },
-    { "key"       : "lwtd2013-web-based-swmaps",
+    { "key"       : "2013-web-based-swmaps",
       "bibtex"    : "lwtd2013-web-based-swmaps.bib",
       "title"     : "Interactive Software Maps for Web-Based Source Code Analysis",
       "date"      : "2013-05-01",
@@ -44,27 +50,30 @@
       "published" : "In Proceedings of the International Web3D Conference",
       
       "caption"   : {
-        "en" : "Software maps -- linking rectangular 3D-Treemaps, software system structure, and performance indicators -- are commonly used to support informed decision making in software-engineering processes. We present a web-based rendering system for software maps that achieves both fast client-side page load time and interactive frame rates even with large software maps. We significantly reduce page load time by efficiently encoding hierarchy and geometry data for the net transport. Apart from that, appropriate interaction, layouting, and labeling techniques as well as common image enhancements aid evaluation of project-related quality aspects.",
-        "de" : "Software maps -- linking rectangular 3D-Treemaps, software system structure, and performance indicators -- are commonly used to support informed decision making in software-engineering processes. We present a web-based rendering system for software maps that achieves both fast client-side page load time and interactive frame rates even with large software maps. We significantly reduce page load time by efficiently encoding hierarchy and geometry data for the net transport. Apart from that, appropriate interaction, layouting, and labeling techniques as well as common image enhancements aid evaluation of project-related quality aspects." },
+        "en" : "Software maps&mdash;linking 2.5D treemaps, software system structure, and performance indicators&mdash;are commonly used to support informed decision making in software-engineering processes.
+                In this paper a web-based rendering system for software maps that achieves both fast client-side page load time and interactive frame rates even with large software maps is presented.
+                The page load time is significantly reduced by efficiently encoding hierarchy and geometry data for the net transport.",
+        "de" : "Softwarelagekarten&mdash;als Anwendung von 2.5D Treemaps zur Darstellung von Softwaresystemstrukturen und -metriken&mdash;können zur informationsgestützen Entscheidungsfindung in der Softwareentwicklung verwendet werden.
+                In dieser Arbeit wird ein webbasiertes Renderingsystem für große, massive Softwarelagekarten vorgestellt, welches durch effektive Speicherung und Aufteilung der Hierarchie- und Geometryinformationen clientseitige Ladezeiten verringert und interaktive Bildwiederholraten erreicht." },
 
       "thumbnail" : "2013-web3d-interactive-software-maps.jpg",
       "flickr"    : "72157650179270797",
-      "downloads"   : [
-        { "href"    : "https://doi.acm.org/10.1145/2466533.2466550",
-          "desc"    : "DOI"
+      "downloads" : [
+        { "href"  : "https://doi.acm.org/10.1145/2466533.2466550",
+          "desc"  : "DOI"
         },
-        { "href"    : "https://drive.google.com/file/d/0B9sUajZRijJAYTQwM3NlajlRZEE/view",
-          "desc"    : "Paper (PDF, 3.0 MiB)"
+        { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAYTQwM3NlajlRZEE/view",
+          "desc"  : "Paper (PDF, 3.0 MiB)"
         },
-        { "href"    : "https://drive.google.com/file/d/0B9sUajZRijJAU2ZqbENPN3BFUXc/view",
-          "desc"    : "Slides (PDF, 14.9 MiB)"
+        { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAU2ZqbENPN3BFUXc/view",
+          "desc"  : "Slides (PDF, 14.9 MiB)"
         },
-        { "href"    : "https://www.youtube.com/watch?v=AaHJRVQ3Z1E",
-          "desc"    : "Video (YouTube)",
-          "video"   : "youtube"
+        { "href"  : "https://www.youtube.com/watch?v=AaHJRVQ3Z1E",
+          "desc"  : "Video (YouTube)",
+          "video" : "youtube"
         } ],
     },
-    { "key"       : "ld2014-parameter-painting",
+    { "key"       : "2014-parameter-painting",
       "bibtex"    : "ld2014-parameter-painting.bib",
       "title"     : "Painting Per-Pixel Parametrization for Interactive Image Filtering",
       "date"      : "2014-08-01",
@@ -72,15 +81,120 @@
       "published" : "In Expressive Poster Session",
       
       "caption"   : {
-        "en" : "We present a photo-editing method that enables per-pixel parameter manipulation of image filtering by means of interactive painting. Predefined as well as custom image filters are exposed to the user, as a parametrizable composition of image operations. Brushes, as sequences of actions mapping user inputs (in terms of brush shape, flow, pressure, etc.) to arbitrary functions or convolution operators, are used to draw within the parameter space. Our tool demonstrates that interactive painting can be used to, e.g., locally tweak inadequate parametrization and, furthermore, provides a blueprint for an open, collaborative photo-editing platform.",
-        "de" : "We present a photo-editing method that enables per-pixel parameter manipulation of image filtering by means of interactive painting. Predefined as well as custom image filters are exposed to the user, as a parametrizable composition of image operations. Brushes, as sequences of actions mapping user inputs (in terms of brush shape, flow, pressure, etc.) to arbitrary functions or convolution operators, are used to draw within the parameter space. Our tool demonstrates that interactive painting can be used to, e.g., locally tweak inadequate parametrization and, furthermore, provides a blueprint for an open, collaborative photo-editing platform." },
+        "en" : "This work presents a photo-editing method that enables per-pixel parameter manipulation of image filtering by means of interactive painting.
+                Predefined or custom image filters are exposed to the user, as a parametrizable composition of image operations. 
+                Brushes, as sequences of actions mapping user inputs (in terms of brush shape, flow, pressure, etc.) to arbitrary functions or convolution operators, are used to draw within the parameter space. 
+                It demonstrates how interactive painting can be used to, e.g., locally tweak parametrization and, furthermore, provides a blueprint for an collaborative photo-editing platform.",
+        "de" : "Diese Arbeit stellt eine Methode zur Bildbearbeitung vor, welche per-pixel Manipulation von Filterparametern ermöglicht.
+                Vordefinierte oder benutzerdefinierte Bildfilter werden als Komposition parametrisierter Bildoperationen freigelegt.
+                So können Interaktionen mittels Pinselmethapher (Pinselform, Verlauf, Druck, etc.) als Abfolge von Operationen (z.B. Faltungen) im Parameterraum genutzt werden.
+                Es wird gezeigt wie durch Malen interaktiv lokale Korrekturen der Parameterisierungen erfolgen können. 
+                Zudem kann die Arbeit als Blaupause für eine offene, kollaborative Bildverarbebitungs-Platform dienen." },
 
       "thumbnail" : "2014-expressive-painting-per-pixel-parametrization.jpg",
       "flickr"    : "72157650124474077",
       "downloads" : [
-        { "href"    : "https://drive.google.com/file/d/0B9sUajZRijJAZm1GSHhKdHNvdjg/view",
-          "desc"    : "Poster (PDF, 19.1 MiB)"
+        { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAZm1GSHhKdHNvdjg/view",
+          "desc"  : "Poster (PDF, 19.1 MiB)"
         } ],
-  } ]
+    },
+    { "key"       : "2015-oilpaint-stylization",
+      "bibtex"    : "slkd2015-oilpaint-stylization.bib",
+      "title"     : "Image Stylization by Oil Paint Filtering Using Color Palettes",
+      "date"      : "2015-06-20",
+      "authors"   : [ "Amir Semmo", "Daniel Limberger", "Jan Eric Kyprianidis", "Jürgen Döllner" ],
+      "published" : "In Proceedings of the Workshop on Computational Aesthetic",
+      "lead_note" : "<a href='http://expressive.graphics/2015'>Best Paper Award</a>",
+
+      "caption"   : {
+        "en" : "This paper presents an approach for transforming images into an oil paint look. 
+                A color quantization scheme is proposed that performs feature-aware recolorization using the dominant colors of the input image. 
+                In addition, an approach for real-time computation of paint textures is presented that builds on the smoothed structure adapted to the main feature contours of the quantized image. 
+                The stylization technique leads to homogeneous outputs in the color domain and enables creative control over the visual output, such as color adjustments and per-pixel parametrizations by means of interactive painting.",
+        "de" : "In dieser Arbeit wird eine Methode zur Umwandlung eines Bildes in ein Ölgemälde vorgestellt. 
+                Dazu wird ein Schema zur Farbquantisierung vorgeschlagen, welches eine Feature-erhaltende Neueinfärbung mittels dominanter Farben des Eingabebildes erlaubt.
+                Zudem wird ein Ansatz zur echtzeit-fähigen Berechnung einer Farb- und Lackstruktur auf Basis von an Featurekonturen ausgerichteten und geglätteter Strukturen diskutiert.
+                Die Methode liefert farblich homogene Ergebnisse und ermöglicht gestalterische Kontrolle über die Ausgabe, z.B. Farbanpassungen oder Per-Pixel Parameterisierung mittels interkativem Malen." },
+
+      "thumbnail" : "2015-oil-paint-stylization-using-color-palettes.jpg",
+
+      "downloads" : [
+        { "href"  : "http://dx.doi.org/10.2312/exp.20151188",
+          "desc"  : "DOI"
+        },
+        { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAcGdHblRfbmdkcXM/view",
+          "desc"  : "Paper (PDF, 7.5 MiB)"
+        },
+        { "href"  : "https://www.youtube.com/watch?v=T65gbk8Ruk4",
+          "desc"  : "Video (YouTube)",
+          "video" : "youtube"
+        } ],
+
+    },
+    { "key"       : "2015-natural-metaphors",
+      "bibtex"    : "wtld2015-natural-metaphors.bib",
+      "title"     : "Natural Phenomena as Metaphors for Visualization of Trend Data in Interactive Software Maps",
+      "date"      : "2015-09-16",
+      "authors"   : [ "Hannes Würfel", "Matthias Trapp", "Daniel Limberger", "Jürgen Döllner" ],
+      "published" : "In Proceedings of Computer Graphics and Visual Computing",
+      
+      "caption"   : {
+        "en" : "This work explores the suitability of rendering natural phenomena in Software maps for effective communication of changes as well as trends.
+                Therefore, Unreal Engine 4 is prototypically used to render Software maps and natural phenomena, such as fire, clouds, smoke, rain, rust, or shininess in real-time.
+                Trend data is automatically computed by hierarchically accumulating as well as analyzing the underlying software metrics, and is mapped to the additional visual variables.",
+        "de" : "Diese Arbeit untersucht inwiefern die Bildsynthese einzelner Naturerscheinungen in Softwarelagekarten als ergänzende visuelle Variablen zur effektiven Kommunikation von Änderungen und Trends geeignet ist.
+                Dabei wird die Unreal Engine 4 prototypisch genutzt Softwarelagekarten als auch Naturerscheinungen wie Feuer, Wolken, Rauch, Regen, Rost, oder Glanz in Echtzeit zu rendern.
+                Die Trenddaten werden aus den zugrundeliegenden Softwaremetriken abgeleitet und auf die zusätzlichen visuellen Variablen abgebildet." },
+
+      "thumbnail" : "2015-natural-metaphors.jpg",
+      "flickr"    : "72157663043933623",     
+      "downloads" : [
+        { "href"  : "http://dx.doi.org/10.2312/cgvc.20151246",
+          "desc"  : "DOI"
+        },
+        { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAMnBIY0VuaTVkdWc/view",
+          "desc"  : "Paper (PDF, 16.9 MiB)"
+        } ],
+    },
+    { "key"       : "2016-oilpaint-stylization",
+      "bibtex"    : "slkd2016-oilpaint-stylization.bib",
+      "title"     : "Image Stylization by Interactive Oil Paint Filtering",
+      "date"      : "2016-01-09",
+      "authors"   : [ "Amir Semmo", "Daniel Limberger", "Jan Eric Kyprianidis", "Jürgen Döllner" ],
+      "published" : "Computers & Graphics",
+      "lead_note" : "<a href='http://vcg.isti.cnr.it/cgf/winner.php?year=2016'>CGF Cover Contest 2016 (Runner-up)</a>",
+      
+      "caption"   : {
+        "en" : "An interactive system for transforming images into an oil paint look is presented:
+                First, dominant colors from an input image are derived for feature-aware recolorization and quantization to conform with a global color palette. 
+                Afterwards, it employs non-linear filtering based on the smoothed structure adapted to the main feature contours of the quantized image to synthesize a paint texture in real-time.
+                Furthermore, a generalized brush-based painting interface is introduced that operates within parameter spaces to locally adjust the level of abstraction of the filtering effects.",
+        "de" : "An interactive system for transforming images into an oil paint look is presented:
+                First, dominant colors from an input image are derived for feature-aware recolorization and quantization to conform with a global color palette. 
+                Afterwards, it employs non-linear filtering based on the smoothed structure adapted to the main feature contours of the quantized image to synthesize a paint texture in real-time.
+                Furthermore, a generalized brush-based painting interface is introduced that operates within parameter spaces to locally adjust the level of abstraction of the filtering effects." },
+
+      "thumbnail" : "2016-interactive-oil-paint-filtering.jpg",
+      "flickr"      : "72157652814171753",
+      "downloads" : [
+        { "href"  : "http://dx.doi.org/10.1016/j.cag.2015.12.001",
+          "desc"  : "DOI"
+        },
+        { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAaGQtQnotbGtISGM/view",
+          "desc"  : "Paper (PDF, 17.9 MiB)"
+        } ],
+    } ,
+    { "key"       : "2016-multi-frame-sampling",
+      "title"     : "Progressive Rendering using Multi-frame Sampling",
+      "date"      : "2016-04-08",
+      "authors"   : [ "Daniel Limberger", "Karsten Tausche", "Johannes Linke", "Jürgen Döllner" ],
+      "published" : "GPU Pro 7: Advanced Rendering Techniques",
+      
+      "caption"   : {
+        "en" : "This article will be release in April 2016.<br>More details and supplemental material will be provided soon...",
+        "de" : "Dieser Artikel erscheint im April.<br>Weitere Details und ergänzende Materialien folgen..." },
+
+      "thumbnail" : "2016-multi-frame-sampling.jpg",
+    }]
 
 }

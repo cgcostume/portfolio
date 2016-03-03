@@ -1,5 +1,5 @@
 ---
-layout: compress
+#layout: compress
 ---
 
 var flickr_api = "https://api.flickr.com/services/rest/";
@@ -50,6 +50,9 @@ function flickr_photosets(photoset_id)
 
   .done(function(data) 
   {
+    if(!data.photoset)
+        return;
+
     var gallery = [];
 
     $.each(data.photoset.photo, function(i, photo) {
