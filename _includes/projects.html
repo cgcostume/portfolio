@@ -3,15 +3,14 @@
 </div>
 
 {% assign projects = site.data.projects.projects | sort:"date" %}
+<div class="row">
 {% for p in projects reversed %}{% capture rowmode %}{% cycle 0, 1, 1, 2 %}{% endcapture %}
-{% if rowmode == '0' %}<div class="row">{% endif %}
   <div class="col-lg-3 col-md-4 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 project ">
     {% include thumbnail.html %}
     <h4>{{ p.title }}</h4>
     <p>{{ p.caption.[page.lang] }}</p>
     <p>{% if p.bibtex %}<a data-toggle="modal" href="#bibtex-{{ p.key }}">BibTex</a>{% if p.downloads %}, {% endif %}{% endif %}
-      {% if p.downloads %}{% for download in p.downloads %}<a {% if download.video %}class="video-{{ download.video }}" {% endif %}href="{{ download.href }}">{{ download.desc }}</a>{% if download != p.downloads.last %}, {% endif %}{% endfor %}{% endif %}
-    </p>
+      {% if p.downloads %}{% for download in p.downloads %}<a {% if download.video %}class="video-{{ download.video }}" {% endif %}href="{{ download.href }}">{{ download.desc }}</a>{% if download != p.downloads.last %}, {% endif %}{% endfor %}{% endif %}&nbsp;</p>
   </div>
-{% if rowmode == '2' or p == projects.first %}</div>{% endif %}
 {% endfor %}
+</div>
