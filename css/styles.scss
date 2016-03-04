@@ -62,6 +62,29 @@ h1 {
       margin-left: 0.25rem;
     }
   }
+
+  img {
+    height: 1.35rem;
+    width: 1.35rem;
+  }
+
+  .dropdown-menu {
+    border: none;
+    margin-right: .9375rem;
+  }
+
+  .dropdown-item {
+    color: $navbar-light-color; 
+
+    @include hover-focus {
+      color: $navbar-light-hover-color; 
+      background: none;
+    }  
+  }
+  .dropdown-item.active {
+    color: $navbar-light-active-color; 
+    background: none;
+  }
 }
 
 .text-justify {

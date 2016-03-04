@@ -1,5 +1,5 @@
 ---
-#layout: compress
+layout: compress
 ---
 
 var flickr_api = "https://api.flickr.com/services/rest/";
