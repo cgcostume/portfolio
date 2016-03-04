@@ -8,9 +8,10 @@
     { "key"       : "glbinding2014",
       "title"     : "glbinding",
       "date"      : "2014-05-02",
+      "status"    : "ongoing",
      
       "caption"   : {
-        "en" : "Cross-platform C++ binding for OpenGL, solely based on the xml-based OpenGL API specification.",
+        "en" : "I initiated, (co-)designed, and continue to maintain this state-of-the-art, cross-platform C++ binding for the OpenGL API.",
         "de" : "Cross-platform C++ binding for OpenGL, solely based on the xml-based OpenGL API specification." },
 
       "authors"   : [ "Daniel Limberger", "Willy Scheibel", "Roland Lux" ],
@@ -24,9 +25,10 @@
     { "key"       : "globjects2013",
       "title"     : "globjects",
       "date"      : "2013-05-07",
+      "status"    : "ongoing",
 
       "caption"   : {
-        "en" : "Cross-platform C++ library providing an object oriented interface for OpenGL's programmable pipeline.",
+        "en" : "A cross-platform C++ interface for OpenGL's programmable pipeline that I (co-)designed and continue to support.",
         "de" : "Cross-platform C++ library providing an object oriented interface for OpenGL's programmable pipeline." },
 
       "authors"   : [ "Willy Scheibel", "Roland Lux", "Daniel Limberger" ],
@@ -39,7 +41,7 @@
     { "key"       : "osghimmel2011",
       "title"     : "OSG Himmel",
       "date"      : "2011-08-29",
-      
+
       "caption"   : {
         "en" : "OSG library featuring dynamic, immersive, textured or date-time and location based, procedural skies.",
         "de" : "OSG library featuring dynamic, immersive, textured or date-time and location based, procedural skies." },
