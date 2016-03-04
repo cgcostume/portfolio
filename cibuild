@@ -1,4 +1,2 @@
-set -e # halt script on error
-
-bundle exec jekyll build
-bundle exec htmlproof ./_site
+install: gem install jekyll html-proofer
+script: jekyll build && htmlproof ./_site
