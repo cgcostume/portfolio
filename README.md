@@ -8,22 +8,23 @@ The complete site's content is based on a json/xml file per section (e.g., ```co
 
 #### Features
 
-* responsive single-page using bootstrap 4
+* responsive single-page using [Bootstrap 4](http://v4-alpha.getbootstrap.com/)
 * multi-language support
 * sections for publications, projects, talks/keynotes, teaching, contact, and more
 * section contents loaded from json data-files (_data)
 * unique, distinguishable layouts per section
-* easy BibTeX provisioning (show, select, and copy to clipboard, as well as download .bib)
-* php free contact form using [Formspree](http://formspree.io/)
-* dynamic integration of Flickr photo sets (with basic caching)
-* optimized for [gh-pages](https://pages.github.com/) deployment (uses no unsupported plugins)
+* dynamic integration of [Flickr photo sets](https://www.flickr.com/services/api/) (with basic caching)
+* php and javascript free contact form using [Formspree](http://formspree.io/)
+* optimized for [GitHub Pages](https://pages.github.com/) deployment (uses no unsupported plugins)
 * minimizes html and css (currently using compress layout method)
-* takes advantage of jsdelivr
-* valid html5
+* takes advantage of [jsDelivr](https://www.jsdelivr.com/) and [Google Fonts](https://www.google.com/fonts)
+* easy BibTeX provisioning (show, select, and copy to clipboard, as well as download .bib)
+* valid html5 output (nearly-valid css, due to some issues in bootstrap)
+* responsive navigation (with scrollspy) comprising a top-page link (author or icon), section links (nav-links or dropdown-items), and a language toggle for all used languages
 
 #### Dependencies
 
-Datafolio uses [Jekyll](http://jekyllrb.com/), [Bootstrap](http://getbootstrap.com/), [Bootswatch](http://bootswatch.com/) themes, [spin.js](http://fgnass.github.io/spin.js/), [blueimp-gallery](https://github.com/blueimp/Bootstrap-Image-Gallery), and accesses the [flickr API](https://www.flickr.com/services/api/).
+Datafolio uses [Jekyll](http://jekyllrb.com/), [Bootstrap 4](http://v4-alpha.getbootstrap.com/), [Blueimp Gallery](https://github.com/blueimp/Bootstrap-Image-Gallery), can access the [Flickr API](https://www.flickr.com/services/api/) and relies on [jsDelivr](https://www.jsdelivr.com/), [Google Fonts](https://www.google.com/fonts), and [Formspree](http://formspree.io/).
 
 #### Setting up the Build Environment (on Windows)
 
