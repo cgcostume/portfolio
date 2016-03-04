@@ -31,7 +31,8 @@ exclude: [
   'Gemfile',
   'Gemfile.lock',
   'package.json',
-  'README.md']
+  'README.md',
+  'vendor']
 
 defaults:
   - scope:
