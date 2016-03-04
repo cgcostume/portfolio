@@ -1,11 +1,9 @@
 language: ruby
 rvm: 2.2.0
-node_js: stable
-install: 
-- bundle install --without production --deployment
+
+install: gem install jekyll html-proofer
 
 script: 
-- bundle install jekyll html-proofer
 - jekyll build 
 - htmlproof ./_site
 
