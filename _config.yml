@@ -27,6 +27,7 @@ markdown: kramdown
 
 # Outputting
 exclude: [
+  'cibuild',
   'Gemfile',
   'Gemfile.lock',
   'package.json',
