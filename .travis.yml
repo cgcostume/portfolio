@@ -1,6 +1,9 @@
 language: ruby
 rvm:
   - 2.1
+install:
+  - bundle install
+  - gem install nokogiri
 script:
   - bundle exec jekyll build
   - bundle exec htmlproof ./_site
