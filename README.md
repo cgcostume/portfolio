@@ -25,6 +25,8 @@ The complete site's content is based on a json/xml file per section (e.g., ```co
 * easy BibTeX provisioning (show, select, and copy to clipboard, as well as download .bib)
 * valid html5 output (nearly-valid css, due to some issues in bootstrap)
 * responsive navigation (with scrollspy) comprising a top-page link (author or icon), section links (nav-links or dropdown-items), and a language toggle for all used languages
+* support for vCard via file and QR Code
+* basic [Travis CI](https://travis-ci.org/) integration
 
 #### Dependencies
 
