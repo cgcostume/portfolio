@@ -6,6 +6,9 @@
 {% for p in publications reversed %}
 <div class="row{% if p != publications.first %} not-last{% endif %}">
   <div class="col-sm-3">
+    {% assign thumbnail_src = p.thumbnail %}
+    {% assign thumbnail_alt = p.title %}
+    {% assign thumbnail_flickr = p.flickr %}
     {% include thumbnail.html %}
   </div>
   <div class="col-sm-9">
