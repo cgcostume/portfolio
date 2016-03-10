@@ -36,6 +36,10 @@ exclude: [
 
 defaults:
   - scope:
+      path: '.'
+    values:
+      lang: en
+  - scope:
       path: 'de'
     values:
       lang: de

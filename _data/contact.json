@@ -3,6 +3,22 @@
     "en" : "Contact",
   	"de" : "Kontakt" },
 
+  "vcard" : {
+    "file" : "/vcard.vcf",
+    "qr_svg" : "vcard-qr.svg",
+    "qr_fallback" : "vcard-qr.png" },
+
+  "vcard_label" : {
+    "label" : {
+      "en" : "vCard",
+      "de" : "vCard" },
+    "download_file" : {
+      "en" : "Download file",
+      "de" : "Datei herunterladen" },
+    "scan_qr_code" : {
+      "en" : "or scan QR code:",
+      "de" : "oder QR-Code scannen:" }},
+
   "email" : "cgdaniel@outlook.com", 
 
   "email_label" : {

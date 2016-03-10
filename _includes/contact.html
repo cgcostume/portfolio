@@ -31,6 +31,22 @@
       </p>
     </div>
   </div>
+  {% if contact.vcard %}
+  {% assign vcard = contact.vcard %}
+  <div class="form-group row">
+    <label class="col-sm-2 col-sm-offset-1 form-control-label text-sm-right text-xs-left">{{ contact.vcard_label.label.[page.lang] }}:</label>
+    <div class="col-sm-7">
+      {% if vcard.qr_svg %}
+      <p class="form-control-static"><a href="{{ vcard.file }}">{{ contact.vcard_label.download_file.[page.lang] }}</a> {{ contact.vcard_label.scan_qr_code.[page.lang] }}</p>
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="col-md-2 col-sm-3 col-sm-offset-3 col-xs-4">
+      <p>{% assign svg_alt = "vCard QR Code" %}{% assign svg_src = vcard.qr_svg %}{% assign svg_fallback = vcard.qr_fallback %}{% include svg.html %}</p>
+      {% endif %}
+    </div>
+  </div>
+  {% endif %}
 </form>
 
 <form id="contact-form" action="//formspree.io/{{ contact.email }}" method="POST">
