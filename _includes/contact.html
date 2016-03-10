@@ -3,9 +3,9 @@
   <h1>{{ contact.heading.[page.lang] | escape }}</h1>
 </div>
 
-<form>
+<form id="contact-form" action="//formspree.io/{{ contact.email }}" method="POST">
   <div class="form-group row">
-    <label class="col-sm-2 col-sm-offset-1 form-control-label text-sm-right text-xs-left">{{ contact.email_label.[page.lang] }}:</label>
+    <span class="col-sm-2 col-sm-offset-1 form-control-label text-sm-right text-xs-left">{{ contact.email_label.[page.lang] }}:</span>
     <div class="col-sm-7">
       <p class="form-control-static"><a href="mailto:{{ contact.email }}">{{ contact.email }}</a></p>
       <p class="form-control-static text-muted">
@@ -16,13 +16,13 @@
     </div>
   </div>
   <div class="form-group row">
-    <label class="col-sm-2 col-sm-offset-1 form-control-label text-sm-right text-xs-left">{{ contact.phone_label.[page.lang] }}:</label>
+    <span class="col-sm-2 col-sm-offset-1 form-control-label text-sm-right text-xs-left">{{ contact.phone_label.[page.lang] }}:</span>
     <div class="col-sm-7">
       <p class="form-control-static"><a href="tel:{{ contact.phone[page.lang] | replace : ' ', '' }}">{{ contact.phone[page.lang] }}</a></p>
     </div>
   </div>
   <div class="form-group row">
-    <label class="col-sm-2 col-sm-offset-1 form-control-label text-sm-right text-xs-left">{{ contact.refs_label.[page.lang] }}:</label>
+    <span class="col-sm-2 col-sm-offset-1 form-control-label text-sm-right text-xs-left">{{ contact.refs_label.[page.lang] }}:</span>
     <div class="col-sm-7">
       <p class="form-control-static">
       {% for ref in contact.refs %}
@@ -34,7 +34,7 @@
   {% if contact.vcard %}
   {% assign vcard = contact.vcard %}
   <div class="form-group row">
-    <label class="col-sm-2 col-sm-offset-1 form-control-label text-sm-right text-xs-left">{{ contact.vcard_label.label.[page.lang] }}:</label>
+    <span class="col-sm-2 col-sm-offset-1 form-control-label text-sm-right text-xs-left">{{ contact.vcard_label.label.[page.lang] }}:</span>
     <div class="col-sm-7">
       {% if vcard.qr_svg %}
       <p class="form-control-static"><a href="{{ vcard.file }}">{{ contact.vcard_label.download_file.[page.lang] }}</a> {{ contact.vcard_label.scan_qr_code.[page.lang] }}</p>
@@ -47,9 +47,7 @@
     </div>
   </div>
   {% endif %}
-</form>
 
-<form id="contact-form" action="//formspree.io/{{ contact.email }}" method="POST">
   <div class="form-group row">
     <div class="col-sm-7 col-sm-offset-3">
       <h4>{{ contact.form_legend.[page.lang] }}:</h4>
@@ -58,9 +56,9 @@
   </div>
 
   <div class="form-group row">
-    <label for="name" class="col-sm-2 col-sm-offset-1 form-control-label text-sm-right text-xs-left">{{ contact.name_label.[page.lang] }}:</label>
+    <label for="_name" class="col-sm-2 col-sm-offset-1 form-control-label text-sm-right text-xs-left">{{ contact.name_label.[page.lang] }}:</label>
     <div class="col-sm-7">
-      <input type="text" class="form-control" id="name" name="name" placeholder="{{ contact.name_label.[page.lang] }}">
+      <input type="text" class="form-control" id="_name" name="_name" placeholder="{{ contact.name_label.[page.lang] }}">
     </div>
   </div>
 
@@ -72,9 +70,9 @@
   </div>
 
   <div class="form-group row">
-    <label for="message" class="col-sm-2 col-sm-offset-1 form-control-label text-sm-right text-xs-left">{{ contact.message_label.[page.lang] }}:</label>
+    <label for="_message" class="col-sm-2 col-sm-offset-1 form-control-label text-sm-right text-xs-left" >{{ contact.message_label.[page.lang] }}:</label>
     <div class="col-sm-7">
-      <textarea class="form-control" rows="3" id="message" name="{{ contact.message_label.[page.lang] }}"></textarea>
+      <textarea class="form-control" rows="3" id="_message" name="{{ contact.message_label.[page.lang] }}"></textarea>
     </div>
   </div>
 
