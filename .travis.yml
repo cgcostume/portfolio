@@ -7,7 +7,7 @@ install:
 script:
   - bundle exec jekyll build
   - bundle exec htmlproof --help 
-  - bundle exec htmlproof ./_site --only-4xx --check-favicon --check-html
+  - bundle exec htmlproof ./_site --only-4xx
 branches:
   only:
   - master
