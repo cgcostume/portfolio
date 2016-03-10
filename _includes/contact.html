@@ -1,6 +1,6 @@
 {% assign contact = site.data.contact %}
 <div class="row text-xs-center">
-  <h1>{{ contact.heading.[page.lang] }}</h1>
+  <h1>{{ contact.heading.[page.lang] | escape }}</h1>
 </div>
 
 <form>

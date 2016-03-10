@@ -20,19 +20,19 @@
     </ul>
     <button class="navbar-toggler hidden-sm-up pull-xs-right" type="button" data-toggle="dropdown" id="sections-toggler"  aria-haspopup="true">&#9776;</button>
     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="sections-toggler">
-      <a class="dropdown-item" href="#publications">{{ site.data.publications.heading.[page.lang] }}</a>
-      <a class="dropdown-item" href="#projects">{{ site.data.projects.heading.[page.lang] }}</a>
-      <a class="dropdown-item" href="#talks">{{ site.data.talks.heading.[page.lang] }}</a>
-      <a class="dropdown-item" href="#teaching">{{ site.data.teaching.heading.[page.lang] }}</a>
-      <a class="dropdown-item" href="#contact">{{ site.data.contact.heading.[page.lang] }}</a>
+      <a class="dropdown-item" href="#publications">{{ site.data.publications.heading.[page.lang] | escape }}</a>
+      <a class="dropdown-item" href="#projects">{{ site.data.projects.heading.[page.lang] | escape }}</a>
+      <a class="dropdown-item" href="#talks">{{ site.data.talks.heading.[page.lang] | escape }}</a>
+      <a class="dropdown-item" href="#teaching">{{ site.data.teaching.heading.[page.lang] | escape }}</a>
+      <a class="dropdown-item" href="#contact">{{ site.data.contact.heading.[page.lang] | escape }}</a>
     </div>
     <div class="collapse navbar-toggleable-xs">
       <ul class="nav navbar-nav pull-xs-right">
-        <li class="nav-item"><a class="nav-link" href="#publications">{{ site.data.publications.heading.[page.lang] }}</a></li>
-        <li class="nav-item"><a class="nav-link" href="#projects">{{ site.data.projects.heading.[page.lang] }}</a></li>
-        <li class="nav-item"><a class="nav-link" href="#talks">{{ site.data.talks.heading.[page.lang] }}</a></li>
-        <li class="nav-item"><a class="nav-link" href="#teaching">{{ site.data.teaching.heading.[page.lang] }}</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">{{ site.data.contact.heading.[page.lang] }}</a></li>
+        <li class="nav-item"><a class="nav-link" href="#publications">{{ site.data.publications.heading.[page.lang] | escape }}</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">{{ site.data.projects.heading.[page.lang] | escape }}</a></li>
+        <li class="nav-item"><a class="nav-link" href="#talks">{{ site.data.talks.heading.[page.lang] | escape }}</a></li>
+        <li class="nav-item"><a class="nav-link" href="#teaching">{{ site.data.teaching.heading.[page.lang] | escape }}</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">{{ site.data.contact.heading.[page.lang] | escape }}</a></li>
       </ul>
     </div>
   </div>
