@@ -7,7 +7,7 @@
   <div class="form-group row">
     <label class="col-sm-2 col-sm-offset-1 form-control-label text-sm-right text-xs-left">{{ contact.email_label.[page.lang] }}:</label>
     <div class="col-sm-7">
-      <p class="form-control-static">{{ contact.email }} (<a href="mailto:{{ contact.email }}">mailto</a>)</p>
+      <p class="form-control-static"><a href="mailto:{{ contact.email }}">{{ contact.email }}</a></p>
       <p class="form-control-static text-muted">
       {{ contact.alternative_label.[page.lang] }}:  
       {% for email in contact.alternative_emails %}{{ email }}{% if email != contact.alternative_emails.last %}, {% endif %}
@@ -18,7 +18,7 @@
   <div class="form-group row">
     <label class="col-sm-2 col-sm-offset-1 form-control-label text-sm-right text-xs-left">{{ contact.phone_label.[page.lang] }}:</label>
     <div class="col-sm-7">
-      <p class="form-control-static">{{ contact.phone[page.lang] }}</p>
+      <p class="form-control-static"><a href="tel:{{ contact.phone[page.lang] | replace : ' ', '' }}">{{ contact.phone[page.lang] }}</a></p>
     </div>
   </div>
   <div class="form-group row">
