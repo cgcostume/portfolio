@@ -6,7 +6,7 @@ install:
   - gem install nokogiri
 script:
   - bundle exec jekyll build
-  - bundle exec htmlproof ./_site --only_4xx
+  - bundle exec htmlproof ./_site --only-4xx
 branches:
   only:
   - master
