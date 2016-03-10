@@ -6,7 +6,7 @@ install:
   - gem install nokogiri
 script:
   - bundle exec jekyll build
-  - bundle exec htmlproof ./_site --only-4xx --check-favicon --assume-extension --check-html
+  - bundle exec htmlproof ./_site --only-4xx --check-favicon --assume-extension=".html" --check-html
 branches:
   only:
   - master
