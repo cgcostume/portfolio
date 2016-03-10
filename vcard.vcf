@@ -4,9 +4,9 @@ N:Limberger;Daniel;;;
 FN:Daniel Limberger
 ADR;TYPE=home:;;Humboldtring 5 A;Potsdam;;14473;Germany
 TITLE:Graphics Systems Engineer, Researcher, and Entrepreneur
-EMAIL;TYPE=personal;PREF=3:cgdaniel@outlook.com
-EMAIL;TYPE=work;PREF=2:limberger@cginternals.com
-EMAIL;TYPE=work;PREF=1:daniel.limberger@hpi.de
+EMAIL;TYPE=personal;PREF=1:cgdaniel@outlook.com
+EMAIL;TYPE=work:limberger@cginternals.com
+EMAIL;TYPE=work:daniel.limberger@hpi.de
 TEL;TYPE=voice,cell:+491635681828
 TEL;TYPE=voice,home:+4933128791344
 TEL;TYPE=voice,work:+4933155093907
