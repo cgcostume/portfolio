@@ -6,7 +6,6 @@ url: 'http://daniellimberger.de' # the base hostname & protocol for your site
 
 title: 'Daniel Limberger'
 author: 'Daniel Limberger'
-description: 'Personal website of Daniel Limberger, a Berlin based Graphics Systems Engineer, Researcher, and Entrepreneur. It enlists his publications, projects, talks, teachings, and contact information.'
 
 languages: [ 'en', 'de' ]
 
@@ -39,10 +38,12 @@ defaults:
       path: ''
     values:
       lang: en
+      description: 'Personal website of Daniel Limberger, a Berlin based Graphics Systems Engineer, Researcher, and Entrepreneur. It enlists his publications, projects, talks, teachings, and contact information.'
   - scope:
       path: 'de'
     values:
       lang: de
+      description: 'Persönliche Webseite von Daniel Limberger, Ingeniuer für grafische System, Forscher und Unternehmer. Die Webseite listet Veröffentlichungen, Projekte, Vorträge, Lehrtätigkeiten und Kontaktdaten.'
   - scope:
       path: 'en'
     values:
