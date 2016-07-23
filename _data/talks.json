@@ -5,6 +5,10 @@
 
   "talks" : [
 
+    { "date"      : "2016-07-23 00:00:00",
+      "title"     : "Dynamic 2.5D Treemaps using Declarative 3D on the Web",
+      "location"  : "ACM SIGGRAPH Web3D Conference 2016, Anaheim, CA, USA",
+    },
     { "date"      : "2015-05-07 00:00:00",
       "title"     : "Monitoring Software Quality Aspects using Software Maps",
       "location"  : "SAPPHIRE NOW 2015, Orlando, FL, USA",
