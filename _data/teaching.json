@@ -11,11 +11,7 @@
         "type"   : "Lecture (BA)",
         "role"   : "Tutor & Co-Lecturer"
       },
-      { "course" : "Methods and Techniques of Software Visualization",
-        "type"   : "Seminar (MA)",
-        "role"   : "Tutor"
-      },
-      { "course" : "Methods and Techniques of Geospatial Visualization",
+      { "course" : "Methods and Techniques of Software and Geospatial Visualization",
         "type"   : "Seminar (MA)",
         "role"   : "Tutor"
       },
