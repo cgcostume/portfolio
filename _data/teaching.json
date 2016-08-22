@@ -15,6 +15,14 @@
         "type"   : "Seminar (MA)",
         "role"   : "Tutor"
       },
+      { "course" : "Methods and Techniques of Geospatial Visualization",
+        "type"   : "Seminar (MA)",
+        "role"   : "Tutor"
+      },
+      { "course" : "Einführung in Visual Analytics",
+        "type"   : "Seminar (BA)",
+        "role"   : "Tutor"
+      },
       { "course" : "Massive Information Mining for Software Analytics",
         "type"   : "Project (BA)",
         "role"   : "Supervisor"
