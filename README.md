@@ -8,7 +8,7 @@ The complete site's content is based on a json/xml file per section (e.g., ```co
 
 * [Daniel Limberger](http://www.daniellimberger.de) (my personal website)
 
-* [Amir Semmo](http://asemmo.github.io/) (adapted, older revision of Datafolio)
+* [Amir Semmo](http://asemmo.github.io/)
 * [Maximilian Söchting](http://msoechting.de/en/)
 
 #### Features
