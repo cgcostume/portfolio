@@ -6,7 +6,7 @@ The complete site's content is based on a json/xml file per section (e.g., ```co
 
 #### Examples
 
-* [Daniel Limberger](http://www.daniellimberger.de)
+* [Daniel Limberger](http://www.daniellimberger.de) (my personal website)
 
 * [Amir Semmo](http://asemmo.github.io/) (adapted, older revision of Datafolio)
 * [Maximilian Söchting](http://msoechting.de/en/)
