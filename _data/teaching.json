@@ -7,12 +7,16 @@
 
   { "term" : "2016 : Summer Term",
     "courses" : 
-    [ { "course" : "Advanced Analytics for Ecosystems around Software",
-        "type"   : "Lecture (massive open online course)",
-        "role"   : "Tutor" 
+    [ { "course" : "Computergraphics II",
+        "type"   : "Lecture (BA)",
+        "role"   : "Tutor & Co-Lecturer"
       },
       { "course" : "Methods and Techniques of Software Visualization",
         "type"   : "Seminar (MA)",
+        "role"   : "Tutor"
+      },
+      { "course" : "Introduction to Visual Analytics",
+        "type"   : "Seminar (BA)",
         "role"   : "Tutor"
       },
       { "course" : "Massive Information Mining for Software Analytics",

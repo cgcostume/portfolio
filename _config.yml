@@ -2,7 +2,7 @@
 timezone: Europe/Berlin
 
 baseurl: '' # the subpath of your site, e.g. /blog/
-url: 'http://daniellimberger.de' # the base hostname & protocol for your site
+url: 'https://cgcostume.github.io' # the base hostname & protocol for your site
 
 title: 'Daniel Limberger'
 author: 'Daniel Limberger'
