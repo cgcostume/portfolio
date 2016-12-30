@@ -1,12 +1,12 @@
 {% assign header = site.data.header %}
 <header>
-  <div class="row text-xs-center">
-    <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
-      <img class="img-fluid img-rounded center-block" {{ site.default_header_img_dimensions }} src="/img/{{ header.picture }}" alt="portrait">
+  <div class="row flex-items-xs-center text-xs-center">
+    <div class="col-md-6 col-sm-8">
+      <img class="rounded img-fluid center-block" {{ site.default_header_img_dimensions }} src="/img/{{ header.picture }}" alt="portrait">
     </div>
   </div>
-  <div class="row text-xs-center">
-    <div class="col-md-8 col-md-offset-2">
+  <div class="row flex-items-xs-center text-xs-center">
+    <div class="col-md-8">
       <h1>{{ header.heading.[page.lang] | escape }}</h1>
       <p class="lead">{{ header.lead.[page.lang] | escape }}</p>
       <p class="text-xs-left">{{ header.about.[page.lang] }}</p>
