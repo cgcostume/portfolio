@@ -1,9 +1,14 @@
 {% capture nav_prefix %}/{{ page.lang }}/{% endcapture %}
 <nav class="navbar navbar-light bg-faded navbar-fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="#page-top">
-      <span class="hidden-sm-down">{{ site.author }}</span>
-      <span class="hidden-md-up"><img src="/img/navicon.png" class="rounded" width="30" height="30" alt="top-page"></span></a>
+    <ul class="nav navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#page-top">
+          <span class="hidden-sm-down">{{ site.author }}</span>
+          <span class="hidden-md-up"><img src="/img/navicon.png" class="rounded" width="32" height="32" alt="top-page"></span>
+        </a>
+      </li>
+    </ul>
     <ul class="nav navbar-nav float-xs-right" id="lang-select">
       {% capture lang_lc %}{{ lang | downcase }}{% endcapture %}
       {% for lang in site.languages %}

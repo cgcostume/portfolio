@@ -51,9 +51,7 @@ h1 {
 
 .navbar {
 
-  //padding: 0;
   background-color: $body-bg;
-  //opacity: 0.92;
 
   #lang-select {
 
@@ -64,15 +62,17 @@ h1 {
     }
   }
 
+  img {
+    margin: -1rem 0;
+  }
+
   .navbar-toggler {
     border: none;
-//    padding-bottom: 1.85rem;
-//    height: auto; // 
+    margin-bottom: -1rem;
   }
 
   .dropdown-menu {
     border: none;
-//    margin-right: .9375rem;
   }
 
   .dropdown-item {
@@ -85,7 +85,6 @@ h1 {
   }
   .dropdown-item.active {
     color: $navbar-light-active-color; 
-//    background: none;
   }
 }
 
@@ -110,7 +109,7 @@ section {
   padding: 4rem 0 0;
 }
 
-label {
+tag {
   text-align: right;
 }
 
@@ -122,12 +121,8 @@ footer div {
   margin-bottom: .5rem;
 }
 
-.label.top-left {
+.tag.top-left {
   position: absolute;
-}
-
-.thumbnail {
-  margin-bottom: 1rem;
 }
 
 .partial-radius {
@@ -149,7 +144,7 @@ footer div {
   }
 }
 
-.label.animate {
+.tag.animate {
   -webkit-animation: sk-scaleout 0.66s infinite ease-in-out;
   animation: sk-scaleout 0.66s infinite ease-in-out;
 }

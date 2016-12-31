@@ -9,8 +9,8 @@
       "bibtex"    : "led2012-sky-phenomena.bib",
       "title"     : "Single-Pass Rendering of Day and Night Sky Phenomena",
       "date"      : "2012-11-01",
-      "authors"   : [ "Daniel Limberger", "Juri Engel", "Jürgen Döllner" ],
-      "published" : "In Proceedings of the Vision, Modeling, and Visualization Workshop",
+      "authors"   : [ "Daniel Müller (Limberger)", "Juri Engel", "Jürgen Döllner" ],
+      "published" : "Proceedings of the International Workshop on Vision, Modeling, and Visualization",
       
       "caption"   : {
         "en" : "This paper presents techniques for astronomical based, real-time rendering of skies as seen from low altitudes on earth, in respect to location, date, and time.
@@ -25,7 +25,7 @@
       "thumbnail" : "2012-vmv-day-and-night-sky.jpg",
       "flickr"    : "72157650186586300",
       "downloads" : [
-        { "href"  : "https://dx.doi.org/10.2312/PE/VMV/VMV12/055-062",
+        { "href"  : "https://doi.org/10.2312/PE/VMV/VMV12/055-062",
           "desc"  : "DOI"
         },
         { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAMi1maGtNOV9GTU0/view",
@@ -42,12 +42,13 @@
           "desc"  : "Google Code"
         } ],
     },
+
     { "key"       : "2013-web-based-swmaps",
       "bibtex"    : "lwtd2013-web-based-swmaps.bib",
       "title"     : "Interactive Software Maps for Web-Based Source Code Analysis",
       "date"      : "2013-05-01",
       "authors"   : [ "Daniel Limberger", "Benjamin Wasty", "Jonas Trümper", "Jürgen Döllner" ],
-      "published" : "In Proceedings of the International Web3D Conference",
+      "published" : "Proceedings of the International Conference on 3D Web Technology",
       
       "caption"   : {
         "en" : "Software maps&mdash;linking 2.5D treemaps, software system structure, and performance indicators&mdash;are commonly used to support informed decision making in software-engineering processes.
@@ -59,7 +60,7 @@
       "thumbnail" : "2013-web3d-interactive-software-maps.jpg",
       "flickr"    : "72157650179270797",
       "downloads" : [
-        { "href"  : "https://doi.acm.org/10.1145/2466533.2466550",
+        { "href"  : "https://doi.org/10.1145/2466533.2466550",
           "desc"  : "DOI"
         },
         { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAYTQwM3NlajlRZEE/view",
@@ -73,12 +74,13 @@
           "video" : "youtube"
         } ],
     },
+
     { "key"       : "2014-parameter-painting",
       "bibtex"    : "ld2014-parameter-painting.bib",
       "title"     : "Painting Per-Pixel Parametrization for Interactive Image Filtering",
       "date"      : "2014-08-01",
       "authors"   : [ "Daniel Limberger", "Jürgen Döllner" ],
-      "published" : "In Expressive Poster Session",
+      "published" : "Expressive Posters",
       
       "caption"   : {
         "en" : "This work presents a photo-editing method that enables per-pixel parameter manipulation of image filtering by means of interactive painting.
@@ -98,12 +100,13 @@
           "desc"  : "Poster (PDF, 19.1 MiB)"
         } ],
     },
+
     { "key"       : "2015-oilpaint-stylization",
       "bibtex"    : "slkd2015-oilpaint-stylization.bib",
       "title"     : "Image Stylization by Oil Paint Filtering Using Color Palettes",
       "date"      : "2015-06-20",
       "authors"   : [ "Amir Semmo", "Daniel Limberger", "Jan Eric Kyprianidis", "Jürgen Döllner" ],
-      "published" : "In Proceedings of the Workshop on Computational Aesthetic",
+      "published" : "Proceedings of the International Symposium on Computational Aesthetics",
       "lead_note" : "<a href='http://expressive.graphics/2015'>Best Paper Award</a>",
 
       "caption"   : {
@@ -116,10 +119,10 @@
                 Zudem wird ein Ansatz zur echtzeit-fähigen Berechnung einer Farb- und Lackstruktur auf Basis von an Featurekonturen ausgerichteten und geglätteter Strukturen diskutiert.
                 Die Methode liefert farblich homogene Ergebnisse und ermöglicht gestalterische Kontrolle über die Ausgabe, z.B. Farbanpassungen oder Per-Pixel Parameterisierung mittels interkativem Malen." },
 
-      "thumbnail" : "2015-oil-paint-stylization-using-color-palettes.jpg",
+      "thumbnail" : "2015-cae-oil-paint-stylization-using-color-palettes.jpg",
 
       "downloads" : [
-        { "href"  : "http://dx.doi.org/10.2312/exp.20151188",
+        { "href"  : "https://doi.org/10.2312/exp.20151188",
           "desc"  : "DOI"
         },
         { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAcGdHblRfbmdkcXM/view",
@@ -131,12 +134,13 @@
         } ],
 
     },
+
     { "key"       : "2015-natural-metaphors",
       "bibtex"    : "wtld2015-natural-metaphors.bib",
       "title"     : "Natural Phenomena as Metaphors for Visualization of Trend Data in Interactive Software Maps",
       "date"      : "2015-09-16",
       "authors"   : [ "Hannes Würfel", "Matthias Trapp", "Daniel Limberger", "Jürgen Döllner" ],
-      "published" : "In Proceedings of Computer Graphics and Visual Computing",
+      "published" : "Proceedings of the International Symposium on Computer Graphics and Visual Computing",
       
       "caption"   : {
         "en" : "This work explores the suitability of rendering natural phenomena in Software maps for effective communication of changes as well as trends.
@@ -146,16 +150,17 @@
                 Dabei wird die Unreal Engine 4 prototypisch genutzt Softwarelagekarten als auch Naturerscheinungen wie Feuer, Wolken, Rauch, Regen, Rost, oder Glanz in Echtzeit zu rendern.
                 Die Trenddaten werden aus den zugrundeliegenden Softwaremetriken abgeleitet und auf die zusätzlichen visuellen Variablen abgebildet." },
 
-      "thumbnail" : "2015-natural-metaphors.jpg",
+      "thumbnail" : "2015-cgvc-natural-metaphors.jpg",
       "flickr"    : "72157663043933623",     
       "downloads" : [
-        { "href"  : "http://dx.doi.org/10.2312/cgvc.20151246",
+        { "href"  : "https://doi.org/10.2312/cgvc.20151246",
           "desc"  : "DOI"
         },
         { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAMnBIY0VuaTVkdWc/view",
           "desc"  : "Paper (PDF, 16.9 MiB)"
         } ],
     },
+
     { "key"       : "2016-oilpaint-stylization",
       "bibtex"    : "slkd2016-oilpaint-stylization.bib",
       "title"     : "Image Stylization by Interactive Oil Paint Filtering",
@@ -174,27 +179,126 @@
                 Afterwards, it employs non-linear filtering based on the smoothed structure adapted to the main feature contours of the quantized image to synthesize a paint texture in real-time.
                 Furthermore, a generalized brush-based painting interface is introduced that operates within parameter spaces to locally adjust the level of abstraction of the filtering effects." },
 
-      "thumbnail" : "2016-interactive-oil-paint-filtering.jpg",
+      "thumbnail" : "2016-cgf-interactive-oil-paint-filtering.jpg",
       "flickr"      : "72157652814171753",
       "downloads" : [
-        { "href"  : "http://dx.doi.org/10.1016/j.cag.2015.12.001",
+        { "href"  : "https://doi.org/10.1016/j.cag.2015.12.001",
           "desc"  : "DOI"
         },
         { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAaGQtQnotbGtISGM/view",
           "desc"  : "Paper (PDF, 17.9 MiB)"
         } ],
     } ,
-    { "key"       : "2016-multi-frame-sampling",
+
+    { "key"       : "2016-progressive-rendering",
+      "bibtex"    : "ltld2016-multi-frame-sampling.bib",
       "title"     : "Progressive Rendering using Multi-frame Sampling",
       "date"      : "2016-04-08",
       "authors"   : [ "Daniel Limberger", "Karsten Tausche", "Johannes Linke", "Jürgen Döllner" ],
       "published" : "GPU Pro 7: Advanced Rendering Techniques",
       
       "caption"   : {
-        "en" : "This article will be release in April 2016.<br>More details and supplemental material will be provided soon...",
-        "de" : "Dieser Artikel erscheint im April.<br>Weitere Details und ergänzende Materialien folgen..." },
+        "en" : "ToDo",
+        "de" : "ToDo" },
 
-      "thumbnail" : "2016-multi-frame-sampling.jpg",
-    }]
+      "thumbnail" : "2016-gpupro-multi-frame-sampling.jpg",
+    },
+
+    { "key"       : "2016-sketchiness-treemaps",
+      "bibtex"    : "lfhtd2016-sketchiness-treemaps.bib",
+      "title"     : "Evaluation of Sketchiness as a Visual Variable for 2.5D Treemaps",
+      "date"      : "2016-07-19",
+      "authors"   : [ "Daniel Limberger", "Carolin Fiedler", "Sebastian Hahn", "Matthias Trapp", "Jürgen Döllner" ],
+      "published" : "Proceedings of the International Conference on Information Visualization",
+      
+      "caption"   : {
+        "en" : "Treemaps serve as generic, effective tools to display, explore, and analyze multi-variate tree data in a scalable, interactive, and consistent way. 
+                In this paper, we discuss and evaluate sketchiness as visual variable of 2.5D treemaps. 
+                Sketchy rendering techniques allow us to map data, e.g., about uncertainty, imprecision, or vagueness, independently from mappings to other visual variables such as size, color, and height.
+                To this end, we present a design space for sketchy rendering for 2.5D treemaps and corresponding implementation of a real-time sketchy rendering technique. 
+                The results of three user studies carried out indicate that sketchiness is a promising candidate for an independent visual variable for 2.5D treemaps, in particular to map ordinal data with a small range such as data that qualifies map items, it shows no strong interference with other visual variables such as color and height due to the regular gestalt of blocks and, hence, allows us to extend the expressiveness of 2.5D treemaps.",
+        "de" : "ToDo." },
+
+      "thumbnail" : "2016-iv-sketchiness-in-treemaps.jpg",
+      "downloads" : [
+        { "href"  : "https://doi.org/10.1109/IV.2016.61",
+          "desc"  : "DOI"
+        },
+        { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAVFN3Q195aTJRcjg/view",
+          "desc"  : "Paper (PDF, 5.0 MiB)"
+        } ],
+    } ,
+
+    { "key"       : "2016-multi-frame-sampling",
+      "bibtex"    : "ld2016-multi-frame-sampling.bib",
+      "title"     : "Real-time Rendering of High-quality Effects using Multi-frame Sampling",
+      "date"      : "2016-08-01",
+      "authors"   : [ "Daniel Limberger", "Jürgen Döllner" ],
+      "published" : "ACM SIGGRAPH Posters",
+      
+      "caption"   : {
+        "en" : "In a rendering environment of comparatively sparse interaction, e.g., digital production tools, image synthesis and its quality do not have to be constrained to single frames.
+                This work analyzes strategies for highly economically rendering of state-of-the-art rendering effects using progressive multi-frame sampling in real-time. 
+                By distributing and accumulating samples of sampling-based rendering techniques (e.g., anti-aliasing, orderindependent transparency, depth-of-field and shadowing, ambient occlusion, screen-space reflections) over multiple frames, images of very high quality can be synthesized with unequaled resource-efficiency.",
+        "de" : "ToDo." },
+
+      "thumbnail" : "2016-siggraph-multi-frame-sampling.jpg",
+      "downloads" : [
+        { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAN2VfNjBTcll0VTA/view",
+          "desc"  : "Poster (PDF, 5.9 MiB)"
+        },
+        { "href"  : "https://github.com/cgcostume/multiframesampling",
+          "desc"  : "C++ Source Code (GitHub)"
+        },
+        { "href"  : "http://cgcostume.github.io/mfsv/",
+          "desc"  : "three.js Demo (GitHub)"
+        } ],
+    },
+
+    { "key"       : "2016-declarative-treemaps",
+      "bibtex"    : "lsld2016-declarative-treemaps.bib",
+      "title"     : "Dynamic 2.5D Treemaps using Declarative 3D on the Web",
+      "date"      : "2016-08-01",
+      "authors"   : [ "Daniel Limberger", "Willy Scheibel", "Stefan Lemme", "Jürgen Döllner" ],
+      "published" : "Proceedings of the International Conference on 3D Web Technology",
+      
+      "caption"   : {
+        "en" : "The 2.5D treemap represents a general purpose visualization technique to map multi-variate hierarchical data in a scalable, interactive, and consistent way used in a number of application fields.
+                In this paper, we explore the capabilities of Declarative 3D for the web-based implementation of 2.5D treemap clients.
+                Particularly, we investigate how X3DOM and XML3D can be used to implement clients with equivalent features that interactively display 2.5D treemaps with dynamic mapping of attributes. 
+                We also show a first step towards a glTF-based implementation. 
+                These approaches are benchmarked focusing on their interaction capabilities with respect to rendering and speed of dynamic data mapping. 
+                We discuss the results for our representative example of a complex 3D interactive visualization technique and summerize recommendations for improvements towards operational web clients.",
+        "de" : "ToDo." },
+
+      "thumbnail" : "2016-web3d-declarative-treemaps.jpg",
+      "downloads" : [
+        { "href"  : "https://doi.org/10.1145/2945292.2945313",
+          "desc"  : "DOI"
+        },
+        { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAQ2JjTWJCUjgtbzA/view",
+          "desc"  : "Paper (PDF, 1.3 MiB)"
+        },
+        { "href"  : "https://github.com/cgcostume/web3d-treemaps",
+          "desc"  : "Source Code (GitHub)"
+        },
+        { "href"  : "http://cgcostume.github.io/web3d-treemaps/",
+          "desc"  : "Demo (GitHub)"
+        } ],
+    },
+
+    { "key"       : "2017-aggregation-swmaps",
+      "title"     : "Reducing Visual Complexity in Software Maps using Importance-based Aggregation of Nodes",
+      "date"      : "2017-02-27",
+      "authors"   : [ "Daniel Limberger", "Willy Scheibel", "Sebastian Hahn", "Jürgen Döllner" ],
+      "published" : "Proceedings of the International Conference on Information Visualization Theory and Applications",
+      
+      "caption"   : {
+        "en" : "ToDo.",
+        "de" : "ToDo." },
+
+      "thumbnail" : "2017-ivapp-aggregation-swmaps.jpg",
+    },
+  ]
 
 }

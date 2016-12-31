@@ -34,7 +34,7 @@ function flickr_photosets(photoset_id)
     return;
   }
 
-  var spinner = $('#' + photoset_id + ' .label');
+  var spinner = $('#' + photoset_id + ' .tag');
   var spinner_text = spinner.text();
   spinner.text("fetching");
   spinner.addClass("animate");

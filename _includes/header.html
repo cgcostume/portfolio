@@ -2,10 +2,8 @@
 <header>
   <div class="row flex-items-xs-center text-xs-center">
     <div class="col-md-6 col-sm-8">
-      <img class="rounded img-fluid center-block" {{ site.default_header_img_dimensions }} src="/img/{{ header.picture }}" alt="portrait">
+      <img class="rounded img-fluid" {{ site.default_header_img_dimensions }} src="/img/{{ header.picture }}" alt="portrait">
     </div>
-  </div>
-  <div class="row flex-items-xs-center text-xs-center">
     <div class="col-md-8">
       <h1>{{ header.heading.[page.lang] | escape }}</h1>
       <p class="lead">{{ header.lead.[page.lang] | escape }}</p>

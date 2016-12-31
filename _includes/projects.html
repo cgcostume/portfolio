@@ -1,5 +1,7 @@
 <div class="row text-xs-center">
-  <h1>{{ site.data.projects.heading.[page.lang] | escape }}</h1>
+  <div class="col-xs-12">
+    <h1>{{ site.data.projects.heading.[page.lang] | escape }}</h1>
+  </div>
 </div>
 
 {% assign projects = site.data.projects.projects | sort:"date" %}

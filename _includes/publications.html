@@ -1,44 +1,26 @@
 <div class="row text-xs-center">
-  <h1>{{ site.data.publications.heading.[page.lang] | escape }}</h1>
+  <div class="col-xs">
+    <h1>{{ site.data.publications.heading.[page.lang] | escape }}</h1>
+  </div>
 </div>
 
 {% assign publications = site.data.publications.publications | sort:"date" %}
 {% for p in publications reversed %}
 <div class="row{% if p != publications.first %} not-last{% endif %}">
-  <div class="col-sm-3">
+  <div class="col-lg-2 col-sm-3">
     {% assign thumbnail_src = p.thumbnail %}
     {% assign thumbnail_alt = p.title %}
     {% assign thumbnail_flickr = p.flickr %}
     {% include thumbnail.html %}
   </div>
-  <div class="col-sm-9">
-    <h4>{{ p.title | escape }}</h4>
+  <div class="hidden-sm-up mb-1 col-xs"></div>
+  <div class="col-lg-10 col-sm-9">
+    <h5>{{ p.title | escape }}</h5>
     <p>{% for author in p.authors %}{% if author == p.authors.last %}and {% endif %}{{ author }}{% if p.authors.size > 2 and author != p.authors.last %},{% endif %} {% endfor %}<br><span class="text-muted">{{ p.published }} {{ p.date | date: '%Y' }}{% if p.lead_note %}, {{ p.lead_note }}{% endif %}</span></p>
-    <p>{{ p.caption.[page.lang] }}</p>
-    <p>
-      {% if p.bibtex %}<a data-toggle="modal" href="#bibtex-{{ p.key }}">BibTeX</a>{% if p.downloads %}, {% endif %}{% endif %}
+    <div hidden>{{ p.caption.[page.lang] }}</div>
+    <p>{% if p.bibtex %}<a href="/bib/{{ p.bibtex }}">BibTeX</a>{% if p.downloads %}, {% endif %}{% endif %}
       {% if p.downloads %}{% for download in p.downloads %}<a {% if download.video %}class="video-{{ download.video }}" {% endif %}href="{{ download.href }}">{{ download.desc | escape }}</a>{% if download != p.downloads.last %}, {% endif %}{% endfor %}{% endif %}
     </p>
-    {% if p.bibtex %}
-    <div class="modal fade" id="bibtex-{{ p.key }}" tabindex="-1" role="dialog" aria-labelledby="bibtex-{{ p.key }}" aria-hidden="true">
-      <div class="modal-dialog"  role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title">BibTeX : {{ p.key }}</h4>
-          </div>
-          <div class="modal-body">
-            <pre id="bibtex-data-{{ p.key }}">{% include /bib/{{ p.bibtex }} %}</pre>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
-            <button type="button" data-clipboard-target="#bibtex-data-{{ p.key }}" class="btn btn-primary btn-sm btn-clipboard">Copy to Clipboard</button>
-            <a href="/bib/{{ p.bibtex }}" class="btn btn-primary btn-sm">Download</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    {% endif %}
   </div>
 </div>
 {% endfor %}
