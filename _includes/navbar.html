@@ -21,14 +21,16 @@
       {% endif %}
       {% endfor %}
     </ul>
-    <button class="navbar-toggler hidden-sm-up float-xs-right" type="button" data-toggle="dropdown" id="sections-toggler" aria-haspopup="true"></button>
-    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="sections-toggler">
+    
+    <button type="button" class="navbar-toggler hidden-sm-up float-xs-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+    <div class="dropdown-menu dropdown-menu-right">
       <a class="dropdown-item" href="#publications">{{ site.data.publications.heading.[page.lang] | escape }}</a>
       <a class="dropdown-item" href="#projects">{{ site.data.projects.heading.[page.lang] | escape }}</a>
       <a class="dropdown-item" href="#talks">{{ site.data.talks.heading.[page.lang] | escape }}</a>
       <a class="dropdown-item" href="#teaching">{{ site.data.teaching.heading.[page.lang] | escape }}</a>
       <a class="dropdown-item" href="#contact">{{ site.data.contact.heading.[page.lang] | escape }}</a>
     </div>
+
     <div class="collapse navbar-toggleable-xs">
       <ul class="nav navbar-nav float-xs-right">
         <li class="nav-item"><a class="nav-link" href="#publications">{{ site.data.publications.heading.[page.lang] | escape }}</a></li>
