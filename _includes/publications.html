@@ -17,10 +17,29 @@
   <div class="col-lg-10 col-sm-9">
     <h5>{{ p.title | escape }}</h5>
     <p>{% for author in p.authors %}{% if author == p.authors.last %}and {% endif %}{{ author }}{% if p.authors.size > 2 and author != p.authors.last %},{% endif %} {% endfor %}<br><span class="text-muted">{{ p.published }} {{ p.date | date: '%Y' }}{% if p.lead_note %}, {{ p.lead_note }}{% endif %}</span></p>
-    <div hidden>{{ p.caption.[page.lang] }}</div>
-    <p>{% if p.bibtex %}<a href="/bib/{{ p.bibtex }}">BibTeX</a>{% if p.downloads %}, {% endif %}{% endif %}
-      {% if p.downloads %}{% for download in p.downloads %}<a {% if download.video %}class="video-{{ download.video }}" {% endif %}href="{{ download.href }}">{{ download.desc | escape }}</a>{% if download != p.downloads.last %}, {% endif %}{% endfor %}{% endif %}
+
+    <p>
+    {% if p.abstract %}<a data-toggle="collapse" href="#abstract-{{ p.key }}">Abstract</a>{% if p.bibtex or p.downloads %}, {% endif %}{% endif %}
+    {% if p.bibtex %}<a data-toggle="collapse" href="#bibtex-{{ p.key }}">BibTeX</a>{% if p.downloads %}, {% endif %}{% endif %}
+    {% if p.downloads %}{% for download in p.downloads %}<a {% if download.video %}class="video-{{ download.video }}" {% endif %}href="{{ download.href }}">{{ download.desc | escape }}</a>{% if download != p.downloads.last %}, {% endif %}{% endfor %}{% endif %}
     </p>
+
+    {% if p.abstract %}
+    <div class="collapse abstract" id="abstract-{{ p.key }}">
+      <p>{{ p.abstract }}</p>
+    </div>
+    {% endif %}
+
+    {% if p.bibtex %}
+    <div class="collapse bibtex" id="bibtex-{{ p.key }}">
+      <div class="btn-clipboard-parent">
+        <button type="button" data-clipboard-target="#bibtex-data-{{ p.key }}" class="btn btn-sm btn-clipboard">Copy to Clipboard</button> 
+      </div>
+      <div class="card card-block">
+        <pre id="bibtex-data-{{ p.key }}">{% include /bib/{{ p.bibtex }} %}</pre>
+      </div>
+    </div>
+    {% endif %}
   </div>
 </div>
 {% endfor %}

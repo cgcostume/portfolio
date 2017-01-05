@@ -12,15 +12,10 @@
       "authors"   : [ "Daniel Müller (Limberger)", "Juri Engel", "Jürgen Döllner" ],
       "published" : "Proceedings of the International Workshop on Vision, Modeling, and Visualization",
       
-      "caption"   : {
-        "en" : "This paper presents techniques for astronomical based, real-time rendering of skies as seen from low altitudes on earth, in respect to location, date, and time.
-                The techniques allow for composing an atmosphere with sun, multiple cloud layers, moon, bright stars, and Milky Way, into a holistic sky with unprecedented level of detail and diversity.
-                GPU generated, viewpoint-aligned billboards are used to render stars with approximated color, brightness, and scintillations. 
-                A similar approach is used to synthesize the moon considering lunar phase, earthshine, shading, and lunar eclipses.",
-        "de" : "In dieser Arbeit werden echtzeitfähige Renderingtechniken zur astronomisch basierten Darstellung von Himmelsphänomenen für beliebige Standorte und Zeitpunkte vorgestellt.
-                Sie erlauben eine Komposition von Sonne, Wolkenschichten, Mond, Sternen sowie der Milchstraße zu einem ganzheitlichen Himmelsabbild mit hohem Detailgrad.
-                GPU generierte, dem Betrachter zugeneigte Billboards werden zum Rendern von Sternen mit korrekter Farbe, Helligkeit und Szintillationen verwendet. 
-                Ähnlich wird der Mond unter Einbeziehung der Mondphase, dem Erdschein, der Beleuchtung sowie Mondfinsternisse synthetisiert." },
+      "abstract"  : "This paper presents techniques for astronomical based, real-time rendering of skies as seen from low altitudes on earth, in respect to location, date, and time. 
+        The techniques allow for composing an atmosphere with sun, multiple cloud layers, moon, bright stars, and Milky Way, into a holistic sky with unprecedented level of detail and diversity. 
+        GPU generated, viewpoint-aligned billboards are used to render stars with approximated color, brightness, and scintillations. 
+        A similar approach is used to synthesize the moon considering lunar phase, earthshine, shading, and lunar eclipses.",
 
       "thumbnail" : "2012-vmv-day-and-night-sky.jpg",
       "flickr"    : "72157650186586300",
@@ -29,13 +24,13 @@
           "desc"  : "DOI"
         },
         { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAMi1maGtNOV9GTU0/view",
-          "desc"  : "Paper (PDF, 5.7 MiB)"
+          "desc"  : "Paper"
         },
         { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAeEg2NGtKV3NLWk0/view",
-          "desc"  : "Slides (PDF, 3.0 MiB)"
+          "desc"  : "Slides"
         },
         { "href"  : "https://www.youtube.com/watch?v=t8ibsEl0kAI",
-          "desc"  : "Video (YouTube)",
+          "desc"  : "Video",
           "popup" : "youtube"
         },
         { "href"  : "https://code.google.com/p/osghimmel/",
@@ -50,12 +45,9 @@
       "authors"   : [ "Daniel Limberger", "Benjamin Wasty", "Jonas Trümper", "Jürgen Döllner" ],
       "published" : "Proceedings of the International Conference on 3D Web Technology",
       
-      "caption"   : {
-        "en" : "Software maps&mdash;linking 2.5D treemaps, software system structure, and performance indicators&mdash;are commonly used to support informed decision making in software-engineering processes.
-                In this paper a web-based rendering system for software maps that achieves both fast client-side page load time and interactive frame rates even with large software maps is presented.
-                The page load time is significantly reduced by efficiently encoding hierarchy and geometry data for the net transport.",
-        "de" : "Softwarelagekarten&mdash;als Anwendung von 2.5D Treemaps zur Darstellung von Softwaresystemstrukturen und -metriken&mdash;können zur informationsgestützen Entscheidungsfindung in der Softwareentwicklung verwendet werden.
-                In dieser Arbeit wird ein webbasiertes Renderingsystem für große, massive Softwarelagekarten vorgestellt, welches durch effektive Speicherung und Aufteilung der Hierarchie- und Geometryinformationen clientseitige Ladezeiten verringert und interaktive Bildwiederholraten erreicht." },
+      "abstract"  : "Software maps&mdash;linking 2.5D treemaps, software system structure, and performance indicators&mdash;are commonly used to support informed decision making in software-engineering processes.
+        In this paper a web-based rendering system for software maps that achieves both fast client-side page load time and interactive frame rates even with large software maps is presented.
+        The page load time is significantly reduced by efficiently encoding hierarchy and geometry data for the net transport.",
 
       "thumbnail" : "2013-web3d-interactive-software-maps.jpg",
       "flickr"    : "72157650179270797",
@@ -64,13 +56,13 @@
           "desc"  : "DOI"
         },
         { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAYTQwM3NlajlRZEE/view",
-          "desc"  : "Paper (PDF, 3.0 MiB)"
+          "desc"  : "Paper"
         },
         { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAU2ZqbENPN3BFUXc/view",
-          "desc"  : "Slides (PDF, 14.9 MiB)"
+          "desc"  : "Slides"
         },
         { "href"  : "https://www.youtube.com/watch?v=AaHJRVQ3Z1E",
-          "desc"  : "Video (YouTube)",
+          "desc"  : "Video",
           "video" : "youtube"
         } ],
     },
@@ -82,22 +74,16 @@
       "authors"   : [ "Daniel Limberger", "Jürgen Döllner" ],
       "published" : "Expressive Posters",
       
-      "caption"   : {
-        "en" : "This work presents a photo-editing method that enables per-pixel parameter manipulation of image filtering by means of interactive painting.
-                Predefined or custom image filters are exposed to the user, as a parametrizable composition of image operations. 
-                Brushes, as sequences of actions mapping user inputs (in terms of brush shape, flow, pressure, etc.) to arbitrary functions or convolution operators, are used to draw within the parameter space. 
-                It demonstrates how interactive painting can be used to, e.g., locally tweak parametrization and, furthermore, provides a blueprint for an collaborative photo-editing platform.",
-        "de" : "Diese Arbeit stellt eine Methode zur Bildbearbeitung vor, welche per-pixel Manipulation von Filterparametern ermöglicht.
-                Vordefinierte oder benutzerdefinierte Bildfilter werden als Komposition parametrisierter Bildoperationen freigelegt.
-                So können Interaktionen mittels Pinselmethapher (Pinselform, Verlauf, Druck, etc.) als Abfolge von Operationen (z.B. Faltungen) im Parameterraum genutzt werden.
-                Es wird gezeigt wie durch Malen interaktiv lokale Korrekturen der Parameterisierungen erfolgen können. 
-                Zudem kann die Arbeit als Blaupause für eine offene, kollaborative Bildverarbebitungs-Platform dienen." },
+      "abstract"  : "This work presents a photo-editing method that enables per-pixel parameter manipulation of image filtering by means of interactive painting.
+        Predefined or custom image filters are exposed to the user, as a parametrizable composition of image operations. 
+        Brushes, as sequences of actions mapping user inputs (in terms of brush shape, flow, pressure, etc.) to arbitrary functions or convolution operators, are used to draw within the parameter space. 
+        It demonstrates how interactive painting can be used to, e.g., locally tweak parametrization and, furthermore, provides a blueprint for an collaborative photo-editing platform.",
 
       "thumbnail" : "2014-expressive-painting-per-pixel-parametrization.jpg",
       "flickr"    : "72157650124474077",
       "downloads" : [
         { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAZm1GSHhKdHNvdjg/view",
-          "desc"  : "Poster (PDF, 19.1 MiB)"
+          "desc"  : "Poster"
         } ],
     },
 
@@ -109,15 +95,10 @@
       "published" : "Proceedings of the International Symposium on Computational Aesthetics",
       "lead_note" : "<a href='http://expressive.graphics/2015'>Best Paper Award</a>",
 
-      "caption"   : {
-        "en" : "This paper presents an approach for transforming images into an oil paint look. 
-                A color quantization scheme is proposed that performs feature-aware recolorization using the dominant colors of the input image. 
-                In addition, an approach for real-time computation of paint textures is presented that builds on the smoothed structure adapted to the main feature contours of the quantized image. 
-                The stylization technique leads to homogeneous outputs in the color domain and enables creative control over the visual output, such as color adjustments and per-pixel parametrizations by means of interactive painting.",
-        "de" : "In dieser Arbeit wird eine Methode zur Umwandlung eines Bildes in ein Ölgemälde vorgestellt. 
-                Dazu wird ein Schema zur Farbquantisierung vorgeschlagen, welches eine Feature-erhaltende Neueinfärbung mittels dominanter Farben des Eingabebildes erlaubt.
-                Zudem wird ein Ansatz zur echtzeit-fähigen Berechnung einer Farb- und Lackstruktur auf Basis von an Featurekonturen ausgerichteten und geglätteter Strukturen diskutiert.
-                Die Methode liefert farblich homogene Ergebnisse und ermöglicht gestalterische Kontrolle über die Ausgabe, z.B. Farbanpassungen oder Per-Pixel Parameterisierung mittels interkativem Malen." },
+      "abstract"  : "This paper presents an approach for transforming images into an oil paint look. 
+        A color quantization scheme is proposed that performs feature-aware recolorization using the dominant colors of the input image. 
+        In addition, an approach for real-time computation of paint textures is presented that builds on the smoothed structure adapted to the main feature contours of the quantized image. 
+        The stylization technique leads to homogeneous outputs in the color domain and enables creative control over the visual output, such as color adjustments and per-pixel parametrizations by means of interactive painting.",
 
       "thumbnail" : "2015-cae-oil-paint-stylization-using-color-palettes.jpg",
 
@@ -126,10 +107,10 @@
           "desc"  : "DOI"
         },
         { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAcGdHblRfbmdkcXM/view",
-          "desc"  : "Paper (PDF, 7.5 MiB)"
+          "desc"  : "Paper"
         },
         { "href"  : "https://www.youtube.com/watch?v=T65gbk8Ruk4",
-          "desc"  : "Video (YouTube)",
+          "desc"  : "Video",
           "video" : "youtube"
         } ],
 
@@ -142,13 +123,9 @@
       "authors"   : [ "Hannes Würfel", "Matthias Trapp", "Daniel Limberger", "Jürgen Döllner" ],
       "published" : "Proceedings of the International Symposium on Computer Graphics and Visual Computing",
       
-      "caption"   : {
-        "en" : "This work explores the suitability of rendering natural phenomena in Software maps for effective communication of changes as well as trends.
-                Therefore, Unreal Engine 4 is prototypically used to render Software maps and natural phenomena, such as fire, clouds, smoke, rain, rust, or shininess in real-time.
-                Trend data is automatically computed by hierarchically accumulating as well as analyzing the underlying software metrics, and is mapped to the additional visual variables.",
-        "de" : "Diese Arbeit untersucht inwiefern die Bildsynthese einzelner Naturerscheinungen in Softwarelagekarten als ergänzende visuelle Variablen zur effektiven Kommunikation von Änderungen und Trends geeignet ist.
-                Dabei wird die Unreal Engine 4 prototypisch genutzt Softwarelagekarten als auch Naturerscheinungen wie Feuer, Wolken, Rauch, Regen, Rost, oder Glanz in Echtzeit zu rendern.
-                Die Trenddaten werden aus den zugrundeliegenden Softwaremetriken abgeleitet und auf die zusätzlichen visuellen Variablen abgebildet." },
+      "abstract"  : "This work explores the suitability of rendering natural phenomena in Software maps for effective communication of changes as well as trends.
+        Therefore, Unreal Engine 4 is prototypically used to render Software maps and natural phenomena, such as fire, clouds, smoke, rain, rust, or shininess in real-time.
+        Trend data is automatically computed by hierarchically accumulating as well as analyzing the underlying software metrics, and is mapped to the additional visual variables.",
 
       "thumbnail" : "2015-cgvc-natural-metaphors.jpg",
       "flickr"    : "72157663043933623",     
@@ -157,7 +134,7 @@
           "desc"  : "DOI"
         },
         { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAMnBIY0VuaTVkdWc/view",
-          "desc"  : "Paper (PDF, 16.9 MiB)"
+          "desc"  : "Paper"
         } ],
     },
 
@@ -169,15 +146,10 @@
       "published" : "Computers & Graphics",
       "lead_note" : "<a href='http://vcg.isti.cnr.it/cgf/winner.php?year=2016'>CGF Cover Contest 2016 (Runner-up)</a>",
       
-      "caption"   : {
-        "en" : "An interactive system for transforming images into an oil paint look is presented:
-                First, dominant colors from an input image are derived for feature-aware recolorization and quantization to conform with a global color palette. 
-                Afterwards, it employs non-linear filtering based on the smoothed structure adapted to the main feature contours of the quantized image to synthesize a paint texture in real-time.
-                Furthermore, a generalized brush-based painting interface is introduced that operates within parameter spaces to locally adjust the level of abstraction of the filtering effects.",
-        "de" : "An interactive system for transforming images into an oil paint look is presented:
-                First, dominant colors from an input image are derived for feature-aware recolorization and quantization to conform with a global color palette. 
-                Afterwards, it employs non-linear filtering based on the smoothed structure adapted to the main feature contours of the quantized image to synthesize a paint texture in real-time.
-                Furthermore, a generalized brush-based painting interface is introduced that operates within parameter spaces to locally adjust the level of abstraction of the filtering effects." },
+      "abstract"  : "An interactive system for transforming images into an oil paint look is presented:
+        First, dominant colors from an input image are derived for feature-aware recolorization and quantization to conform with a global color palette. 
+        Afterwards, it employs non-linear filtering based on the smoothed structure adapted to the main feature contours of the quantized image to synthesize a paint texture in real-time.
+        Furthermore, a generalized brush-based painting interface is introduced that operates within parameter spaces to locally adjust the level of abstraction of the filtering effects.",
 
       "thumbnail" : "2016-cgf-interactive-oil-paint-filtering.jpg",
       "flickr"      : "72157652814171753",
@@ -186,7 +158,7 @@
           "desc"  : "DOI"
         },
         { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAaGQtQnotbGtISGM/view",
-          "desc"  : "Paper (PDF, 17.9 MiB)"
+          "desc"  : "Paper"
         } ],
     } ,
 
@@ -197,9 +169,8 @@
       "authors"   : [ "Daniel Limberger", "Karsten Tausche", "Johannes Linke", "Jürgen Döllner" ],
       "published" : "GPU Pro 7: Advanced Rendering Techniques",
       
-      "caption"   : {
-        "en" : "ToDo",
-        "de" : "ToDo" },
+      "abstract"  : "This chapter presents an approach that distributes sampling over multiple, consecutive frames, and, thereby, enables sampling-based, real-time rendering techniques to be implemented for most graphics hardware and systems in a less complex, straightforward way.
+        This systematic, extensible schema allows developers to effectively handle the increasing implementation complexity of advanced, sophisticated, real-time rendering techniques, while improving responsiveness and reducing required hardware resources.",
 
       "thumbnail" : "2016-gpupro-multi-frame-sampling.jpg",
     },
@@ -211,13 +182,11 @@
       "authors"   : [ "Daniel Limberger", "Carolin Fiedler", "Sebastian Hahn", "Matthias Trapp", "Jürgen Döllner" ],
       "published" : "Proceedings of the International Conference on Information Visualization",
       
-      "caption"   : {
-        "en" : "Treemaps serve as generic, effective tools to display, explore, and analyze multi-variate tree data in a scalable, interactive, and consistent way. 
-                In this paper, we discuss and evaluate sketchiness as visual variable of 2.5D treemaps. 
-                Sketchy rendering techniques allow us to map data, e.g., about uncertainty, imprecision, or vagueness, independently from mappings to other visual variables such as size, color, and height.
-                To this end, we present a design space for sketchy rendering for 2.5D treemaps and corresponding implementation of a real-time sketchy rendering technique. 
-                The results of three user studies carried out indicate that sketchiness is a promising candidate for an independent visual variable for 2.5D treemaps, in particular to map ordinal data with a small range such as data that qualifies map items, it shows no strong interference with other visual variables such as color and height due to the regular gestalt of blocks and, hence, allows us to extend the expressiveness of 2.5D treemaps.",
-        "de" : "ToDo." },
+      "abstract"  : "Treemaps serve as generic, effective tools to display, explore, and analyze multi-variate tree data in a scalable, interactive, and consistent way. 
+        In this paper, we discuss and evaluate sketchiness as visual variable of 2.5D treemaps. 
+        Sketchy rendering techniques allow us to map data, e.g., about uncertainty, imprecision, or vagueness, independently from mappings to other visual variables such as size, color, and height.
+        To this end, we present a design space for sketchy rendering for 2.5D treemaps and corresponding implementation of a real-time sketchy rendering technique. 
+        The results of three user studies carried out indicate that sketchiness is a promising candidate for an independent visual variable for 2.5D treemaps, in particular to map ordinal data with a small range such as data that qualifies map items, it shows no strong interference with other visual variables such as color and height due to the regular gestalt of blocks and, hence, allows us to extend the expressiveness of 2.5D treemaps.",
 
       "thumbnail" : "2016-iv-sketchiness-in-treemaps.jpg",
       "downloads" : [
@@ -225,7 +194,7 @@
           "desc"  : "DOI"
         },
         { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAVFN3Q195aTJRcjg/view",
-          "desc"  : "Paper (PDF, 5.0 MiB)"
+          "desc"  : "Paper"
         } ],
     } ,
 
@@ -236,22 +205,20 @@
       "authors"   : [ "Daniel Limberger", "Jürgen Döllner" ],
       "published" : "ACM SIGGRAPH Posters",
       
-      "caption"   : {
-        "en" : "In a rendering environment of comparatively sparse interaction, e.g., digital production tools, image synthesis and its quality do not have to be constrained to single frames.
-                This work analyzes strategies for highly economically rendering of state-of-the-art rendering effects using progressive multi-frame sampling in real-time. 
-                By distributing and accumulating samples of sampling-based rendering techniques (e.g., anti-aliasing, orderindependent transparency, depth-of-field and shadowing, ambient occlusion, screen-space reflections) over multiple frames, images of very high quality can be synthesized with unequaled resource-efficiency.",
-        "de" : "ToDo." },
+      "abstract"  : "In a rendering environment of comparatively sparse interaction, e.g., digital production tools, image synthesis and its quality do not have to be constrained to single frames.
+        This work analyzes strategies for highly economically rendering of state-of-the-art rendering effects using progressive multi-frame sampling in real-time. 
+        By distributing and accumulating samples of sampling-based rendering techniques (e.g., anti-aliasing, orderindependent transparency, depth-of-field and shadowing, ambient occlusion, screen-space reflections) over multiple frames, images of very high quality can be synthesized with unequaled resource-efficiency.",
 
       "thumbnail" : "2016-siggraph-multi-frame-sampling.jpg",
       "downloads" : [
         { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAN2VfNjBTcll0VTA/view",
-          "desc"  : "Poster (PDF, 5.9 MiB)"
+          "desc"  : "Poster"
         },
         { "href"  : "https://github.com/cgcostume/multiframesampling",
-          "desc"  : "C++ Source Code (GitHub)"
+          "desc"  : "Source Code"
         },
         { "href"  : "http://cgcostume.github.io/mfsv/",
-          "desc"  : "three.js Demo (GitHub)"
+          "desc"  : "Demo"
         } ],
     },
 
@@ -262,14 +229,12 @@
       "authors"   : [ "Daniel Limberger", "Willy Scheibel", "Stefan Lemme", "Jürgen Döllner" ],
       "published" : "Proceedings of the International Conference on 3D Web Technology",
       
-      "caption"   : {
-        "en" : "The 2.5D treemap represents a general purpose visualization technique to map multi-variate hierarchical data in a scalable, interactive, and consistent way used in a number of application fields.
-                In this paper, we explore the capabilities of Declarative 3D for the web-based implementation of 2.5D treemap clients.
-                Particularly, we investigate how X3DOM and XML3D can be used to implement clients with equivalent features that interactively display 2.5D treemaps with dynamic mapping of attributes. 
-                We also show a first step towards a glTF-based implementation. 
-                These approaches are benchmarked focusing on their interaction capabilities with respect to rendering and speed of dynamic data mapping. 
-                We discuss the results for our representative example of a complex 3D interactive visualization technique and summerize recommendations for improvements towards operational web clients.",
-        "de" : "ToDo." },
+      "abstract"  : "The 2.5D treemap represents a general purpose visualization technique to map multi-variate hierarchical data in a scalable, interactive, and consistent way used in a number of application fields.
+        In this paper, we explore the capabilities of Declarative 3D for the web-based implementation of 2.5D treemap clients.
+        Particularly, we investigate how X3DOM and XML3D can be used to implement clients with equivalent features that interactively display 2.5D treemaps with dynamic mapping of attributes. 
+        We also show a first step towards a glTF-based implementation. 
+        These approaches are benchmarked focusing on their interaction capabilities with respect to rendering and speed of dynamic data mapping. 
+        We discuss the results for our representative example of a complex 3D interactive visualization technique and summerize recommendations for improvements towards operational web clients.",
 
       "thumbnail" : "2016-web3d-declarative-treemaps.jpg",
       "downloads" : [
@@ -277,13 +242,13 @@
           "desc"  : "DOI"
         },
         { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAQ2JjTWJCUjgtbzA/view",
-          "desc"  : "Paper (PDF, 1.3 MiB)"
+          "desc"  : "Paper"
         },
         { "href"  : "https://github.com/cgcostume/web3d-treemaps",
-          "desc"  : "Source Code (GitHub)"
+          "desc"  : "Source Code"
         },
         { "href"  : "http://cgcostume.github.io/web3d-treemaps/",
-          "desc"  : "Demo (GitHub)"
+          "desc"  : "Demo"
         } ],
     },
 
@@ -293,9 +258,13 @@
       "authors"   : [ "Daniel Limberger", "Willy Scheibel", "Sebastian Hahn", "Jürgen Döllner" ],
       "published" : "Proceedings of the International Conference on Information Visualization Theory and Applications",
       
-      "caption"   : {
-        "en" : "ToDo.",
-        "de" : "ToDo." },
+      "abstract"  : "    Depicting massive software system data using treemaps can result in visual clutter and increased cognitive load.
+        This paper introduces an adaptive level-of-detail (LoD) technique that uses scoring for interactive aggregation on a per-node basis.
+        The scoring approximates importance by degree-of-interest measures as well as screen and user-interaction scores.
+        The technique adheres to established aggregation guidelines and was evaluated by means of two user studies.
+        The first investigates task completion time in visual search.
+        The second evaluates the readability of the presented nesting level contouring for aggregates.
+        With the adaptive LoD technique software maps allow for multi-resolution depictions of software system information while facilitating annotation and efficient identification of important nodes.",
 
       "thumbnail" : "2017-ivapp-aggregation-swmaps.jpg",
     },

@@ -149,6 +149,38 @@ footer div {
   animation: sk-scaleout 0.66s infinite ease-in-out;
 }
 
+.bibtex {
+
+  .card {
+    background-color: #f7f7f9;
+  }
+
+  pre {
+    font-size: 80%;
+    margin-bottom: 0;
+  }
+
+  .btn-clipboard-parent {
+    display: block;
+    position: relative;
+    float: right;
+  }
+
+  .btn-clipboard {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    z-index: 10;
+    display: block;
+    padding: .25rem .5rem;
+    font-size: 75%;
+    color: #818a91;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: .25rem;
+  }
+}
+
 @-webkit-keyframes sk-scaleout {
     0% { opacity: 1.00; }
    50% { opacity: 0.66; }
