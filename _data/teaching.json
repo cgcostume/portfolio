@@ -99,7 +99,7 @@
         "role"   : "Tutor & Co-Lecturer"
       },
       { "course" : "Introduction to 3D Computergraphics",
-        "type"   : "youth academy",
+        "type"   : "Youth Academy",
         "role"   : "Lecturer"
       } ]
   },
@@ -133,7 +133,7 @@
         "role"   : "Tutor & Co-Lecturer"
       },
       { "course" : "Introduction to 3D Computergraphics",
-        "type"   : "youth academy",
+        "type"   : "Youth Academy",
         "role"   : "Lecturer"
       } ]
   } ]

@@ -4,17 +4,17 @@
   </div>
 </div>
 
-
 {% assign talks = site.data.talks.talks | sort:"date" %}
 {% for t in talks reversed %}
-<div class="row{% if t != talks.last %} mt-0{% endif %} flex-items-xs-between">
+<div class="row{% if t != talks.last %} mt-0{% endif %}">
 
   <div class="col-md-3 text-md-right">
     {{ t.date | date : "%x" }}
   </div>
 
   <div class="col-md-9">
-    <p>{{ t.title | escape }}<br><span class="text-muted">{{ t.location | escape }}
+    <h5>{{ t.title | escape }}</h5>
+    <p><span class="text-muted">{{ t.location | escape }}
     {% if t.downloads %} |
     {% for download in t.downloads %}
       <a href="{{ download.href }}">{{ download.desc | escape }}</a>{% if download != t.downloads.last %}, {% endif %}{% endfor %}

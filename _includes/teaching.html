@@ -1,15 +1,17 @@
 <div class="row text-xs-center">
-  <h1>{{ site.data.teaching.heading.[page.lang] | escape }}</h1>
+  <div class="col-xs">
+    <h1>{{ site.data.teaching.heading.[page.lang] | escape }}</h1>
+  </div>
 </div>
 
 {% assign terms = site.data.teaching.terms | sort:"term" %} 
 {% for t in terms reversed %}
   
   {% capture i %}{% cycle 0, 1 %}{% endcapture %}
-  {% if i == '0' %}<div class="row">{% endif %}
+  {% if i == '0' %}<div class="row flex-items-xs-center">{% endif %}
 
-  <div class="col-md-5 {% cycle 'col-md-offset-1 text-md-right text-xs-left', 'col-md-offset-0' %} col-sm-10 col-sm-offset-1">
-    <h4>{{ t.term | escape }}</h4>
+  <div class="col-md-5 {% cycle 'text-md-right text-xs-left', '' %} col-sm-10">
+    <h5>{{ t.term | escape }}</h5>
     {% for c in t.courses %}
     <p>{{ c.course | escape }}<br><span class="text-muted">{{ c.type | escape }}, {{ c.role | escape }}</span></p>
     {% endfor %}
