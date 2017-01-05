@@ -6,7 +6,8 @@
 
 {% assign publications = site.data.publications.publications | sort:"date" %}
 {% for p in publications reversed %}
-<div class="row{% if p != publications.first %} not-last{% endif %}">
+<div class="row">
+  
   <div class="col-lg-2 col-sm-3">
     {% assign thumbnail_src = p.thumbnail %}
     {% assign thumbnail_alt = p.title %}
@@ -14,6 +15,7 @@
     {% include thumbnail.html %}
   </div>
   <div class="hidden-sm-up mb-1 col-xs"></div>
+  
   <div class="col-lg-10 col-sm-9">
     <h5>{{ p.title | escape }}</h5>
     <p>{% for author in p.authors %}{% if author == p.authors.last %}and {% endif %}{{ author }}{% if p.authors.size > 2 and author != p.authors.last %},{% endif %} {% endfor %}<br><span class="text-muted">{{ p.published }} {{ p.date | date: '%Y' }}{% if p.lead_note %}, {{ p.lead_note }}{% endif %}</span></p>

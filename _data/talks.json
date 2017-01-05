@@ -18,7 +18,7 @@
       "location"  : "DGKF & DGPF Workshop \"3D-Stadmodelle\", Bonn, Germany",
       "downloads" :
       [ { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAZ0ZjcXpQT0s1Yzg/view",
-          "desc"  : "Slides (PDF, 4.5 MiB)"
+          "desc"  : "Slides"
         } ] 
     },
     { "date"      : "2013-06-20 00:00:00",
@@ -26,7 +26,7 @@
       "location"  : "Web3D2013, San Sebastian, Spain",
       "downloads" : [
       { "href"    : "https://drive.google.com/file/d/0B9sUajZRijJAU2ZqbENPN3BFUXc/view",
-        "desc"    : "Slides (PDF, 14.9 MiB)"
+        "desc"    : "Slides"
       } ]
     },
     { "date"      : "2013-06-20 00:00:00",
@@ -38,7 +38,7 @@
       "location"  : "VMV2012, Magdeburg, Germany",
       "downloads" : [
       { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAeEg2NGtKV3NLWk0/view",
-        "desc"  : "Slides (PDF, 3.0 MiB)"
+        "desc"  : "Slides"
       } ]
     },
     { "date"      : "2010-06-08 00:00:00",
