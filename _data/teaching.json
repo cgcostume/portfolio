@@ -5,6 +5,25 @@
 
   "terms" : [
 
+  { "term" : "2017 : Summer Term",
+    "courses" : 
+    [ ]
+  },
+  { "term" : "2016/17 : Winter Term",
+    "courses" : 
+    [ { "course" : "Advanced Programming in C++",
+        "type"   : "Lecture (MA)",
+        "role"   : "Tutor & Co-Lecturer"
+      },
+      { "course" : "Methods and Techniques of Information Visualization",
+        "type"   : "Seminar (MA)",
+        "role"   : "Tutor"
+      },
+      { "course" : "Real-time Monitoring of Massive File Systems",
+        "type"   : "Project (MA)",
+        "role"   : "Supervisor"
+      } ]
+  },
   { "term" : "2016 : Summer Term",
     "courses" : 
     [ { "course" : "Computergraphics II",
