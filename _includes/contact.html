@@ -61,24 +61,31 @@
     </div>
   </div>
 
-  <div class="form-group row">
-    <label for="_name" class="col-sm-3 col-form-label text-sm-right text-xs-left">{{ contact.name_label.[page.lang] }}:</label>
+  <div class="form-group row" id="formspree-name">
+    <label for="name" class="col-sm-3 form-control-label col-form-label text-sm-right text-xs-left">{{ contact.name_label.[page.lang] }}:</label>
     <div class="col-sm-7">
-      <input type="text" class="form-control" id="_name" name="_name" placeholder="{{ contact.name_label.[page.lang] }}">
+      <input type="text" class="form-control" id="name" name="name" placeholder="{{ contact.name_label.[page.lang] }}">
     </div>
   </div>
 
-  <div class="form-group row">
-    <label for="_replyto" class="col-sm-3 col-form-label text-sm-right text-xs-left">{{ contact.email_label.[page.lang] }}:</label>
+  <div class="form-group row" id="formspree-nobot">{% comment %} honeypot for blocking spam {% endcomment %}
+    <label for="nobot" class="col-sm-3 form-control-label col-form-label text-sm-right text-xs-left" >Verification:</label>
     <div class="col-sm-7">
-      <input type="text" class="form-control" id="_replyto" name="_replyto" placeholder="{{ contact.email_label.[page.lang] }}">
+      <input type="text" class="form-control" id="nobot" name="nobot" placeholder="nobot">
     </div>
   </div>
 
-  <div class="form-group row">
-    <label for="_message" class="col-sm-3 col-form-label text-sm-right text-xs-left" >{{ contact.message_label.[page.lang] }}:</label>
+  <div class="form-group row" id="formspree-replyto">
+    <label for="replyto" class="col-sm-3 form-control-label col-form-label text-sm-right text-xs-left">{{ contact.email_label.[page.lang] }}:</label>
     <div class="col-sm-7">
-      <textarea class="form-control" rows="3" id="_message" name="{{ contact.message_label.[page.lang] }}"></textarea>
+      <input type="text" class="form-control" id="replyto" name="_replyto" placeholder="{{ contact.email_label.[page.lang] }}">
+    </div>
+  </div>
+
+  <div class="form-group row" id="formspree-message">
+    <label for="message" class="col-sm-3 form-control-label col-form-label text-sm-right text-xs-left" >{{ contact.message_label.[page.lang] }}:</label>
+    <div class="col-sm-7">
+      <textarea class="form-control" rows="3" id="message" name="message" placeholder="{{ contact.message_label.[page.lang] }}"></textarea>
     </div>
   </div>
 
