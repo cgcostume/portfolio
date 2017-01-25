@@ -53,26 +53,4 @@
     "en" : "More",
     "de" : "Weitere" },
 
-  "formspree" : "cgdaniel@outlook.com",
-
-  "form_legend" : {
-    "en" : "Drop Me a Line",
-    "de" : "Sende mir eine Nachricht" },
-
-  "name_label" : {
-    "en" : "Name",
-    "de" : "Name" },
-
-  "message_label" : {
-    "en" : "Message",
-    "de" : "Nachricht" },
-
-  "submit_button" : {
-    "en" : "Submit",
-    "de" : "Absenden" },
-
-   "submit_info" : {
-   	"en" : "To cgdaniel@outlook.com via <a href='https://formspree.io/'>Formspree</a>.",
-   	"de" : "Via <a href='https://formspree.io/'>Formspree</a> an cgdaniel@outlook.com." },
-
 }
