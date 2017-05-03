@@ -276,7 +276,7 @@
 
     { "key"       : "2017-web3d-progressive",
       "title"     : "Progressive High-Quality Rendering for Interactive Information Cartography using WebGL",
-      "date"      : "2017-02-27",
+      "date"      : "2017-06-05",
       "authors"   : [ "Daniel Limberger", "Marcel Pursche", "Jan Klimke", "Jürgen Döllner" ],
       "published" : "Proceedings of the International Conference on 3D Web Technology",
       
@@ -290,7 +290,7 @@
 
     { "key"       : "2017-iv-mixed-projection",
       "title"     : "Mixed-projection Treemaps: A novel Perspective on Treemaps",
-      "date"      : "2017-02-27",
+      "date"      : "2017-07-11",
       "authors"   : [ "Daniel Limberger", "Willy Scheibel", "Matthias Trapp", "Jürgen Döllner" ],
       "published" : "Proceedings of the International Conference on Information Visualization",
       
