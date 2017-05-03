@@ -253,12 +253,13 @@
     },
 
     { "key"       : "2017-aggregation-swmaps",
+      "bibtex"    : "lshd2017-aggregation.bib",
       "title"     : "Reducing Visual Complexity in Software Maps using Importance-based Aggregation of Nodes",
       "date"      : "2017-02-27",
       "authors"   : [ "Daniel Limberger", "Willy Scheibel", "Sebastian Hahn", "Jürgen Döllner" ],
       "published" : "Proceedings of the International Conference on Information Visualization Theory and Applications",
       
-      "abstract"  : "    Depicting massive software system data using treemaps can result in visual clutter and increased cognitive load.
+      "abstract"  : "Depicting massive software system data using treemaps can result in visual clutter and increased cognitive load.
         This paper introduces an adaptive level-of-detail (LoD) technique that uses scoring for interactive aggregation on a per-node basis.
         The scoring approximates importance by degree-of-interest measures as well as screen and user-interaction scores.
         The technique adheres to established aggregation guidelines and was evaluated by means of two user studies.
@@ -267,6 +268,41 @@
         With the adaptive LoD technique software maps allow for multi-resolution depictions of software system information while facilitating annotation and efficient identification of important nodes.",
 
       "thumbnail" : "2017-ivapp-aggregation-swmaps.jpg",
+      "downloads" : [
+        { "href"  : "https://doi.org/10.5220/0006267501760185",
+          "desc"  : "DOI"
+        } ],
+    },
+
+    { "key"       : "2017-web3d-progressive",
+      "title"     : "Progressive High-Quality Rendering for Interactive Information Cartography using WebGL",
+      "date"      : "2017-02-27",
+      "authors"   : [ "Daniel Limberger", "Marcel Pursche", "Jan Klimke", "Jürgen Döllner" ],
+      "published" : "Proceedings of the International Conference on 3D Web Technology",
+      
+      "abstract"  : "Information cartography services provided via web-based clients using real-time rendering do not always necessitate a continuous stream of updates in the visual display.
+        This paper shows how progressive rendering by means of multi-frame sampling and frame accumulation can introduce high-quality visual effects using robust and straightforward implementations.
+        For it, (1) a suitable rendering loop is described, (2) WebGL limitations are discussed, and (3) an adaption of THREE.js featuring progressive anti-aliasing, screen-space ambient occlusion, and depth of field is detailed.
+        Furthermore, sampling strategies are discussed and rendering performance is evaluated, emphasizing the low per-frame costs of this approach.",
+
+      "thumbnail" : "2017-web3d-progressive.jpg",
+    },
+
+    { "key"       : "2017-iv-mixed-projection",
+      "title"     : "Mixed-projection Treemaps: A novel Perspective on Treemaps",
+      "date"      : "2017-02-27",
+      "authors"   : [ "Daniel Limberger", "Willy Scheibel", "Matthias Trapp", "Jürgen Döllner" ],
+      "published" : "Proceedings of the International Conference on Information Visualization",
+      
+      "abstract"  : "2D treemaps are a space-filling visualization technique that facilitate exploration of non-spatial, attributed, tree-structured data using the visual variables size and color.
+        In extension thereto, 2.5D treemaps introduce height for additional information display. 
+        This extension entails challenges such as increased rendering effort, occlusion, or the need for navigation techniques that counterbalance the advantages of 2D treemaps to a certain degree.
+        This paper presents a novel technique for combining 2D and 2.5D treemaps using multi-perspective views to leverage the advantages of both treemap types. 
+        It enables a new form of overview+detail visualization for complex treemaps and contributes new concepts for real-time rendering of and interaction with mixed-projection treemaps. 
+        The technique operates by tilting up inner nodes using affine transformations and animated state transitions.
+        The mixed use of orthogonal and perspective projections is discussed and application examples that facilitate exploration of multi-variate data and benefit from the reduced interaction overhead are demonstrated.",
+
+      "thumbnail" : "2017-iv-mixed-projection.jpg",
     },
   ]
 
