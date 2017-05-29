@@ -5,6 +5,14 @@
 
   "talks" : [
 
+    { "date"      : "2017-02-27 00:00:00",
+      "title"     : "Reducing Visual Complexity in Software Maps using Importance-based Aggregation of Nodes",
+      "location"  : "IVAPP 2017, Porto, Portugal",
+      "downloads" :
+      [ { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAMTJqSnJwQTZhbnc/view",
+          "desc"  : "Slides"
+        } ] 
+    },
     { "date"      : "2016-07-23 00:00:00",
       "title"     : "Dynamic 2.5D Treemaps using Declarative 3D on the Web",
       "location"  : "ACM SIGGRAPH Web3D Conference 2016, Anaheim, CA, USA",
