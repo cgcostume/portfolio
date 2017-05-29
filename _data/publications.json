@@ -271,6 +271,9 @@
       "downloads" : [
         { "href"  : "https://doi.org/10.5220/0006267501760185",
           "desc"  : "DOI"
+        },
+        { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAYmN0Y09EQkplNzA/view",
+          "desc"  : "Paper"
         } ],
     },
 
