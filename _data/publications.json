@@ -289,6 +289,12 @@
         Furthermore, sampling strategies are discussed and rendering performance is evaluated, emphasizing the low per-frame costs of this approach.",
 
       "thumbnail" : "2017-web3d-progressive.jpg",
+      "downloads" : [
+        { "href"  : "https://doi.org/10.1145/3055624.3075951",
+          "desc"  : "DOI"
+        },
+        { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAT1k0dy1PSjZLeXM/view",
+          "desc" 
     },
 
     { "key"       : "2017-iv-mixed-projection",
