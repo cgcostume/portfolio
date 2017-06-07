@@ -93,7 +93,7 @@
       "date"      : "2015-06-20",
       "authors"   : [ "Amir Semmo", "Daniel Limberger", "Jan Eric Kyprianidis", "Jürgen Döllner" ],
       "published" : "Proceedings of the International Symposium on Computational Aesthetics",
-      "lead_note" : "<a href='http://expressive.graphics/2015'>Best Paper Award</a>",
+      "lead_note" : "<a href='http://expressive.richardt.name/2015/Prizes'>Best Paper Award</a>",
 
       "abstract"  : "This paper presents an approach for transforming images into an oil paint look. 
         A color quantization scheme is proposed that performs feature-aware recolorization using the dominant colors of the input image. 
