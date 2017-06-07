@@ -283,6 +283,7 @@
       "date"      : "2017-06-05",
       "authors"   : [ "Daniel Limberger", "Marcel Pursche", "Jan Klimke", "Jürgen Döllner" ],
       "published" : "Proceedings of the International Conference on 3D Web Technology",
+      "lead_note" : "<a href='https://twitter.com/Web3DConsortium/status/872336310027079683/photo/1'>Best Paper Award</a>",
       
       "abstract"  : "Information cartography services provided via web-based clients using real-time rendering do not always necessitate a continuous stream of updates in the visual display.
         This paper shows how progressive rendering by means of multi-frame sampling and frame accumulation can introduce high-quality visual effects using robust and straightforward implementations.
