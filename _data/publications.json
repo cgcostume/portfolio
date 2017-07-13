@@ -244,6 +244,9 @@
         { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAQ2JjTWJCUjgtbzA/view",
           "desc"  : "Paper"
         },
+        { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAUXp2SndPTktzdjQ/view",
+          "desc"  : "Slides"
+        },
         { "href"  : "https://github.com/cgcostume/web3d-treemaps",
           "desc"  : "Source Code"
         },
@@ -274,6 +277,9 @@
         },
         { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAYmN0Y09EQkplNzA/view",
           "desc"  : "Paper"
+        },
+        { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAMTJqSnJwQTZhbnc/view",
+          "desc"  : "Slides"
         } ],
     },
 
