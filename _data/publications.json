@@ -322,6 +322,9 @@
       "downloads" : [
         { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAM0Z0N2ZoSUVxb28/view",
           "desc"  : "Paper"
+        },
+        { "href"  : "https://drive.google.com/file/d/0B9sUajZRijJAY0FhZTBzaVByYm8/view",
+          "desc"  : "Slides"
         } ],
     },
   ]
