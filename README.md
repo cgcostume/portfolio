@@ -1,37 +1,38 @@
+# Daniel's Portfolio Theme
 
-Portfolio optimized for researchers and those who strive for a minimal, file-based "content management" (**Datafolio**).
-The complete site's content is based on a json/xml file per section (e.g., ```contact.json```, ```projects.json```, ```publications.json```, ```talks.json```, and ```teaching.json```) as well as the pages ```_config.yml``` information. 
+This portfolio is optimized for researchers and those who strive for a minimal, file-based content management.
+The complete site's content is based on a json/yaml file per section (e.g., `contact.json`, `projects.json`, `publications.json`, `talks.json`, and `teaching.json`) as well as the pages `_config.yml` information. 
 
 [![Build Status](https://travis-ci.org/cgcostume/cgcostume.github.io.svg?branch=master)](https://travis-ci.org/cgcostume/cgcostume.github.io)
 
-#### Examples
+## Examples
 
 * [Daniel Limberger](http://www.daniellimberger.de) (my personal website)
 * [Amir Semmo](http://www.amirsemmo.de)
 * [Willy Scheibel](http://www.willyscheibel.de)
 * [Maximilian Söchting](http://msoechting.de)
 
-#### Features
+## Features
 
-* responsive single-page using [Bootstrap 4](http://v4-alpha.getbootstrap.com/)
+* responsive single-page using [Bootstrap 4](http://getbootstrap.com/)
 * multi-language support
 * sections for publications, projects, talks/keynotes, teaching, contact, and more
-* section contents loaded from json data-files (_data)
+* section contents loaded from json/yaml data-files (_data)
 * unique, distinguishable layouts per section
 * dynamic integration of [Flickr photo sets](https://www.flickr.com/services/api/) (with basic caching)
 * php and javascript free contact form using [Formspree](http://formspree.io/)
-* optimized for [GitHub Pages](https://pages.github.com/) deployment (uses no unsupported plugins)
+* supports deployment using [GitHub Pages](https://pages.github.com/) 
 * minimizes html and css (currently using compress layout method)
-* takes advantage of [jsDelivr](https://www.jsdelivr.com/) and [Google Fonts](https://www.google.com/fonts)
-* easy BibTeX provisioning (show, select, and copy to clipboard, as well as download .bib)
+* easy BibTeX provisioning (show, select, and copy to clipboard, or download)
 * valid html5 output (nearly-valid css, due to some issues in bootstrap)
 * responsive navigation (with scrollspy) comprising a top-page link (author or icon), section links (nav-links or dropdown-items), and a language toggle for all used languages
 * support for vCard via file and QR Code
 * basic [Travis CI](https://travis-ci.org/) integration
 
-#### Dependencies
 
-Datafolio uses [Jekyll](http://jekyllrb.com/), [Bootstrap 4](http://v4-alpha.getbootstrap.com/), [Blueimp Gallery](https://github.com/blueimp/Bootstrap-Image-Gallery), can access the [Flickr API](https://www.flickr.com/services/api/) and relies on [jsDelivr](https://www.jsdelivr.com/), [Google Fonts](https://www.google.com/fonts), and [Formspree](http://formspree.io/).
+## Development
+
+This website uses [Jekyll](http://jekyllrb.com/), [Bootstrap 4](http://getbootstrap.com/), [Blueimp Gallery](https://github.com/blueimp/Bootstrap-Image-Gallery), can access the [Flickr API](https://www.flickr.com/services/api/), and [Formspree](http://formspree.io/).
 
 #### Setting up the Build Environment (on Windows)
 
