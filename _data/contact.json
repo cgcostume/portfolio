@@ -42,15 +42,13 @@
     "de" : "Telefon" },
 
   "refs" : [ 
-  	{ "name" : "LinkedIn", "href" : "https://www.linkedin.com/in/daniellimberger" },
   	{ "name" : "GitHub", "href" : "https://github.com/cgcostume" },
   	{ "name" : "Flickr", "href" : "https://www.flickr.com/photos/131006004@N06/albums" },
   	{ "name" : "YouTube", "href" : "https://www.youtube.com/user/costumebrother" },
-  	{ "name" : "Vimeo", "href" : "https://vimeo.com/user2011768" },
+  	{ "name" : "Vimeo", "href" : "https://vimeo.com/user2011768" }
   	],
 
   "refs_label" : {
     "en" : "More",
-    "de" : "Weitere" },
-
+    "de" : "Weitere" }
 }
