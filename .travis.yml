@@ -3,7 +3,6 @@ cache: bundler
 rvm:
   - 2.2
 install:
-  - gem install nokogiri
   - bundle install
 script:
   - bundle exec jekyll build
