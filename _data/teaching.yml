@@ -5,9 +5,21 @@ heading:
 
 terms:
 
+- term: '2018 : Summer Term'
+  courses: 
+  - course: Advanced Games of Life
+    type: Seminar (BA, MA)
+    role: Tutor & Supervisor
+
+- term: '2017/18 : Winter Term'
+  courses:
+  - course: Graphics Programming with OpenGL and C++
+    type: Seminar (BA)
+    role: Tutor & Co-Lecturer
+
+
 - term: '2017 : Summer Term'
   courses: []
-
 
 - term: '2016/17 : Winter Term'
   courses:
@@ -37,7 +49,6 @@ terms:
     type: Project (BA)
     role: Supervisor
 
-
 - term: '2015/16 : Winter Term'
   courses:
   - course: Systems Engineering for Software Analytics
@@ -60,14 +71,13 @@ terms:
     type: Project (BA)
     role: Supervisor
 
-
 - term: '2014/15 : Winter Term'
   courses:
   - course: Visualization for Interactive Software Analytics
     type: Seminar (MA)
     role: Tutor
   - course: Introduction to Programming C++
-    type: Lecture (MA Geo)
+    type: Lecture (MA)
     role: Lecturer
   - course: Game Programming
     type: Lecture/Seminar (BA)
@@ -88,7 +98,6 @@ terms:
   - course: Software Analysis and Visualization
     type: Project (BA)
     role: Supervisor
-
 
 - term: '2013/14 : Winter Term'
   courses:
@@ -117,7 +126,6 @@ terms:
   - course: Computergraphics I
     type: Lecture (BA)
     role: Tutor & Co-Lecturer
-
 
 - term: '2012/13 : Winter Term'
   courses:
