@@ -1,6 +1,6 @@
 <div class="thumbnail">
 {% if thumbnail_flickr %}<a href="https://www.flickr.com/photos/{{ site.flickr_user }}/sets/{{ thumbnail_flickr }}/" class="thumbnail flickr" id="{{ thumbnail_flickr }}">
   <span class="tag tag-primary top-left partial-radius">Flickr</span>{% endif %}
-<img class="rounded img-fluid" {{ site.default_thubmnail_img_dimensions }} src="/img/{{ thumbnail_src }}" alt="Thumbnail of {{ thumbnail_alt }}">
+<img class="img-fluid" {{ site.default_thubmnail_img_dimensions }} src="/img/{{ thumbnail_src }}" alt="Thumbnail of {{ thumbnail_alt }}">
 {% if thumbnail_flickr %}</a>{% endif %}
 </div>

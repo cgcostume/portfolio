@@ -1,7 +1,4 @@
-heading: 
- en: Publications
- de: Publikationen
-
+heading: Publications
 publications: 
 
 - key: 2012-sky-phenomena
@@ -301,7 +298,7 @@ publications:
   - href: https://drive.google.com/file/d/0B9sUajZRijJAT1k0dy1PSjZLeXM/view
     desc: Paper
 
-    
+
 - key: 2017-iv-mixed-projection
   title: 'Mixed-Projection Treemaps: A Novel Approach Mixing 2D and 2.5D Treemaps'
   date: '2017-07-11'
@@ -323,3 +320,39 @@ publications:
     desc: Paper
   - href: https://drive.google.com/file/d/0B9sUajZRijJAY0FhZTBzaVByYm8/view
     desc: Slides
+
+
+- key: 2018-iv-open-ll
+  title: 'OpenLL: an API for Dynamic 2D and 3D Labeling'
+  date: '2018-07-10'
+  authors: 
+  - Daniel Limberger
+  - Anne Gropler
+  - Stefan Buschmann
+  - Jürgen Döllner
+  - Benjamin Wasty
+  published: Proceedings of the International Conference on Information Visualization
+  abstract:
+      Today's rendering APIs lack robust functionality and capabilities for dynamic, real-time text rendering and labeling, which represent key requirements for 3D application design in many fields.
+      As a consequence, most rendering systems are barely or not at all equipped with respective capabilities.
+      This paper drafts the unified text rendering and labeling API OpenLL intended to complement common rendering APIs, frameworks, and transmission formats.
+      For it, various uses of static and dynamic placement of labels are showcased and a text interaction technique is presented.
+      Furthermore, API design constraints with respect to state-of-the-art text rendering techniques are discussed.
+      This contribution is intended to initiate a community-driven specification of a free and open label library.
+  thumbnail: 2018-iv-open-ll.jpg
+
+
+- key: 2018-vinci-reference
+  title: 'Interactive, Height-based Filtering in 2.5D Treemaps'
+  date: '2018-08-10'
+  authors: 
+  - Daniel Limberger
+  - Matthias Trapp
+  - Jürgen Döllner
+  published: Proceedings of the International Symposium on Visual Information Communication and Interaction
+  abstract:
+      The 2.5D treemap facilitates interactive exploration of multivariate data. 
+      It includes height as a visual variable for additional information display and enables exploration of correlations within mapped attributes. 
+      In this paper techniques for the visual display of a height reference for interactive modification from within the visualization are introduced.
+      Results of a preliminary user study are presented and potential benefits for improved performance, i.e., precision and speed, of identification, comparison, filtering, and selection tasks are discussed.
+  thumbnail: 2018-vinci-reference.jpg

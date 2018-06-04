@@ -7,34 +7,23 @@
 
 // variables override
 
-$brand-color-0: rgb(  0,  85, 124);
-$brand-color-1: rgb( 24, 109, 148);
-$brand-color-2: rgb( 52, 136, 173);
-$brand-color-3: rgb(129, 193, 220);
-$brand-color-4: rgb(187, 229, 243);
-$brand-color-5: rgb(238, 246, 254);
-
-$code-color: $brand-color-2;
-$body-color: #3d3d3d !default;
-
+$body-color: #343a40 !default;
+$primary: #6cbb23 !default;
 
 $enable-flex: true;
-$enable-rounded: true;
+$enable-rounded: false;
 
 $font-family-sans-serif: 'Roboto';
-$font-family-monospace: 'Source Code Pro';
+$font-family-monospace: 'Roboto Mono';
 
 $headings-font-weight: 300;
-
-$brand-dark: $brand-color-1;
-$brand-light: $brand-color-4;
-$brand-primary: $brand-color-2;
+$font-weight-bold: 700;
 
 $jumbotron-bg: transparent;
 $jumbotron-padding: 0rem;
 
-$link-color: $brand-color-1;
-$link-hover-color: $brand-color-3;
+// $link-color: $brand-color-1;
+// $link-hover-color: $brand-color-3;
 $link-hover-decoration: none;
 
 // Import customized bootstrap from `sass_dir` (defaults to `_sass`)
@@ -49,8 +38,24 @@ p {
   @hyphenation-resource
 }
 
+header {
+  margin-top: 5rem;
+}
+
 h1 {
-  padding-top: 2rem;
+  @extend .display-4;
+  @extend .text-uppercase;
+  @extend .my-5;
+}
+
+h2 {
+  font-size: $font-size-base * 2.5;
+  @extend .text-uppercase;
+}
+
+h3 {
+  font-size: $font-size-base * 1.25;
+  margin-bottom: 1rem;
 }
 
 .navbar {
@@ -64,10 +69,6 @@ h1 {
     > li.nav-item + .nav-item {
       margin-left: 0.25rem;
     }
-  }
-
-  img {
-    margin: -1rem 0;
   }
 
   .navbar-toggler {
@@ -92,10 +93,6 @@ h1 {
     color: $navbar-light-active-color; 
     background: none;
   }
-}
-
-header {
-  margin-top: 4rem;
 }
 
 .text-justify {
@@ -157,13 +154,16 @@ footer div {
 
 .bibtex {
 
-  .card {
-    background-color: #f7f7f9;
-  }
+  @extend .card;
+  background-color: $card-cap-bg;
+  // .card {
+  //   background-color: #f7f7f9;
+  // }
 
   pre {
-    font-size: 80%;
+    font-size: 75%;
     margin-bottom: 0;
+    overflow: hidden;
   }
 
   .btn-clipboard-parent {
@@ -174,8 +174,8 @@ footer div {
 
   .btn-clipboard {
     position: absolute;
-    top: .5rem;
-    right: .5rem;
+    top: 0rem;
+    right: 0rem;
     z-index: 10;
     display: block;
     padding: .25rem .5rem;

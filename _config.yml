@@ -6,8 +6,6 @@ url: 'https://daniellimberger.de' # the base hostname & protocol for your site
 title: 'Daniel Limberger'
 author: 'Daniel Limberger'
 
-languages: [ 'en', 'de' ]
-
 flickr_user: '131006004@N06'
 flickr_api_key: adb4be93419edab991522b4fa92b7029
 

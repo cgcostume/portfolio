@@ -1,6 +1,6 @@
-<div class="row text-xs-center">
-  <div class="col-xs">
-    <h1>{{ site.data.publications.heading.[page.lang] | escape }}</h1>
+<div class="row text-center">
+  <div class="col-12">
+    <h2>{{ site.data.publications.heading | escape }}</h2>
   </div>
 </div>
 
@@ -17,13 +17,16 @@
   <div class="hidden-sm-up mb-1 col-xs"></div>
   
   <div class="col-lg-10 col-sm-9">
-    <h5>{{ p.title | escape }}</h5>
-    <p>{% for author in p.authors %}{% if author == p.authors.last %}and {% endif %}{{ author }}{% if p.authors.size > 2 and author != p.authors.last %},{% endif %} {% endfor %}<br><span class="text-muted">{{ p.published }} {{ p.date | date: '%Y' }}{% if p.lead_note %}, {{ p.lead_note }}{% endif %}</span></p>
-
+    <h3>{{ p.title | escape }}</h3>
     <p>
-    {% if p.abstract %}<a data-toggle="collapse" href="#abstract-{{ p.key }}">Abstract</a>{% if p.bibtex or p.downloads %}, {% endif %}{% endif %}
-    {% if p.bibtex %}<a data-toggle="collapse" href="#bibtex-{{ p.key }}">BibTeX</a>{% if p.downloads %}, {% endif %}{% endif %}
-    {% if p.downloads %}{% for download in p.downloads %}<a {% if download.video %}class="video-{{ download.video }}" {% endif %}href="{{ download.href }}">{{ download.desc | escape }}</a>{% if download != p.downloads.last %}, {% endif %}{% endfor %}{% endif %}
+      {% for author in p.authors %}{% if author == p.authors.last %}and {% endif %}{{ author }}{% if p.authors.size > 2 and author != p.authors.last %},{% endif %} {% endfor %}
+      <br>
+      {{ p.published }} {{ p.date | date: '%Y' }}{% if p.lead_note %}, {{ p.lead_note }}{% endif %}
+    </p>
+    <p>
+      {% if p.abstract %}<a data-toggle="collapse" href="#abstract-{{ p.key }}">Abstract</a>{% if p.bibtex or p.downloads %}&ensp;|&ensp;{% endif %}{% endif %}
+      {% if p.bibtex %}<a data-toggle="collapse" href="#bibtex-{{ p.key }}">BibTeX</a>{% if p.downloads %}&ensp;|&ensp;{% endif %}{% endif %}
+      {% if p.downloads %}{% for download in p.downloads %}<a {% if download.video %}class="video-{{ download.video }}" {% endif %}href="{{ download.href }}">{{ download.desc | escape }}</a>{% if download != p.downloads.last %}&ensp;|&ensp;{% endif %}{% endfor %}{% endif %}
     </p>
 
     {% if p.abstract %}
@@ -37,7 +40,7 @@
       <div class="btn-clipboard-parent">
         <button type="button" data-clipboard-target="#bibtex-data-{{ p.key }}" class="btn btn-sm btn-clipboard">Copy to Clipboard</button> 
       </div>
-      <div class="card card-block">
+      <div class="card-body">
         <pre id="bibtex-data-{{ p.key }}">{% include /bib/{{ p.bibtex }} %}</pre>
       </div>
     </div>

@@ -1,13 +1,13 @@
 {% assign header = site.data.header %}
 <header>
-  <div class="row text-center text-center">
+  <div class="row text-center">
     <div class="col-md-6 offset-md-3 col-sm-8 offset-sm-2">
-      <img class="rounded img-fluid" {{ site.default_header_img_dimensions }} src="/img/{{ header.picture }}" alt="portrait">
+      <img class="img-fluid" {{ site.default_header_img_dimensions }} src="/img/{{ header.picture }}" alt="portrait">
     </div>
-    <div class="col-md-8 offset-md-2">
-      <h1>{{ header.heading.[page.lang] | escape }}</h1>
-      <p class="lead">{{ header.lead.[page.lang] | escape }}</p>
-      <p class="text-left">{{ header.about.[page.lang] }}</p>
+    <div class="col-md-6 offset-md-3">
+      <h1>{{ header.name }}<br><span class="font-weight-bold">{{ header.surname }}</span></h1>
+      <p class="lead">{{ header.lead }}</p>
+      <p class="text-left">{{ header.about }}</p>
     </div>
   </div>
 </header>
