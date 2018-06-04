@@ -3,6 +3,8 @@
 ---
 @charset "utf-8";
 
+@import "fonts";
+
 // variables override
 
 $brand-color-0: rgb(  0,  85, 124);
@@ -13,12 +15,14 @@ $brand-color-4: rgb(187, 229, 243);
 $brand-color-5: rgb(238, 246, 254);
 
 $code-color: $brand-color-2;
+$body-color: #3d3d3d !default;
+
 
 $enable-flex: true;
 $enable-rounded: true;
 
-$font-family-sans-serif: 'Source Sans Pro', sans-serif;
-$font-family-monospace: 'Source Code Pro', monospace;
+$font-family-sans-serif: 'Roboto';
+$font-family-monospace: 'Source Code Pro';
 
 $headings-font-weight: 300;
 

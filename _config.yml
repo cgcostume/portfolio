@@ -1,15 +1,12 @@
 # Site settings
-timezone: Europe/Berlin
 
 baseurl: '' # the subpath of your site, e.g. /blog/
-url: 'https://cgcostume.github.io' # the base hostname & protocol for your site
+url: 'https://daniellimberger.de' # the base hostname & protocol for your site
 
 title: 'Daniel Limberger'
 author: 'Daniel Limberger'
 
 languages: [ 'en', 'de' ]
-
-google_font_sans_serif: 'Source+Sans+Pro:300'
 
 flickr_user: '131006004@N06'
 flickr_api_key: adb4be93419edab991522b4fa92b7029

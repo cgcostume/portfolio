@@ -1,12 +1,14 @@
-<footer>
-  <div class="container">
-    <div class="row flex-items-xs-center text-xs-center">
-      <div class="col-md-8 col-xs">
-        <small>This website is designed by <a href="https://github.com/cgcostume/cgcostume.github.io">Daniel Limberger</a> and hosted via <a href="https://pages.github.com/">GitHub Pages</a>. Last updated on <a href="https://github.com/cgcostume/cgcostume.github.io/commits/master">{{ site.time | date: "%x" }}</a>. <a href="https://help.github.com/articles/github-privacy-statement/">Privacy</a></small>
-      </div>
-    </div>
-  </div>
+{% assign footer = site.data.footer %}
+{% capture index_url %}{{ site.baseurl }}/{{ page.lang}}/{% endcapture %}
+
+<footer class="text-center">Copyright &copy; 2015&thinsp;&ndash;&thinsp;{{ site.time | date: "%Y" }} Daniel Limberger
+    <br>
+    <small>{{ footer.endangered[page.lang] }}
+        <a href="{{ index_url }}privacy-policy.html">{{ footer.privacy[page.lang] }}</a>
+    </small>
 </footer>
+<data hidden value="{{ site.data.gitrev.revision }}">revision</data>
+
 
 <div id="blueimp-gallery" class="blueimp-gallery js-only">
   <div class="slides">#</div>

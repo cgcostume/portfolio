@@ -74,7 +74,7 @@ function flickr_photosets(photoset_id)
 
 $(document).ready(function() 
 { 
-  new Clipboard('.btn-clipboard');
+  new ClipboardJS('.btn-clipboard');
 
   $('.flickr').on('click', function(event) 
   { 
@@ -115,37 +115,3 @@ function getURLParameter(sParam)
   }
   return null;
 }
-
-{% comment %} honeypot for blocking spam {% endcomment %}
-jQuery.validator.addMethod("empty", function(value, element) {
-  return this.optional(element) || (value.length === 0 || !value.trim());
-}, "Please verify you are not a bot.");
-
-$("#contact-form").validate({
-
-  lang : '{{ page.lang }}',
-
-  rules : {
-    name     : { required : true },
-    nobot    : { maxlength: 0, empty : true }, {% comment %} honeypot for blocking spam {% endcomment %}
-    _replyto : { required : true, email : true },
-    message  : { required : true, maxlength : 1024 } }, 
-
-  errorClass   : 'error form-control-static text-warning',
-  errorElement : 'small',
-
-  highlight : function(label) 
-  { $(label).closest('.form-group').addClass('has-warning'); },
-
-  success : function(label) 
-  { $(label).closest('.form-group').removeClass('has-warning');
-    $(label).remove(); },
-
-  submitHandler : function(form) 
-  { $.ajax(
-    { url  : form.action,
-      type : form.method,
-      data : $(form).serializeJSON()
-    });
-  }
-});

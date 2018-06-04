@@ -1,6 +1,7 @@
 {% assign contact = site.data.contact %}
-<div class="row text-xs-center mb-1">
-  <div class="col-xs">
+
+<div class="row text-center">
+  <div class="col-12">
     <h1>{{ contact.heading.[page.lang] | escape }}</h1>
   </div>
 </div>
@@ -11,11 +12,11 @@
     <label class="col-sm-3 col-form-label text-sm-right text-xs-left">{{ contact.email_label.[page.lang] }}:</label>
     <div class="col-sm-9">
       <p class="form-control-static mb-0"><a href="mailto:{{ contact.email }}">{{ contact.email }}</a></p>
-      <p class="form-control-static text-muted">
+      <small class="form-control-static text-muted">
       {{ contact.alternative_label.[page.lang] }}:  
       {% for email in contact.alternative_emails %}{{ email }}{% if email != contact.alternative_emails.last %}, {% endif %}
       {% endfor %}
-      </p>
+      </small>
     </div>
   </div>
 
