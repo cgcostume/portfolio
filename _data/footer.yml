@@ -1,0 +1,11 @@
+endangered: 
+  en: >
+    This type of website is critically endangered: 
+    static, self-hosted, single-origin, as well as tracking and cookie-free.
+  de: >
+    Dieser Webseitentypus ist vom Aussterben bedroht: 
+    statisch, selbst-gehostet, single-origin, sowie frei von Tracking und Cookies.
+
+privacy:
+  en: Privacy Policy
+  de: Datenschutzerklärung
