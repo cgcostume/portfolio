@@ -3,8 +3,10 @@
   {% assign thumbnail_alt = p.title %}
   {% assign thumbnail_flickr = p.flickr %}
   {% include thumbnail.html %}
-  <h5 class="mt-1">{{ p.title | escape }}</h5>
-  <p>{{ p.caption.[page.lang] }}</p>
-  <p>{% if p.bibtex %}<a data-toggle="modal" href="#bibtex-{{ p.key }}">BibTex</a>{% if p.downloads %}, {% endif %}{% endif %}
-    {% if p.downloads %}{% for download in p.downloads %}<a {% if download.video %}class="video-{{ download.video }}" {% endif %}href="{{ download.href }}">{{ download.desc }}</a>{% if download != p.downloads.last %}, {% endif %}{% endfor %}{% endif %}&nbsp;</p>
+  <h3 class="mt-3">
+    {% if p.href %}<a href="{{ p.href }}">{% endif %}
+    {{ p.title | escape }}
+    {% if p.href %}</a>{% endif %}
+  </h3>   
+  <p>{{ p.caption }}</p>
 </div>

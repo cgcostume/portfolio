@@ -1,11 +1,15 @@
-{% assign footer = site.data.footer %}
-{% capture index_url %}{{ site.baseurl }}/{{ page.lang}}/{% endcapture %}
+{% assign contact = site.data.contact %}
+{% capture index_url %}{{ site.baseurl }}/{% endcapture %}
 
-<footer class="text-center">Copyright &copy; 2015&thinsp;&ndash;&thinsp;{{ site.time | date: "%Y" }} Daniel Limberger
-    <br>
-    <small>{{ footer.endangered[page.lang] }}
-        <a href="{{ index_url }}privacy-policy.html">{{ footer.privacy[page.lang] }}</a>
-    </small>
+<footer>
+  <div class="row text-center">
+    <div class="col-12">
+      <p class="mt-5">
+        Copyright &copy; 2015&thinsp;&ndash;&thinsp;{{ site.time | date: "%Y" }} Daniel Limberger,
+        <a href="{{ index_url }}privacy-policy.html">Privacy Policy</a>
+      </p>
+    </div>
+  </div>
 </footer>
 <data hidden value="{{ site.data.gitrev.revision }}">revision</data>
 

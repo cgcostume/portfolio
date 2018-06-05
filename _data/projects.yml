@@ -1,7 +1,5 @@
 ---
-heading:
-  en: Projects
-  de: Projekte
+heading: Projects
 
 projects:
 
@@ -9,101 +7,74 @@ projects:
   title: glbinding
   date: '2014-05-02'
   status: ongoing
-  caption:
-    en: I initiated, (co-)designed, and continue to maintain this state-of-the-art, cross-platform C++ binding for the OpenGL API.
-    de: I initiated, (co-)designed, and continue to maintain this state-of-the-art, cross-platform C++ binding for the OpenGL API.
+  caption: I initiated, (co-)designed, and continue to maintain this state-of-the-art, cross-platform C++ binding for the OpenGL API.
   authors:
   - Daniel Limberger
   - Willy Scheibel
   - Roland Lux
   thumbnail: 2014-glbinding.jpg
   flickr: '72157650197067747'
-  downloads:
-  - href: https://github.com/hpicgs/glbinding
-    desc: Project
+  href: https://github.com/hpicgs/glbinding
 
 
 - key: globjects2013
   title: globjects
   date: '2013-05-07'
   status: ongoing
-  caption:
-    en: A cross-platform C++ interface for OpenGL's programmable pipeline that I (co-)designed and continue to support.
-    de: A cross-platform C++ interface for OpenGL's programmable pipeline that I (co-)designed and continue to support.
+  caption: A cross-platform C++ interface for OpenGL's programmable pipeline that I (co-)designed and continue to support.
   authors:
   - Willy Scheibel
   - Roland Lux
   - Daniel Limberger
   thumbnail: 2013-globjects.jpg
-  downloads:
-  - href: https://github.com/hpicgs/globjects
-    desc: Project
+  href: https://github.com/hpicgs/globjects
 
 
 - key: osghimmel2011
   title: OSG Himmel
   date: '2011-08-29'
-  caption:
-    en: OSG library featuring dynamic, immersive, textured or date-time and location based, procedural skies.
-    de: OSG library featuring dynamic, immersive, textured or date-time and location based, procedural skies.
+  caption: OSG library featuring dynamic, immersive, textured or date-time and location based, procedural skies.
   authors:
   - Daniel Limberger
   thumbnail: 2011-osghimmel.jpg
-  downloads:
-  - href: https://github.com/hpicgs/osghimmel
-    desc: Project
+  href: https://github.com/hpicgs/osghimmel
 
 
 - key: pathgl2013
   title: Path Tracing Test
   date: '2013-07-05'
-  caption:
-    en: Basic test for progressive path tracing of triangle-based meshes, running on the GPU using OpenGL.
-    de: Basic test for progressive path tracing of triangle-based meshes, running on the GPU using OpenGL.
+  caption: Basic test for progressive path tracing of triangle-based meshes, running on the GPU using OpenGL.
   authors:
   - Daniel Limberger
   thumbnail: 2013-pathgl.jpg
   flickr: '72157648293674913'
-  downloads:
-  - href: https://github.com/cgcostume/pathgl
-    desc: Project
+  href: https://github.com/cgcostume/pathgl
 
 
 - key: gameprogramming2014
   title: Game Programming
   date: '2014-04-02'
-  caption:
-    en: While enjoying co-lecturing multiple Game Programming Seminars, I like editing videos to promote these rare seminars.
-    de: While enjoying co-lecturing multiple Game Programming Seminars, I like editing videos to promote these rare seminars.
+  caption: While enjoying co-lecturing multiple Game Programming Seminars, I like editing videos to promote these rare seminars.
   authors:
   - Daniel Limberger
   thumbnail: 2014-gameprogramming.jpg
-  downloads:
-  - href: https://www.youtube.com/watch?v=wWwM2787v-Q
-    desc: Video
-    video: youtube
+  href: https://www.youtube.com/watch?v=wWwM2787v-Q
 
 
 - key: vissoft2014
   title: Publicity & Web Chair
   date: '2014-08-01'
-  caption:
-    en: Disseminatied conference information and redesigned the Logo and Website of the IEEE Conf. on Software Visualization.
-    de: Disseminatied conference information and redesigned the Logo and Website of the IEEE Conf. on Software Visualization.
+  caption: Disseminatied conference information and redesigned the Logo and Website of the IEEE Conf. on Software Visualization.
   authors:
   - Daniel Limberger
   thumbnail: 2014-vissoft-chair.jpg
-  downloads:
-  - href: http://vissoft.iro.umontreal.ca/
-    desc: Conference Website
+  href: http://vissoft.iro.umontreal.ca/
 
 
 - key: tangible2015
   title: Tangible Treemaps
   date: '2015-08-01'
-  caption:
-    en: We experimented with 3d printed, colored, and labeled 2.5D treemaps by means of feasibility and interaction.
-    de: We experimented with 3d printed, colored, and labeled 2.5D treemaps by means of feasibility and interaction.
+  caption: We experimented with 3d printed, colored, and labeled 2.5D treemaps by means of feasibility and interaction.
   authors:
   - Daniel Limberger
   - Alexander Lehmann
@@ -115,13 +86,8 @@ projects:
 - key: minature2011
   title: Miniature Baby Print
   date: '2011-12-19'
-  caption:
-    en: In 2011 I created my first miniature 3D print of my two month old daughter as a present for her grand parents.
-    de: '2011 habe ich meinen ersten 3D Druck gemacht: meine damals zwei Monate alte Tochter als Geschenk an ihre Großeltern.'
+  caption: In 2011 I created my first miniature 3D print of my two month old daughter as a present for her grand parents.
   authors:
   - Daniel Limberger
   thumbnail: 2011-minature-baby-print.jpg
-  downloads:
-  - href: https://www.youtube.com/watch?v=qmHODSMQMUk
-    desc: Video
-    video: youtube
+  href: https://www.youtube.com/watch?v=qmHODSMQMUk

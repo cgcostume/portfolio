@@ -51,11 +51,12 @@ h1 {
 h2 {
   font-size: $font-size-base * 2.5;
   @extend .text-uppercase;
+  @extend .my-5;
 }
 
 h3 {
   font-size: $font-size-base * 1.25;
-  margin-bottom: 1rem;
+  @extend .mb-3;
 }
 
 .navbar {
@@ -108,32 +109,21 @@ h3 {
     max-width: 60rem;
 }}
 
-section {
+section, footer {
   padding: 4rem 0 0;
 }
 
-tag {
+footer {
+   margin-bottom: 2rem;
+}
+
+.badge {
+  font-weight: $font-weight-normal;
   text-align: right;
 }
 
-form .row {
-  margin-top: 0rem;
-}
-
-footer div {
-  margin-bottom: .5rem;
-}
-
-.tag.top-left {
+.badge.top-left {
   position: absolute;
-}
-
-.partial-radius {
-  border: none;
-  border-top-right-radius: 0;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: $border-radius;
-  border-bottom-right-radius: $border-radius;
 }
 
 .project {
@@ -147,7 +137,7 @@ footer div {
   }
 }
 
-.tag.animate {
+.badge.animate {
   -webkit-animation: sk-scaleout 0.66s infinite ease-in-out;
   animation: sk-scaleout 0.66s infinite ease-in-out;
 }
@@ -187,16 +177,6 @@ footer div {
   }
 }
 
-.form-control-static {
-  line-height: 1.5; 
-}
-
-form #formspree-nobot {
-  // display: none;  // this does not work since validate for no bot cannot process
-  visibility: hidden;
-  height: 0;
-  margin-bottom: 0;
-}
 
 @-webkit-keyframes sk-scaleout {
     0% { opacity: 1.00; }

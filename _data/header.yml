@@ -2,7 +2,10 @@
 picture: daniel-limberger-feb-2016.jpg
 name: Daniel
 surname: Limberger
-lead: Systems Engineer&ensp;|&ensp;Researcher&ensp;|&ensp;Entrepreneur
+leads: 
+- Systems Engineer
+- Researcher
+- Entrepreneur
 about: >
   I'm designing, developing, implementing, and maintaining mostly interactive computer graphics techniques and systems.
   As a PhD student in the <a href='https://hpi.de/doellner/index.html'>Computer Graphics Systems group</a> at the <a href='https://hpi.de/'>Hasso Plattner Institute</a> I study, teach, supervise, and publish in the fields of massive, multivariate data visualization, human-computer interaction, as well as programming and computer graphics fundamentals.

@@ -1,6 +1,6 @@
-<div class="row text-xs-center">
-  <div class="col-xs">
-    <h1>{{ site.data.teaching.heading.[page.lang] | escape }}</h1>
+<div class="row text-center">
+  <div class="col-12">
+    <h2>{{ site.data.teaching.heading | escape }}</h2>
   </div>
 </div>
 
@@ -8,12 +8,13 @@
 {% for t in terms reversed %}
   
   {% capture i %}{% cycle 0, 1 %}{% endcapture %}
-  {% if i == '0' %}<div class="row flex-items-xs-center">{% endif %}
+  {% if i == '0' %}<div class="row justify-content-md-center">{% endif %}
 
-  <div class="col-md-5 {% cycle 'text-md-right text-xs-left', '' %} col-sm-10">
-    <h5>{{ t.term | escape }}</h5>
+  <div class="col-md-5 {% cycle 'text-md-right text-left', '' %} col-sm-10">
+    <h3>{{ t.term | escape }}</h3>
     {% for c in t.courses %}
-    <p>{{ c.course | escape }}<br><span class="text-muted">{{ c.type | escape }}, {{ c.role | escape }}</span></p>
+    <p>{{ c.course | escape }}<br>
+    <small>{{ c.type | escape }}, {{ c.role | escape }}</small></p>
     {% endfor %}
   </div>
   {% if i == '1' || t != terms.first %}</div>{% endif %}

@@ -26,7 +26,6 @@ publications:
     desc: Slides
   - href: https://www.youtube.com/watch?v=t8ibsEl0kAI
     desc: Video
-    popup: youtube
   - href: https://github.com/cgcostume/osghimmel
     desc: Source Code
 
@@ -56,7 +55,6 @@ publications:
     desc: Slides
   - href: https://www.youtube.com/watch?v=AaHJRVQ3Z1E
     desc: Video
-    video: youtube
 
 
 - key: 2014-parameter-painting
@@ -103,7 +101,6 @@ publications:
     desc: Paper
   - href: https://www.youtube.com/watch?v=T65gbk8Ruk4
     desc: Video
-    video: youtube
 
 
 - key: 2015-natural-metaphors

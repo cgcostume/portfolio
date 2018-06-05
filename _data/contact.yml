@@ -1,42 +1,16 @@
-heading:
-  en: Contact
-  de: Kontakt
 
-vcard:
-  file: /vcard.vcf
-  qr_svg: vcard-qr.svg
-  qr_fallback: vcard-qr.png
+vcard: /vcard.vcf
+vcard_label: vCard
 
-vcard_label:
-  label:
-    en: vCard
-    de: vCard
-  download_file:
-    en: Download file
-    de: Datei herunterladen
-  scan_qr_code:
-    en: 'or scan QR code:'
-    de: 'oder QR-Code scannen:'
+emails: 
+- contact@daniellimberger.de
+# - daniel.limberger@hpi.de
+# - limberger@cginternals.com
 
-email: cgdaniel@outlook.com
-email_label:
-  en: E-Mail
-  de: E-Mail
+email_label: E-Mail
 
-alternative_emails:
-- daniel.limberger@hpi.de
-- limberger@cginternals.com
-
-alternative_label:
-  en: Other
-  de: Alternativ
-
-phone:
-  en: +49 163 568 2818
-  de: 0163 568 2818
-phone_label:
-  en: Phone
-  de: Telefon
+phone: +49 163 568 2818
+phone_label: Phone
 
 refs:
 - name: GitHub
@@ -48,6 +22,4 @@ refs:
 - name: Vimeo
   href: https://vimeo.com/user2011768
 
-refs_label:
-  en: More
-  de: Weitere
+refs_label: More
