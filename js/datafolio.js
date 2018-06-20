@@ -18,13 +18,16 @@ function blueimp_gallery(photoset_id)
 {
   blueimp.Gallery(gallery_cache[photoset_id]
     , { useBootstrapModal : false, event : event, container: '#blueimp-gallery' });  
+
 }
 
-// function blueimp_video(photoset_id)
-// {
-//   blueimp.Gallery(gallery_cache[photoset_id]
-//     , { useBootstrapModal : false, event : event, container: '#blueimp-gallery' });  
-// }
+/*
+function blueimp_video(photoset_id)
+{
+  blueimp.Gallery(gallery_cache[photoset_id]
+    , { useBootstrapModal : false, event : event, container: '#blueimp-gallery' });  
+}
+*/
 
 function flickr_photosets(photoset_id) 
 {
