@@ -3,12 +3,9 @@ heading: Talks
 
 talks:
 
-- date: '2017-07-12 00:00:00'
-  title: 'Mixed-Projection Treemaps: A Novel Approach Mixing 2D and 2.5D Treemaps'
-  location: iV 2017, London, UK
-  downloads:
-  - href: https://drive.google.com/file/d/0B9sUajZRijJAY0FhZTBzaVByYm8/view
-    desc: Slides
+- date: '2018-08-14 00:00:00'
+  title: 'Interactive, Height-based Filtering in 2.5D Treemaps'
+  location: VINCI 2018, Växjö, SE
 
 - date: '2017-02-27 00:00:00'
   title: Reducing Visual Complexity in Software Maps using Importance-based Aggregation of Nodes
