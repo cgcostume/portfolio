@@ -3,13 +3,15 @@ vcard: /vcard.vcf
 vcard_label: vCard
 
 emails: 
-- contact@daniellimberger.de
+  - cgdaniel@outlook.com
+# - contact@daniellimberger.de
 # - daniel.limberger@hpi.de
 # - limberger@cginternals.com
 
 email_label: E-Mail
 
-phone: +49 163 568 2818
+# phone:  +49 / 1 63 / 5 68 28 18
+phone:       +49 163 568 2818
 phone_label: Phone
 
 refs:
