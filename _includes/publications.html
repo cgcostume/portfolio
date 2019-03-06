@@ -6,7 +6,10 @@
 
 {% assign publications = site.data.publications.publications | sort:"date" %}
 {% for p in publications reversed %}
-<div class="row">
+{% if p.key == 'separator' %}
+<hr class="row separator" />
+{% else %}
+<div class="row" id="{{ p.key }}">
   
   <div class="col-lg-2 col-sm-3">
     {% assign thumbnail_src = p.thumbnail %}
@@ -19,7 +22,7 @@
   <div class="col-lg-10 col-sm-9">
     <h3>{{ p.title | escape }}</h3>
     <p>
-      {% for author in p.authors %}{% if author == p.authors.last %}and {% endif %}{{ author }}{% if p.authors.size > 2 and author != p.authors.last %},{% endif %} {% endfor %}
+      {% for author in p.authors %}{% if author == p.authors.last and p.authors.size > 1 %}and {% endif %}{{ author }}{% if p.authors.size > 2 and author != p.authors.last %},{% endif %} {% endfor %}
       <br>
       {{ p.published }} {{ p.date | date: '%Y' }}{% if p.lead_note %}, {{ p.lead_note }}{% endif %}
     </p>
@@ -47,5 +50,6 @@
     {% endif %}
   </div>
 </div>
+{% endif %}
 {% endfor %}
 

@@ -1,0 +1,354 @@
+heading: Publications
+publications: 
+
+- key: 2012-sky-phenomena
+  bibtex: led2012-sky-phenomena.bib
+  title: Single-Pass Rendering of Day and Night Sky Phenomena
+  date: '2012-11-01'
+  authors: 
+  - Daniel Müller (Limberger)
+  - Juri Engel
+  - Jürgen Döllner
+  published: Proceedings of the International Workshop on Vision, Modeling, and Visualization
+  abstract:
+    This paper presents techniques for astronomical based, real-time rendering of skies as seen from low altitudes on earth, in respect to location, date, and time. 
+    The techniques allow for composing an atmosphere with sun, multiple cloud layers, moon, bright stars, and Milky Way, into a holistic sky with unprecedented level of detail and diversity. 
+    GPU generated, viewpoint-aligned billboards are used to render stars with approximated color, brightness, and scintillations. 
+    A similar approach is used to synthesize the moon considering lunar phase, earthshine, shading, and lunar eclipses.
+  thumbnail: 2012-vmv-day-and-night-sky.jpg
+  flickr: 72157650186586300
+  downloads: 
+  - href: https://doi.org/10.2312/PE/VMV/VMV12/055-062
+    desc: DOI
+  - href: https://drive.google.com/file/d/0B9sUajZRijJAMi1maGtNOV9GTU0/view
+    desc: Paper
+  - href: https://drive.google.com/file/d/0B9sUajZRijJAeEg2NGtKV3NLWk0/view
+    desc: Slides
+  - href: https://www.youtube.com/watch?v=t8ibsEl0kAI
+    desc: Video
+  - href: https://github.com/cgcostume/osghimmel
+    desc: Source Code
+
+- key: 2013-web-based-swmaps
+  bibtex: lwtd2013-web-based-swmaps.bib
+  title: Interactive Software Maps for Web-Based Source Code Analysis
+  date: '2013-05-01'
+  authors: 
+  - Daniel Limberger
+  - Benjamin Wasty
+  - Jonas Trümper
+  - Jürgen Döllner
+  published: Proceedings of the International Conference on 3D Web Technology
+  abstract:
+    Software maps&mdash;linking 2.5D treemaps, software system structure, and performance indicators&mdash;are commonly used to support informed decision making in software-engineering processes. 
+    In this paper a web-based rendering system for software maps that achieves both fast client-side page load time and interactive frame rates even with large software maps is presented. 
+    The page load time is significantly reduced by efficiently encoding hierarchy and geometry data for the net transport.
+  thumbnail: 2013-web3d-interactive-software-maps.jpg
+  flickr: 72157650179270797
+  downloads: 
+  - href: https://doi.org/10.1145/2466533.2466550
+    desc: DOI
+  - href: https://drive.google.com/file/d/0B9sUajZRijJAYTQwM3NlajlRZEE/view
+    desc: Paper
+  - href: https://drive.google.com/file/d/0B9sUajZRijJAU2ZqbENPN3BFUXc/view
+    desc: Slides
+  - href: https://www.youtube.com/watch?v=AaHJRVQ3Z1E
+    desc: Video
+
+
+- key: 2014-parameter-painting
+  bibtex: ld2014-parameter-painting.bib
+  title: Painting Per-Pixel Parametrization for Interactive Image Filtering
+  date: '2014-08-01'
+  authors: 
+  - Daniel Limberger
+  - Jürgen Döllner
+  published: Expressive Posters
+  abstract:
+    This work presents a photo-editing method that enables per-pixel parameter manipulation of image filtering by means of interactive painting.
+    Predefined or custom image filters are exposed to the user, as a parametrizable composition of image operations. 
+    Brushes, as sequences of actions mapping user inputs (in terms of brush shape, flow, pressure, etc.) to arbitrary functions or convolution operators, are used to draw within the parameter space. 
+    It demonstrates how interactive painting can be used to, e.g., locally tweak parametrization and, furthermore, provides a blueprint for an collaborative photo-editing platform.
+  thumbnail: 2014-expressive-painting-per-pixel-parametrization.jpg
+  flickr: 72157650124474077
+  downloads: 
+  - href: https://drive.google.com/file/d/0B9sUajZRijJAZm1GSHhKdHNvdjg/view
+    desc: Poster
+ 
+
+- key: 2015-oilpaint-stylization
+  bibtex: slkd2015-oilpaint-stylization.bib
+  title: Image Stylization by Oil Paint Filtering Using Color Palettes
+  date: '2015-06-20'
+  authors: 
+  - Amir Semmo
+  - Daniel Limberger
+  - Jan Eric Kyprianidis
+  - Jürgen Döllner
+  published: Proceedings of the International Symposium on Computational Aesthetics
+  lead_note: <a href='http://expressive.richardt.name/2015/Prizes'>Best Paper Award</a>
+  abstract:
+    This paper presents an approach for transforming images into an oil paint look.
+    A color quantization scheme is proposed that performs feature-aware recolorization using the dominant colors of the input image. 
+    In addition, an approach for real-time computation of paint textures is presented that builds on the smoothed structure adapted to the main feature contours of the quantized image. 
+    The stylization technique leads to homogeneous outputs in the color domain and enables creative control over the visual output, such as color adjustments and per-pixel parametrizations by means of interactive painting.
+  thumbnail: 2015-cae-oil-paint-stylization-using-color-palettes.jpg
+  downloads: 
+  - href: https://doi.org/10.2312/exp.20151188
+    desc: DOI
+  - href: https://drive.google.com/file/d/0B9sUajZRijJAcGdHblRfbmdkcXM/view
+    desc: Paper
+  - href: https://www.youtube.com/watch?v=T65gbk8Ruk4
+    desc: Video
+
+
+- key: 2015-natural-metaphors
+  bibtex: wtld2015-natural-metaphors.bib
+  title: Natural Phenomena as Metaphors for Visualization of Trend Data in Interactive Software Maps
+  date: '2015-09-16'
+  authors: 
+  - Hannes Würfel
+  - Matthias Trapp
+  - Daniel Limberger
+  - Jürgen Döllner
+  published: Proceedings of the International Symposium on Computer Graphics and Visual Computing
+  abstract:
+    This work explores the suitability of rendering natural phenomena in Software maps for effective communication of changes as well as trends. 
+    Therefore, Unreal Engine 4 is prototypically used to render Software maps and natural phenomena, such as fire, clouds, smoke, rain, rust, or shininess in real-time. 
+    Trend data is automatically computed by hierarchically accumulating as well as analyzing the underlying software metrics, and is mapped to the additional visual variables.
+  thumbnail: 2015-cgvc-natural-metaphors.jpg
+  flickr: 72157663043933623
+  downloads: 
+  - href: https://doi.org/10.2312/cgvc.20151246
+    desc: DOI
+  - href: https://drive.google.com/file/d/0B9sUajZRijJAMnBIY0VuaTVkdWc/view
+    desc: Paper
+
+
+- key: 2016-oilpaint-stylization
+  bibtex: slkd2016-oilpaint-stylization.bib
+  title: Image Stylization by Interactive Oil Paint Filtering
+  date: '2016-01-09'
+  authors: 
+  - Amir Semmo
+  - Daniel Limberger
+  - Jan Eric Kyprianidis
+  - Jürgen Döllner
+  published: Computers & Graphics
+  lead_note: <a href='http://vcg.isti.cnr.it/cgf/winner.php?year=2016'>CGF Cover Contest 2016 (Runner-up)</a>
+  abstract:
+    An interactive system for transforming images into an oil paint look is presented.
+    First, dominant colors from an input image are derived for feature-aware recolorization and quantization to conform with a global color palette. 
+    Afterwards, it employs non-linear filtering based on the smoothed structure adapted to the main feature contours of the quantized image to synthesize a paint texture in real-time.
+    Furthermore, a generalized brush-based painting interface is introduced that operates within parameter spaces to locally adjust the level of abstraction of the filtering effects.
+  thumbnail: 2016-cgf-interactive-oil-paint-filtering.jpg
+  flickr: 72157652814171753
+  downloads: 
+  - href: https://doi.org/10.1016/j.cag.2015.12.001
+    desc: DOI
+  - href: https://drive.google.com/file/d/0B9sUajZRijJAaGQtQnotbGtISGM/view
+    desc: Paper
+
+
+- key: 2016-progressive-rendering
+  bibtex: ltld2016-multi-frame-sampling.bib
+  title: Progressive Rendering using Multi-frame Sampling
+  date: '2016-04-08'
+  authors: 
+  - Daniel Limberger
+  - Karsten Tausche
+  - Johannes Linke
+  - Jürgen Döllner
+  published: 'GPU Pro 7: Advanced Rendering Techniques'
+  abstract:
+    This chapter presents an approach that distributes sampling over multiple, consecutive frames, and, thereby, enables sampling-based, real-time rendering techniques to be implemented for most graphics hardware and systems in a less complex, straightforward way. 
+    This systematic, extensible schema allows developers to effectively handle the increasing implementation complexity of advanced, sophisticated, real-time rendering techniques, while improving responsiveness and reducing required hardware resources.
+  thumbnail: 2016-gpupro-multi-frame-sampling.jpg
+
+
+- key: 2016-sketchiness-treemaps
+  bibtex: lfhtd2016-sketchiness-treemaps.bib
+  title: Evaluation of Sketchiness as a Visual Variable for 2.5D Treemaps
+  date: '2016-07-19'
+  authors: 
+  - Daniel Limberger
+  - Carolin Fiedler
+  - Sebastian Hahn
+  - Matthias Trapp
+  - Jürgen Döllner
+  published: Proceedings of the International Conference on Information Visualization
+  abstract:
+    Treemaps serve as generic, effective tools to display, explore, and analyze multi-variate tree data in a scalable, interactive, and consistent way
+    In this paper, we discuss and evaluate sketchiness as visual variable of 2.5D treemaps. 
+    Sketchy rendering techniques allow us to map data, e.g., about uncertainty, imprecision, or vagueness, independently from mappings to other visual variables such as size, color, and height. 
+    To this end, we present a design space for sketchy rendering for 2.5D treemaps and corresponding implementation of a real-time sketchy rendering technique.
+    The results of three user studies carried out indicate that sketchiness is a promising candidate for an independent visual variable for 2.5D treemaps, in particular to map ordinal data with a small range such as data that qualifies map items, it shows no strong interference with other visual variables such as color and height due to the regular gestalt of blocks and, hence, allows us to extend the expressiveness of 2.5D treemaps.
+  thumbnail: 2016-iv-sketchiness-in-treemaps.jpg
+  downloads: 
+  - href: https://doi.org/10.1109/IV.2016.61
+    desc: DOI
+  - href: https://drive.google.com/file/d/0B9sUajZRijJAVFN3Q195aTJRcjg/view
+    desc: Paper
+
+
+- key: 2016-multi-frame-sampling
+  bibtex: ld2016-multi-frame-sampling.bib
+  title: Real-time Rendering of High-quality Effects using Multi-frame Sampling
+  date: '2016-08-01'
+  authors: 
+  - Daniel Limberger
+  - Jürgen Döllner
+  published: ACM SIGGRAPH Posters
+  abstract:
+    In a rendering environment of comparatively sparse interaction, e.g., digital production tools, image synthesis and its quality do not have to be constrained to single frames.
+    This work analyzes strategies for highly economically rendering of state-of-the-art rendering effects using progressive multi-frame sampling in real-time.
+    By distributing and accumulating samples of sampling-based rendering techniques (e.g., anti-aliasing, orderindependent transparency, depth-of-field and shadowing, ambient occlusion, screen-space reflections) over multiple frames, images of very high quality can be synthesized with unequaled resource-efficiency.
+  thumbnail: 2016-siggraph-multi-frame-sampling.jpg
+  downloads: 
+  - href: https://drive.google.com/file/d/0B9sUajZRijJAN2VfNjBTcll0VTA/view
+    desc: Poster
+  - href: https://github.com/cgcostume/multiframesampling
+    desc: Source Code
+  - href: http://cgcostume.github.io/mfsv/
+    desc: Demo
+
+
+- key: 2016-declarative-treemaps
+  bibtex: lsld2016-declarative-treemaps.bib
+  title: Dynamic 2.5D Treemaps using Declarative 3D on the Web
+  date: '2016-08-01'
+  authors: 
+  - Daniel Limberger
+  - Willy Scheibel
+  - Stefan Lemme
+  - Jürgen Döllner
+  published: Proceedings of the International Conference on 3D Web Technology
+  abstract:
+    The 2.5D treemap represents a general purpose visualization technique to map multi-variate hierarchical data in a scalable, interactive, and consistent way used in a number of application fields.
+    In this paper, we explore the capabilities of Declarative 3D for the web-based implementation of 2.5D treemap clients.
+    Particularly, we investigate how X3DOM and XML3D can be used to implement clients with equivalent features that interactively display 2.5D treemaps with dynamic mapping of attributes.
+    We also show a first step towards a glTF-based implementation. These approaches are benchmarked focusing on their interaction capabilities with respect to rendering and speed of dynamic data mapping.
+    We discuss the results for our representative example of a complex 3D interactive visualization technique and summerize recommendations for improvements towards operational web clients.
+  thumbnail: 2016-web3d-declarative-treemaps.jpg
+  downloads: 
+  - href: https://doi.org/10.1145/2945292.2945313
+    desc: DOI
+  - href: https://drive.google.com/file/d/0B9sUajZRijJAQ2JjTWJCUjgtbzA/view
+    desc: Paper
+  - href: https://drive.google.com/file/d/0B9sUajZRijJAUXp2SndPTktzdjQ/view
+    desc: Slides
+  - href: https://github.com/cgcostume/web3d-treemaps
+    desc: Source Code
+  - href: http://cgcostume.github.io/web3d-treemaps/
+    desc: Demo
+
+
+- key: 2017-aggregation-swmaps
+  bibtex: lshd2017-aggregation.bib
+  title: Reducing Visual Complexity in Software Maps using Importance-based Aggregation of Nodes
+  date: '2017-02-27'
+  authors: 
+  - Daniel Limberger
+  - Willy Scheibel
+  - Sebastian Hahn
+  - Jürgen Döllner
+  published: Proceedings of the International Conference on Information Visualization Theory and Applications
+  abstract: 
+    Depicting massive software system data using treemaps can result in visual clutter and increased cognitive load.
+    This paper introduces an adaptive level-of-detail (LoD) technique that uses scoring for interactive aggregation on a per-node basis.
+    The scoring approximates importance by degree-of-interest measures as well as screen and user-interaction scores.
+    The technique adheres to established aggregation guidelines and was evaluated by means of two user studies.
+    The first investigates task completion time in visual search.
+    The second evaluates the readability of the presented nesting level contouring for aggregates.
+    With the adaptive LoD technique software maps allow for multi-resolution depictions of software system information while facilitating annotation and efficient identification of important nodes.
+  thumbnail: 2017-ivapp-aggregation-swmaps.jpg
+  downloads: 
+  - href: https://doi.org/10.5220/0006267501760185
+    desc: DOI
+  - href: https://drive.google.com/file/d/0B9sUajZRijJAYmN0Y09EQkplNzA/view
+    desc: Paper
+  - href: https://drive.google.com/file/d/0B9sUajZRijJAMTJqSnJwQTZhbnc/view
+    desc: Slides
+
+    
+- key: 2017-web3d-progressive
+  bibtex: lpkd2017-progressive.bib
+  title: Progressive High-Quality Rendering for Interactive Information Cartography using WebGL
+  date: '2017-06-05'
+  authors: 
+  - Daniel Limberger
+  - Marcel Pursche
+  - Jan Klimke
+  - Jürgen Döllner
+  published: Proceedings of the International Conference on 3D Web Technology
+  lead_note: <a href='https://twitter.com/Web3DConsortium/status/872336310027079683/photo/1'>Best Paper Award</a>
+  abstract: 
+    Information cartography services provided via web-based clients using real-time rendering do not always necessitate a continuous stream of updates in the visual display.
+    This paper shows how progressive rendering by means of multi-frame sampling and frame accumulation can introduce high-quality visual effects using robust and straightforward implementations.
+    For it, (1) a suitable rendering loop is described, (2) WebGL limitations are discussed, and (3) an adaption of THREE.js featuring progressive anti-aliasing, screen-space ambient occlusion, and depth of field is detailed.
+    Furthermore, sampling strategies are discussed and rendering performance is evaluated, emphasizing the low per-frame costs of this approach.
+  thumbnail: 2017-web3d-progressive.jpg
+  downloads: 
+  - href: https://doi.org/10.1145/3055624.3075951
+    desc: DOI
+  - href: https://drive.google.com/file/d/0B9sUajZRijJAT1k0dy1PSjZLeXM/view
+    desc: Paper
+
+
+- key: 2017-iv-mixed-projection
+  title: 'Mixed-Projection Treemaps: A Novel Approach Mixing 2D and 2.5D Treemaps'
+  date: '2017-07-11'
+  authors: 
+  - Daniel Limberger
+  - Willy Scheibel
+  - Matthias Trapp
+  - Jürgen Döllner
+  published: Proceedings of the International Conference on Information Visualization
+  abstract:
+    This paper presents a novel technique for combining 2D and 2.5D treemaps using multi-perspective views to leverage the advantages of both treemap types.
+    It enables a new form of overview+detail visualization for tree-structured data and contributes new concepts for real-time rendering of and interaction with treemaps.
+    The technique operates by tilting the graphical elements representing inner nodes using affine transformations and animated state transitions.
+    We explain how to mix orthogonal and perspective projections within a single treemap.
+    Finally, we show application examples that benefit from the reduced interaction overhead.
+  thumbnail: 2017-iv-mixed-projection.jpg
+  downloads: 
+  - href: https://drive.google.com/file/d/0B9sUajZRijJAM0Z0N2ZoSUVxb28/view
+    desc: Paper
+  - href: https://drive.google.com/file/d/0B9sUajZRijJAY0FhZTBzaVByYm8/view
+    desc: Slides
+
+
+- key: 2018-iv-open-ll
+  title: 'OpenLL: an API for Dynamic 2D and 3D Labeling'
+  date: '2018-07-10'
+  authors: 
+  - Daniel Limberger
+  - Anne Gropler
+  - Stefan Buschmann
+  - Jürgen Döllner
+  - Benjamin Wasty
+  published: Proceedings of the International Conference on Information Visualization
+  abstract:
+      Today's rendering APIs lack robust functionality and capabilities for dynamic, real-time text rendering and labeling, which represent key requirements for 3D application design in many fields.
+      As a consequence, most rendering systems are barely or not at all equipped with respective capabilities.
+      This paper drafts the unified text rendering and labeling API OpenLL intended to complement common rendering APIs, frameworks, and transmission formats.
+      For it, various uses of static and dynamic placement of labels are showcased and a text interaction technique is presented.
+      Furthermore, API design constraints with respect to state-of-the-art text rendering techniques are discussed.
+      This contribution is intended to initiate a community-driven specification of a free and open label library.
+  thumbnail: 2018-iv-open-ll.jpg
+
+
+- key: 2018-vinci-reference
+  title: 'Interactive, Height-based Filtering in 2.5D Treemaps'
+  date: '2018-08-10'
+  authors: 
+  - Daniel Limberger
+  - Matthias Trapp
+  - Jürgen Döllner
+  published: Proceedings of the International Symposium on Visual Information Communication and Interaction
+  abstract:
+      The 2.5D treemap facilitates interactive exploration of multivariate data. 
+      It includes height as a visual variable for additional information display and enables exploration of correlations within mapped attributes. 
+      In this paper techniques for the visual display of a height reference for interactive modification from within the visualization are introduced.
+      Results of a preliminary user study are presented and potential benefits for improved performance, i.e., precision and speed, of identification, comparison, filtering, and selection tasks are discussed.
+  thumbnail: 2018-vinci-reference.jpg

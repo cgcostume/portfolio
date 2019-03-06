@@ -1,12 +1,70 @@
 heading: Publications
 publications: 
 
-- key: 2012-sky-phenomena
-  bibtex: led2012-sky-phenomena.bib
+
+- key: 2009-bt-pencil-synthesis
+  title: Computergenerierte Bleistiftzeichnungen von 3D-Stadtmodellen
+  date: '2009-11-01'
+  authors: 
+  - Daniel Müller (now Limberger)
+  published: Bachelor's Thesis in IT-Systems Engineering
+  abstract:
+    This work summarizes techniques for 3D-image synthesis of pencil or crayon drawings of virtual 3D-city-models in real-time.
+    The document was written and is available in German language only (sorry).
+    <br><br>
+    Diese Arbeit befasst sich mit der Erstellung von Bleistiftzeichnungen dreidimensionaler Modelle in Echtzeit und prüft die Anwendbarkeit auf virtuelle 3D-Stadtmodelle. 
+    Bisherige Verfahren gehen kaum auf stilprägende subjektive Einflüsse der Zeichner ein. 
+    So werden stilrelevante Maßnahmen wie weiche Schatten und Lichteinflüsse durch Umgebungsverdeckung häufig vernachlässigt. 
+    Nach einer kurzen Zusammenfassung bisheriger Ansätze zur Nachahmung von Bleistiftzeichnungen, werden effiziente Implementierung für Konturdarstellung und Krümmungsapproximation zur Schraffur vorgestellt. 
+    Da die meisten Berechnungen diskretisiert im Bildraum vorgenommen werden, entstehen beim Rendern komplexer 3D-Stadtmodelle störende, mit der Tiefe zunehmende Artefakte. 
+    Zur Abschwächung dieser Störfaktoren werden praktische Lösungen wie stilkonforme Tiefenfokussierung diskutiert.
+  thumbnail: 2009-bt-pencil-synthesis.jpg
+  flickr: 72157690157643673
+  downloads: 
+  - href: resources/2009 – Mueller (now Limberger) – Computergenerierte Bleistiftzeichnungen von 3D-Stadtmodellen.pdf
+    desc: Bachelor's Thesis [de]
+
+
+- key: 2012-mt-sky-rendering
+  title: Photorealistisches Rendering atmosphärischer Effekte in geovirtuellen 3D-Umgebungen in Echtzeit
+  date: '2012-09-06'
+  authors: 
+  - Daniel Müller (now Limberger)
+  published: Master's Thesis in IT-Systems Engineering
+  abstract:
+    The document was written and is available in German language only (sorry).
+    <br><br>
+    In this work we present a system for image-synthesis of atmospheric effects in virtual 3d environments.
+    It allows realtime rendering of dynamic, high quality environments for background composition (background scenery) for a variety of applications not only in video-games and simulators
+    (e.g., Flight- or vehicle-simulators), but also for architectural and historical visualizations.
+    To ensure ease of integration, only the background associated phenomena are taken into account. 
+    Thereby a texture-based, and a simulation-based approach are presented. 
+    The texture-based approach targets the imitation of any environment and uses wellknown, texture-based methods with hardly any creative limitations. 
+    They are expandable and ideal for applications where, in resprect to the rendering performance, only low capacities can be allocated.
+    The simulation-based, astrophysical approach, in contrast, is based on astronomical algorithms and astrophysical observations.
+    The new models and methods used within this approach, provide the conceptual focus of this work. 
+    Both approaches are optimized for rendering dynamic day-night cycles within a single rendering pass and without subsequent processing. 
+    They are integrated in a large representative rendering system (OpenSceneGraph). 
+    Detailed performance measurements in different scenarios and quality levels show that the system has little effect on overall rendering-speed. 
+  thumbnail: 2012-mt-sky-rendering.jpg
+  flickr: 72157650186586300
+  downloads: 
+  - href: resources/2012 – Mueller (now Limberger) – Photorealistisches Rendering atmosphaerischer Effekte in geovirtuellen 3D-Umgebungen in Echtzeit.pdf
+    desc: Master's Thesis [de]
+  - href: https://github.com/hpicgs/osghimmel
+    desc: Source Code
+
+
+- key: separator
+  date: '2012-10-01'
+
+
+- key: 2012-vmv-sky-phenomena
+  bibtex: limberger2012-sky-phenomena.bib
   title: Single-Pass Rendering of Day and Night Sky Phenomena
   date: '2012-11-01'
   authors: 
-  - Daniel Müller (Limberger)
+  - Daniel Müller (now Limberger)
   - Juri Engel
   - Jürgen Döllner
   published: Proceedings of the International Workshop on Vision, Modeling, and Visualization
@@ -20,18 +78,17 @@ publications:
   downloads: 
   - href: https://doi.org/10.2312/PE/VMV/VMV12/055-062
     desc: DOI
-  - href: https://drive.google.com/file/d/0B9sUajZRijJAMi1maGtNOV9GTU0/view
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/287031803_Single-pass_Rendering_of_Day_and_Night_Sky_Phenomena/links/58db7a24a6fdccca1c9488b3
     desc: Paper
-  - href: https://drive.google.com/file/d/0B9sUajZRijJAeEg2NGtKV3NLWk0/view
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/331556201_Single-pass_Rendering_of_Day_and_Night_Sky_Phenomena/links/5c7feeb5299bf1268d403c6d
     desc: Slides
   - href: https://www.youtube.com/watch?v=t8ibsEl0kAI
     desc: Video
   - href: https://github.com/cgcostume/osghimmel
     desc: Source Code
 
-
-- key: 2013-web-based-swmaps
-  bibtex: lwtd2013-web-based-swmaps.bib
+- key: 2013-web3d-web-based-swmaps
+  bibtex: limberger2013-web-based-swmaps.bib
   title: Interactive Software Maps for Web-Based Source Code Analysis
   date: '2013-05-01'
   authors: 
@@ -49,16 +106,16 @@ publications:
   downloads: 
   - href: https://doi.org/10.1145/2466533.2466550
     desc: DOI
-  - href: https://drive.google.com/file/d/0B9sUajZRijJAYTQwM3NlajlRZEE/view
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/262408378_Interactive_software_maps_for_web-based_source_code_analysis/links/589dbde3aca272046aa8ffa7
     desc: Paper
-  - href: https://drive.google.com/file/d/0B9sUajZRijJAU2ZqbENPN3BFUXc/view
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/331556350_Interactive_Software_Maps_for_Web-based_Source_Code_Analysis/links/5c7fed69458515831f8aff6a
     desc: Slides
   - href: https://www.youtube.com/watch?v=AaHJRVQ3Z1E
     desc: Video
 
 
-- key: 2014-parameter-painting
-  bibtex: ld2014-parameter-painting.bib
+- key: 2014-expressive-parameter-painting
+  bibtex: limberger2014-parameter-painting.bib
   title: Painting Per-Pixel Parametrization for Interactive Image Filtering
   date: '2014-08-01'
   authors: 
@@ -73,12 +130,12 @@ publications:
   thumbnail: 2014-expressive-painting-per-pixel-parametrization.jpg
   flickr: 72157650124474077
   downloads: 
-  - href: https://drive.google.com/file/d/0B9sUajZRijJAZm1GSHhKdHNvdjg/view
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/313549904_Painting_Per-Pixel_Parametrization_for_Interactive_Image_Filtering/links/589dc04caca272046aa9042e
     desc: Poster
  
 
-- key: 2015-oilpaint-stylization
-  bibtex: slkd2015-oilpaint-stylization.bib
+- key: 2015-cae-oilpaint-stylization
+  bibtex: semmo2015-oilpaint-stylization.bib
   title: Image Stylization by Oil Paint Filtering Using Color Palettes
   date: '2015-06-20'
   authors: 
@@ -97,14 +154,14 @@ publications:
   downloads: 
   - href: https://doi.org/10.2312/exp.20151188
     desc: DOI
-  - href: https://drive.google.com/file/d/0B9sUajZRijJAcGdHblRfbmdkcXM/view
+  - href: https://www.researchgate.net/profile/Amir_Semmo/publication/277531015_Image_Stylization_by_Oil_Paint_Filtering_using_Color_Palettes/links/556c35b208aeccd7773a2f85
     desc: Paper
   - href: https://www.youtube.com/watch?v=T65gbk8Ruk4
     desc: Video
 
 
-- key: 2015-natural-metaphors
-  bibtex: wtld2015-natural-metaphors.bib
+- key: 2015-cgvc-natural-metaphors
+  bibtex: wuerfel2015-natural-metaphors.bib
   title: Natural Phenomena as Metaphors for Visualization of Trend Data in Interactive Software Maps
   date: '2015-09-16'
   authors: 
@@ -122,12 +179,12 @@ publications:
   downloads: 
   - href: https://doi.org/10.2312/cgvc.20151246
     desc: DOI
-  - href: https://drive.google.com/file/d/0B9sUajZRijJAMnBIY0VuaTVkdWc/view
+  - href: https://www.researchgate.net/profile/Matthias_Trapp/publication/281347949_Natural_Phenomena_as_Metaphors_for_Visualization_of_Trend_Data_in_Interactive_Software_Maps/links/55ffbd6508aeafc8ac8ba169
     desc: Paper
 
 
-- key: 2016-oilpaint-stylization
-  bibtex: slkd2016-oilpaint-stylization.bib
+- key: 2016-cgf-oilpaint-stylization
+  bibtex: semmo2016-oilpaint-stylization.bib
   title: Image Stylization by Interactive Oil Paint Filtering
   date: '2016-01-09'
   authors: 
@@ -147,12 +204,12 @@ publications:
   downloads: 
   - href: https://doi.org/10.1016/j.cag.2015.12.001
     desc: DOI
-  - href: https://drive.google.com/file/d/0B9sUajZRijJAaGQtQnotbGtISGM/view
+  - href: https://www.researchgate.net/profile/Amir_Semmo/publication/289694790_Image_stylization_by_interactive_oil_paint_filtering/links/5a38e88a458515919e727ede
     desc: Paper
 
 
-- key: 2016-progressive-rendering
-  bibtex: ltld2016-multi-frame-sampling.bib
+- key: 2016-gpupro-multi-frame-sampling
+  bibtex: limberger2016-multi-frame-sampling-pro.bib
   title: Progressive Rendering using Multi-frame Sampling
   date: '2016-04-08'
   authors: 
@@ -167,8 +224,8 @@ publications:
   thumbnail: 2016-gpupro-multi-frame-sampling.jpg
 
 
-- key: 2016-sketchiness-treemaps
-  bibtex: lfhtd2016-sketchiness-treemaps.bib
+- key: 2016-iv-sketchiness-treemaps
+  bibtex: limberger2016-sketchiness-treemaps.bib
   title: Evaluation of Sketchiness as a Visual Variable for 2.5D Treemaps
   date: '2016-07-19'
   authors: 
@@ -188,12 +245,12 @@ publications:
   downloads: 
   - href: https://doi.org/10.1109/IV.2016.61
     desc: DOI
-  - href: https://drive.google.com/file/d/0B9sUajZRijJAVFN3Q195aTJRcjg/view
+  - href: https://www.researchgate.net/profile/Matthias_Trapp/publication/301682636_Evaluation_of_Sketchiness_as_a_Visual_Variable_for_25D_Treemaps/links/5addc0c7458515c60f5f7065
     desc: Paper
 
 
-- key: 2016-multi-frame-sampling
-  bibtex: ld2016-multi-frame-sampling.bib
+- key: 2016-siggrapg-multi-frame-sampling
+  bibtex: limberger2016-multi-frame-sampling.bib
   title: Real-time Rendering of High-quality Effects using Multi-frame Sampling
   date: '2016-08-01'
   authors: 
@@ -206,7 +263,7 @@ publications:
     By distributing and accumulating samples of sampling-based rendering techniques (e.g., anti-aliasing, orderindependent transparency, depth-of-field and shadowing, ambient occlusion, screen-space reflections) over multiple frames, images of very high quality can be synthesized with unequaled resource-efficiency.
   thumbnail: 2016-siggraph-multi-frame-sampling.jpg
   downloads: 
-  - href: https://drive.google.com/file/d/0B9sUajZRijJAN2VfNjBTcll0VTA/view
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/305082223_Real-time_rendering_of_high-quality_effects_using_multi-frame_sampling/links/5c7feab2458515831f8afeb8
     desc: Poster
   - href: https://github.com/cgcostume/multiframesampling
     desc: Source Code
@@ -214,8 +271,8 @@ publications:
     desc: Demo
 
 
-- key: 2016-declarative-treemaps
-  bibtex: lsld2016-declarative-treemaps.bib
+- key: 2016-web3d-declarative-treemaps
+  bibtex: limberger2016-declarative-treemaps.bib
   title: Dynamic 2.5D Treemaps using Declarative 3D on the Web
   date: '2016-08-01'
   authors: 
@@ -234,9 +291,9 @@ publications:
   downloads: 
   - href: https://doi.org/10.1145/2945292.2945313
     desc: DOI
-  - href: https://drive.google.com/file/d/0B9sUajZRijJAQ2JjTWJCUjgtbzA/view
+  - href: https://www.researchgate.net/profile/Willy_Scheibel/publication/305420771_Dynamic_25D_treemaps_using_declarative_3D_on_the_web/links/5b2cb47b4585150d23c1f3ea
     desc: Paper
-  - href: https://drive.google.com/file/d/0B9sUajZRijJAUXp2SndPTktzdjQ/view
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/331407662_Dynamic_25D_Treemaps_using_Declarative_3D_on_the_Web/links/5c77e4fa299bf1268d2c7e74
     desc: Slides
   - href: https://github.com/cgcostume/web3d-treemaps
     desc: Source Code
@@ -244,8 +301,8 @@ publications:
     desc: Demo
 
 
-- key: 2017-aggregation-swmaps
-  bibtex: lshd2017-aggregation.bib
+- key: 2017-ivapp-aggregation-swmaps
+  bibtex: limberger2017-aggregation.bib
   title: Reducing Visual Complexity in Software Maps using Importance-based Aggregation of Nodes
   date: '2017-02-27'
   authors: 
@@ -266,14 +323,14 @@ publications:
   downloads: 
   - href: https://doi.org/10.5220/0006267501760185
     desc: DOI
-  - href: https://drive.google.com/file/d/0B9sUajZRijJAYmN0Y09EQkplNzA/view
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/313377340_Reducing_Visual_Complexity_in_Software_Maps_using_Importance-based_Aggregation_of_Nodes/links/589dbd3845851598bab4014b
     desc: Paper
-  - href: https://drive.google.com/file/d/0B9sUajZRijJAMTJqSnJwQTZhbnc/view
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/331407406_Reducing_Visual_Complexity_in_Software_Maps_using_Importance-based_Aggregation_of_Nodes/links/5c77deb8299bf1268d2c7c7b
     desc: Slides
 
     
 - key: 2017-web3d-progressive
-  bibtex: lpkd2017-progressive.bib
+  bibtex: limberger2017-progressive.bib
   title: Progressive High-Quality Rendering for Interactive Information Cartography using WebGL
   date: '2017-06-05'
   authors: 
@@ -292,11 +349,12 @@ publications:
   downloads: 
   - href: https://doi.org/10.1145/3055624.3075951
     desc: DOI
-  - href: https://drive.google.com/file/d/0B9sUajZRijJAT1k0dy1PSjZLeXM/view
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/316999882_Progressive_High-Quality_Rendering_for_Interactive_Information_Cartography_using_WebGL/links/5b72cc00a6fdcc87df79e788
     desc: Paper
 
 
 - key: 2017-iv-mixed-projection
+  bibtex: limberger2017-mixed.bib
   title: 'Mixed-Projection Treemaps: A Novel Approach Mixing 2D and 2.5D Treemaps'
   date: '2017-07-11'
   authors: 
@@ -313,13 +371,38 @@ publications:
     Finally, we show application examples that benefit from the reduced interaction overhead.
   thumbnail: 2017-iv-mixed-projection.jpg
   downloads: 
-  - href: https://drive.google.com/file/d/0B9sUajZRijJAM0Z0N2ZoSUVxb28/view
+  - href: https://doi.org/10.1109/iV.2017.67
+    desc: DOI
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/316999964_Mixed-Projection_Treemaps_A_Novel_Approach_Mixing_2D_and_25D_Treemaps/links/5ab28be2aca272171001b92a
     desc: Paper
-  - href: https://drive.google.com/file/d/0B9sUajZRijJAY0FhZTBzaVByYm8/view
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/330106367_Mixed-Projection_TreemapsA_Novel_Approach_Mixing_2D_and_3D_Treemaps/links/5c77be80458515831f75e32b
     desc: Slides
 
 
+- key: 2018-patent-lod-treemaps
+  bibtex: limberger2018-lod-treemaps.bib
+  title: 'Interactive, Adaptive Level-of-Detail in 2.5D Treemaps'
+  date: '2018-07-10'
+  authors: 
+  - Daniel Limberger
+  published: United States Patent and Trademark Office
+  abstract:
+      An aggregation approach allows for a dynamic, interactive, adaptive level-of-detail for 2D, 2.5D, and 3D treemaps for visualization of complex information. 
+      For example, the 2.5D treemap visualization concept is extended by providing adaptive identification of aggregates by means of an interactive node scoring approach based on contextual relevance and various other task, interaction, visibility, and/or performance specific criteria. 
+      For the resulting mapping and rendering, a per-frame aggregation of blocks and accumulation of those attributes mapped to visual variables (context) is described. 
+      Since every embodiment is also targeted for dynamic, interactive visual display of 2.5D treemaps, the rendering is designed to be capable for execution in real-time.
+      Visual preservation of important information is conveyed by hierarchy elements and their mapped attributes (nodes-of-interest) as well as compliance to known aggregation guidelines including visualization of aggregated color and height information, visualization of aggregates that are discernible from non-aggregates, and visualization of outliers within aggregates. 
+      Applications include visualization of software maps, business intelligence data, file hierarchies for storage devices, and the like.
+  thumbnail: 2018-patent-lod-treemaps.jpg
+  downloads: 
+  - href: https://patents.google.com/patent/US9953443B2/en
+    desc: Patent
+  - href: https://globaldossier.uspto.gov/#/result/patent/US/9953443/1
+    desc: USPTO
+
+
 - key: 2018-iv-open-ll
+  bibtex: limberger2018-openll.bib
   title: 'OpenLL: an API for Dynamic 2D and 3D Labeling'
   date: '2018-07-10'
   authors: 
@@ -337,9 +420,17 @@ publications:
       Furthermore, API design constraints with respect to state-of-the-art text rendering techniques are discussed.
       This contribution is intended to initiate a community-driven specification of a free and open label library.
   thumbnail: 2018-iv-open-ll.jpg
+  downloads: 
+  - href: https://doi.org/10.1109/iV.2018.00039
+    desc: DOI
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/327017928_OpenLL_an_API_for_Dynamic_2D_and_3D_Labeling/links/5b72c86845851546c902c9f1
+    desc: Paper
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/331400327_OpenLL_an_API_for_Dynamic_2D_and_3D_Labeling/links/5c77cc29458515831f75e5e4
+    desc: Slides
 
 
 - key: 2018-vinci-reference
+  bibtex: limberger2018-reference.bib
   title: 'Interactive, Height-based Filtering in 2.5D Treemaps'
   date: '2018-08-10'
   authors: 
@@ -353,3 +444,35 @@ publications:
       In this paper techniques for the visual display of a height reference for interactive modification from within the visualization are introduced.
       Results of a preliminary user study are presented and potential benefits for improved performance, i.e., precision and speed, of identification, comparison, filtering, and selection tasks are discussed.
   thumbnail: 2018-vinci-reference.jpg
+  downloads: 
+  - href: https://doi.org/10.1145/3231622.3231638
+    desc: DOI
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/326728307_Interactive_Height-Based_Filtering_in_25D_Treemaps/links/5b72cb95a6fdcc87df79e161
+    desc: Paper
+  - href: https://www.researchgate.net/profile/Matthias_Trapp/publication/330106559_Interactive_Height-based_Filtering_in_25D_Treemaps/links/5c2df2f4299bf12be3aaf161
+    desc: Slides
+
+
+- key: 2019-ivapp-insitu
+  title: 'In-Situ Comparison for 2.5D Treemaps'
+  date: '2019-02-25'
+  authors: 
+  - Daniel Limberger
+  - Matthias Trapp
+  - Jürgen Döllner
+  published: Proceedings of the International Conference on Information Visualization Theory and Applications
+  abstract:
+      2.5D treemaps can be used to visualize tree-structured data using the height dimension for additional information display. 
+      For tree-structured and time-variant data though, changes or variants in the data are difficult to visualize. 
+      This paper presents an in-situ approach to depict differences between two versions (original and comparative state) of a data set, e.g., metrics of different revisions of a software system, in a single 2.5D treemap.
+      Multiple geometry variants for the in-situ representation of individual nodes, especially concerning height, area, and color, are presented and discussed. 
+      Finally, a preliminary study for the simultaneous change of attributes in height and area is described, hinting that arrow pattern help to clarify reading direction.
+  thumbnail: 2019-ivapp-insitu.jpg
+  downloads: 
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/330195762_In-Situ_Comparison_for_25D_Treemaps/links/5c77b7d592851c695046e613
+    desc: Paper
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/331399508_In-Situ_Comparison_for_25D_Treemaps/links/5c77b9a3a6fdcc4715a1c58c
+    desc: Poster
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/331400019_In-Situ_Comparison_for_25D_Treemaps_-_Templates/data/5c77c029458515831f75e389/2019-Limberger-In-Situ-Comparison-for-25D-Treemaps-Templates.pdf
+    desc: Template Card
+  
