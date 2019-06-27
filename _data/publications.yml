@@ -379,6 +379,22 @@ publications:
     desc: Slides
 
 
+- key: 2018-gpu360-multi-frame-sampling
+  bibtex: limberger2018-multi-frame-sampling-pro.bib
+  title: Progressive Rendering using Multi-frame Sampling
+  date: '2018-07-10'
+  authors: 
+  - Daniel Limberger
+  - Karsten Tausche
+  - Johannes Linke
+  - Jürgen Döllner
+  published: 'GPU Pro 360 Guide to Rendering'
+  abstract:
+    This chapter presents an approach that distributes sampling over multiple, consecutive frames, and, thereby, enables sampling-based, real-time rendering techniques to be implemented for most graphics hardware and systems in a less complex, straightforward way. 
+    This systematic, extensible schema allows developers to effectively handle the increasing implementation complexity of advanced, sophisticated, real-time rendering techniques, while improving responsiveness and reducing required hardware resources.
+  thumbnail: 2018-gpu360-multi-frame-sampling.jpg
+
+
 - key: 2018-patent-lod-treemaps
   bibtex: limberger2018-lod-treemaps.bib
   title: 'Interactive, Adaptive Level-of-Detail in 2.5D Treemaps'
