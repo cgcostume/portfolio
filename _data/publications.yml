@@ -381,7 +381,7 @@ publications:
 
 - key: 2018-gpu360-multi-frame-sampling
   bibtex: limberger2018-multi-frame-sampling-pro.bib
-  title: Progressive Rendering using Multi-frame Sampling
+  title: Progressive Rendering using Multi-frame Sampling | Reprint of the GPU Pro 7 Article
   date: '2018-07-10'
   authors: 
   - Daniel Limberger
