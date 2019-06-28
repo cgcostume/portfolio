@@ -470,6 +470,7 @@ publications:
 
 
 - key: 2019-ivapp-insitu
+  bibtex: limberger2019-insitu.bib
   title: 'In-Situ Comparison for 2.5D Treemaps'
   date: '2019-02-25'
   authors: 
