@@ -495,3 +495,27 @@ publications:
   - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/331400019_In-Situ_Comparison_for_25D_Treemaps_-_Templates/data/5c77c029458515831f75e389/2019-Limberger-In-Situ-Comparison-for-25D-Treemaps-Templates.pdf
     desc: Template Card
   
+  
+
+- key: 2019-vinci-advanced
+  bibtex: limberger2019-advanced.bib
+  title: 'Advanced Visual Metaphors and Techniques for Software Maps'
+  date: '2019-09-20'
+  authors: 
+  - Daniel Limberger
+  - Willy Scheibel
+  - Matthias Trapp
+  - Jürgen Döllner
+  published: Proceedings of the International Symposium on Visual Information Communication and Interaction
+  abstract:
+      Software maps provide a general-purpose interactive user interface and information display for software analytics tools.
+      This paper systematically introduces and classifies software maps as a treemap-based technique for software cartography.
+      It provides an overview of advanced visual metaphors and techniques, each suitable for interactive visual analytics tasks, that can be used to enhance the expressiveness of software maps.
+      Thereto, the metaphors and techniques are briefly described, located within a visualization pipeline model, and considered within the software map design space.
+      Consequent applications and use cases w.r.t. different types of software system data and software engineering data are discussed, arguing for a versatile use of software maps in visual software analytics.
+  thumbnail: 2019-vinci-advanced.jpg
+  downloads: 
+  - href: https://doi.org/10.1145/3356422.3356444
+    desc: DOI          
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/335062804_Advanced_Visual_Metaphors_and_Techniques_for_Software_Maps/links/5d883828a6fdcc8fd6106c95
+    desc: Paper
