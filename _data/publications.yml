@@ -96,7 +96,7 @@ publications:
   - Benjamin Wasty
   - Jonas Trümper
   - Jürgen Döllner
-  published: Proceedings of the International Conference on 3D Web Technology
+  published: Proc. ACM International Conference on Web3D Technology (Web3D)
   abstract:
     Software maps&mdash;linking 2.5D treemaps, software system structure, and performance indicators&mdash;are commonly used to support informed decision making in software-engineering processes. 
     In this paper a web-based rendering system for software maps that achieves both fast client-side page load time and interactive frame rates even with large software maps is presented. 
@@ -169,7 +169,7 @@ publications:
   - Matthias Trapp
   - Daniel Limberger
   - Jürgen Döllner
-  published: Proceedings of the International Symposium on Computer Graphics and Visual Computing
+  published: Proc. EG Computer Graphics and Visual Computing (CGVC)
   abstract:
     This work explores the suitability of rendering natural phenomena in Software maps for effective communication of changes as well as trends. 
     Therefore, Unreal Engine 4 is prototypically used to render Software maps and natural phenomena, such as fire, clouds, smoke, rain, rust, or shininess in real-time. 
@@ -234,7 +234,7 @@ publications:
   - Sebastian Hahn
   - Matthias Trapp
   - Jürgen Döllner
-  published: Proceedings of the International Conference on Information Visualization
+  published: Proc. IEEE International Conference Information Visualisation (iV)
   abstract:
     Treemaps serve as generic, effective tools to display, explore, and analyze multi-variate tree data in a scalable, interactive, and consistent way
     In this paper, we discuss and evaluate sketchiness as visual variable of 2.5D treemaps. 
@@ -280,7 +280,7 @@ publications:
   - Willy Scheibel
   - Stefan Lemme
   - Jürgen Döllner
-  published: Proceedings of the International Conference on 3D Web Technology
+  published: Proc. ACM International Conference on Web3D Technology (Web3D)
   abstract:
     The 2.5D treemap represents a general purpose visualization technique to map multi-variate hierarchical data in a scalable, interactive, and consistent way used in a number of application fields.
     In this paper, we explore the capabilities of Declarative 3D for the web-based implementation of 2.5D treemap clients.
@@ -310,7 +310,7 @@ publications:
   - Willy Scheibel
   - Sebastian Hahn
   - Jürgen Döllner
-  published: Proceedings of the International Conference on Information Visualization Theory and Applications
+  published: Proc. the International Conference on Information Visualization Theory and Applications (IVAPP)
   abstract: 
     Depicting massive software system data using treemaps can result in visual clutter and increased cognitive load.
     This paper introduces an adaptive level-of-detail (LoD) technique that uses scoring for interactive aggregation on a per-node basis.
@@ -338,7 +338,7 @@ publications:
   - Marcel Pursche
   - Jan Klimke
   - Jürgen Döllner
-  published: Proceedings of the International Conference on 3D Web Technology
+  published: Proc. ACM International Conference on 3D Web Technology (Web3D)
   lead_note: <a href='https://twitter.com/Web3DConsortium/status/872336310027079683/photo/1'>Best Paper Award</a>
   abstract: 
     Information cartography services provided via web-based clients using real-time rendering do not always necessitate a continuous stream of updates in the visual display.
@@ -362,7 +362,7 @@ publications:
   - Willy Scheibel
   - Matthias Trapp
   - Jürgen Döllner
-  published: Proceedings of the International Conference on Information Visualization
+  published: Proc. IEEE International Conference Information Visualisation (iV)
   abstract:
     This paper presents a novel technique for combining 2D and 2.5D treemaps using multi-perspective views to leverage the advantages of both treemap types.
     It enables a new form of overview+detail visualization for tree-structured data and contributes new concepts for real-time rendering of and interaction with treemaps.
@@ -388,7 +388,7 @@ publications:
   - Karsten Tausche
   - Johannes Linke
   - Jürgen Döllner
-  published: 'GPU Pro 360 Guide to Rendering'
+  published: GPU Pro 360 Guide to Rendering
   abstract:
     This chapter presents an approach that distributes sampling over multiple, consecutive frames, and, thereby, enables sampling-based, real-time rendering techniques to be implemented for most graphics hardware and systems in a less complex, straightforward way. 
     This systematic, extensible schema allows developers to effectively handle the increasing implementation complexity of advanced, sophisticated, real-time rendering techniques, while improving responsiveness and reducing required hardware resources.
@@ -427,7 +427,7 @@ publications:
   - Stefan Buschmann
   - Jürgen Döllner
   - Benjamin Wasty
-  published: Proceedings of the International Conference on Information Visualization
+  published: Proc. IEEE International Conference Information Visualisation (iV)
   abstract:
       Today's rendering APIs lack robust functionality and capabilities for dynamic, real-time text rendering and labeling, which represent key requirements for 3D application design in many fields.
       As a consequence, most rendering systems are barely or not at all equipped with respective capabilities.
@@ -453,7 +453,7 @@ publications:
   - Daniel Limberger
   - Matthias Trapp
   - Jürgen Döllner
-  published: Proceedings of the International Symposium on Visual Information Communication and Interaction
+  published: Proc. ACM International Symposium on Visual Information Communication and Interaction (VINCI)
   abstract:
       The 2.5D treemap facilitates interactive exploration of multivariate data. 
       It includes height as a visual variable for additional information display and enables exploration of correlations within mapped attributes. 
@@ -477,7 +477,7 @@ publications:
   - Daniel Limberger
   - Matthias Trapp
   - Jürgen Döllner
-  published: Proceedings of the International Conference on Information Visualization Theory and Applications
+  published: Proc. International Conference on Information Visualization Theory and Applications (IVAPP)
   abstract:
       2.5D treemaps can be used to visualize tree-structured data using the height dimension for additional information display. 
       For tree-structured and time-variant data though, changes or variants in the data are difficult to visualize. 
@@ -505,7 +505,7 @@ publications:
   - Willy Scheibel
   - Matthias Trapp
   - Jürgen Döllner
-  published: Proceedings of the International Symposium on Visual Information Communication and Interaction
+  published: Proc. ACM International Symposium on Visual Information Communication and Interaction (VINCI)
   abstract:
       Software maps provide a general-purpose interactive user interface and information display for software analytics tools.
       This paper systematically introduces and classifies software maps as a treemap-based technique for software cartography.
