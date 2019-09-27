@@ -67,7 +67,7 @@ publications:
   - Daniel Müller (now Limberger)
   - Juri Engel
   - Jürgen Döllner
-  published: Proceedings of the International Workshop on Vision, Modeling, and Visualization
+  published: Proc. EG International Workshop on Vision, Modeling, and Visualization (VMV)
   abstract:
     This paper presents techniques for astronomical based, real-time rendering of skies as seen from low altitudes on earth, in respect to location, date, and time. 
     The techniques allow for composing an atmosphere with sun, multiple cloud layers, moon, bright stars, and Milky Way, into a holistic sky with unprecedented level of detail and diversity. 
@@ -121,7 +121,7 @@ publications:
   authors: 
   - Daniel Limberger
   - Jürgen Döllner
-  published: Expressive Posters
+  published: ACM/EG Expressive Posters
   abstract:
     This work presents a photo-editing method that enables per-pixel parameter manipulation of image filtering by means of interactive painting.
     Predefined or custom image filters are exposed to the user, as a parametrizable composition of image operations. 
@@ -143,7 +143,7 @@ publications:
   - Daniel Limberger
   - Jan Eric Kyprianidis
   - Jürgen Döllner
-  published: Proceedings of the International Symposium on Computational Aesthetics
+  published: Proc. EG Computational Aesthetics (CAe)
   lead_note: <a href='http://expressive.richardt.name/2015/Prizes'>Best Paper Award</a>
   abstract:
     This paper presents an approach for transforming images into an oil paint look.
