@@ -3,6 +3,23 @@ heading: Teaching
 
 terms:
 
+
+- term: '2019 : Summer Term'
+  courses: 
+  - course: Computer Graphics II
+    type: Lecture (BA)
+    role: Co-Lecturer
+  - course: Fundamentals of Software Analytics
+    type: Seminar (MA)
+    role: Tutor
+
+- term: '2018/19 : Winter Term'
+  courses:
+  - course: User Interface Programming
+    type: Lecture (BA)
+    role: Tutor
+
+
 - term: '2018 : Summer Term'
   courses: 
   - course: Advanced Games of Life
@@ -34,7 +51,7 @@ terms:
 
 - term: '2016 : Summer Term'
   courses:
-  - course: Computergraphics II
+  - course: Computer Graphics II
     type: Lecture (BA)
     role: Tutor & Co-Lecturer
   - course: Methods and Techniques of Software Visualization
@@ -80,7 +97,7 @@ terms:
   - course: Game Programming
     type: Lecture/Seminar (BA)
     role: Tutor & Co-Lecturer
-  - course: Introduction to 3D Computergraphics
+  - course: Introduction to 3D Computer Graphics
     type: Youth Academy
     role: Lecturer
 
@@ -105,10 +122,10 @@ terms:
   - course: Game Programming
     type: Lecture/Seminar (BA)
     role: Tutor & Co-Lecturer
-  - course: Computergraphics II
+  - course: Computer Graphics II
     type: Lecture (BA)
     role: Tutor & Co-Lecturer
-  - course: Introduction to 3D Computergraphics
+  - course: Introduction to 3D Computer Graphics
     type: Youth Academy
     role: Lecturer
 
@@ -121,7 +138,7 @@ terms:
   - course: Graphics Programming with OpenGL and C++
     type: Lecture/Seminar (BA)
     role: Tutor & Lecturer
-  - course: Computergraphics I
+  - course: Computer Graphics I
     type: Lecture (BA)
     role: Tutor & Co-Lecturer
 
@@ -133,9 +150,9 @@ terms:
   - course: Game Programming
     type: Lecture/Seminar (BA)
     role: Tutor & Co-Lecturer
-  - course: Computergraphics II
+  - course: Computer Graphics II
     type: Lecture (BA)
     role: Tutor & Co-Lecturer
-  - course: Introduction to 3D Computergraphics
+  - course: Introduction to 3D Computer Graphics
     type: Youth Academy
     role: Lecturer

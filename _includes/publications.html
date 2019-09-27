@@ -1,6 +1,13 @@
 <div class="row text-center">
   <div class="col-12">
     <h2>{{ site.data.publications.heading | escape }}</h2>
+    <p class="pt-0">Research <strong>Profiles</strong>:&ensp;
+      <a href="https://orcid.org/{{ site.data.publications.orcid }}">ORCID</a>
+      <br class="d-inline d-sm-none"><span class="d-none d-sm-inline">&ensp;|&ensp;</span>
+      <a href="https://www.researchgate.net/profile/{{ site.data.publications.researchgate }}">Research Gate</a>
+      <br class="d-inline d-sm-none"><span class="d-none d-sm-inline">&ensp;|&ensp;</span>
+      <a href="https://scholar.google.de/citations?user={{ site.data.publications.scholar }}">Google Scholar</a>
+    </p>
   </div>
 </div>
 

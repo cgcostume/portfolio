@@ -11,7 +11,7 @@
       <p class="lead">
           {% for lead in header.leads %}
           {{ lead }}{% if lead != header.leads.last %}
-          <br class="d-inline d-sm-none"><span class="d-none d-sm-inline">&ensp;|&ensp;</span>{% endif %}
+          <br class="d-inline d-sm-none"><span class="d-none d-sm-inline">&mdash;</span>{% endif %}
           {% endfor %}
       </p>
       <p>
