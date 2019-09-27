@@ -310,7 +310,7 @@ publications:
   - Willy Scheibel
   - Sebastian Hahn
   - Jürgen Döllner
-  published: Proc. the International Conference on Information Visualization Theory and Applications (IVAPP)
+  published: Proc. International Conference on Information Visualization Theory and Applications (IVAPP)
   abstract: 
     Depicting massive software system data using treemaps can result in visual clutter and increased cognitive load.
     This paper introduces an adaptive level-of-detail (LoD) technique that uses scoring for interactive aggregation on a per-node basis.
