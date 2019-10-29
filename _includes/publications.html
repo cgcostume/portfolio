@@ -31,7 +31,7 @@
     <p>
       {% for author in p.authors %}{% if author == p.authors.last and p.authors.size > 1 %}and {% endif %}{{ author }}{% if p.authors.size > 2 and author != p.authors.last %},{% endif %} {% endfor %}
       <br>
-      {{ p.published }} {{ p.date | date: '%Y' }}{% if p.lead_note %}, {{ p.lead_note }}{% endif %}
+      {{ p.published }}, {{ p.date | date: '%Y' }}{% if p.lead_note %}, {{ p.lead_note }}{% endif %}
     </p>
     <p>
       {% if p.abstract %}<a data-toggle="collapse" href="#abstract-{{ p.key }}">Abstract</a>{% if p.bibtex or p.downloads %}&ensp;|&ensp;{% endif %}{% endif %}
