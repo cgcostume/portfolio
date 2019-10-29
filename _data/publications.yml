@@ -522,3 +522,22 @@ publications:
     desc: DOI          
   - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/335062804_Advanced_Visual_Metaphors_and_Techniques_for_Software_Maps/links/5d883828a6fdcc8fd6106c95
     desc: Paper
+
+
+- key: 2019-hiviser-extended
+  bibtex: shld2019-hiviser-extended.bib
+  title: 'Visualization of Tree-structured Data using Web Service Composition'
+  date: '2019-10-01'
+  authors:
+  - Willy Scheibel
+  - Judith Hartmann
+  - Daniel Limberger
+  - Jürgen Döllner
+  published: Computer Vision, Imaging and Computer Graphics - Theory and Applications, Revised Selected Papers (VISIGRAPP)
+  abstract: 
+      This article reiterates on the recently presented hierarchy visualization service HiViSer and its API.
+      It illustrates its decomposition into modular services for data processing and visualization of tree-structured data.
+      The decomposition is aligned to the common structure of visualization pipelines and, in this way, facilitates attribution of the services' capabilities.
+      Suitable base resource types are proposed and their structure and relations as well as a subtyping concept for specifics in hierarchy visualization implementations are detailed. Moreover, state-of-the-art quality standards and techniques for self-documentation and discovery of components are incorporated.
+      As a result, a blueprint for Web service design, architecture, modularization, and composition is presented, targeting fundamental visualization tasks of tree-structured data, i.e., gathering, processing, rendering, and provisioning. Finally, the applicability of the service components and the API is evaluated in the context of exemplary applications.
+  thumbnail: 2019-ivapp-hiviser-extended.jpg
