@@ -541,3 +541,28 @@ publications:
       Suitable base resource types are proposed and their structure and relations as well as a subtyping concept for specifics in hierarchy visualization implementations are detailed. Moreover, state-of-the-art quality standards and techniques for self-documentation and discovery of components are incorporated.
       As a result, a blueprint for Web service design, architecture, modularization, and composition is presented, targeting fundamental visualization tasks of tree-structured data, i.e., gathering, processing, rendering, and provisioning. Finally, the applicability of the service components and the API is evaluated in the context of exemplary applications.
   thumbnail: 2019-ivapp-hiviser-extended.jpg
+  
+  
+- key: 2020-treemap-taxonomy
+  bibtex: stld2020-treemap-taxonomy.bib
+  title: 'A Taxonomy of Treemap Visualization Techniques'
+  date: '2020-02-27'
+  authors:
+  - Willy Scheibel
+  - Matthias Trapp
+  - Daniel Limberger
+  - Jürgen Döllner
+  published: Proc. International Conference on Information Visualization Theory and Applications (IVAPP)
+  abstract: 
+    A treemap is a visualization that has been specifically designed to facilitate the exploration of tree-structured data and, more general, hierarchically structured data. 
+    The family of visualization techniques that use a visual metaphor for parent-child relationships based "on the property of containment" (Johnson, 1993) is commonly referred to as treemaps. 
+    However, as the number of variations of treemaps grows, it becomes increasingly important to distinguish clearly between techniques and their specific characteristics. 
+    This paper proposes to discern between Space-filling Treemap, Containment Treemap, Implicit Edge Representation Tree, and Mapped Tree for classification of hierarchy visualization techniques and highlights their respective properties.
+    This taxonomy is created as a hyponymy, i.e., its classes have an is-a relationship to one another. 
+    With this proposal, we intend to stimulate a discussion on a more unambiguous classification of treemaps and, furthermore, broaden what is understood by the concept of treemap itself.
+  thumbnail: 2020-ivapp-treemap-taxonomy.jpg
+  downloads:
+  - href: https://www.researchgate.net/profile/Willy_Scheibel/publication/338402878/inline/jsViewer/5e5cd038a6fdccbeba12bf83?pdfJsDownload=1
+    desc: Paper
+  - href: https://www.researchgate.net/profile/Willy_Scheibel/publication/339617725/inline/jsViewer/5e5cd13ba6fdccbeba12bfea?pdfJsDownload=1
+    desc: Slides
