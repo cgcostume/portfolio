@@ -525,7 +525,7 @@ publications:
 
 
 - key: 2019-hiviser-extended
-  bibtex: shld2019-hiviser-extended.bib
+  bibtex: scheibel2019-hiviser-extended.bib
   title: 'Visualization of Tree-structured Data using Web Service Composition'
   date: '2019-10-01'
   authors:
@@ -544,7 +544,7 @@ publications:
   
   
 - key: 2020-treemap-taxonomy
-  bibtex: stld2020-treemap-taxonomy.bib
+  bibtex: scheibel2020-treemap-taxonomy.bib
   title: 'A Taxonomy of Treemap Visualization Techniques'
   date: '2020-02-27'
   authors:
