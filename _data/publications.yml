@@ -560,7 +560,7 @@ publications:
     This paper proposes to discern between Space-filling Treemap, Containment Treemap, Implicit Edge Representation Tree, and Mapped Tree for classification of hierarchy visualization techniques and highlights their respective properties.
     This taxonomy is created as a hyponymy, i.e., its classes have an is-a relationship to one another. 
     With this proposal, we intend to stimulate a discussion on a more unambiguous classification of treemaps and, furthermore, broaden what is understood by the concept of treemap itself.
-  thumbnail: 2020-ivapp-treemap-taxonomy.jpg
+  thumbnail: 2020-ivapp-treemap-taxonomy.png
   downloads:
   - href: https://www.researchgate.net/profile/Willy_Scheibel/publication/338402878/inline/jsViewer/5e5cd038a6fdccbeba12bf83?pdfJsDownload=1
     desc: Paper
