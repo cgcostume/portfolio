@@ -34,9 +34,12 @@
       {{ p.published }}, {{ p.date | date: '%Y' }}{% if p.lead_note %}, {{ p.lead_note }}{% endif %}
     </p>
     <p>
-    {% if p.abstract %}<a data-toggle="collapse" href="#abstract-{{ p.key }}">Abstract</a>{% if p.bibtex or p.downloads %} &ensp;|&ensp;{% endif %}{% endif %}
-    {% if p.bibtex %}<a data-toggle="collapse" href="#bibtex-{{ p.key }}">BibTeX</a>{% if p.downloads %} &ensp;|&ensp;{% endif %}{% endif %}
-    {% if p.downloads %}{% for download in p.downloads %}<a href="{{ download.href }}">{{ download.desc | escape }}</a>{% if download != p.downloads.last %} &ensp;|&ensp;{% endif %}{% endfor %}{% endif %}
+           {% if p.abstract %}<a data-toggle="collapse" href="#abstract-{{ p.key }}">Abstract</a>{% if p.bibtex or p.downloads %}&ensp;|&ensp;{% endif %}
+{% endif %}{% if p.bibtex %}<a data-toggle="collapse" href="#bibtex-{{ p.key }}">BibTeX</a>{% if p.downloads %}&ensp;|&ensp;{% endif %}
+{% endif %}{% if p.downloads %}{% for download in p.downloads %}
+<a href="{{ download.href }}">{{ download.desc | escape }}</a>
+{% if download != p.downloads.last %}&ensp;|&ensp;{% endif %}
+{% endfor %}{% endif %}
     </p>
 
     {% if p.abstract %}
