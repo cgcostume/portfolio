@@ -401,7 +401,7 @@ publications:
 
 - key: 2018-patent-lod-treemaps
   bibtex: limberger2018-lod-treemaps.bib
-  title: 'Interactive, Adaptive Level-of-Detail in 2.5D Treemaps'
+  title: Interactive, Adaptive Level-of-Detail in 2.5D Treemaps
   date: '2018-07-10'
   authors: 
   - Daniel Limberger
@@ -451,7 +451,7 @@ publications:
 
 - key: 2018-vinci-reference
   bibtex: limberger2018-reference.bib
-  title: 'Interactive, Height-based Filtering in 2.5D Treemaps'
+  title: Interactive, Height-based Filtering in 2.5D Treemaps
   date: '2018-08-10'
   authors: 
   - Daniel Limberger
@@ -475,7 +475,7 @@ publications:
 
 - key: 2019-ivapp-insitu
   bibtex: limberger2019-insitu.bib
-  title: 'In-Situ Comparison for 2.5D Treemaps'
+  title: In-Situ Comparison for 2.5D Treemaps
   date: '2019-02-25'
   authors: 
   - Daniel Limberger
@@ -502,7 +502,7 @@ publications:
 
 - key: 2019-vinci-advanced
   bibtex: limberger2019-advanced.bib
-  title: 'Advanced Visual Metaphors and Techniques for Software Maps'
+  title: Advanced Visual Metaphors and Techniques for Software Maps
   date: '2019-09-20'
   authors: 
   - Daniel Limberger
@@ -526,7 +526,7 @@ publications:
 
 - key: 2019-hiviser-extended
   bibtex: scheibel2019-hiviser-extended.bib
-  title: 'Visualization of Tree-structured Data using Web Service Composition'
+  title: Visualization of Tree-structured Data using Web Service Composition
   date: '2019-10-01'
   authors:
   - Willy Scheibel
@@ -545,7 +545,7 @@ publications:
   
 - key: 2020-treemap-taxonomy
   bibtex: scheibel2020-treemap-taxonomy.bib
-  title: 'A Taxonomy of Treemap Visualization Techniques'
+  title: A Taxonomy of Treemap Visualization Techniques
   date: '2020-02-27'
   authors:
   - Willy Scheibel
@@ -566,3 +566,68 @@ publications:
     desc: Paper
   - href: https://www.researchgate.net/profile/Willy_Scheibel/publication/339617725/inline/jsViewer/5e5cd13ba6fdccbeba12bfea?pdfJsDownload=1
     desc: Slides
+
+
+- key: 2020-vinci-survey-effectiveness
+  bibtex: fiedler2020-survey-effectiveness.bib
+  title: Survey on User Studies on the Effectiveness of Treemaps
+  date: '2020-12-08'
+  authors:
+  - Carolin Fiedler
+  - Willy Scheibel
+  - Daniel Limberger
+  - Matthias Trapp
+  - Jürgen Döllner
+  published: Proc. ACM International Symposium on Visual Information Communication and Interaction (VINCI)
+  thumbnail: 2020-vinci-survey-effectiveness.png
+
+
+- key: 2020-vinci-survey-layouts
+  bibtex: scheibel2020-survey-layouts.bib
+  title: Survey of Treemap Layout Algorithms
+  date: '2020-12-08'
+  authors:
+  - Willy Scheibel
+  - Daniel Limberger
+  - Jürgen Döllner
+  published: Proc. ACM International Symposium on Visual Information Communication and Interaction (VINCI)
+  thumbnail: 2020-vinci-survey-layouts.jpg
+
+
+- key: 2020-web3d-pbr-lighting
+  bibtex: otto2020-pbr-lighting.bib
+  title: Physically-based Environment and Area Lighting using Progressive Rendering in WebGL
+  date: '2020-11-09'
+  authors: 
+  - Philipp Otto
+  - Daniel Limberger
+  - Jürgen Döllner
+  published: Proc. ACM International Conference on Web3D Technology (Web3D)
+  abstract:
+    This paper presents a progressive rendering approach that enables rendering of static 3D scenes, lit by physically-based environment and area lights.
+    Multi-frame sampling strategies are used to approximate elaborate lighting that is refined while showing intermediate results to the user.
+    The presented approach enables interactive yet high-quality rendering in the web and runs on a wide range of devices including low-performance hardware such as mobile devices.
+    An open-source implementation of the described techniques using TypeScript and WebGL 2.0 is presented and provided.
+    For evaluation, we compare our rendering results to both a path tracer and a physically-based rasterizer.
+    Our findings show that the approach approximates the lighting and shadowing of the path-traced reference well while being faster than the compared rasterizer.
+  thumbnail: 2020-web3d-pbr-lighting.jpg
+
+
+- key: 2020-web3d-scatter-plot
+  bibtex: wagner2020-scatter-plot.bib
+  title: A Framework for Interactive Exploration of Clusters in Massive Data Using 3D Scatter Plots and WebGL
+  date: '2020-11-09'
+  authors: 
+  - Lukas Wagner
+  - Willy Scheibel
+  - Daniel Limberger
+  - Matthias Trapp
+  - Jürgen Döllner
+  published: Proc. ACM International Conference on Web3D Technology (Web3D)
+  abstract:
+    This paper presents a rendering framework for the visualization of massive point datasets in the web.
+    It includes highly interactive point rendering, cluster visualization, basic interaction methods, and importance-based labeling, while being available for both mobile and desktop browsers.
+    The rendering style is customizable, as shown in figure 1.
+    Our evaluation indicates that the framework facilitates interactive visualization of tens of millions of raw data points even without dynamic filtering or aggregation.
+  thumbnail: 2020-web3d-scatter-plot.jpg
+
