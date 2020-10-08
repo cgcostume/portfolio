@@ -527,13 +527,13 @@ publications:
 - key: 2019-hiviser-extended
   bibtex: scheibel2019-hiviser-extended.bib
   title: Visualization of Tree-structured Data using Web Service Composition
-  date: '2019-10-01'
+  date: '2020-02-20'
   authors:
   - Willy Scheibel
   - Judith Hartmann
   - Daniel Limberger
   - Jürgen Döllner
-  published: VISIGRAPP - Extended and Revised Papers
+  published: VISIGRAPP 2019: Computer Vision, Imaging and Computer Graphics Theory and Applications
   abstract: 
       This article reiterates on the recently presented hierarchy visualization service HiViSer and its API.
       It illustrates its decomposition into modular services for data processing and visualization of tree-structured data.
@@ -541,6 +541,11 @@ publications:
       Suitable base resource types are proposed and their structure and relations as well as a subtyping concept for specifics in hierarchy visualization implementations are detailed. Moreover, state-of-the-art quality standards and techniques for self-documentation and discovery of components are incorporated.
       As a result, a blueprint for Web service design, architecture, modularization, and composition is presented, targeting fundamental visualization tasks of tree-structured data, i.e., gathering, processing, rendering, and provisioning. Finally, the applicability of the service components and the API is evaluated in the context of exemplary applications.
   thumbnail: 2019-ivapp-hiviser-extended.jpg
+  downloads: 
+  - href: https://doi.org/10.1007/978-3-030-41590-7_10
+    desc: DOI
+  - href: https://www.researchgate.net/profile/Willy_Scheibel/publication/339362147/inline/jsViewer/5e5ccf0c4585152ce8ff8d73?pdfJsDownload=1
+    desc: Paper
   
   
 - key: 2020-treemap-taxonomy
