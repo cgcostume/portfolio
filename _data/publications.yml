@@ -533,7 +533,7 @@ publications:
   - Judith Hartmann
   - Daniel Limberger
   - Jürgen Döllner
-  published: VISIGRAPP 2019: Computer Vision, Imaging and Computer Graphics Theory and Applications
+  published: 'VISIGRAPP 2019: Computer Vision, Imaging and Computer Graphics Theory and Applications'
   abstract: 
       This article reiterates on the recently presented hierarchy visualization service HiViSer and its API.
       It illustrates its decomposition into modular services for data processing and visualization of tree-structured data.
