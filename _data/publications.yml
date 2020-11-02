@@ -599,6 +599,18 @@ publications:
   thumbnail: 2020-vinci-survey-layouts.jpg
 
 
+- key: 2020-vinci-uncertainty
+  bibtex: limberger2020-uncertainty.bib
+  title: Depicting Uncertainty in 2.5D Treemaps
+  date: '2020-12-08'
+  authors:
+  - Daniel Limberger
+  - Matthias Trapp
+  - Jürgen Döllner
+  published: Proc. ACM International Symposium on Visual Information Communication and Interaction (VINCI)
+  thumbnail: 2020-vinci-uncertainty.jpg
+
+
 - key: 2020-web3d-pbr-lighting
   bibtex: otto2020-pbr-lighting.bib
   title: Physically-based Environment and Area Lighting using Progressive Rendering in WebGL
