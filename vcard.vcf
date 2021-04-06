@@ -2,7 +2,7 @@ BEGIN:VCARD
 VERSION:3.0
 N:Limberger;Daniel;;;
 FN:Daniel Limberger
-ADR;TYPE=home:;;Humboldtring 5 A;Potsdam;;14473;Germany
+ADR;TYPE=home:;;Rudolf-Breitscheid-Str. 36;Potsdam;;14482;Germany
 TITLE:Graphics Systems Engineer, Researcher, and Entrepreneur
 EMAIL;TYPE=pref:cgdaniel@outlook.com
 EMAIL;TYPE=work:limberger@cginternals.com
