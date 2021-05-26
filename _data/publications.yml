@@ -82,9 +82,9 @@ publications:
   downloads: 
   - href: https://doi.org/10.2312/PE/VMV/VMV12/055-062
     desc: DOI
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/287031803_Single-pass_Rendering_of_Day_and_Night_Sky_Phenomena/links/58db7a24a6fdccca1c9488b3
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/287031803/inline/jsViewer/58db7a24a6fdccca1c9488b3?pdfJsDownload=1
     desc: Paper
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/331556201_Single-pass_Rendering_of_Day_and_Night_Sky_Phenomena/links/5c7feeb5299bf1268d403c6d
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/331556201/inline/jsViewer/5c7feeb5299bf1268d403c6d?pdfJsDownload=1
     desc: Slides
   - href: https://www.youtube.com/watch?v=t8ibsEl0kAI
     desc: Video
@@ -110,9 +110,9 @@ publications:
   downloads: 
   - href: https://doi.org/10.1145/2466533.2466550
     desc: DOI
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/262408378_Interactive_software_maps_for_web-based_source_code_analysis/links/589dbde3aca272046aa8ffa7
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/262408378/inline/jsViewer/589dbde3aca272046aa8ffa7?pdfJsDownload=1
     desc: Paper
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/331556350_Interactive_Software_Maps_for_Web-based_Source_Code_Analysis/links/5c7fed69458515831f8aff6a
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/331556350/inline/jsViewer/5c7fed69458515831f8aff6a?pdfJsDownload=1
     desc: Slides
   - href: https://www.youtube.com/watch?v=AaHJRVQ3Z1E
     desc: Video
@@ -134,7 +134,7 @@ publications:
   thumbnail: 2014-expressive-painting-per-pixel-parametrization.jpg
   flickr: 72157650124474077
   downloads: 
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/313549904_Painting_Per-Pixel_Parametrization_for_Interactive_Image_Filtering/links/589dc04caca272046aa9042e
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/313549904/inline/jsViewer/589dc04caca272046aa9042e?pdfJsDownload=1
     desc: Poster
  
 
@@ -158,7 +158,7 @@ publications:
   downloads: 
   - href: https://doi.org/10.2312/exp.20151188
     desc: DOI
-  - href: https://www.researchgate.net/profile/Amir_Semmo/publication/277531015_Image_Stylization_by_Oil_Paint_Filtering_using_Color_Palettes/links/556c35b208aeccd7773a2f85
+  - href: https://www.researchgate.net/profile/Amir_Semmo/publication/277531015/inline/jsViewer/556c35b208aeccd7773a2f85?pdfJsDownload=1
     desc: Paper
   - href: https://www.youtube.com/watch?v=T65gbk8Ruk4
     desc: Video
@@ -183,7 +183,7 @@ publications:
   downloads: 
   - href: https://doi.org/10.2312/cgvc.20151246
     desc: DOI
-  - href: https://www.researchgate.net/profile/Matthias_Trapp/publication/281347949_Natural_Phenomena_as_Metaphors_for_Visualization_of_Trend_Data_in_Interactive_Software_Maps/links/55ffbd6508aeafc8ac8ba169
+  - href: https://www.researchgate.net/profile/Matthias_Trapp/publication/281347949/inline/jsViewer/55ffbd6508aeafc8ac8ba169?pdfJsDownload=1
     desc: Paper
 
 
@@ -208,7 +208,7 @@ publications:
   downloads: 
   - href: https://doi.org/10.1016/j.cag.2015.12.001
     desc: DOI
-  - href: https://www.researchgate.net/profile/Amir_Semmo/publication/289694790_Image_stylization_by_interactive_oil_paint_filtering/links/5a38e88a458515919e727ede
+  - href: https://www.researchgate.net/profile/Amir_Semmo/publication/289694790/inline/jsViewer/5a38e88a458515919e727ede?pdfJsDownload=1
     desc: Paper
 
 
@@ -249,7 +249,7 @@ publications:
   downloads: 
   - href: https://doi.org/10.1109/IV.2016.61
     desc: DOI
-  - href: https://www.researchgate.net/profile/Matthias_Trapp/publication/301682636_Evaluation_of_Sketchiness_as_a_Visual_Variable_for_25D_Treemaps/links/5addc0c7458515c60f5f7065
+  - href: https://www.researchgate.net/profile/Matthias_Trapp/publication/301682636/inline/jsViewer/5addc0c7458515c60f5f7065?pdfJsDownload=1
     desc: Paper
 
 
@@ -267,7 +267,7 @@ publications:
     By distributing and accumulating samples of sampling-based rendering techniques (e.g., anti-aliasing, orderindependent transparency, depth-of-field and shadowing, ambient occlusion, screen-space reflections) over multiple frames, images of very high quality can be synthesized with unequaled resource-efficiency.
   thumbnail: 2016-siggraph-multi-frame-sampling.jpg
   downloads: 
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/305082223_Real-time_rendering_of_high-quality_effects_using_multi-frame_sampling/links/5c7feab2458515831f8afeb8
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/305082223/inline/jsViewer/5c7feab2458515831f8afeb8?pdfJsDownload=1
     desc: Poster
   - href: https://github.com/cgcostume/multiframesampling
     desc: Source Code
@@ -295,9 +295,9 @@ publications:
   downloads: 
   - href: https://doi.org/10.1145/2945292.2945313
     desc: DOI
-  - href: https://www.researchgate.net/profile/Willy_Scheibel/publication/305420771_Dynamic_25D_treemaps_using_declarative_3D_on_the_web/links/5b2cb47b4585150d23c1f3ea
+  - href: https://www.researchgate.net/profile/Willy_Scheibel/publication/305420771/inline/jsViewer/5b2cb47b4585150d23c1f3ea?pdfJsDownload=1
     desc: Paper
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/331407662_Dynamic_25D_Treemaps_using_Declarative_3D_on_the_Web/links/5c77e4fa299bf1268d2c7e74
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/331407662/inline/jsViewer/5c77e4fa299bf1268d2c7e74?pdfJsDownload=1
     desc: Slides
   - href: https://github.com/cgcostume/web3d-treemaps
     desc: Source Code
@@ -327,9 +327,9 @@ publications:
   downloads: 
   - href: https://doi.org/10.5220/0006267501760185
     desc: DOI
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/313377340_Reducing_Visual_Complexity_in_Software_Maps_using_Importance-based_Aggregation_of_Nodes/links/589dbd3845851598bab4014b
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/313377340/inline/jsViewer/589dbd3845851598bab4014b?pdfJsDownload=1
     desc: Paper
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/331407406_Reducing_Visual_Complexity_in_Software_Maps_using_Importance-based_Aggregation_of_Nodes/links/5c77deb8299bf1268d2c7c7b
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/331407406/inline/jsViewer/5c77deb8299bf1268d2c7c7b?pdfJsDownload=1
     desc: Slides
 
     
@@ -353,7 +353,7 @@ publications:
   downloads: 
   - href: https://doi.org/10.1145/3055624.3075951
     desc: DOI
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/316999882_Progressive_High-Quality_Rendering_for_Interactive_Information_Cartography_using_WebGL/links/5b72cc00a6fdcc87df79e788
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/316999882/inline/jsViewer/5b72cc00a6fdcc87df79e788?pdfJsDownload=1
     desc: Paper
 
 
@@ -377,9 +377,9 @@ publications:
   downloads: 
   - href: https://doi.org/10.1109/iV.2017.67
     desc: DOI
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/316999964_Mixed-Projection_Treemaps_A_Novel_Approach_Mixing_2D_and_25D_Treemaps/links/5ab28be2aca272171001b92a
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/316999964/inline/jsViewer/5ab28be2aca272171001b92a?pdfJsDownload=1
     desc: Paper
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/330106367_Mixed-Projection_TreemapsA_Novel_Approach_Mixing_2D_and_3D_Treemaps/links/5c77be80458515831f75e32b
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/330106367/inline/jsViewer/5c77be80458515831f75e32b?pdfJsDownload=1
     desc: Slides
 
 
@@ -443,9 +443,9 @@ publications:
   downloads: 
   - href: https://doi.org/10.1109/iV.2018.00039
     desc: DOI
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/327017928_OpenLL_an_API_for_Dynamic_2D_and_3D_Labeling/links/5b72c86845851546c902c9f1
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/327017928/inline/jsViewer/5b72c86845851546c902c9f1?pdfJsDownload=1
     desc: Paper
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/331400327_OpenLL_an_API_for_Dynamic_2D_and_3D_Labeling/links/5c77cc29458515831f75e5e4
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/331400327/inline/jsViewer/5c77cc29458515831f75e5e4?pdfJsDownload=1
     desc: Slides
 
 
@@ -467,9 +467,9 @@ publications:
   downloads: 
   - href: https://doi.org/10.1145/3231622.3231638
     desc: DOI
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/326728307_Interactive_Height-Based_Filtering_in_25D_Treemaps/links/5b72cb95a6fdcc87df79e161
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/326728307/inline/jsViewer/5b72cb95a6fdcc87df79e161?pdfJsDownload=1
     desc: Paper
-  - href: https://www.researchgate.net/profile/Matthias_Trapp/publication/330106559_Interactive_Height-based_Filtering_in_25D_Treemaps/links/5c2df2f4299bf12be3aaf161
+  - href: https://www.researchgate.net/profile/Matthias_Trapp/publication/330106559/inline/jsViewer/5c2df2f4299bf12be3aaf161?pdfJsDownload=1
     desc: Slides
 
 
@@ -492,9 +492,9 @@ publications:
   downloads: 
   - href: https://doi.org/10.5220/0007576203140321
     desc: DOI
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/330195762_In-Situ_Comparison_for_25D_Treemaps/links/5c77b7d592851c695046e613
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/330195762/inline/jsViewer/5c77b7d592851c695046e613?pdfJsDownload=1
     desc: Paper
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/331399508_In-Situ_Comparison_for_25D_Treemaps/links/5c77b9a3a6fdcc4715a1c58c
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/331399508/inline/jsViewer/5c77b9a3a6fdcc4715a1c58c?pdfJsDownload=1
     desc: Poster
   - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/331400019_In-Situ_Comparison_for_25D_Treemaps_-_Templates/data/5c77c029458515831f75e389/2019-Limberger-In-Situ-Comparison-for-25D-Treemaps-Templates.pdf
     desc: Template Card
@@ -520,7 +520,7 @@ publications:
   downloads: 
   - href: https://doi.org/10.1145/3356422.3356444
     desc: DOI          
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/335062804_Advanced_Visual_Metaphors_and_Techniques_for_Software_Maps/links/5d883828a6fdcc8fd6106c95
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/335062804/inline/jsViewer/5d883828a6fdcc8fd6106c95?pdfJsDownload=1
     desc: Paper
 
 
@@ -584,7 +584,21 @@ publications:
   - Matthias Trapp
   - Jürgen Döllner
   published: Proc. ACM International Symposium on Visual Information Communication and Interaction (VINCI)
+  abstract:
+    Treemaps are a commonly used tool for the visual display and communication of tree-structured, multi-variate data. 
+    In order to confidently know when and how treemaps can best be applied, the research community uses usability studies and controlled experiments to "understand the potential and limitations of our tools" (Plaisant, 2004).
+    To support the communities' understanding and usage of treemaps, this survey provides a comprehensive review and detailed overview of 69 user studies related to treemaps. 
+    However, due to pitfalls and shortcomings in design, conduct, and reporting of the user studies, there is little that can be reliably derived or accepted as a generalized statement. 
+    Fundamental open questions include configuration, compatible tasks, use cases, and perceptional characteristics of treemaps. 
+    The reliability of findings and statements is discussed and common pitfalls of treemap user studies are identified.
   thumbnail: 2020-vinci-survey-effectiveness.png
+  downloads:
+  - href: https://doi.org/10.1145/3430036.3430054
+    desc: DOI
+  - href: https://www.researchgate.net/profile/Willy_Scheibel/publication/346565359/inline/jsViewer/60083702a6fdccdcb8690e02?pdfJsDownload=1
+    desc: Paper
+  - href: https://varg-dev.github.io/treemap-studies
+    desc: Website
 
 
 - key: 2020-vinci-survey-layouts
@@ -596,7 +610,18 @@ publications:
   - Daniel Limberger
   - Jürgen Döllner
   published: Proc. ACM International Symposium on Visual Information Communication and Interaction (VINCI)
+  abstract:
+    This paper provides an overview of published treemap layout algorithms from 1991 to 2019 that were used for information visualization and computational geometry. 
+    First, a terminology is outlined for the precise communication of tree-structured data and layouting processes. 
+    Second, an overview and classification of layout algorithms is presented and application areas are discussed. 
+    Third, the use-case-specific adaption process is outlined and discussed. 
+    This overview targets practitioners and researchers by providing a starting point for own research, visualization design, and applications. 
   thumbnail: 2020-vinci-survey-layouts.jpg
+  downloads:
+  - href: https://doi.org/10.1145/3430036.3430041
+    desc: DOI
+  - href: https://www.researchgate.net/profile/Willy_Scheibel/publication/346565429/inline/jsViewer/6008e5e9a6fdccdcb86bb8d0?pdfJsDownload=1
+    desc: Paper
 
 
 - key: 2020-vinci-uncertainty
@@ -608,7 +633,16 @@ publications:
   - Matthias Trapp
   - Jürgen Döllner
   published: Proc. ACM International Symposium on Visual Information Communication and Interaction (VINCI)
+  abstract:
+    A truthful and unbiased display of data using information visualization requires detecting and communicating uncertainty. 
+    Uncertainty is often inherent in data or is introduced by data processing and visualization (e.g., visual display of accumulated data) but frequently not accounted for. 
+    This paper discusses the suitability of advanced visual variables such as sketchiness, noise, nesting-level contouring, and color weaving for communicating uncertainty.
   thumbnail: 2020-vinci-uncertainty.jpg
+  downloads: 
+  - href: https://doi.org/10.1145/3430036.3432753
+    desc: DOI
+  - href: https://www.researchgate.net/profile/Matthias-Trapp-2/publication/347313642/inline/jsViewer/60acf193a6fdcc647ed752cc?pdfJsDownload=1
+    desc: Paper
 
 
 - key: 2020-web3d-pbr-lighting
@@ -628,6 +662,11 @@ publications:
     For evaluation, we compare our rendering results to both a path tracer and a physically-based rasterizer.
     Our findings show that the approach approximates the lighting and shadowing of the path-traced reference well while being faster than the compared rasterizer.
   thumbnail: 2020-web3d-pbr-lighting.jpg
+  downloads:
+  - href: https://doi.org/10.1145/3424616.3424697
+    desc: DOI
+  - href: https://www.researchgate.net/profile/Daniel-Limberger/publication/347578774/inline/jsViewer/60ae14d5a6fdcc647edc3760?pdfJsDownload=1
+    desc: Paper
 
 
 - key: 2020-web3d-scatter-plot
@@ -647,4 +686,63 @@ publications:
     The rendering style is customizable, as shown in figure 1.
     Our evaluation indicates that the framework facilitates interactive visualization of tens of millions of raw data points even without dynamic filtering or aggregation.
   thumbnail: 2020-web3d-scatter-plot.jpg
+  downloads:
+  - href: https://doi.org/10.1145/3424616.3424730
+    desc: DOI
+  - href: https://www.researchgate.net/profile/Lukas-Wagner-17/publication/345770726/inline/jsViewer/5fbe75cb299bf104cf770132?pdfJsDownload=1
+    desc: Paper
 
+
+- key: 2021-ivapp-software-forest
+  bibtex: atzberger2021-software-forest.bib
+  title: 'Software Forest: A Visualization of Semantic Similarities in Source Code using a Tree Metaphor'
+  date: '2021-02-08'
+  authors: 
+  - Daniel Atzberger
+  - Tim Cech
+  - Merlin de la Haye
+  - Maximilian Söchting
+  - Willy Scheibel
+  - Daniel Limberger
+  - Jürgen Döllner
+  published: Proc. International Conference on Information Visualization Theory and Applications (IVAPP)
+  abstract: 
+    Software visualization techniques provide effective means for program comprehension tasks as they allow developers to interactively explore large code bases. 
+    A frequently encountered task during software development is the detection of source code files of similar semantic. 
+    To assist this task we present Software Forest, a novel 2.5D software visualization that enables interactive exploration of semantic similarities within a software system, illustrated as a forest. 
+    The underlying layout results from the analysis of the vocabulary of the software documents using Latent Dirichlet Allocation and Multidimensional Scaling and therefore reflects the semantic similarity between source code files. 
+    By mapping properties of a software entity, e.g., size metrics or trend data, to visual variables encoded by various, figurative tree meshes, aspects of a software system can be displayed. 
+    This concept is complemented with implementation details as well as a discussion on applications.
+  thumbnail: 2021-ivapp-software-forest.jpg
+  downloads: 
+  - href: https://doi.org/10.5220/0010267601120122
+    desc: DOI
+  - href: https://www.researchgate.net/profile/Willy-Scheibel/publication/349382985/inline/jsViewer/6047926192851c077f2981ce?pdfJsDownload=1
+    desc: Paper
+ 
+
+- key: 2021-eurovis-roomcanvas
+  bibtex: koenig2021-roomcanvas.bib
+  title: 'RoomCanvas: A Visualization System for Spatiotemporal Temperature Data in Smart Homes'
+  date: '2021-06-16'
+  authors: 
+  - Bastian König
+  - Daniel Limberger
+  - Jan Klimke
+  - Benjamin Hagedorn
+  - Jürgen Döllner
+  published: Proc. EG International Conference on Visualization (EuroVis)
+  abstract:
+    Spatiotemporal measurements such as power consumption, temperature, humidity, movement, noise, brightness, etc., will become ubiquitously available in both old and modern homes to capture and analyze behavioral patterns. 
+    The data is fed into analytics platforms and tapped by services but is generally not readily available to consumers for exploration due in part to its inherent complexity and volume. 
+    We present an interactive visualization system that uses a simplified 3D representation of building interiors as a canvas for a unified sensor data display. 
+    The system’s underlying visualization supports spatial as well as temporal accumulation of data, e.g., temperature and humidity values. 
+    It introduces a volumetric data interpolation approach which takes 3D room boundaries such as walls, doors, and windows into account. 
+    We showcase an interactive, web-based prototype that allows for the exploration of historical as well as real-time data of multiple temperature and humidity sensors. 
+    Finally, we sketch an integrated pipeline from sensor data acquisition to visualization, discuss the creation of semantic geometry and subsequent preprocessing, and provide insights into our real-time rendering implementation.
+  thumbnail: 2021-eurovis-roomcanvas.jpg
+   downloads:
+  - href: https://
+    desc: DOI
+  - href: https://
+    desc: Paper
