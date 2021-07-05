@@ -567,6 +567,8 @@ publications:
     With this proposal, we intend to stimulate a discussion on a more unambiguous classification of treemaps and, furthermore, broaden what is understood by the concept of treemap itself.
   thumbnail: 2020-ivapp-treemap-taxonomy.png
   downloads:
+  - href: https://doi.org/10.5220/0009153902730280
+    desc: DOI
   - href: https://www.researchgate.net/profile/Willy_Scheibel/publication/338402878/inline/jsViewer/5e5cd038a6fdccbeba12bf83?pdfJsDownload=1
     desc: Paper
   - href: https://www.researchgate.net/profile/Willy_Scheibel/publication/339617725/inline/jsViewer/5e5cd13ba6fdccbeba12bfea?pdfJsDownload=1
@@ -741,4 +743,41 @@ publications:
     We showcase an interactive, web-based prototype that allows for the exploration of historical as well as real-time data of multiple temperature and humidity sensors. 
     Finally, we sketch an integrated pipeline from sensor data acquisition to visualization, discuss the creation of semantic geometry and subsequent preprocessing, and provide insights into our real-time rendering implementation.
   thumbnail: 2021-eurovis-roomcanvas.jpg
+  
+
+- key: 2021-vinci-etf-visualization
+  bibtex: buessemeyer2021-etf-visualization.bib
+  title: 'Interactive Simulation and Visualization of Long-Term, ETF-based Investment Strategies'
+  date: '2021-09-08'
+  authors: 
+  - Martin Büßemeyer
+  - Daniel Limberger
+  - Willy Scheibel
+  - Jürgen Döllner
+  published: Proc. ACM International Symposium on Visual Information Communication and Interaction (VINCI)
+  abstract:
+    Personal, long-term investment products, especially ones for retirement savings, require thorough understanding to use them profitably. 
+    Even simple savings plans based on exchange-traded funds(ETFs) are subject to many variables and uncertainties to be considered for expected and planned-upon returns. 
+    We present aninteractive simulation of an ETF-based savings plan that combinesforecasts, risk awareness, taxes and costs, inflation, and dynamicinflows and outflows into a single visualization. 
+    The visualizationconsists of four parts: a form-fill interface for configuration, a savings and payout simulation, a cash flow chart, and a savings chart. Based on a specific use case, we discuss how private investors canbenefit from using our visualization after a short training period. 
+  thumbnail: 2021-vinci-etf-visualization.jpg
+  
+
+- key: 2021-vinci-procedural-textures
+  bibtex: limberger2021-procedural.bib
+  title: 'Visualization of Data Changes in 2.5D Treemaps using Procedural Textures and Animated Transitions'
+  date: '2021-09-08'
+  authors: 
+  - Daniel Limberger
+  - Willy Scheibel
+  - Jan Dieken
+  - Jürgen Döllner
+  published: Proc. ACM International Symposium on Visual Information Communication and Interaction (VINCI)
+  abstract:
+    This work investigates the extent to which animated procedural texture patterns can be used to support the representation of changes in 2.5D treemaps. 
+    Changes in height, color, and area of individual nodes can easily be visualized using animated transitions. 
+    Especially for changes in the color attribute, plain animated transitions are not able to directly communicate the direction of change itself. 
+    We show how procedural texture patterns can be superimposed to the color mapping and support transitions.
+    To this end, we discuss qualitative properties of each pattern, demonstrate their ability to communicate change direction both with and without animation, and conclude which of the patterns are more likely to increase effectiveness and correctness of the change mapping in 2.5D treemaps. 
+  thumbnail: 2021-vinci-procedural.jpg
   
