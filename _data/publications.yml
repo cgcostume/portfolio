@@ -407,12 +407,12 @@ publications:
   - Daniel Limberger
   published: United States Patent and Trademark Office
   abstract:
-      An aggregation approach allows for a dynamic, interactive, adaptive level-of-detail for 2D, 2.5D, and 3D treemaps for visualization of complex information. 
-      For example, the 2.5D treemap visualization concept is extended by providing adaptive identification of aggregates by means of an interactive node scoring approach based on contextual relevance and various other task, interaction, visibility, and/or performance specific criteria. 
-      For the resulting mapping and rendering, a per-frame aggregation of blocks and accumulation of those attributes mapped to visual variables (context) is described. 
-      Since every embodiment is also targeted for dynamic, interactive visual display of 2.5D treemaps, the rendering is designed to be capable for execution in real-time.
-      Visual preservation of important information is conveyed by hierarchy elements and their mapped attributes (nodes-of-interest) as well as compliance to known aggregation guidelines including visualization of aggregated color and height information, visualization of aggregates that are discernible from non-aggregates, and visualization of outliers within aggregates. 
-      Applications include visualization of software maps, business intelligence data, file hierarchies for storage devices, and the like.
+    An aggregation approach allows for a dynamic, interactive, adaptive level-of-detail for 2D, 2.5D, and 3D treemaps for visualization of complex information. 
+    For example, the 2.5D treemap visualization concept is extended by providing adaptive identification of aggregates by means of an interactive node scoring approach based on contextual relevance and various other task, interaction, visibility, and/or performance specific criteria. 
+    For the resulting mapping and rendering, a per-frame aggregation of blocks and accumulation of those attributes mapped to visual variables (context) is described. 
+    Since every embodiment is also targeted for dynamic, interactive visual display of 2.5D treemaps, the rendering is designed to be capable for execution in real-time.
+    Visual preservation of important information is conveyed by hierarchy elements and their mapped attributes (nodes-of-interest) as well as compliance to known aggregation guidelines including visualization of aggregated color and height information, visualization of aggregates that are discernible from non-aggregates, and visualization of outliers within aggregates. 
+    Applications include visualization of software maps, business intelligence data, file hierarchies for storage devices, and the like.
   thumbnail: 2018-patent-lod-treemaps.jpg
   downloads: 
   - href: https://patents.google.com/patent/US9953443B2/en
@@ -433,12 +433,12 @@ publications:
   - Benjamin Wasty
   published: Proc. IEEE International Conference Information Visualisation (iV)
   abstract:
-      Today's rendering APIs lack robust functionality and capabilities for dynamic, real-time text rendering and labeling, which represent key requirements for 3D application design in many fields.
-      As a consequence, most rendering systems are barely or not at all equipped with respective capabilities.
-      This paper drafts the unified text rendering and labeling API OpenLL intended to complement common rendering APIs, frameworks, and transmission formats.
-      For it, various uses of static and dynamic placement of labels are showcased and a text interaction technique is presented.
-      Furthermore, API design constraints with respect to state-of-the-art text rendering techniques are discussed.
-      This contribution is intended to initiate a community-driven specification of a free and open label library.
+    Today's rendering APIs lack robust functionality and capabilities for dynamic, real-time text rendering and labeling, which represent key requirements for 3D application design in many fields.
+    As a consequence, most rendering systems are barely or not at all equipped with respective capabilities.
+    This paper drafts the unified text rendering and labeling API OpenLL intended to complement common rendering APIs, frameworks, and transmission formats.
+    For it, various uses of static and dynamic placement of labels are showcased and a text interaction technique is presented.
+    Furthermore, API design constraints with respect to state-of-the-art text rendering techniques are discussed.
+    This contribution is intended to initiate a community-driven specification of a free and open label library.
   thumbnail: 2018-iv-open-ll.jpg
   downloads: 
   - href: https://doi.org/10.1109/iV.2018.00039
@@ -459,10 +459,10 @@ publications:
   - Jürgen Döllner
   published: Proc. ACM International Symposium on Visual Information Communication and Interaction (VINCI)
   abstract:
-      The 2.5D treemap facilitates interactive exploration of multivariate data. 
-      It includes height as a visual variable for additional information display and enables exploration of correlations within mapped attributes. 
-      In this paper techniques for the visual display of a height reference for interactive modification from within the visualization are introduced.
-      Results of a preliminary user study are presented and potential benefits for improved performance, i.e., precision and speed, of identification, comparison, filtering, and selection tasks are discussed.
+    The 2.5D treemap facilitates interactive exploration of multivariate data. 
+    It includes height as a visual variable for additional information display and enables exploration of correlations within mapped attributes. 
+    In this paper techniques for the visual display of a height reference for interactive modification from within the visualization are introduced.
+    Results of a preliminary user study are presented and potential benefits for improved performance, i.e., precision and speed, of identification, comparison, filtering, and selection tasks are discussed.
   thumbnail: 2018-vinci-reference.jpg
   downloads: 
   - href: https://doi.org/10.1145/3231622.3231638
@@ -483,11 +483,11 @@ publications:
   - Jürgen Döllner
   published: Proc. International Conference on Information Visualization Theory and Applications (IVAPP)
   abstract:
-      2.5D treemaps can be used to visualize tree-structured data using the height dimension for additional information display. 
-      For tree-structured and time-variant data though, changes or variants in the data are difficult to visualize. 
-      This paper presents an in-situ approach to depict differences between two versions (original and comparative state) of a data set, e.g., metrics of different revisions of a software system, in a single 2.5D treemap.
-      Multiple geometry variants for the in-situ representation of individual nodes, especially concerning height, area, and color, are presented and discussed. 
-      Finally, a preliminary study for the simultaneous change of attributes in height and area is described, hinting that arrow pattern help to clarify reading direction.
+    2.5D treemaps can be used to visualize tree-structured data using the height dimension for additional information display. 
+    For tree-structured and time-variant data though, changes or variants in the data are difficult to visualize. 
+    This paper presents an in-situ approach to depict differences between two versions (original and comparative state) of a data set, e.g., metrics of different revisions of a software system, in a single 2.5D treemap.
+    Multiple geometry variants for the in-situ representation of individual nodes, especially concerning height, area, and color, are presented and discussed. 
+    Finally, a preliminary study for the simultaneous change of attributes in height and area is described, hinting that arrow pattern help to clarify reading direction.
   thumbnail: 2019-ivapp-insitu.jpg
   downloads: 
   - href: https://doi.org/10.5220/0007576203140321
@@ -511,11 +511,11 @@ publications:
   - Jürgen Döllner
   published: Proc. ACM International Symposium on Visual Information Communication and Interaction (VINCI)
   abstract:
-      Software maps provide a general-purpose interactive user interface and information display for software analytics tools.
-      This paper systematically introduces and classifies software maps as a treemap-based technique for software cartography.
-      It provides an overview of advanced visual metaphors and techniques, each suitable for interactive visual analytics tasks, that can be used to enhance the expressiveness of software maps.
-      Thereto, the metaphors and techniques are briefly described, located within a visualization pipeline model, and considered within the software map design space.
-      Consequent applications and use cases w.r.t. different types of software system data and software engineering data are discussed, arguing for a versatile use of software maps in visual software analytics.
+    Software maps provide a general-purpose interactive user interface and information display for software analytics tools.
+    This paper systematically introduces and classifies software maps as a treemap-based technique for software cartography.
+    It provides an overview of advanced visual metaphors and techniques, each suitable for interactive visual analytics tasks, that can be used to enhance the expressiveness of software maps.
+    Thereto, the metaphors and techniques are briefly described, located within a visualization pipeline model, and considered within the software map design space.
+    Consequent applications and use cases w.r.t. different types of software system data and software engineering data are discussed, arguing for a versatile use of software maps in visual software analytics.
   thumbnail: 2019-vinci-advanced.jpg
   downloads: 
   - href: https://doi.org/10.1145/3356422.3356444
@@ -535,11 +535,11 @@ publications:
   - Jürgen Döllner
   published: 'VISIGRAPP 2019: Computer Vision, Imaging and Computer Graphics Theory and Applications'
   abstract: 
-      This article reiterates on the recently presented hierarchy visualization service HiViSer and its API.
-      It illustrates its decomposition into modular services for data processing and visualization of tree-structured data.
-      The decomposition is aligned to the common structure of visualization pipelines and, in this way, facilitates attribution of the services' capabilities.
-      Suitable base resource types are proposed and their structure and relations as well as a subtyping concept for specifics in hierarchy visualization implementations are detailed. Moreover, state-of-the-art quality standards and techniques for self-documentation and discovery of components are incorporated.
-      As a result, a blueprint for Web service design, architecture, modularization, and composition is presented, targeting fundamental visualization tasks of tree-structured data, i.e., gathering, processing, rendering, and provisioning. Finally, the applicability of the service components and the API is evaluated in the context of exemplary applications.
+    This article reiterates on the recently presented hierarchy visualization service HiViSer and its API.
+    It illustrates its decomposition into modular services for data processing and visualization of tree-structured data.
+    The decomposition is aligned to the common structure of visualization pipelines and, in this way, facilitates attribution of the services' capabilities.
+    Suitable base resource types are proposed and their structure and relations as well as a subtyping concept for specifics in hierarchy visualization implementations are detailed. Moreover, state-of-the-art quality standards and techniques for self-documentation and discovery of components are incorporated.
+    As a result, a blueprint for Web service design, architecture, modularization, and composition is presented, targeting fundamental visualization tasks of tree-structured data, i.e., gathering, processing, rendering, and provisioning. Finally, the applicability of the service components and the API is evaluated in the context of exemplary applications.
   thumbnail: 2019-ivapp-hiviser-extended.jpg
   downloads: 
   - href: https://doi.org/10.1007/978-3-030-41590-7_10
@@ -759,7 +759,7 @@ publications:
     Personal, long-term investment products, especially ones for retirement savings, require thorough understanding to use them profitably. 
     Even simple savings plans based on exchange-traded funds(ETFs) are subject to many variables and uncertainties to be considered for expected and planned-upon returns. 
     We present aninteractive simulation of an ETF-based savings plan that combinesforecasts, risk awareness, taxes and costs, inflation, and dynamicinflows and outflows into a single visualization. 
-    The visualizationconsists of four parts: a form-fill interface for configuration, a savings and payout simulation, a cash flow chart, and a savings chart. Based on a specific use case, we discuss how private investors canbenefit from using our visualization after a short training period. 
+    The visualization consists of four parts; a form-fill interface for configuration, a savings and payout simulation, a cash flow chart, and a savings chart. Based on a specific use case, we discuss how private investors canbenefit from using our visualization after a short training period. 
   thumbnail: 2021-vinci-etf-visualization.jpg
   
 
