@@ -780,4 +780,7 @@ publications:
     We show how procedural texture patterns can be superimposed to the color mapping and support transitions.
     To this end, we discuss qualitative properties of each pattern, demonstrate their ability to communicate change direction both with and without animation, and conclude which of the patterns are more likely to increase effectiveness and correctness of the change mapping in 2.5D treemaps. 
   thumbnail: 2021-vinci-procedural.jpg
-  
+  downloads: 
+  - href: https://doi.org/10.1145/3481549.3481570
+    desc: DOI
+    
