@@ -783,4 +783,26 @@ publications:
   downloads: 
   - href: https://doi.org/10.1145/3481549.3481570
     desc: DOI
-    
+
+
+- key: 2021-vinci-software-galaxy
+  bibtex: limberger2021-software-galaxy.bib
+  title: 'Software Galaxies: Displaying Coding Activities using a Galaxy Metaphor'
+  date: '2021-09-08'
+  authors: 
+  - Daniel Atzberger
+  - Willy Scheibel
+  - Daniel Limberger
+  - Jürgen Döllner
+  published: Proc. ACM International Symposium on Visual Information Communication and Interaction (VINCI)
+  abstract:
+    Software visualization uses metaphors to depict software and software development data that usually has no gestalt.
+    The choice of a metaphor and visual depiction is researched broadly, but deriving a layout based on similarity is still challenging.
+    We present a novel approach to 3D software visualization called Software Galaxy.
+    Our layout is based on applying Latent Dirichlet Allocation on source code.
+    We utilize a metaphor inspired from astronomy for depicting software metrics for single files and clusters.
+    Our first experiments indicate that a 3D visualization capturing semantic relatedness can be beneficial for standard program comprehension tasks.
+  thumbnail: 2021-vinci-software-galaxy.jpg
+  downloads: 
+  - href: https://doi.org/10.1145/3481549.3481573
+    desc: DOI
