@@ -1,0 +1,9 @@
+@inproceedings{atzberger2021-software-galaxy,
+ author = {Atzberger, Daniel and Scheibel, Willy and Limberger, Daniel and D\"{o}llner, J\"{u}rgen},
+ title = {Software Galaxies: Displaying Coding Activities using a Galaxy Metaphor},
+ booktitle = {Proceedings of the 14th International Symposium on Visual Information Communication and Interaction},
+ series = {VINCI '21},
+ year = {2021},
+ publisher = {ACM}
+ doi = {},
+}
