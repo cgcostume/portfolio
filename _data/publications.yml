@@ -761,6 +761,9 @@ publications:
     We present aninteractive simulation of an ETF-based savings plan that combinesforecasts, risk awareness, taxes and costs, inflation, and dynamicinflows and outflows into a single visualization. 
     The visualization consists of four parts; a form-fill interface for configuration, a savings and payout simulation, a cash flow chart, and a savings chart. Based on a specific use case, we discuss how private investors canbenefit from using our visualization after a short training period. 
   thumbnail: 2021-vinci-etf-visualization.jpg
+    downloads: 
+  - href: https://doi.org/10.1145/3481549.3481568
+    desc: DOI
   
 
 - key: 2021-vinci-procedural-textures
