@@ -743,6 +743,11 @@ publications:
     We showcase an interactive, web-based prototype that allows for the exploration of historical as well as real-time data of multiple temperature and humidity sensors. 
     Finally, we sketch an integrated pipeline from sensor data acquisition to visualization, discuss the creation of semantic geometry and subsequent preprocessing, and provide insights into our real-time rendering implementation.
   thumbnail: 2021-eurovis-roomcanvas.jpg
+  downloads: 
+  - href: https://doi.org/10.2312/evs.20211048
+    desc: DOI
+  - href: https://roomcanvas.dev/
+    desc: Demo  
   
 
 - key: 2021-vinci-etf-visualization
