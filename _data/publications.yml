@@ -786,7 +786,7 @@ publications:
 
 
 - key: 2021-vinci-software-galaxy
-  bibtex: limberger2021-software-galaxy.bib
+  bibtex: atzberger2021-software-galaxy.bib
   title: 'Software Galaxies: Displaying Coding Activities using a Galaxy Metaphor'
   date: '2021-09-08'
   authors: 
