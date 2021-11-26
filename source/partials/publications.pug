@@ -1,5 +1,9 @@
 
-- var publications = data.publications;
+-
+  const publications = data.publications.publications.sort((a, b) => {
+    const aDate = Date.parse(a.date);
+    const bDate = Date.parse(b.date);
+    return aDate < bDate ? +1 : aDate > bDate ? -1 : 0; });
 
 .row.text-center
   .col-12
@@ -12,3 +16,37 @@
       br.d-inline.d-sm-none
       span.d-none.d-sm-inline &ensp;|&ensp;
       a(href = `https://scholar.google.de/citations?user=${publications.scholar}`) Google Scholar
+
+include thumbnail
+
+each p in publications
+  if p.key === 'separator'
+    hr.row.separator
+  else
+    .row(id =`${p.key}`)
+
+      .col-lg-2.col-sm-3
+        +thumbnail(p.thumbnail, p.title, p.flickr)
+      .d-block.d-sm-none.mb-3.col-12
+
+      .col-lg-10.col-sm-9
+        h3 #{p.title}
+        p
+        | #{p.published},
+        | #{p.date.slice(0, 4)}
+        if p.lead_note
+          | ,&nbsp;
+          if p.lead_href
+            a(href = `${p.lead_href}`) #{p.lead_note}
+          else
+            | #{p.lead_note}
+        p
+          small #{p.authors.reduce((text, value, i, array) => text + (i < array.length - 1 ? ', ' : array.length > 2 ? ', and ' : ' and ') + value)}
+
+        p
+          if p.abstract
+            a(data-bs-toggle = 'collapse' href = `#abstract-${p.key}`) Abstract
+
+        if p.abstract
+          .collapse.abstract(data-bs-target id = `abstract-${p.key}`)
+            p !{p.abstract}

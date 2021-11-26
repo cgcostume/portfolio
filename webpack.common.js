@@ -14,6 +14,7 @@ const gitCommitHash = rev.indexOf(':') === -1 ? 'unknown' :
 
 const data = {
     revision: JSON.stringify(gitCommitHash),
+    config: parseYAMLThenStringifySync('config.yml'),
     contact: parseYAMLThenStringifySync('contact.yml'),
     header: parseYAMLThenStringifySync('header.yml'),
     publications: parseYAMLThenStringifySync('publications.yml')
@@ -70,6 +71,7 @@ module.exports = function (env) {
         context: path.resolve(__dirname, "./source"),
         entry: {
             'styles': ['./styles/main.scss'],
+            'bootstrap': ['./scripts/bootstrap.js'],
         },
 
         plugins: [
@@ -78,6 +80,9 @@ module.exports = function (env) {
                 patterns: [
                     { from: 'images/**/*.webp', to: '[path]/[name][ext]', force: false },
                     { from: 'vcard.vcf', to: '[name][ext]', force: false },
+                    /* third party scripts */
+                    { from: '../node_modules/jquery/dist/jquery.min.js', to: '[name][ext]' },
+
                 ]
             }),
             // new ImageMinimizerPlugin({
@@ -93,10 +98,7 @@ module.exports = function (env) {
             //     },
             // }),
             new webpack.DefinePlugin({
-                data: data,
-                // VISUALIZATIONS: JSON.stringify(require('./source/visualizations.json')),
-                // RESOURCES: JSON.stringify(require('./source/resources.json')),
-                // MEDIA: JSON.stringify(media),
+                data: data
             }),
             new MiniCssExtractPlugin({
                 filename: '[name].css',
