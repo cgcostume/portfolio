@@ -1,0 +1,14 @@
+
+- var publications = data.publications;
+
+.row.text-center
+  .col-12
+    h2 #{publications.heading}
+    p.pt-0 Research #[strong Profiles]:&ensp;
+      a(href = `https://orcid.org/${publications.orcid}`) ORCID
+      br.d-inline.d-sm-none
+      span.d-none.d-sm-inline &ensp;|&ensp;
+      a(href = `https://www.researchgate.net/profile/${publications.researchgate}`) Research Gate
+      br.d-inline.d-sm-none
+      span.d-none.d-sm-inline &ensp;|&ensp;
+      a(href = `https://scholar.google.de/citations?user=${publications.scholar}`) Google Scholar

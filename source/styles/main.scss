@@ -1,0 +1,272 @@
+@charset "utf-8";
+
+@use "@fontsource/roboto/scss/mixins" as Roboto;
+@use "@fontsource/roboto-mono/scss/mixins" as RobotoMono;
+
+@include Roboto.fontFaceCustom(
+  $weight: 300,
+  $display: normal,
+  $woffPath:  "~@fontsource/roboto/files/roboto-latin-300-normal.woff",
+  $woff2Path: "~@fontsource/roboto/files/roboto-latin-300-normal.woff2",
+  $unicodeRange: false
+);
+
+@include Roboto.fontFaceCustom(
+  $weight: 700,
+  $display: normal,
+  $woffPath:  "~@fontsource/roboto/files/roboto-latin-700-normal.woff",
+  $woff2Path: "~@fontsource/roboto/files/roboto-latin-700-normal.woff2",
+  $unicodeRange: false
+);
+
+@include RobotoMono.fontFaceCustom(
+  $weight: 400,
+  $display: normal,
+  $woffPath:  "~@fontsource/roboto-mono/files/roboto-mono-latin-400-normal.woff",
+  $woff2Path: "~@fontsource/roboto-mono/files/roboto-mono-latin-400-normal.woff2",
+  $unicodeRange: false
+);
+
+// variables override
+
+$body-color: #343a40 !default;
+$primary: #0dcaf0 !default;
+$secondary: #d63384 !default;
+// $primary: #6cbb23 !default;
+// $primary: #4e8aad !default;
+
+
+$enable-flex: true;
+$enable-rounded: true !default;
+
+$font-family-sans-serif: 'Roboto';
+$font-family-monospace: 'Roboto Mono';
+
+$headings-font-weight: 300;
+$font-weight-bold: 700;
+
+$jumbotron-bg: transparent;
+$jumbotron-padding: 0rem;
+
+$link-decoration: none;
+
+
+$enable-negative-margins: true;
+
+$aspect-ratios: (
+  "1x1": 100%,
+  "4x3": calc(3 / 4 * 100%),
+  "16x9": calc(9 / 16 * 100%),
+  "21x9": calc(9 / 21 * 100%),
+  "4x1": calc(1 / 4 * 100%)
+);
+
+
+// bootstrap modules - include path set by package script "sass"
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+
+// Layout & components
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+// @import "bootstrap/scss/tables";
+// @import "bootstrap/scss/forms";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/transitions";
+@import "bootstrap/scss/dropdown";
+// @import "bootstrap/scss/button-group";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/card";
+// @import "bootstrap/scss/breadcrumb";
+// @import "bootstrap/scss/pagination";
+// @import "bootstrap/scss/badge";
+// @import "bootstrap/scss/alert";
+// @import "bootstrap/scss/progress";
+@import "bootstrap/scss/list-group";
+@import "bootstrap/scss/close";
+// @import "bootstrap/scss/toasts";
+// @import "bootstrap/scss/modal";
+// @import "bootstrap/scss/tooltip";
+// @import "bootstrap/scss/popover";
+// @import "bootstrap/scss/carousel";
+// @import "bootstrap/scss/spinners";
+
+// Helpers
+@import "bootstrap/scss/helpers";
+
+// Utilities
+@import "bootstrap/scss/utilities/api";
+// scss-docs-end import-stack
+
+
+// common
+
+p {
+  hyphens: auto;
+  // @hyphenation-resource
+}
+
+header {
+  margin-top: 5rem;
+}
+
+h1 {
+  @extend .display-4;
+  @extend .text-uppercase;
+  @extend .my-4;
+
+  strong {
+    font-weight: $font-weight-bold;
+  }
+}
+
+h2 {
+  font-size: $font-size-base * 2.5;
+  @extend .text-uppercase;
+  @extend .my-5;
+}
+
+h3 {
+  font-size: $font-size-base * 1.0;
+  font-weight: bold;
+  @extend .mb-3;
+}
+
+// .navbar {
+
+//   background-color: $body-bg;
+
+//   #lang-select {
+
+//     margin-left: 1rem;
+
+//     > li.nav-item + .nav-item {
+//       margin-left: 0.25rem;
+//     }
+//   }
+
+//   .navbar-toggler {
+//     border: none;
+//     margin-bottom: -1rem;
+//     cursor: pointer;
+//   }
+
+//   .dropdown-menu {
+//     border: none;
+//   }
+
+//   .dropdown-item {
+//     color: $navbar-light-color;
+
+//     @include hover-focus {
+//       color: $navbar-light-hover-color;
+//       background: none;
+//     }
+//   }
+//   .dropdown-item.active {
+//     color: $navbar-light-active-color;
+//     background: none;
+//   }
+// }
+
+.text-justify {
+  text-align: justify;
+}
+
+.row {
+  margin-top: 2rem;
+}
+
+@media (min-width: 75em) {
+.container {
+    max-width: 60rem;
+}}
+
+section, footer {
+  padding: 4rem 0 0;
+}
+
+footer {
+   margin-bottom: 2rem;
+}
+
+.badge {
+  font-weight: $font-weight-normal;
+  text-align: right;
+}
+
+.badge.top-left {
+  position: absolute;
+}
+
+.project {
+  padding-bottom: 1rem; }
+
+.blueimp-gallery-controls {
+
+  > .prev, > .next {
+    background: transparent;
+    border: none;
+  }
+}
+
+.badge.animate {
+  -webkit-animation: sk-scaleout 0.66s infinite ease-in-out;
+  animation: sk-scaleout 0.66s infinite ease-in-out;
+}
+
+.bibtex {
+
+  @extend .card;
+  background-color: $card-cap-bg;
+  // .card {
+  //   background-color: #f7f7f9;
+  // }
+
+  pre {
+    font-size: 75%;
+    margin-bottom: 0;
+    overflow: hidden;
+  }
+
+  .btn-clipboard-parent {
+    display: block;
+    position: relative;
+    float: right;
+  }
+
+  .btn-clipboard {
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    z-index: 10;
+    display: block;
+    padding: .25rem .5rem;
+    font-size: 75%;
+    color: #818a91;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: .25rem;
+  }
+}
+
+
+@-webkit-keyframes sk-scaleout {
+    0% { opacity: 1.00; }
+   50% { opacity: 0.66; }
+  100% { opacity: 1.00; }
+}
+
+@keyframes sk-scaleout {
+    0% { opacity: 1.00; }
+   50% { opacity: 0.66; }
+  100% { opacity: 1.00; }
+}
