@@ -7,15 +7,15 @@
 
 .row.text-center
   .col-12
-    h2 #{publications.heading}
+    h2 #{data.publications.heading}
     p.pt-0 Research #[strong Profiles]:&ensp;
-      a(href = `https://orcid.org/${publications.orcid}`) ORCID
+      a(href = `https://orcid.org/${data.publications.orcid}`) ORCID
       br.d-inline.d-sm-none
       span.d-none.d-sm-inline &ensp;|&ensp;
-      a(href = `https://www.researchgate.net/profile/${publications.researchgate}`) Research Gate
+      a(href = `https://www.researchgate.net/profile/${data.publications.researchgate}`) Research Gate
       br.d-inline.d-sm-none
       span.d-none.d-sm-inline &ensp;|&ensp;
-      a(href = `https://scholar.google.de/citations?user=${publications.scholar}`) Google Scholar
+      a(href = `https://scholar.google.de/citations?user=${data.publications.scholar}`) Google Scholar
 
 include thumbnail
 

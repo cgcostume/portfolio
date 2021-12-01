@@ -1,6 +1,6 @@
 mixin thumbnail(src, alt, flickr)
   .thumbnail.position-relative
   if flickr
-    a(href = `https://www.flickr.com/photos/${data.config.flickr_user}/sets/${flickr}/` id = `${flickr}`).thumbnail.flickr
+    a.thumbnail.flickr(href = `https://www.flickr.com/photos/${data.config.flickr_user}/sets/${flickr}/` id = `${flickr}`)
       span.badge.bg-primary.top-left Flickr
-  img.img-fluid(width = `${data.config.img_defaults.thumbnail.w}` height = `${data.config.img_defaults.thumbnail.h}` src = `/images/${src}` alt = `Thumbnail of ${alt}`)
+  img.img-fluid.rounded(width = `${data.config.img_defaults.thumbnail.w}` height = `${data.config.img_defaults.thumbnail.h}` src = `/images/${src}` alt = `Thumbnail of ${alt}`)

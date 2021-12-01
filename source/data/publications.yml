@@ -1,3 +1,4 @@
+
 heading: Publications
 orcid: 0000-0002-9111-4809
 researchgate: Daniel_Limberger
@@ -5,13 +6,12 @@ scholar: 58R1TH4AAAAJ
 
 publications:
 
-
 - key: 2009-bt-pencil-synthesis
   title: Computergenerierte Bleistiftzeichnungen von 3D-Stadtmodellen
   date: '2009-11-01'
   authors:
   - Daniel Müller (now Limberger)
-  published: Bachelor's Thesis in IT-Systems Engineering
+  published: Bachelor's Thesis in IT-Systems Engineering, Hasso Plattner Institute
   abstract:
     This work summarizes techniques for 3D-image synthesis of pencil or crayon drawings of virtual 3D-city-models in real-time.
     The document was written and is available in German language only.
@@ -34,7 +34,7 @@ publications:
   date: '2012-09-06'
   authors:
   - Daniel Müller (now Limberger)
-  published: Master's Thesis in IT-Systems Engineering
+  published: Master's Thesis in IT-Systems Engineering, Hasso Plattner Institute
   abstract:
     The document was written and is available in German language only.
     <br><br>
@@ -765,7 +765,7 @@ publications:
   published: Proc. ACM International Symposium on Visual Information Communication and Interaction (VINCI)
   abstract:
     Personal, long-term investment products, especially ones for retirement savings, require thorough understanding to use them profitably.
-    Even simple savings plans based on exchange-traded funds(ETFs) are subject to many variables and uncertainties to be considered for expected and planned-upon returns.
+    Even simple savings plans based on exchange-traded funds (ETFs) are subject to many variables and uncertainties to be considered for expected and planned-upon returns.
     We present aninteractive simulation of an ETF-based savings plan that combinesforecasts, risk awareness, taxes and costs, inflation, and dynamicinflows and outflows into a single visualization.
     The visualization consists of four parts; a form-fill interface for configuration, a savings and payout simulation, a cash flow chart, and a savings chart. Based on a specific use case, we discuss how private investors canbenefit from using our visualization after a short training period.
   thumbnail: 2021-vinci-etf-visualization.webp
@@ -817,3 +817,44 @@ publications:
   downloads:
   - href: https://doi.org/10.1145/3481549.3481573
     desc: DOI
+
+
+- key: 2021-web3d-tumor-segmentation
+  bibtex: kordt2021-tumor-segmentation.bib
+  title: 'Interactive Volumetric Region Growing for Brain Tumor Segmentation on MRI using WebGL'
+  date: '2021-11-10'
+  authors:
+  - Jonas Kordt
+  - Paul Brachmann
+  - Daniel Limberger
+  - Christoph Lippert
+  published: Proc. ACM International Conference on Web3D Technology (Web3D)
+  abstract:
+    Volumetric segmentation of medical images is an essential tool in treatment planning and many longitudinal studies.
+    While machine learning approaches promise to fully automate it, they most often still depend on manually labeled training data.
+    We thus present a GPU-based volumetric region growing approach for semi-automatic brain tumor segmentation that can be interactively tuned.
+    Additionally, we propose multidimensional transfer functions for ray tracing that allow users to judge the quality of the grown region.
+    Our implementation produces a full brain tumor segmentation within a few milliseconds on consumer hardware.
+    The visualization uses adaptive resolution scaling and progressive, asynchronous shading computation to maintain a stable 60 Hz refresh rate.
+  thumbnail: 2021-web3d-tumor-segmentation.webp
+
+
+- key: 2022-grapp-pointcloud-stylization
+  bibtex: wagner2022-pointcloud-stylization.bib
+  title: 'A Non-Photorealistic Rendering Technique for Art-directed Hatching of 3D Point Clouds'
+  date: '2022-02-08'
+  authors:
+  - Ronja Wagner
+  - Ole Wegen
+  - Daniel Limberger
+  - Jürgen Döllner
+  - Matthias Trapp
+  published: Proc. International Conference on Computer Graphics Theory and Applications (GRAPP)
+  abstract:
+    Point clouds or point-based geometry of varying density can nowadays be easily acquired using LiDAR cameras or modern smartphones with LiDAR sensors.
+    We demonstrate how this data can be used directly to create novel artistic digital content using Non-Photorealistic Rendering techniques.
+    We introduce a GPU-based technique for art-directable NPR rendering of 3D point clouds at interactive frame-rates.
+    The technique uses either a subset or all of the points to generate oriented, sketchy strokes by taking local curvature and normal information into account.
+    It uses X-Toon textures as part of its parameterization, supports hatching and cross hatching, and is inherently temporal coherent with respect to virtual camera movements.
+    This introduces significant artistic freedom that is underlined by our results, which show that a variety of different sketchy styles such as colored crayons, pencil, pointillism, wax crayons, blue print, and chalk-drawings can be achieved on a wide spectrum of point clouds, i.e., covering 3D polygonal meshes as well as iPad-based LiDAR scans.
+  thumbnail: 2022-grapp-pointcloud-stylization.webp

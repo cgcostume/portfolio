@@ -1,11 +1,49 @@
----
+
 heading: Teaching
 
 terms:
 
+- term: '2022 : Summer Term'
+  courses:
+  - course: ToDo
+    type: ToDo
+    role: ToDo
+
+- term: '2021/22 : Winter Term'
+  courses:
+  - course: ToDo
+    type: ToDo
+    role: ToDo
+
+
+- term: '2021 : Summer Term'
+  courses:
+  - course: ToDo
+    type: ToDo
+    role: ToDo
+
+- term: '2020/21 : Winter Term'
+  courses:
+  - course: ToDo
+    type: ToDo
+    role: ToDo
+
+
+- term: '2020 : Summer Term'
+  courses:
+  - course: ToDo
+    type: ToDo
+    role: ToDo
+
+- term: '2019/20 : Winter Term'
+  courses:
+  - course: ToDo
+    type: ToDo
+    role: ToDo
+
 
 - term: '2019 : Summer Term'
-  courses: 
+  courses:
   - course: Computer Graphics II
     type: Lecture (BA)
     role: Co-Lecturer
@@ -21,7 +59,7 @@ terms:
 
 
 - term: '2018 : Summer Term'
-  courses: 
+  courses:
   - course: Advanced Games of Life
     type: Seminar (BA, MA)
     role: Tutor & Supervisor

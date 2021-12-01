@@ -6,7 +6,7 @@ header
   .row.text-center
     .col-lg-6.offset-lg-3.col-sm-8.offset-sm-2
       figure.figure
-        img.figure-img.img-fluid(width = `${data.config.img_defaults.header.w}` height = `${data.config.img_defaults.header.h}` src = `/images/${header.picture}` alt = `${header.picture_label}`)
+        img.figure-img.img-fluid.rounded(width = `${data.config.img_defaults.header.w}` height = `${data.config.img_defaults.header.h}` src = `/images/${header.picture}` alt = `${header.picture_label}`)
         if header.picture_copyright
           figcaption.figure-caption.text-end &copy; #{header.picture_copyright}
 

@@ -37,7 +37,8 @@ $secondary: #d63384 !default;
 
 
 $enable-flex: true;
-$enable-rounded: false !default;
+// $enable-rounded: false !default;
+$enable-rounded: true !default;
 
 $font-family-sans-serif: 'Roboto';
 $font-family-monospace: 'Roboto Mono';
@@ -198,13 +199,17 @@ footer {
    margin-bottom: 2rem;
 }
 
-.badge {
-  font-weight: $font-weight-normal;
-  text-align: right;
-}
+.flickr {
 
-.badge.top-left {
-  position: absolute;
+  .badge {
+    font-weight: $font-weight-normal;
+    text-align: right;
+  }
+
+  .badge.top-left {
+    position: absolute;
+    border-radius: $border-radius 0;
+  }
 }
 
 .project {
