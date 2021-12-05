@@ -20,8 +20,12 @@
 
     if selected === true
       h2 Selected #[strong #{data.publications.heading}]
+      p
+        a.text-secondary(href = '/publications.html') Show #[strong all #{data.publications.heading}]
     else
-      h2 #{data.publications.heading}
+      h2 All #[strong #{data.publications.heading}]
+      p
+        a.text-secondary(href = '/index.html') by #[strong #{data.header.name} #{data.header.surname}]
 
     p.pt-0 Research Profiles:&ensp;
       a(href = `https://orcid.org/${data.publications.orcid}`) ORCID
@@ -31,9 +35,6 @@
       br.d-inline.d-sm-none
       span.d-none.d-sm-inline &ensp;|&ensp;
       a(href = `https://scholar.google.de/citations?user=${data.publications.scholar}`) Google Scholar
-
-    if selected
-      p &mdash;&ensp; #[a(href = '/publications.html') Show all #{data.publications.publications.length} #{data.publications.heading}] &ensp;&mdash;
 
 
 include thumbnail

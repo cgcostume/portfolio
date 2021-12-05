@@ -837,7 +837,6 @@ publications:
 
 
 - key: 2021-web3d-tumor-segmentation
-  bibtex: kordt2021-tumor-segmentation
   title: 'Interactive Volumetric Region Growing for Brain Tumor Segmentation on MRI using WebGL'
   date: '2021-11-10'
   authors:
@@ -857,7 +856,6 @@ publications:
 
 
 - key: 2022-grapp-pointcloud-stylization
-  bibtex: wagner2022-pointcloud-stylization
   title: 'A Non-Photorealistic Rendering Technique for Art-directed Hatching of 3D Point Clouds'
   date: '2022-02-08'
   authors:

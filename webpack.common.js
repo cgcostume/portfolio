@@ -50,7 +50,7 @@ const webp = require('imagemin-webp');
 imagemin(['source/images/*.{jpg,png}'], {
     destination: 'source/images',
     plugins: [
-        webp({ quality: 96 })
+        webp({ quality: 88 })
     ]
 })
 // imagemin(['source/images/*.{svg}'], {
