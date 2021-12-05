@@ -22,6 +22,7 @@
 @include RobotoMono.fontFaceCustom(
   $weight: 400,
   $display: normal,
+  $fontName: "Roboto Mono",
   $woffPath:  "~@fontsource/roboto-mono/files/roboto-mono-latin-400-normal.woff",
   $woff2Path: "~@fontsource/roboto-mono/files/roboto-mono-latin-400-normal.woff2",
   $unicodeRange: false
@@ -40,14 +41,17 @@ $enable-flex: true;
 // $enable-rounded: false !default;
 $enable-rounded: true !default;
 
+// In honor of Microsoft Windows 11
+$border-radius: 8pt;
+
 $font-family-sans-serif: 'Roboto';
 $font-family-monospace: 'Roboto Mono';
 
 $headings-font-weight: 300;
 $font-weight-bold: 700;
 
-$jumbotron-bg: transparent;
-$jumbotron-padding: 0rem;
+// $jumbotron-bg: transparent;
+// $jumbotron-padding: 0rem;
 
 $link-decoration: none;
 
@@ -123,16 +127,18 @@ h1 {
   @extend .display-4;
   @extend .text-uppercase;
   @extend .my-4;
-
-  strong {
-    font-weight: $font-weight-bold;
-  }
 }
 
 h2 {
   font-size: $font-size-base * 2.5;
   @extend .text-uppercase;
   @extend .my-5;
+}
+
+h1, h2 {
+  strong {
+    font-weight: $font-weight-bold;
+  }
 }
 
 h3 {
@@ -232,34 +238,21 @@ footer {
 
   @extend .card;
   background-color: $card-cap-bg;
-  // .card {
-  //   background-color: #f7f7f9;
-  // }
+  border-radius: $border-radius-sm;
 
   pre {
     font-size: 75%;
     margin-bottom: 0;
-    overflow: hidden;
+    // white-space: pre-wrap;
+    // word-break: keep-all
   }
 
-  .btn-clipboard-parent {
-    display: block;
-    position: relative;
-    float: right;
-  }
-
-  .btn-clipboard {
-    position: absolute;
-    top: 0rem;
-    right: 0rem;
-    z-index: 10;
-    display: block;
-    padding: .25rem .5rem;
-    font-size: 75%;
+  .btn {
     color: #818a91;
+    font-size: 75%;
     cursor: pointer;
     background-color: transparent;
-    border-radius: .25rem;
+    padding: .25rem .5rem;
   }
 }
 

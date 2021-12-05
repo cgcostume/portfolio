@@ -13,6 +13,12 @@
         "editor.tabSize": 2,
         "editor.autoIndent": true
     },
+    "[bibtex]": {
+        "editor.insertSpaces": false,
+        "editor.tabSize": 2,
+        "editor.autoIndent": false,
+        "editor.formatOnSave": false
+    },
     "files.associations": {
         "*.bithoundrc": "json",
         "*.nycrc": "json"
@@ -31,8 +37,7 @@
         "node_modules": true
     },
     "cSpell.language": "en",
-    "cSpell.words": [
-    ],
+    "cSpell.words": [],
     "cSpell.flagWords": [
         "hte"
     ],

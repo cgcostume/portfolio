@@ -7,6 +7,7 @@ scholar: 58R1TH4AAAAJ
 publications:
 
 - key: 2009-bt-pencil-synthesis
+  selected: true
   title: Computergenerierte Bleistiftzeichnungen von 3D-Stadtmodellen
   date: '2009-11-01'
   authors:
@@ -30,6 +31,7 @@ publications:
 
 
 - key: 2012-mt-sky-rendering
+  selected: true
   title: Photorealistisches Rendering atmosphärischer Effekte in geovirtuellen 3D-Umgebungen in Echtzeit
   date: '2012-09-06'
   authors:
@@ -60,11 +62,12 @@ publications:
 
 
 - key: separator
+  selected: true
   date: '2012-10-01'
 
 
 - key: 2012-vmv-sky-phenomena
-  bibtex: limberger2012-sky-phenomena.bib
+  bibtex: limberger2012-sky-phenomena
   title: Single-Pass Rendering of Day and Night Sky Phenomena
   date: '2012-11-01'
   authors:
@@ -92,7 +95,7 @@ publications:
     desc: Source Code
 
 - key: 2013-web3d-web-based-swmaps
-  bibtex: limberger2013-web-based-swmaps.bib
+  bibtex: limberger2013-interactive
   title: Interactive Software Maps for Web-Based Source Code Analysis
   date: '2013-05-01'
   authors:
@@ -119,7 +122,7 @@ publications:
 
 
 - key: 2014-expressive-parameter-painting
-  bibtex: limberger2014-parameter-painting.bib
+  bibtex: limberger2014-parameter-painting
   title: Painting Per-Pixel Parametrization for Interactive Image Filtering
   date: '2014-08-01'
   authors:
@@ -139,8 +142,9 @@ publications:
 
 
 - key: 2015-cae-oilpaint-stylization
-  bibtex: semmo2015-oilpaint-stylization.bib
-  title: Image Stylization by Oil Paint Filtering Using Color Palettes
+  selected: true
+  bibtex: semmo2015-oilpaint-stylization
+  title: Image Stylization by Oil Paint Filtering using Color Palettes
   date: '2015-06-20'
   authors:
   - Amir Semmo
@@ -166,7 +170,7 @@ publications:
 
 
 - key: 2015-cgvc-natural-metaphors
-  bibtex: wuerfel2015-natural-metaphors.bib
+  bibtex: wuerfel2015-natural-metaphors
   title: Natural Phenomena as Metaphors for Visualization of Trend Data in Interactive Software Maps
   date: '2015-09-16'
   authors:
@@ -189,7 +193,7 @@ publications:
 
 
 - key: 2016-cgf-oilpaint-stylization
-  bibtex: semmo2016-oilpaint-stylization.bib
+  bibtex: semmo2016-oilpaint-stylization
   title: Image Stylization by Interactive Oil Paint Filtering
   date: '2016-01-09'
   authors:
@@ -215,7 +219,8 @@ publications:
 
 
 - key: 2016-gpupro-multi-frame-sampling
-  bibtex: limberger2016-multi-frame-sampling-pro.bib
+  selected: true
+  bibtex: limberger2016-multi-frame-sampling-pro
   title: Progressive Rendering using Multi-frame Sampling
   date: '2016-04-08'
   authors:
@@ -228,10 +233,13 @@ publications:
     This chapter presents an approach that distributes sampling over multiple, consecutive frames, and, thereby, enables sampling-based, real-time rendering techniques to be implemented for most graphics hardware and systems in a less complex, straightforward way.
     This systematic, extensible schema allows developers to effectively handle the increasing implementation complexity of advanced, sophisticated, real-time rendering techniques, while improving responsiveness and reducing required hardware resources.
   thumbnail: 2016-gpupro-multi-frame-sampling.webp
+  downloads:
+  - href: https://doi.org/10.1201/b21261
+    desc: DOI
 
 
 - key: 2016-iv-sketchiness-treemaps
-  bibtex: limberger2016-sketchiness-treemaps.bib
+  bibtex: limberger2016-sketchiness-treemaps
   title: Evaluation of Sketchiness as a Visual Variable for 2.5D Treemaps
   date: '2016-07-19'
   authors:
@@ -256,7 +264,7 @@ publications:
 
 
 - key: 2016-siggrapg-multi-frame-sampling
-  bibtex: limberger2016-multi-frame-sampling.bib
+  bibtex: limberger2016-multi-frame-sampling
   title: Real-time Rendering of High-quality Effects using Multi-frame Sampling
   date: '2016-08-01'
   authors:
@@ -269,6 +277,8 @@ publications:
     By distributing and accumulating samples of sampling-based rendering techniques (e.g., anti-aliasing, orderindependent transparency, depth-of-field and shadowing, ambient occlusion, screen-space reflections) over multiple frames, images of very high quality can be synthesized with unequaled resource-efficiency.
   thumbnail: 2016-siggraph-multi-frame-sampling.webp
   downloads:
+  - href: https://doi.org/10.1145/2945078.2945157
+    desc: DOI
   - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/305082223/inline/jsViewer/5c7feab2458515831f8afeb8?pdfJsDownload=1
     desc: Poster
   - href: https://github.com/cgcostume/multiframesampling
@@ -278,7 +288,7 @@ publications:
 
 
 - key: 2016-web3d-declarative-treemaps
-  bibtex: limberger2016-declarative-treemaps.bib
+  bibtex: limberger2016-declarative-treemaps
   title: Dynamic 2.5D Treemaps using Declarative 3D on the Web
   date: '2016-08-01'
   authors:
@@ -308,7 +318,7 @@ publications:
 
 
 - key: 2017-ivapp-aggregation-swmaps
-  bibtex: limberger2017-aggregation.bib
+  bibtex: limberger2017-aggregation
   title: Reducing Visual Complexity in Software Maps using Importance-based Aggregation of Nodes
   date: '2017-02-27'
   authors:
@@ -336,7 +346,8 @@ publications:
 
 
 - key: 2017-web3d-progressive
-  bibtex: limberger2017-progressive.bib
+  selected: true
+  bibtex: limberger2017-progressive
   title: Progressive High-Quality Rendering for Interactive Information Cartography using WebGL
   date: '2017-06-05'
   authors:
@@ -361,7 +372,7 @@ publications:
 
 
 - key: 2017-iv-mixed-projection
-  bibtex: limberger2017-mixed.bib
+  bibtex: limberger2017-mixed
   title: 'Mixed-Projection Treemaps: A Novel Approach Mixing 2D and 2.5D Treemaps'
   date: '2017-07-11'
   authors:
@@ -387,7 +398,7 @@ publications:
 
 
 - key: 2018-gpu360-multi-frame-sampling
-  bibtex: limberger2018-multi-frame-sampling-pro.bib
+  bibtex: limberger2018-multi-frame-pro
   title: Progressive Rendering using Multi-frame Sampling | Reprint of the GPU Pro 7 Article
   date: '2018-07-10'
   authors:
@@ -400,10 +411,14 @@ publications:
     This chapter presents an approach that distributes sampling over multiple, consecutive frames, and, thereby, enables sampling-based, real-time rendering techniques to be implemented for most graphics hardware and systems in a less complex, straightforward way.
     This systematic, extensible schema allows developers to effectively handle the increasing implementation complexity of advanced, sophisticated, real-time rendering techniques, while improving responsiveness and reducing required hardware resources.
   thumbnail: 2018-gpu360-multi-frame-sampling.webp
+  downloads:
+  - href: https://doi.org/10.1201/9781351261524
+    desc: DOI
 
 
 - key: 2018-patent-lod-treemaps
-  bibtex: limberger2018-lod-treemaps.bib
+  selected: true
+  bibtex: limberger2018-lod-patent
   title: Interactive, Adaptive Level-of-Detail in 2.5D Treemaps
   date: '2018-07-10'
   authors:
@@ -425,7 +440,7 @@ publications:
 
 
 - key: 2018-iv-open-ll
-  bibtex: limberger2018-openll.bib
+  bibtex: limberger2018-openll
   title: 'OpenLL: an API for Dynamic 2D and 3D Labeling'
   date: '2018-07-10'
   authors:
@@ -453,7 +468,7 @@ publications:
 
 
 - key: 2018-vinci-reference
-  bibtex: limberger2018-reference.bib
+  bibtex: limberger2018-reference
   title: Interactive, Height-based Filtering in 2.5D Treemaps
   date: '2018-08-10'
   authors:
@@ -477,7 +492,7 @@ publications:
 
 
 - key: 2019-ivapp-insitu
-  bibtex: limberger2019-insitu.bib
+  bibtex: limberger2019-insitu
   title: In-Situ Comparison for 2.5D Treemaps
   date: '2019-02-25'
   authors:
@@ -504,7 +519,8 @@ publications:
 
 
 - key: 2019-vinci-advanced
-  bibtex: limberger2019-advanced.bib
+  selected: true
+  bibtex: limberger2019-advanced
   title: Advanced Visual Metaphors and Techniques for Software Maps
   date: '2019-09-20'
   authors:
@@ -528,7 +544,7 @@ publications:
 
 
 - key: 2019-hiviser-extended
-  bibtex: scheibel2019-hiviser-extended.bib
+  bibtex: scheibel2019-hiviser-extended
   title: Visualization of Tree-structured Data using Web Service Composition
   date: '2020-02-20'
   authors:
@@ -552,7 +568,7 @@ publications:
 
 
 - key: 2020-treemap-taxonomy
-  bibtex: scheibel2020-treemap-taxonomy.bib
+  bibtex: scheibel2020-treemap-taxonomy
   title: A Taxonomy of Treemap Visualization Techniques
   date: '2020-02-27'
   authors:
@@ -579,7 +595,7 @@ publications:
 
 
 - key: 2020-vinci-survey-effectiveness
-  bibtex: fiedler2020-survey-effectiveness.bib
+  bibtex: fiedler2020-survey-effectiveness
   title: Survey on User Studies on the Effectiveness of Treemaps
   date: '2020-12-08'
   authors:
@@ -607,7 +623,7 @@ publications:
 
 
 - key: 2020-vinci-survey-layouts
-  bibtex: scheibel2020-survey-layouts.bib
+  bibtex: scheibel2020-survey-layouts
   title: Survey of Treemap Layout Algorithms
   date: '2020-12-08'
   authors:
@@ -630,7 +646,7 @@ publications:
 
 
 - key: 2020-vinci-uncertainty
-  bibtex: limberger2020-uncertainty.bib
+  bibtex: limberger2020-uncertainty
   title: Depicting Uncertainty in 2.5D Treemaps
   date: '2020-12-08'
   authors:
@@ -651,7 +667,7 @@ publications:
 
 
 - key: 2020-web3d-pbr-lighting
-  bibtex: otto2020-pbr-lighting.bib
+  bibtex: otto2020-pbr-lighting
   title: Physically-based Environment and Area Lighting using Progressive Rendering in WebGL
   date: '2020-11-09'
   authors:
@@ -675,8 +691,8 @@ publications:
 
 
 - key: 2020-web3d-scatter-plot
-  bibtex: wagner2020-scatter-plot.bib
-  title: A Framework for Interactive Exploration of Clusters in Massive Data Using 3D Scatter Plots and WebGL
+  bibtex: wagner2020-scatter-plot
+  title: A Framework for Interactive Exploration of Clusters in Massive Data using 3D Scatter Plots and WebGL
   date: '2020-11-09'
   authors:
   - Lukas Wagner
@@ -699,7 +715,7 @@ publications:
 
 
 - key: 2021-ivapp-software-forest
-  bibtex: atzberger2021-software-forest.bib
+  bibtex: atzberger2021-software-forest
   title: 'Software Forest: A Visualization of Semantic Similarities in Source Code using a Tree Metaphor'
   date: '2021-02-08'
   authors:
@@ -727,7 +743,8 @@ publications:
 
 
 - key: 2021-eurovis-roomcanvas
-  bibtex: koenig2021-roomcanvas.bib
+  selected: true
+  bibtex: koenig2021-roomcanvas
   title: 'RoomCanvas: A Visualization System for Spatiotemporal Temperature Data in Smart Homes'
   date: '2021-06-16'
   authors:
@@ -754,7 +771,7 @@ publications:
 
 
 - key: 2021-vinci-etf-visualization
-  bibtex: buessemeyer2021-etf-visualization.bib
+  bibtex: buessemeyer2021-etf-visualization
   title: 'Interactive Simulation and Visualization of Long-Term, ETF-based Investment Strategies'
   date: '2021-09-08'
   authors:
@@ -775,7 +792,7 @@ publications:
 
 
 - key: 2021-vinci-procedural-textures
-  bibtex: limberger2021-procedural.bib
+  bibtex: limberger2021-procedural
   title: 'Visualization of Data Changes in 2.5D Treemaps using Procedural Textures and Animated Transitions'
   date: '2021-09-08'
   authors:
@@ -797,7 +814,7 @@ publications:
 
 
 - key: 2021-vinci-software-galaxy
-  bibtex: atzberger2021-software-galaxy.bib
+  bibtex: atzberger2021-software-galaxy
   title: 'Software Galaxies: Displaying Coding Activities using a Galaxy Metaphor'
   date: '2021-09-08'
   authors:
@@ -820,7 +837,7 @@ publications:
 
 
 - key: 2021-web3d-tumor-segmentation
-  bibtex: kordt2021-tumor-segmentation.bib
+  bibtex: kordt2021-tumor-segmentation
   title: 'Interactive Volumetric Region Growing for Brain Tumor Segmentation on MRI using WebGL'
   date: '2021-11-10'
   authors:
@@ -840,7 +857,7 @@ publications:
 
 
 - key: 2022-grapp-pointcloud-stylization
-  bibtex: wagner2022-pointcloud-stylization.bib
+  bibtex: wagner2022-pointcloud-stylization
   title: 'A Non-Photorealistic Rendering Technique for Art-directed Hatching of 3D Point Clouds'
   date: '2022-02-08'
   authors:
