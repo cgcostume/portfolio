@@ -1,11 +1,10 @@
-'use strict';
 
-const fs = require('fs');
-const glob = require('glob');
-const path = require('path');
-const webpack = require('webpack');
+import fs from 'fs';
+import glob from 'glob';
+import path from 'path';
+import webpack from 'webpack';
 
-const yaml = require('yaml');
+import yaml from 'yaml';
 
 const parseYAMLThenStringifySync = (filename) => {
     const data = fs.readFileSync(`./source/data/${filename}`, 'utf8');
@@ -26,7 +25,7 @@ const rev = fs.readFileSync('.git/HEAD').toString().trim();
 const gitCommitHash = rev.indexOf(':') === -1 ? 'unknown' :
     fs.readFileSync('.git/' + rev.substring(5)).toString().trim();
 
-const bibFiles = glob.sync(path.join(__dirname, 'source/data/bibliography', '/*.bib'));
+const bibFiles = glob.sync(path.join('source/data/bibliography', '/*.bib'));
 
 const data = {
     revision: JSON.stringify(gitCommitHash),
@@ -38,14 +37,13 @@ const data = {
 };
 
 
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+import CopyWebpackPlugin from 'copy-webpack-plugin';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
 
-const imagemin = require('imagemin');
-const webp = require('imagemin-webp');
-// const { imageminSvgo } = require('imagemin-svgo');
+import imagemin from 'imagemin';
+import webp from 'imagemin-webp';
 
 imagemin(['source/images/*.{jpg,png}'], {
     destination: 'source/images',
@@ -53,6 +51,9 @@ imagemin(['source/images/*.{jpg,png}'], {
         webp({ quality: 88 })
     ]
 })
+
+// const { imageminSvgo } = require('imagemin-svgo');
+//
 // imagemin(['source/images/*.{svg}'], {
 //     destination: 'source/images',
 //     plugins: [
@@ -64,15 +65,13 @@ imagemin(['source/images/*.{jpg,png}'], {
 //         })
 //     ]
 // })
-
-
 // const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 
 
-module.exports = function (env) {
+export default function (env, __dirname) {
 
     const pugFiles = glob.sync(path.join(__dirname, 'source', '/*.pug'));
-    console.log('pug entries', pugFiles);
+    console.log(`pug entries in "${__dirname}":`, pugFiles);
 
     const templates = [];
     pugFiles.forEach((template) => {
