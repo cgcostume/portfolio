@@ -1,5 +1,5 @@
 
-const clipboard = require('clipboard');
+import clipboard from 'clipboard';
 
 // window.addEventListener('DOMContentLoaded', (event) => {
 $(function () {

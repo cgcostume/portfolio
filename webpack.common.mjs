@@ -88,8 +88,8 @@ export default function (env, __dirname) {
         context: path.resolve(__dirname, "./source"),
         entry: {
             'styles': ['./styles/main.scss'],
-            'bootstrap': ['./scripts/bootstrap.js'],
-            'scripts': ['./scripts/scripts.js'],
+            'bootstrap': ['./scripts/bootstrap.mjs'],
+            'scripts': ['./scripts/scripts.mjs'],
         },
 
         plugins: [

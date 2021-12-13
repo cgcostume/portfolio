@@ -837,6 +837,7 @@ publications:
 
 
 - key: 2021-web3d-tumor-segmentation
+  bibtex: kordt2021-tumor-segmentation
   title: 'Interactive Volumetric Region Growing for Brain Tumor Segmentation on MRI using WebGL'
   date: '2021-11-10'
   authors:
@@ -853,6 +854,9 @@ publications:
     Our implementation produces a full brain tumor segmentation within a few milliseconds on consumer hardware.
     The visualization uses adaptive resolution scaling and progressive, asynchronous shading computation to maintain a stable 60 Hz refresh rate.
   thumbnail: 2021-web3d-tumor-segmentation.webp
+  downloads:
+  - href: https://doi.org/10.1145/3485444.3487640
+    desc: DOI
 
 
 - key: 2022-grapp-pointcloud-stylization
