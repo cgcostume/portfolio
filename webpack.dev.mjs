@@ -14,8 +14,11 @@ export default function (env) {
         {
             mode: 'development',
             cache: true,
-            // output: {
-            //     filename: 'styles.css',
-            // },
+            devServer: {
+                hot: false
+            },
+            optimization: {
+                minimize: true,
+            },
         });
 }

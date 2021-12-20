@@ -41,37 +41,18 @@ import CopyWebpackPlugin from 'copy-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
+// import ImageMinimizerPlugin from 'image-minimizer-webpack-plugin';
+
+/* For now, all image sources are specified at pug-compile-time based on the respective yaml files. This makes it
+   difficult to use webpack loader for webp-optimization, since this implies require with expressions... */
 
 import imagemin from 'imagemin';
 import webp from 'imagemin-webp';
 
-imagemin(['source/images/*.{jpg,png}'], {
-    destination: 'source/images',
-    plugins: [
-        webp({ quality: 88 })
-    ]
-})
-
-// const { imageminSvgo } = require('imagemin-svgo');
-//
-// imagemin(['source/images/*.{svg}'], {
-//     destination: 'source/images',
-//     plugins: [
-//         imageminSvgo({
-//             plugins: [{
-//                 name: 'removeViewBox',
-//                 active: false
-//             }]
-//         })
-//     ]
-// })
-// const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
-
-
 export default function (env, __dirname) {
 
     const pugFiles = glob.sync(path.join(__dirname, 'source', '/*.pug'));
-    console.log(`pug entries in "${__dirname}":`, pugFiles);
+    console.log(`collecting pug files in "${path.join(__dirname, 'source')}":`, pugFiles);
 
     const templates = [];
     pugFiles.forEach((template) => {
@@ -82,6 +63,17 @@ export default function (env, __dirname) {
             inject: false
         }));
     });
+
+    const images = glob.sync(path.join(__dirname, 'source/images', '/*.{jpe?g,png}'));
+    console.log(`optimizing images in "${path.join(__dirname, 'source/images')}":`, images);
+
+    imagemin(images, {
+        destination: 'source/images',
+        plugins: [
+            webp({ quality: [88, 96] })
+        ]
+    })
+
 
     return {
 
@@ -103,18 +95,6 @@ export default function (env, __dirname) {
                     { from: '../node_modules/jquery/dist/jquery.min.js', to: '[name][ext]' },
                 ]
             }),
-            // new ImageMinimizerPlugin({
-            //     test: /\.(jpe?g|png)$/i,
-            //     deleteOriginalAssets: true,
-            //     filename: '[path][name].webp',
-            //     minimizerOptions: {
-            //         encodeOptions: {
-            //             webp: { /* how to change quality? */
-            //             },
-            //         },
-            //         plugins: ['imagemin-webp'],
-            //     },
-            // }),
             new webpack.DefinePlugin({
                 data: data,
             }),
@@ -131,10 +111,11 @@ export default function (env, __dirname) {
 
         module: {
             rules: [
-                {
-                    test: /\.(png)$/,
-                    type: 'asset',
-                },
+                // {
+                //     test: /\.(jpe?g|png)$/i,
+                //     type: 'asset/resource',
+                //     generator: { filename: 'webp-generated/[name][ext]' }
+                // },
                 {
                     test: /\.pug$/,
                     include: /source/,
@@ -153,5 +134,27 @@ export default function (env, __dirname) {
                 },
             ]
         },
+
+        // optimization: {
+        //     minimizer: [
+        //         '...',
+        //         new ImageMinimizerPlugin({
+        //             minimizer: {
+        //                 implementation: ImageMinimizerPlugin.imageminMinify,
+        //                 options: {
+        //                     plugins: ['imagemin-mozjpeg', 'imagemin-pngquant']
+        //                 }
+        //             },
+        //             generator: [
+        //                 { // use `?as=webp`
+        //                     preset: 'webp',
+        //                     implementation: ImageMinimizerPlugin.imageminGenerate,
+        //                     options: {
+        //                         plugins: [['imagemin-webp', { quality: [88, 96] }]],
+        //                     },
+        //                 }]
+        //         })
+        //     ]
+        // }
     };
 }
