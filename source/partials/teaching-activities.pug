@@ -1,0 +1,31 @@
+
+-
+  let selected = data.teaching_activities.selected;
+
+  //- // sort by data
+  //- terms = terms.sort((a, b) => {
+  //-   const aTerm = a.term;
+  //-   const bTerm = b.term;
+  //-   return aTerm < bTerm ? +1 : aTerm > bTerm ? -1 : 0; });
+
+
+.row.text-center
+  .col-12
+
+    h2 Selected #[strong #{data.teaching_activities.heading}]
+    p
+      a.text-secondary(href = '/teaching-activities.html') Show #[strong all #{data.teaching_activities.heading}]
+    p.pt-0
+
+
+  each c, index in selected
+    .row.text-start
+      .col-lg-8.col-sm-6.offset-lg-2.offset-sm-3
+        h3 #{c.course}
+//-     {% for c in t.courses %}
+//-     <p>{{ c.course | escape }}<br>
+//-     <small>{{ c.type | escape }}, {{ c.role | escape }}</small></p>
+//-     {% endfor %}
+//-   </div>
+//-   {% if i == '1' || t != terms.first %}</div>{% endif %}
+//- {% endfor %}

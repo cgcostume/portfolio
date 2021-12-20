@@ -33,6 +33,7 @@ const data = {
     contact: parseYAMLThenStringifySync('contact.yml'),
     header: parseYAMLThenStringifySync('header.yml'),
     publications: parseYAMLThenStringifySync('publications.yml'),
+    teaching_activities: parseYAMLThenStringifySync('teaching-activities.yml'),
     bibliography: createBibliographyFromBibFilesSync(bibFiles)
 };
 
