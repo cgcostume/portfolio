@@ -3,8 +3,22 @@ import fs from 'fs';
 import glob from 'glob';
 import path from 'path';
 import webpack from 'webpack';
+import git from 'git-rev-sync';
 
 import yaml from 'yaml';
+
+import CopyWebpackPlugin from 'copy-webpack-plugin';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+
+// import ImageMinimizerPlugin from 'image-minimizer-webpack-plugin';
+
+/* For now, all image sources are specified at pug-compile-time based on the respective yaml files. This makes it
+   difficult to use webpack loader for webp-optimization, since this implies require with expressions... */
+
+import imagemin from 'imagemin';
+import webp from 'imagemin-webp';
+
 
 const parseYAMLThenStringifySync = (filename) => {
     const data = fs.readFileSync(`./source/data/${filename}`, 'utf8');
@@ -21,36 +35,22 @@ const createBibliographyFromBibFilesSync = (filenames) => {
     return JSON.stringify(entries);
 }
 
-const rev = fs.readFileSync('.git/HEAD').toString().trim();
-const gitCommitHash = rev.indexOf(':') === -1 ? 'unknown' :
-    fs.readFileSync('.git/' + rev.substring(5)).toString().trim();
 
-const bibFiles = glob.sync(path.join('source/data/bibliography', '/*.bib'));
+export default (env, __dirname) => {
 
-const data = {
-    revision: JSON.stringify(gitCommitHash),
-    config: parseYAMLThenStringifySync('config.yml'),
-    contact: parseYAMLThenStringifySync('contact.yml'),
-    header: parseYAMLThenStringifySync('header.yml'),
-    publications: parseYAMLThenStringifySync('publications.yml'),
-    teaching_activities: parseYAMLThenStringifySync('teaching-activities.yml'),
-    bibliography: createBibliographyFromBibFilesSync(bibFiles)
-};
+    const bibFiles = glob.sync(path.join('source/data/bibliography', '/*.bib'));
 
+    const data = {
+        revision: JSON.stringify(git.short(__dirname)),
+        config: parseYAMLThenStringifySync('config.yml'),
+        contact: parseYAMLThenStringifySync('contact.yml'),
+        header: parseYAMLThenStringifySync('header.yml'),
+        publications: parseYAMLThenStringifySync('publications.yml'),
+        teaching_activities: parseYAMLThenStringifySync('teaching-activities.yml'),
+        bibliography: createBibliographyFromBibFilesSync(bibFiles)
+    };
 
-import CopyWebpackPlugin from 'copy-webpack-plugin';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
-import MiniCssExtractPlugin from 'mini-css-extract-plugin';
-
-// import ImageMinimizerPlugin from 'image-minimizer-webpack-plugin';
-
-/* For now, all image sources are specified at pug-compile-time based on the respective yaml files. This makes it
-   difficult to use webpack loader for webp-optimization, since this implies require with expressions... */
-
-import imagemin from 'imagemin';
-import webp from 'imagemin-webp';
-
-export default function (env, __dirname) {
+    // Pug Configuration
 
     const pugFiles = glob.sync(path.join(__dirname, 'source', '/*.pug'));
     console.log(`collecting pug files in "${path.join(__dirname, 'source')}":`, pugFiles);
@@ -65,6 +65,8 @@ export default function (env, __dirname) {
         }));
     });
 
+    // Image Optimization (webp)
+
     const images = glob.sync(path.join(__dirname, 'source/images', '/*.{jpe?g,png}'));
     console.log(`optimizing images in "${path.join(__dirname, 'source/images')}":`, images);
 
@@ -78,7 +80,7 @@ export default function (env, __dirname) {
 
     return {
 
-        context: path.resolve(__dirname, "./source"),
+        context: path.resolve(__dirname, 'source'),
         entry: {
             'styles': ['./styles/main.scss'],
             'bootstrap': ['./scripts/bootstrap.mjs'],
@@ -106,7 +108,7 @@ export default function (env, __dirname) {
         ],
 
         output: {
-            path: path.resolve(__dirname, "./build"),
+            path: path.resolve(__dirname, 'build'),
             library: undefined,
         },
 

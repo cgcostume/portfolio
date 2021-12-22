@@ -37,7 +37,10 @@
         "node_modules": true
     },
     "cSpell.language": "en",
-    "cSpell.words": [],
+    "cSpell.words": [
+        "nodir",
+        "Purgecss"
+    ],
     "cSpell.flagWords": [
         "hte"
     ],

@@ -7,10 +7,10 @@
     "author": "Daniel Limberger",
     "type": "module",
     "scripts": {
-        "cleanup": "rimraf ./build",
-        "build": "webpack --config webpack.prod.mjs",
-        "build:dev": "webpack --config webpack.dev.mjs",
-        "start": "webpack serve --config webpack.dev.mjs"
+        "start": "webpack serve --node-env=development",
+        "build:dev": "webpack --node-env=development",
+        "build": "webpack --node-env=production",
+        "cleanup": "rimraf ./build"
     },
     "devDependencies": {
         "@fontsource/roboto": "^4.5.1",
@@ -23,6 +23,7 @@
         "extract-loader": "^5.1.0",
         "favicons-webpack-plugin": "^5.0.2",
         "file-loader": "^6.2.0",
+        "git-rev-sync": "^3.0.1",
         "html-webpack-plugin": "^5.5.0",
         "imagemin": "^8.0.1",
         "imagemin-webp": "^6.0.0",
