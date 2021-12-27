@@ -877,3 +877,26 @@ publications:
     It uses X-Toon textures as part of its parameterization, supports hatching and cross hatching, and is inherently temporal coherent with respect to virtual camera movements.
     This introduces significant artistic freedom that is underlined by our results, which show that a variety of different sketchy styles such as colored crayons, pencil, pointillism, wax crayons, blue print, and chalk-drawings can be achieved on a wide spectrum of point clouds, i.e., covering 3D polygonal meshes as well as iPad-based LiDAR scans.
   thumbnail: 2022-grapp-pointcloud-stylization.webp
+
+
+- key: 2022-ivapp-knowhow-map
+  title: 'Visualization of Knowledge Distribution across Development Teams using 2.5D Semantic Software Maps'
+  date: '2022-02-08'
+  authors:
+  - Daniel Atzberger
+  - Tim Cech
+  - Adrian Jobst
+  - Willy Scheibel
+  - Daniel Limberger
+  - Matthias Trapp
+  - Jürgen Döllner
+  published: Proc. International Conference on Information Visualization Theory and Applications (IVAPP)
+  abstract:
+    In order to detect software risks at an early stage, various software visualization techniques have been developed for monitoring the structure, behaviour, or the underlying development process of software.
+    One of greatest risks for any IT organization consists in an inappropriate distribution of knowledge among its developers, as a projects' success mainly depends on assigning tasks to developers with the required skills and expertise.
+    In this work, we address this problem by proposing a novel Visual Analytics framework for mining and visualizing the expertise of developers based on their source code activities.
+    Under the assumption that a developer's knowledge about code is represented directly through comments and the choice of identifier names, we generate a 2D layout using Latent Dirichlet Allocation together with Multidimensional Scaling on the commit history, thus displaying the semantic relatedness between developers.
+    In order to capture a developer's expertise in a concept, we utilize Labeled LDA trained on a corpus of Open Source projects.
+    By mapping aspects related to skills onto the visual variables of 3D glyphs, we generate a 2.5D Visualization, we call KnowhowMap.
+    We exemplify this approach with an interactive prototype that enables users to analyze the distribution of skills and expertise in an explorative way.
+  thumbnail: 2022-ivapp-knowhow-map.webp
