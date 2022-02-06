@@ -28,7 +28,7 @@ jobs:
           path: deploy
 
       - name: Clean up output
-        run: git rm -rf *
+        run: git rm -rf * || true
         working-directory: deploy
 
       - name: Install dependencies
