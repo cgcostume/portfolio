@@ -82,7 +82,7 @@ $aspect-ratios: (
 @import "bootstrap/scss/containers";
 @import "bootstrap/scss/grid";
 // @import "bootstrap/scss/tables";
-// @import "bootstrap/scss/forms";
+@import "bootstrap/scss/forms";
 @import "bootstrap/scss/buttons";
 @import "bootstrap/scss/transitions";
 @import "bootstrap/scss/dropdown";
@@ -147,6 +147,37 @@ h3 {
   @extend .mb-3;
 }
 
+header  {
+
+  .figure-with-overlay {
+    position: relative;
+    // display: flex;
+  }
+
+  .figure-overlay .img-fluid {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .figure-toggle {
+    position: absolute;
+    right: 0;
+
+    .btn:hover {
+      @extend .text-white;
+    }
+
+    .btn-check:focus + .btn, .btn:focus {
+      box-shadow: none !important;
+    }
+  }
+
+  .figure-caption {
+    visibility: hidden;
+  }
+}
+
 // .navbar {
 
 //   background-color: $body-bg;
@@ -205,18 +236,16 @@ footer {
    margin-bottom: 2rem;
 }
 
-.flickr {
+// .flickr {
 
-  .badge {
-    font-weight: $font-weight-normal;
-    text-align: right;
-  }
-
-  .badge.top-left {
-    position: absolute;
-    border-radius: $border-radius 0;
-  }
+.badge {
+  font-weight: $font-weight-normal;
+  text-align: right;
+  border-radius: $border-radius 0;
 }
+
+
+// }
 
 .project {
   padding-bottom: 1rem; }

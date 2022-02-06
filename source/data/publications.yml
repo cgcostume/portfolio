@@ -74,7 +74,7 @@ publications:
   - Daniel Müller (now Limberger)
   - Juri Engel
   - Jürgen Döllner
-  published: Proc. EG International Workshop on Vision, Modeling, and Visualization (VMV)
+  published: Proc. EG Int. Workshop on Vision, Modeling, and Visualization (VMV)
   abstract:
     This paper presents techniques for astronomical based, real-time rendering of skies as seen from low altitudes on earth, in respect to location, date, and time.
     The techniques allow for composing an atmosphere with sun, multiple cloud layers, moon, bright stars, and Milky Way, into a holistic sky with unprecedented level of detail and diversity.
@@ -103,7 +103,7 @@ publications:
   - Benjamin Wasty
   - Jonas Trümper
   - Jürgen Döllner
-  published: Proc. ACM International Conference on Web3D Technology (Web3D)
+  published: Proc. ACM Int. Conf. on Web3D Technology (Web3D)
   abstract:
     Software maps&mdash;linking 2.5D treemaps, software system structure, and performance indicators&mdash;are commonly used to support informed decision making in software-engineering processes.
     In this paper a web-based rendering system for software maps that achieves both fast client-side page load time and interactive frame rates even with large software maps is presented.
@@ -248,7 +248,7 @@ publications:
   - Sebastian Hahn
   - Matthias Trapp
   - Jürgen Döllner
-  published: Proc. IEEE International Conference Information Visualisation (iV)
+  published: Proc. IEEE Int. Conf. Information Visualisation (iV)
   abstract:
     Treemaps serve as generic, effective tools to display, explore, and analyze multi-variate tree data in a scalable, interactive, and consistent way
     In this paper, we discuss and evaluate sketchiness as visual variable of 2.5D treemaps.
@@ -296,7 +296,7 @@ publications:
   - Willy Scheibel
   - Stefan Lemme
   - Jürgen Döllner
-  published: Proc. ACM International Conference on Web3D Technology (Web3D)
+  published: Proc. ACM Int. Conf. on Web3D Technology (Web3D)
   abstract:
     The 2.5D treemap represents a general purpose visualization technique to map multi-variate hierarchical data in a scalable, interactive, and consistent way used in a number of application fields.
     In this paper, we explore the capabilities of Declarative 3D for the web-based implementation of 2.5D treemap clients.
@@ -326,7 +326,7 @@ publications:
   - Willy Scheibel
   - Sebastian Hahn
   - Jürgen Döllner
-  published: Proc. International Conference on Information Visualization Theory and Applications (IVAPP)
+  published: Proc. Int. Conf. on Information Visualization Theory and Applications (IVAPP)
   abstract:
     Depicting massive software system data using treemaps can result in visual clutter and increased cognitive load.
     This paper introduces an adaptive level-of-detail (LoD) technique that uses scoring for interactive aggregation on a per-node basis.
@@ -355,7 +355,7 @@ publications:
   - Marcel Pursche
   - Jan Klimke
   - Jürgen Döllner
-  published: Proc. ACM International Conference on 3D Web Technology (Web3D)
+  published: Proc. ACM Int. Conf. on 3D Web Technology (Web3D)
   lead_note: Best Paper Award
   lead_href: https://twitter.com/Web3DConsortium/status/872336310027079683/photo/1
   abstract:
@@ -380,7 +380,7 @@ publications:
   - Willy Scheibel
   - Matthias Trapp
   - Jürgen Döllner
-  published: Proc. IEEE International Conference Information Visualisation (iV)
+  published: Proc. IEEE Int. Conf. Information Visualisation (iV)
   abstract:
     This paper presents a novel technique for combining 2D and 2.5D treemaps using multi-perspective views to leverage the advantages of both treemap types.
     It enables a new form of overview+detail visualization for tree-structured data and contributes new concepts for real-time rendering of and interaction with treemaps.
@@ -449,7 +449,7 @@ publications:
   - Stefan Buschmann
   - Jürgen Döllner
   - Benjamin Wasty
-  published: Proc. IEEE International Conference Information Visualisation (iV)
+  published: Proc. IEEE Int. Conf. Information Visualisation (iV)
   abstract:
     Today's rendering APIs lack robust functionality and capabilities for dynamic, real-time text rendering and labeling, which represent key requirements for 3D application design in many fields.
     As a consequence, most rendering systems are barely or not at all equipped with respective capabilities.
@@ -475,7 +475,7 @@ publications:
   - Daniel Limberger
   - Matthias Trapp
   - Jürgen Döllner
-  published: Proc. ACM International Symposium on Visual Information Communication and Interaction (VINCI)
+  published: Proc. ACM Int. Symp. on Visual Information Communication and Interaction (VINCI)
   abstract:
     The 2.5D treemap facilitates interactive exploration of multivariate data.
     It includes height as a visual variable for additional information display and enables exploration of correlations within mapped attributes.
@@ -499,7 +499,7 @@ publications:
   - Daniel Limberger
   - Matthias Trapp
   - Jürgen Döllner
-  published: Proc. International Conference on Information Visualization Theory and Applications (IVAPP)
+  published: Proc. Int. Conf. on Information Visualization Theory and Applications (IVAPP)
   abstract:
     2.5D treemaps can be used to visualize tree-structured data using the height dimension for additional information display.
     For tree-structured and time-variant data though, changes or variants in the data are difficult to visualize.
@@ -528,7 +528,7 @@ publications:
   - Willy Scheibel
   - Matthias Trapp
   - Jürgen Döllner
-  published: Proc. ACM International Symposium on Visual Information Communication and Interaction (VINCI)
+  published: Proc. ACM Int. Symp. on Visual Information Communication and Interaction (VINCI)
   abstract:
     Software maps provide a general-purpose interactive user interface and information display for software analytics tools.
     This paper systematically introduces and classifies software maps as a treemap-based technique for software cartography.
@@ -576,7 +576,7 @@ publications:
   - Matthias Trapp
   - Daniel Limberger
   - Jürgen Döllner
-  published: Proc. International Conference on Information Visualization Theory and Applications (IVAPP)
+  published: Proc. Int. Conf. on Information Visualization Theory and Applications (IVAPP)
   abstract:
     A treemap is a visualization that has been specifically designed to facilitate the exploration of tree-structured data and, more general, hierarchically structured data.
     The family of visualization techniques that use a visual metaphor for parent-child relationships based "on the property of containment" (Johnson, 1993) is commonly referred to as treemaps.
@@ -604,7 +604,7 @@ publications:
   - Daniel Limberger
   - Matthias Trapp
   - Jürgen Döllner
-  published: Proc. ACM International Symposium on Visual Information Communication and Interaction (VINCI)
+  published: Proc. ACM Int. Symp. on Visual Information Communication and Interaction (VINCI)
   abstract:
     Treemaps are a commonly used tool for the visual display and communication of tree-structured, multi-variate data.
     In order to confidently know when and how treemaps can best be applied, the research community uses usability studies and controlled experiments to "understand the potential and limitations of our tools" (Plaisant, 2004).
@@ -630,7 +630,7 @@ publications:
   - Willy Scheibel
   - Daniel Limberger
   - Jürgen Döllner
-  published: Proc. ACM International Symposium on Visual Information Communication and Interaction (VINCI)
+  published: Proc. ACM Int. Symp. on Visual Information Communication and Interaction (VINCI)
   abstract:
     This paper provides an overview of published treemap layout algorithms from 1991 to 2019 that were used for information visualization and computational geometry.
     First, a terminology is outlined for the precise communication of tree-structured data and layouting processes.
@@ -653,7 +653,7 @@ publications:
   - Daniel Limberger
   - Matthias Trapp
   - Jürgen Döllner
-  published: Proc. ACM International Symposium on Visual Information Communication and Interaction (VINCI)
+  published: Proc. ACM Int. Symp. on Visual Information Communication and Interaction (VINCI)
   abstract:
     A truthful and unbiased display of data using information visualization requires detecting and communicating uncertainty.
     Uncertainty is often inherent in data or is introduced by data processing and visualization (e.g., visual display of accumulated data) but frequently not accounted for.
@@ -674,7 +674,7 @@ publications:
   - Philipp Otto
   - Daniel Limberger
   - Jürgen Döllner
-  published: Proc. ACM International Conference on Web3D Technology (Web3D)
+  published: Proc. ACM Int. Conf. on Web3D Technology (Web3D)
   abstract:
     This paper presents a progressive rendering approach that enables rendering of static 3D scenes, lit by physically-based environment and area lights.
     Multi-frame sampling strategies are used to approximate elaborate lighting that is refined while showing intermediate results to the user.
@@ -700,7 +700,7 @@ publications:
   - Daniel Limberger
   - Matthias Trapp
   - Jürgen Döllner
-  published: Proc. ACM International Conference on Web3D Technology (Web3D)
+  published: Proc. ACM Int. Conf. on Web3D Technology (Web3D)
   abstract:
     This paper presents a rendering framework for the visualization of massive point datasets in the web.
     It includes highly interactive point rendering, cluster visualization, basic interaction methods, and importance-based labeling, while being available for both mobile and desktop browsers.
@@ -726,7 +726,7 @@ publications:
   - Willy Scheibel
   - Daniel Limberger
   - Jürgen Döllner
-  published: Proc. International Conference on Information Visualization Theory and Applications (IVAPP)
+  published: Proc. Int. Conf. on Information Visualization Theory and Applications (IVAPP)
   abstract:
     Software visualization techniques provide effective means for program comprehension tasks as they allow developers to interactively explore large code bases.
     A frequently encountered task during software development is the detection of source code files of similar semantic.
@@ -753,7 +753,7 @@ publications:
   - Jan Klimke
   - Benjamin Hagedorn
   - Jürgen Döllner
-  published: Proc. EG International Conference on Visualization (EuroVis)
+  published: Proc. EG Int. Conf. on Visualization (EuroVis)
   abstract:
     Spatiotemporal measurements such as power consumption, temperature, humidity, movement, noise, brightness, etc., will become ubiquitously available in both old and modern homes to capture and analyze behavioral patterns.
     The data is fed into analytics platforms and tapped by services but is generally not readily available to consumers for exploration due in part to its inherent complexity and volume.
@@ -779,7 +779,7 @@ publications:
   - Daniel Limberger
   - Willy Scheibel
   - Jürgen Döllner
-  published: Proc. ACM International Symposium on Visual Information Communication and Interaction (VINCI)
+  published: Proc. ACM Int. Symp. on Visual Information Communication and Interaction (VINCI)
   abstract:
     Personal, long-term investment products, especially ones for retirement savings, require thorough understanding to use them profitably.
     Even simple savings plans based on exchange-traded funds (ETFs) are subject to many variables and uncertainties to be considered for expected and planned-upon returns.
@@ -800,7 +800,7 @@ publications:
   - Willy Scheibel
   - Jan Dieken
   - Jürgen Döllner
-  published: Proc. ACM International Symposium on Visual Information Communication and Interaction (VINCI)
+  published: Proc. ACM Int. Symp. on Visual Information Communication and Interaction (VINCI)
   abstract:
     This work investigates the extent to which animated procedural texture patterns can be used to support the representation of changes in 2.5D treemaps.
     Changes in height, color, and area of individual nodes can easily be visualized using animated transitions.
@@ -822,7 +822,7 @@ publications:
   - Willy Scheibel
   - Daniel Limberger
   - Jürgen Döllner
-  published: Proc. ACM International Symposium on Visual Information Communication and Interaction (VINCI)
+  published: Proc. ACM Int. Symp. on Visual Information Communication and Interaction (VINCI)
   abstract:
     Software visualization uses metaphors to depict software and software development data that usually has no gestalt.
     The choice of a metaphor and visual depiction is researched broadly, but deriving a layout based on similarity is still challenging.
@@ -845,7 +845,7 @@ publications:
   - Paul Brachmann
   - Daniel Limberger
   - Christoph Lippert
-  published: Proc. ACM International Conference on Web3D Technology (Web3D)
+  published: Proc. ACM Int. Conf. on Web3D Technology (Web3D)
   abstract:
     Volumetric segmentation of medical images is an essential tool in treatment planning and many longitudinal studies.
     While machine learning approaches promise to fully automate it, they most often still depend on manually labeled training data.
@@ -868,7 +868,7 @@ publications:
   - Daniel Limberger
   - Jürgen Döllner
   - Matthias Trapp
-  published: Proc. International Conference on Computer Graphics Theory and Applications (GRAPP)
+  published: Proc. Int. Conf. on Computer Graphics Theory and Applications (GRAPP)
   abstract:
     Point clouds or point-based geometry of varying density can nowadays be easily acquired using LiDAR cameras or modern smartphones with LiDAR sensors.
     We demonstrate how this data can be used directly to create novel artistic digital content using Non-Photorealistic Rendering techniques.
@@ -890,7 +890,7 @@ publications:
   - Daniel Limberger
   - Matthias Trapp
   - Jürgen Döllner
-  published: Proc. International Conference on Information Visualization Theory and Applications (IVAPP)
+  published: Proc. Int. Conf. on Information Visualization Theory and Applications (IVAPP)
   abstract:
     In order to detect software risks at an early stage, various software visualization techniques have been developed for monitoring the structure, behaviour, or the underlying development process of software.
     One of greatest risks for any IT organization consists in an inappropriate distribution of knowledge among its developers, as a projects' success mainly depends on assigning tasks to developers with the required skills and expertise.
@@ -900,3 +900,30 @@ publications:
     By mapping aspects related to skills onto the visual variables of 3D glyphs, we generate a 2.5D Visualization, we call KnowhowMap.
     We exemplify this approach with an interactive prototype that enables users to analyze the distribution of skills and expertise in an explorative way.
   thumbnail: 2022-ivapp-knowhow-map.webp
+
+
+- key: 2022-enase-mining-expertise
+  title: 'Mining Developer Expertise from Bug Tracking Systems using the Author-Topic Model'
+  date: '2022-04-25'
+  authors:
+  - Daniel Atzberger
+  - Jonathan Schneider
+  - Willy Scheibel
+  - Daniel Limberger
+  - Matthias Trapp
+  - Jürgen Döllner
+  published: Proc. Int. Conf. on Evaluation of Novel Approaches to Software Engineering (ENASE)
+  abstract:
+    During software development processes, software defects, so-called bugs, are captured in a semi-structured manner in bug tracking systems using textual components and categorical features.
+    It is the task of the triage owner to assign open bugs to developers with the required skills and expertise.
+    This task, known as bug triaging, requires an in-depth knowledge about a developer's skills.
+    Various machine learning techniques have been proposed to automate this task, most of these approaches apply topic models, especially Latent Dirichlet Allocation (LDA), for mining the textual components of bug reports.
+    However none of the proposed approaches explicitly models a developers expertise.
+    In most cases these algorithms are treated as black box, as they allow no explanation about their recommendation.
+    In this work, we show how the Author-Topic Model (ATM), a variant of LDA, can be used to capture a developer's expertise in the latent topics of a corpus of bug reports from the model itself.
+    Furthermore, we present three novel bug triaging techniques based on the ATM.
+    We compare our approach against a baesline model, that is based on LDA, on a dataset of 18.269 bug reports from the Mozilla Firefox project collected between July 1999 to June 2016.
+    The results show that the ATM can outperform the LDA-based approach in terms of the Mean Reciprocal Rank (MRR).
+  thumbnail: 2022-enase-mining-expertise.webp
+
+

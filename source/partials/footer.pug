@@ -10,7 +10,7 @@ footer
         | &copy; 2015&thinsp;&ndash;&thinsp;#{today.getFullYear()}
         | #{header.surname} #{header.name}
       small.mt-0.mb-5
-        span.text-muted This website was last updated on #{today.toLocaleDateString('en-us')}
+        span.text-muted This website was last updated on #{today.toLocaleDateString('en-us', { day: '2-digit', month: '2-digit', year: 'numeric'})}
         | &ensp;|&ensp;
         a(href = `privacy-policy.html`).text-muted Privacy Policy
         | &ensp;|&ensp;

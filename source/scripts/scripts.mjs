@@ -4,8 +4,6 @@ import clipboard from 'clipboard';
 // window.addEventListener('DOMContentLoaded', (event) => {
 $(function () {
 
-  console.log("moep");
-
   new clipboard('.btn-clipboard');
 
   // $('.flickr').on('click', function(event)
@@ -13,6 +11,16 @@ $(function () {
   //   event.preventDefault();
   //   flickr_photosets($(this).attr("id"));
   // });
+
+  const togglePortrait = function () {
+    const toggle = $('#picture-input-toggle')[0];
+    $('#picture-input').attr('hidden', () => !toggle.checked);
+    $('#picture-copyright').css('visibility', toggle.checked ? 'visible' : 'hidden');
+    $('label[for="picture-input-toggle"]').html(toggle.checked ? 'Show generated Drawing' : 'Show original Photo');
+  };
+  togglePortrait();
+  $('#picture-input-toggle').on('click', togglePortrait);
+
 
   var scroll = getURLParameter('scroll');
   if (scroll) {

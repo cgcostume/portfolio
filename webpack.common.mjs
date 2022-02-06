@@ -67,7 +67,7 @@ export default (env, __dirname) => {
 
     // Image Optimization (webp)
 
-    const images = glob.sync(path.join(__dirname, 'source/images', '/*.{jpe?g,png}'));
+    const images = glob.sync(path.join(__dirname, 'source/images', '/*.{jpg,jpeg,png}'));
     console.log(`optimizing images in "${path.join(__dirname, 'source/images')}":`, images);
 
     imagemin(images, {

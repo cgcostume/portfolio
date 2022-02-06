@@ -1,6 +1,7 @@
 
 
-picture: daniel-limberger-2019-03.webp
+picture: daniel-limberger-2019-03-stylized.webp
+picture_input: daniel-limberger-2019-03.webp
 picture_label: Photo of Daniel Limberger, March 2019
 picture_copyright: March 2019, Kathleen Friedrich
 
@@ -22,6 +23,7 @@ surname: Limberger
 leads:
 - Graphics Systems Engineer
 - Visual Analytics Researcher
+
 
 sources: https://github.com/cgcostume/portfolio/
 sources_label: Source Code (GitHub)
