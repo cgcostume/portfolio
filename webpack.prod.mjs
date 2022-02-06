@@ -24,13 +24,13 @@ export default function (env) {
                     paths: glob.sync(path.join(__dirname, 'source', '/**/*'), { nodir: true }),
                 }),
 
-                new WebpackShellPluginNext({
-                    onBuildEnd: {
-                        scripts: [() => {
-                            fs.unlinkSync(path.resolve(__dirname, "./build/styles.js"));
-                        }],
-                    },
-                }),
+                // new WebpackShellPluginNext({
+                //     onBuildEnd: {
+                //         scripts: [() => {
+                //             fs.unlinkSync(path.resolve(__dirname, "./build/styles.js"));
+                //         }],
+                //     },
+                // }),
 
             ],
         });
