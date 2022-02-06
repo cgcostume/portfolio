@@ -1,0 +1,55 @@
+name: Deploy website
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+
+  deploy:
+    name: Deploy website
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Initialize Node.js environment
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+          cache: 'npm'
+
+      - name: Check out code
+        uses: actions/checkout@v2
+        with:
+          path: src
+
+      - name: Check out deploy branch
+        uses: actions/checkout@v2
+        with:
+          ref: deploy
+          path: deploy
+
+      - name: Clean up output
+        run: git rm -rf *
+        working-directory: deploy
+
+      - name: Install dependencies
+        run: npm install
+        working-directory: src
+
+      - name: Build
+        run: npm run build -- --output-path=../deploy
+        working-directory: src
+
+      - name: Create CNAME
+        run: echo "daniellimberger.de" > CNAME
+        working-directory: deploy
+
+      - name: Commit result
+        run: |
+          git config user.email "${{ github.event.pusher.email }}"
+          git config user.name "${{ github.event.pusher.name }}"
+          git add *
+          git diff-index --quiet HEAD || git commit -m "deploy: ${{ github.event.head_commit.message }}"
+          git push
+        working-directory: deploy

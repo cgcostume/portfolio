@@ -1,0 +1,29 @@
+
+
+picture: daniel-limberger-2019-03-stylized.webp
+picture_input: daniel-limberger-2019-03.webp
+picture_label: Photo of Daniel Limberger, March 2019
+picture_copyright: March 2019, Kathleen Friedrich
+
+# picture: daniel-limberger-2016-02.webp
+# picture_label: Photo of Daniel Limberger, February 2016
+# picture_copyright: February 2016, Kathleen Friedrich
+
+# picture: daniel-limberger-2014-09.webp
+# picture_label: Photo of Daniel Limberger, September 2014
+# picture_copyright: September 2014, Liara Limberger
+
+# picture: daniel-limberger-2009-07.webp
+# picture_label: Photo of Daniel Limberger, July 2009
+# picture_copyright: July 2009, Kay Herschelmann
+
+
+name: Daniel
+surname: Limberger
+leads:
+- Graphics Systems Engineer
+- Visual Analytics Researcher
+
+
+sources: https://github.com/cgcostume/portfolio/
+sources_label: Source Code (GitHub)

@@ -1,0 +1,43 @@
+
+- const header = data.header;
+- const contact = data.contact;
+
+header
+  .row.text-center
+    .col-lg-6.offset-lg-3.col-sm-8.offset-sm-2
+      figure.figure.figure-with-overlay
+
+        img.figure-img.img-fluid.mb-0.rounded(src = `/images/${header.picture}` alt = `${header.picture_label}`)
+
+        .figure-overlay
+          img.img-fluid.rounded(src = `/images/${header.picture_input}` alt = `${header. picture_label}` hidden)#picture-input
+
+        .figure-toggle
+          input.btn-check(type = 'checkbox' id = 'picture-input-toggle' autocomplete = 'off')
+          label.btn.badge.bg-dark.position-absolute.bottom-0.end-0(for = 'picture-input-toggle') Show Photo
+
+        if header.picture_copyright
+          figcaption.figure-caption.mt-1.text-start#picture-copyright &copy; #{header.picture_copyright}
+
+    .col-12
+      h1 #{header.name} #[br] #[strong #{header.surname}]
+
+      p.lead
+        each lead, index in header.leads
+          | #{lead}
+          if index < header.leads.length - 1
+            br.d-inline.d-sm-none
+            span.d-none.d-sm-inline &ensp;&mdash;&ensp;
+
+      p
+        a(href = `mailto:${contact.email}`) #{contact.email}
+
+        if contact.phone
+          br.d-inline.d-sm-none
+          span.d-none.d-sm-inline &ensp;|&ensp;
+          a(href = `tel:${contact.phone.replaceAll(' ', '')}`) #{contact.phone}
+
+        if contact.vcard
+          br.d-inline.d-sm-none
+          span.d-none.d-sm-inline &ensp;|&ensp;
+          a(href = `${contact.vcard}`) #{contact.vcard_label}

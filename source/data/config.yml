@@ -1,0 +1,11 @@
+
+flickr_user: '131006004@N06'
+flickr_api_key: adb4be93419edab991522b4fa92b7029
+
+img_defaults:
+  header:
+    w: 1024
+    h: 1024
+  thumbnail:
+    w: 768
+    h: 768

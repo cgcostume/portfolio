@@ -1,0 +1,21 @@
+
+vcard: /vcard.vcf
+vcard_label: vCard
+
+email: cgdaniel@outlook.com
+email_label: E-Mail
+
+phone: +49 163 568 2818
+phone_label: Phone
+
+refs:
+- name: GitHub
+  href: https://github.com/cgcostume
+- name: Flickr
+  href: https://www.flickr.com/photos/131006004@N06/albums
+- name: YouTube
+  href: https://www.youtube.com/user/costumebrother
+- name: Vimeo
+  href: https://vimeo.com/user2011768
+
+refs_label: More

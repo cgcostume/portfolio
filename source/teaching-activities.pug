@@ -1,0 +1,52 @@
+
+doctype html
+html(lang = 'en')
+
+  //- block vars
+
+  include partials/head
+
+  body#page-top(data-spy = 'scroll')
+
+    -
+      let terms = data.teaching_activities.terms;
+
+      terms = terms.sort((a, b) => {
+        const aTerm = a.term;
+        const bTerm = b.term;
+        return aTerm < bTerm ? +1 : aTerm > bTerm ? -1 : 0; });
+
+
+    section#teaching.container
+
+      .row.text-center
+        .col-12
+
+          h2 All #[strong #{data.teaching_activities.heading}]
+          p
+            a.text-secondary(href = '/index.html') by #[strong #{data.header.name} #{data.header.surname}]
+          p.pt-0
+
+          mixin inner(t, index)
+            .col-md-5.col-sm-10(class = `${index % 2 ? 'text-start' : 'text-md-end text-start'}`)
+              h3.mt-2 !{t.term}
+              each c in t.courses
+                p #{c.course}
+                  br
+                  if c.type || c.role
+                    small #{c.type}, #{c.role}
+
+        - let i = 0;
+        while i < terms.length
+          .row.justify-content-md-center
+            +inner(terms[i], i, 'bar')
+            - ++i;
+            if i < terms.length
+              +inner(terms[i], i, 'foo')
+            - ++i;
+
+
+    section#footer.container
+      include partials/footer
+
+  include partials/scripts
