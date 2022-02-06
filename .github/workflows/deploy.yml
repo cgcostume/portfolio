@@ -12,14 +12,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
+      - name: Check out code
+        uses: actions/checkout@v2
+
       - name: Initialize Node.js environment
         uses: actions/setup-node@v2
         with:
           node-version: 16
           cache: 'npm'
-
-      - name: Check out code
-        uses: actions/checkout@v2
 
       - name: Check out deploy branch
         uses: actions/checkout@v2
