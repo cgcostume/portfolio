@@ -20,8 +20,6 @@ jobs:
 
       - name: Check out code
         uses: actions/checkout@v2
-        with:
-          path: src
 
       - name: Check out deploy branch
         uses: actions/checkout@v2
@@ -35,11 +33,9 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: src
 
       - name: Build
-        run: npm run build -- --output-path=../deploy
-        working-directory: src
+        run: npm run build -- --output-path=./deploy
 
       - name: Create CNAME
         run: echo "daniellimberger.de" > CNAME
