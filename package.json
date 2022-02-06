@@ -1,6 +1,6 @@
 {
     "name": "datafolio",
-    "version": "1.0.0",
+    "version": "4.0.0",
     "private": false,
     "license": "MIT",
     "description": "Data-based Portfolio using Pug, Webpack, and TypeScript",
