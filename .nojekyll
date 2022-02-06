@@ -1,8 +1,0 @@
-.archive
-.DS_Store
-build
-node_modules
-package-lock.json
-dist
-deploy
-*.webp
