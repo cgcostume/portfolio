@@ -7,9 +7,9 @@
     "author": "Daniel Limberger",
     "type": "module",
     "scripts": {
-        "start": "webpack serve --node-env=development",
-        "build:dev": "webpack --node-env=development",
-        "build": "webpack --node-env=production"
+        "start": "webpack serve --config webpack.dev.mjs",
+        "build:dev": "webpack --config webpack.dev.mjs",
+        "build": "webpack --config webpack.prod.mjs"
     },
     "devDependencies": {
         "@fontsource/roboto": "^4.5.1",
