@@ -3,37 +3,48 @@ name: Deploy website
 on:
   push:
     branches:
-      - master
-  workflow_dispatch:
+      - main
 
 jobs:
+
   deploy:
     name: Deploy website
     runs-on: ubuntu-latest
     steps:
+
       - name: Initialize Node.js environment
         uses: actions/setup-node@v2
+        with:
+          node-version: 16
+          cache: 'npm'
+
       - name: Check out code
         uses: actions/checkout@v2
         with:
           path: src
+
       - name: Check out deploy branch
         uses: actions/checkout@v2
         with:
           ref: deploy
           path: deploy
+
       - name: Clean up output
         run: git rm -rf *
         working-directory: deploy
-      - name: Set up dependencies
+
+      - name: Install dependencies
         run: npm install
         working-directory: src
-      - name: Build website
+
+      - name: Build
         run: npm run build -- --output-path=../deploy
         working-directory: src
-      # - name: Create CNAME
-      #   run: echo "daniellimberger.de" > CNAME
-      #   working-directory: deploy
+
+      - name: Create CNAME
+        run: echo "daniellimberger.de" > CNAME
+        working-directory: deploy
+
       - name: Commit result
         run: |
           git config user.email "${{ github.event.pusher.email }}"
