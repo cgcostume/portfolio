@@ -102,7 +102,7 @@ $aspect-ratios: (
 // @import "bootstrap/scss/tooltip";
 // @import "bootstrap/scss/popover";
 // @import "bootstrap/scss/carousel";
-// @import "bootstrap/scss/spinners";
+@import "bootstrap/scss/spinners";
 
 // Helpers
 @import "bootstrap/scss/helpers";
@@ -110,6 +110,9 @@ $aspect-ratios: (
 // Utilities
 @import "bootstrap/scss/utilities/api";
 // scss-docs-end import-stack
+
+@import "blueimp-gallery/css/blueimp-gallery.css";
+@import "blueimp-gallery/css/blueimp-gallery-indicator.css";
 
 
 // common
@@ -250,7 +253,11 @@ footer {
 .project {
   padding-bottom: 1rem; }
 
-.blueimp-gallery-controls {
+.blueimp-gallery {
+  background: rgba(0,0,0,0.85);
+}
+
+.blueimp-gallery {
 
   > .prev, > .next {
     background: transparent;

@@ -91,4 +91,3 @@ each p in publications
               button.btn.btn-sm.btn-clipboard(type = 'button' data-clipboard-target = `#bibtex-data-${p.key}` data-clipboard-action = 'copy') Copy to Clipboard
             .card-body
               pre(id = `bibtex-data-${p.key}`) #{data.bibliography[p.bibtex]}
-

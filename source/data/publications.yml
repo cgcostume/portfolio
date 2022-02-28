@@ -24,7 +24,7 @@ publications:
     Da die meisten Berechnungen diskretisiert im Bildraum vorgenommen werden, entstehen beim Rendern komplexer 3D-Stadtmodelle störende, mit der Tiefe zunehmende Artefakte.
     Zur Abschwächung dieser Störfaktoren werden praktische Lösungen wie stilkonforme Tiefenfokussierung diskutiert.
   thumbnail: 2009-bt-pencil-synthesis.webp
-  flickr: 72157690157643673
+  flickr: '72157690157643673'
   downloads:
   - href: resources/2009 – Mueller (now Limberger) – Computergenerierte Bleistiftzeichnungen von 3D-Stadtmodellen.pdf
     desc: Bachelor's Thesis [de]
@@ -53,7 +53,7 @@ publications:
     They are integrated in a large representative rendering system (OpenSceneGraph).
     Detailed performance measurements in different scenarios and quality levels show that the system has little effect on overall rendering-speed.
   thumbnail: 2012-mt-sky-rendering.webp
-  flickr: 72157650186586300
+  flickr: '72157650186586300'
   downloads:
   - href: resources/2012 – Mueller (now Limberger) – Photorealistisches Rendering atmosphaerischer Effekte in geovirtuellen 3D-Umgebungen in Echtzeit.pdf
     desc: Master's Thesis [de]
@@ -81,7 +81,7 @@ publications:
     GPU generated, viewpoint-aligned billboards are used to render stars with approximated color, brightness, and scintillations.
     A similar approach is used to synthesize the moon considering lunar phase, earthshine, shading, and lunar eclipses.
   thumbnail: 2012-vmv-day-and-night-sky.webp
-  flickr: 72157650186586300
+  flickr: '72157650186586300'
   downloads:
   - href: https://doi.org/10.2312/PE/VMV/VMV12/055-062
     desc: DOI
@@ -110,7 +110,7 @@ publications:
     In this paper a web-based rendering system for software maps that achieves both fast client-side page load time and interactive frame rates even with large software maps is presented.
     The page load time is significantly reduced by efficiently encoding hierarchy and geometry data for the net transport.
   thumbnail: 2013-web3d-interactive-software-maps.webp
-  flickr: 72157650179270797
+  flickr: '72157650179270797'
   downloads:
   - href: https://doi.org/10.1145/2466533.2466550
     desc: DOI
@@ -136,7 +136,7 @@ publications:
     Brushes, as sequences of actions mapping user inputs (in terms of brush shape, flow, pressure, etc.) to arbitrary functions or convolution operators, are used to draw within the parameter space.
     It demonstrates how interactive painting can be used to, e.g., locally tweak parametrization and, furthermore, provides a blueprint for an collaborative photo-editing platform.
   thumbnail: 2014-expressive-painting-per-pixel-parametrization.webp
-  flickr: 72157650124474077
+  flickr: '72157650124474077'
   downloads:
   - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/313549904/inline/jsViewer/589dc04caca272046aa9042e
     desc: Poster
@@ -185,7 +185,7 @@ publications:
     Therefore, Unreal Engine 4 is prototypically used to render Software maps and natural phenomena, such as fire, clouds, smoke, rain, rust, or shininess in real-time.
     Trend data is automatically computed by hierarchically accumulating as well as analyzing the underlying software metrics, and is mapped to the additional visual variables.
   thumbnail: 2015-cgvc-natural-metaphors.webp
-  flickr: 72157663043933623
+  flickr: '72157663043933623'
   downloads:
   - href: https://doi.org/10.2312/cgvc.20151246
     desc: DOI
@@ -211,7 +211,7 @@ publications:
     Afterwards, it employs non-linear filtering based on the smoothed structure adapted to the main feature contours of the quantized image to synthesize a paint texture in real-time.
     Furthermore, a generalized brush-based painting interface is introduced that operates within parameter spaces to locally adjust the level of abstraction of the filtering effects.
   thumbnail: 2016-cgf-interactive-oil-paint-filtering.webp
-  flickr: 72157652814171753
+  flickr: '72157652814171753'
   downloads:
   - href: https://doi.org/10.1016/j.cag.2015.12.001
     desc: DOI

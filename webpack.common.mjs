@@ -11,6 +11,7 @@ import CopyWebpackPlugin from 'copy-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
+
 // import ImageMinimizerPlugin from 'image-minimizer-webpack-plugin';
 
 /* For now, all image sources are specified at pug-compile-time based on the respective yaml files. This makes it
@@ -92,10 +93,12 @@ export default (env, __dirname) => {
             new CopyWebpackPlugin({
                 patterns: [
                     { from: 'images/**/*.webp', to: '[path]/[name][ext]', force: false },
+                    { from: 'favicon*', to: '[path]/[name][ext]', force: false },
                     { from: 'resources/**/*', to: '[path]/[name][ext]', force: false },
                     { from: 'data/bibliography/*.bib', to: 'bibliography/[name][ext]', force: false },
                     { from: 'vcard.vcf', to: '[name][ext]', force: false },
-                    /* third party scripts */
+                    /* third party scripts and assets */
+                    { from: '../node_modules/blueimp-gallery/img/**/*', to: 'img/[name][ext]', force: false },
                     { from: '../node_modules/jquery/dist/jquery.min.js', to: '[name][ext]' },
                 ]
             }),
@@ -105,7 +108,7 @@ export default (env, __dirname) => {
             new MiniCssExtractPlugin({
                 filename: '[name].css',
                 chunkFilename: '[id].css',
-            }),
+            })
         ],
 
         output: {
