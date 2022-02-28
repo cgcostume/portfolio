@@ -85,14 +85,15 @@ publications:
   downloads:
   - href: https://doi.org/10.2312/PE/VMV/VMV12/055-062
     desc: DOI
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/287031803/inline/jsViewer/58db7a24a6fdccca1c9488b3?pdfJsDownload=1
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/287031803/inline/jsViewer/58db7a24a6fdccca1c9488b3
     desc: Paper
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/331556201/inline/jsViewer/5c7feeb5299bf1268d403c6d?pdfJsDownload=1
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/331556201/inline/jsViewer/5c7feeb5299bf1268d403c6d
     desc: Slides
   - href: https://www.youtube.com/watch?v=t8ibsEl0kAI
     desc: Video
   - href: https://github.com/cgcostume/osghimmel
     desc: Source Code
+
 
 - key: 2013-web3d-web-based-swmaps
   bibtex: limberger2013-interactive
@@ -113,9 +114,9 @@ publications:
   downloads:
   - href: https://doi.org/10.1145/2466533.2466550
     desc: DOI
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/262408378/inline/jsViewer/589dbde3aca272046aa8ffa7?pdfJsDownload=1
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/262408378/inline/jsViewer/589dbde3aca272046aa8ffa7
     desc: Paper
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/331556350/inline/jsViewer/5c7fed69458515831f8aff6a?pdfJsDownload=1
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/331556350/inline/jsViewer/5c7fed69458515831f8aff6a
     desc: Slides
   - href: https://www.youtube.com/watch?v=AaHJRVQ3Z1E
     desc: Video
@@ -137,7 +138,7 @@ publications:
   thumbnail: 2014-expressive-painting-per-pixel-parametrization.webp
   flickr: 72157650124474077
   downloads:
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/313549904/inline/jsViewer/589dc04caca272046aa9042e?pdfJsDownload=1
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/313549904/inline/jsViewer/589dc04caca272046aa9042e
     desc: Poster
 
 
@@ -163,7 +164,7 @@ publications:
   downloads:
   - href: https://doi.org/10.2312/exp.20151188
     desc: DOI
-  - href: https://www.researchgate.net/profile/Amir_Semmo/publication/277531015/inline/jsViewer/556c35b208aeccd7773a2f85?pdfJsDownload=1
+  - href: https://www.researchgate.net/profile/Amir_Semmo/publication/277531015/inline/jsViewer/556c35b208aeccd7773a2f85
     desc: Paper
   - href: https://www.youtube.com/watch?v=T65gbk8Ruk4
     desc: Video
@@ -188,7 +189,7 @@ publications:
   downloads:
   - href: https://doi.org/10.2312/cgvc.20151246
     desc: DOI
-  - href: https://www.researchgate.net/profile/Matthias_Trapp/publication/281347949/inline/jsViewer/55ffbd6508aeafc8ac8ba169?pdfJsDownload=1
+  - href: https://www.researchgate.net/profile/Matthias_Trapp/publication/281347949/inline/jsViewer/55ffbd6508aeafc8ac8ba169
     desc: Paper
 
 
@@ -214,7 +215,7 @@ publications:
   downloads:
   - href: https://doi.org/10.1016/j.cag.2015.12.001
     desc: DOI
-  - href: https://www.researchgate.net/profile/Amir_Semmo/publication/289694790/inline/jsViewer/5a38e88a458515919e727ede?pdfJsDownload=1
+  - href: https://www.researchgate.net/profile/Amir_Semmo/publication/289694790/inline/jsViewer/5a38e88a458515919e727ede
     desc: Paper
 
 
@@ -259,7 +260,7 @@ publications:
   downloads:
   - href: https://doi.org/10.1109/IV.2016.61
     desc: DOI
-  - href: https://www.researchgate.net/profile/Matthias_Trapp/publication/301682636/inline/jsViewer/5addc0c7458515c60f5f7065?pdfJsDownload=1
+  - href: https://www.researchgate.net/profile/Matthias_Trapp/publication/301682636/inline/jsViewer/5addc0c7458515c60f5f7065
     desc: Paper
 
 
@@ -279,7 +280,7 @@ publications:
   downloads:
   - href: https://doi.org/10.1145/2945078.2945157
     desc: DOI
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/305082223/inline/jsViewer/5c7feab2458515831f8afeb8?pdfJsDownload=1
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/305082223/inline/jsViewer/5c7feab2458515831f8afeb8
     desc: Poster
   - href: https://github.com/cgcostume/multiframesampling
     desc: Source Code
@@ -307,9 +308,9 @@ publications:
   downloads:
   - href: https://doi.org/10.1145/2945292.2945313
     desc: DOI
-  - href: https://www.researchgate.net/profile/Willy_Scheibel/publication/305420771/inline/jsViewer/5b2cb47b4585150d23c1f3ea?pdfJsDownload=1
+  - href: https://www.researchgate.net/profile/Willy_Scheibel/publication/305420771/inline/jsViewer/5b2cb47b4585150d23c1f3ea
     desc: Paper
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/331407662/inline/jsViewer/5c77e4fa299bf1268d2c7e74?pdfJsDownload=1
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/331407662/inline/jsViewer/5c77e4fa299bf1268d2c7e74
     desc: Slides
   - href: https://github.com/cgcostume/web3d-treemaps
     desc: Source Code
@@ -339,9 +340,9 @@ publications:
   downloads:
   - href: https://doi.org/10.5220/0006267501760185
     desc: DOI
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/313377340/inline/jsViewer/589dbd3845851598bab4014b?pdfJsDownload=1
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/313377340/inline/jsViewer/589dbd3845851598bab4014b
     desc: Paper
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/331407406/inline/jsViewer/5c77deb8299bf1268d2c7c7b?pdfJsDownload=1
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/331407406/inline/jsViewer/5c77deb8299bf1268d2c7c7b
     desc: Slides
 
 
@@ -367,7 +368,7 @@ publications:
   downloads:
   - href: https://doi.org/10.1145/3055624.3075951
     desc: DOI
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/316999882/inline/jsViewer/5b72cc00a6fdcc87df79e788?pdfJsDownload=1
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/316999882/inline/jsViewer/5b72cc00a6fdcc87df79e788
     desc: Paper
 
 
@@ -391,9 +392,9 @@ publications:
   downloads:
   - href: https://doi.org/10.1109/iV.2017.67
     desc: DOI
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/316999964/inline/jsViewer/5ab28be2aca272171001b92a?pdfJsDownload=1
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/316999964/inline/jsViewer/5ab28be2aca272171001b92a
     desc: Paper
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/330106367/inline/jsViewer/5c77be80458515831f75e32b?pdfJsDownload=1
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/330106367/inline/jsViewer/5c77be80458515831f75e32b
     desc: Slides
 
 
@@ -461,9 +462,9 @@ publications:
   downloads:
   - href: https://doi.org/10.1109/iV.2018.00039
     desc: DOI
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/327017928/inline/jsViewer/5b72c86845851546c902c9f1?pdfJsDownload=1
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/327017928/inline/jsViewer/5b72c86845851546c902c9f1
     desc: Paper
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/331400327/inline/jsViewer/5c77cc29458515831f75e5e4?pdfJsDownload=1
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/331400327/inline/jsViewer/5c77cc29458515831f75e5e4
     desc: Slides
 
 
@@ -485,9 +486,9 @@ publications:
   downloads:
   - href: https://doi.org/10.1145/3231622.3231638
     desc: DOI
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/326728307/inline/jsViewer/5b72cb95a6fdcc87df79e161?pdfJsDownload=1
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/326728307/inline/jsViewer/5b72cb95a6fdcc87df79e161
     desc: Paper
-  - href: https://www.researchgate.net/profile/Matthias_Trapp/publication/330106559/inline/jsViewer/5c2df2f4299bf12be3aaf161?pdfJsDownload=1
+  - href: https://www.researchgate.net/profile/Matthias_Trapp/publication/330106559/inline/jsViewer/5c2df2f4299bf12be3aaf161
     desc: Slides
 
 
@@ -510,9 +511,9 @@ publications:
   downloads:
   - href: https://doi.org/10.5220/0007576203140321
     desc: DOI
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/330195762/inline/jsViewer/5c77b7d592851c695046e613?pdfJsDownload=1
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/330195762/inline/jsViewer/5c77b7d592851c695046e613
     desc: Paper
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/331399508/inline/jsViewer/5c77b9a3a6fdcc4715a1c58c?pdfJsDownload=1
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/331399508/inline/jsViewer/5c77b9a3a6fdcc4715a1c58c
     desc: Poster
   - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/331400019_In-Situ_Comparison_for_25D_Treemaps_-_Templates/data/5c77c029458515831f75e389/2019-Limberger-In-Situ-Comparison-for-25D-Treemaps-Templates.pdf
     desc: Template Card
@@ -539,7 +540,7 @@ publications:
   downloads:
   - href: https://doi.org/10.1145/3356422.3356444
     desc: DOI
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/335062804/inline/jsViewer/5d883828a6fdcc8fd6106c95?pdfJsDownload=1
+  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/335062804/inline/jsViewer/5d883828a6fdcc8fd6106c95
     desc: Paper
 
 
@@ -563,7 +564,7 @@ publications:
   downloads:
   - href: https://doi.org/10.1007/978-3-030-41590-7_10
     desc: DOI
-  - href: https://www.researchgate.net/profile/Willy_Scheibel/publication/339362147/inline/jsViewer/5e5ccf0c4585152ce8ff8d73?pdfJsDownload=1
+  - href: https://www.researchgate.net/profile/Willy_Scheibel/publication/339362147/inline/jsViewer/5e5ccf0c4585152ce8ff8d73
     desc: Paper
 
 
@@ -588,9 +589,9 @@ publications:
   downloads:
   - href: https://doi.org/10.5220/0009153902730280
     desc: DOI
-  - href: https://www.researchgate.net/profile/Willy_Scheibel/publication/338402878/inline/jsViewer/5e5cd038a6fdccbeba12bf83?pdfJsDownload=1
+  - href: https://www.researchgate.net/profile/Willy_Scheibel/publication/338402878/inline/jsViewer/5e5cd038a6fdccbeba12bf83
     desc: Paper
-  - href: https://www.researchgate.net/profile/Willy_Scheibel/publication/339617725/inline/jsViewer/5e5cd13ba6fdccbeba12bfea?pdfJsDownload=1
+  - href: https://www.researchgate.net/profile/Willy_Scheibel/publication/339617725/inline/jsViewer/5e5cd13ba6fdccbeba12bfea
     desc: Slides
 
 
@@ -616,7 +617,7 @@ publications:
   downloads:
   - href: https://doi.org/10.1145/3430036.3430054
     desc: DOI
-  - href: https://www.researchgate.net/profile/Willy_Scheibel/publication/346565359/inline/jsViewer/60083702a6fdccdcb8690e02?pdfJsDownload=1
+  - href: https://www.researchgate.net/profile/Willy_Scheibel/publication/346565359/inline/jsViewer/60083702a6fdccdcb8690e02
     desc: Paper
   - href: https://varg-dev.github.io/treemap-studies
     desc: Website
@@ -641,7 +642,7 @@ publications:
   downloads:
   - href: https://doi.org/10.1145/3430036.3430041
     desc: DOI
-  - href: https://www.researchgate.net/profile/Willy_Scheibel/publication/346565429/inline/jsViewer/6008e5e9a6fdccdcb86bb8d0?pdfJsDownload=1
+  - href: https://www.researchgate.net/profile/Willy_Scheibel/publication/346565429/inline/jsViewer/6008e5e9a6fdccdcb86bb8d0
     desc: Paper
 
 
@@ -662,7 +663,7 @@ publications:
   downloads:
   - href: https://doi.org/10.1145/3430036.3432753
     desc: DOI
-  - href: https://www.researchgate.net/profile/Matthias-Trapp-2/publication/347313642/inline/jsViewer/60acf193a6fdcc647ed752cc?pdfJsDownload=1
+  - href: https://www.researchgate.net/profile/Matthias-Trapp-2/publication/347313642/inline/jsViewer/60acf193a6fdcc647ed752cc
     desc: Paper
 
 
@@ -686,7 +687,7 @@ publications:
   downloads:
   - href: https://doi.org/10.1145/3424616.3424697
     desc: DOI
-  - href: https://www.researchgate.net/profile/Daniel-Limberger/publication/347578774/inline/jsViewer/60ae14d5a6fdcc647edc3760?pdfJsDownload=1
+  - href: https://www.researchgate.net/profile/Daniel-Limberger/publication/347578774/inline/jsViewer/60ae14d5a6fdcc647edc3760
     desc: Paper
 
 
@@ -710,7 +711,7 @@ publications:
   downloads:
   - href: https://doi.org/10.1145/3424616.3424730
     desc: DOI
-  - href: https://www.researchgate.net/profile/Lukas-Wagner-17/publication/345770726/inline/jsViewer/5fbe75cb299bf104cf770132?pdfJsDownload=1
+  - href: https://www.researchgate.net/profile/Lukas-Wagner-17/publication/345770726/inline/jsViewer/5fbe75cb299bf104cf770132
     desc: Paper
 
 
@@ -738,7 +739,7 @@ publications:
   downloads:
   - href: https://doi.org/10.5220/0010267601120122
     desc: DOI
-  - href: https://www.researchgate.net/profile/Willy-Scheibel/publication/349382985/inline/jsViewer/6047926192851c077f2981ce?pdfJsDownload=1
+  - href: https://www.researchgate.net/profile/Willy-Scheibel/publication/349382985/inline/jsViewer/6047926192851c077f2981ce
     desc: Paper
 
 
@@ -766,6 +767,8 @@ publications:
   downloads:
   - href: https://doi.org/10.2312/evs.20211048
     desc: DOI
+  - href: https://diglib.eg.org/bitstream/handle/10.2312/evs20211048/013-017.pdf
+    desc: Paper
   - href: https://roomcanvas.dev/
     desc: Demo
 
@@ -789,6 +792,8 @@ publications:
   downloads:
   - href: https://doi.org/10.1145/3481549.3481568
     desc: DOI
+  - href: https://www.researchgate.net/profile/Willy-Scheibel/publication/354332166/inline/jsViewer/61486d4e519a1a381f702692
+    desc: Paper
 
 
 - key: 2021-vinci-procedural-textures
@@ -811,6 +816,8 @@ publications:
   downloads:
   - href: https://doi.org/10.1145/3481549.3481570
     desc: DOI
+  - href: https://www.researchgate.net/profile/Willy-Scheibel/publication/354331984/inline/jsViewer/61486d013c6cb310697e65f0
+    desc: Paper
 
 
 - key: 2021-vinci-software-galaxy
@@ -834,6 +841,8 @@ publications:
   downloads:
   - href: https://doi.org/10.1145/3481549.3481573
     desc: DOI
+  - href: https://www.researchgate.net/profile/Willy-Scheibel/publication/354332172/inline/jsViewer/61486d33519a1a381f70268d
+    desc: Paper
 
 
 - key: 2021-web3d-tumor-segmentation
@@ -857,9 +866,12 @@ publications:
   downloads:
   - href: https://doi.org/10.1145/3485444.3487640
     desc: DOI
+  - href: https://www.researchgate.net/profile/Jonas_Kordt/publication/356974519/inline/jsViewer/61bc6f3063bbd932429c6269
+    desc: Paper
 
 
 - key: 2022-grapp-pointcloud-stylization
+  bibtex: wagner2022-pointcloud-stylization
   title: 'A Non-Photorealistic Rendering Technique for Art-directed Hatching of 3D Point Clouds'
   date: '2022-02-08'
   authors:
@@ -877,9 +889,17 @@ publications:
     It uses X-Toon textures as part of its parameterization, supports hatching and cross hatching, and is inherently temporal coherent with respect to virtual camera movements.
     This introduces significant artistic freedom that is underlined by our results, which show that a variety of different sketchy styles such as colored crayons, pencil, pointillism, wax crayons, blue print, and chalk-drawings can be achieved on a wide spectrum of point clouds, i.e., covering 3D polygonal meshes as well as iPad-based LiDAR scans.
   thumbnail: 2022-grapp-pointcloud-stylization.webp
+  downloads:
+    - href: https://doi.org/10.5220/0010849500003124
+      desc: DOI
+    - href: https://www.researchgate.net/profile/Matthias-Trapp-2/publication/358523901/inline/jsViewer/62061b63cf7c2349ca08c7fb
+      desc: Paper
+    - href: https://www.researchgate.net/profile/Daniel-Limberger/publication/358850452_A_Non-Photorealistic_Rendering_Technique_for_Art-directed_Hatching_of_3D_Point_Clouds/data/6218c22f6738db292ac68599/2022-01-28-Wagner-2022-NPR-for-3D-Point-Clouds-Slides-GRAPP.pdf
+      desc: Slides
 
 
 - key: 2022-ivapp-knowhow-map
+  bibtex: atzberger2022-knowhow-map
   title: 'Visualization of Knowledge Distribution across Development Teams using 2.5D Semantic Software Maps'
   date: '2022-02-08'
   authors:
@@ -900,6 +920,11 @@ publications:
     By mapping aspects related to skills onto the visual variables of 3D glyphs, we generate a 2.5D Visualization, we call KnowhowMap.
     We exemplify this approach with an interactive prototype that enables users to analyze the distribution of skills and expertise in an explorative way.
   thumbnail: 2022-ivapp-knowhow-map.webp
+  downloads:
+    - href: https://doi.org/10.5220/0010991100003124
+      desc: DOI
+    - href: https://www.researchgate.net/profile/Matthias-Trapp-2/publication/358523984/inline/jsViewer/62061c62afa8884cabd8675c
+      desc: Paper
 
 
 - key: 2022-enase-mining-expertise
@@ -914,16 +939,37 @@ publications:
   - Jürgen Döllner
   published: Proc. Int. Conf. on Evaluation of Novel Approaches to Software Engineering (ENASE)
   abstract:
-    During software development processes, software defects, so-called bugs, are captured in a semi-structured manner in bug tracking systems using textual components and categorical features.
+    During the software development process, software defects, so-called bugs, are captured in a semi-structured manner in a bug tracking system using textual components and categorical features.
     It is the task of the triage owner to assign open bugs to developers with the required skills and expertise.
-    This task, known as bug triaging, requires an in-depth knowledge about a developer's skills.
-    Various machine learning techniques have been proposed to automate this task, most of these approaches apply topic models, especially Latent Dirichlet Allocation (LDA), for mining the textual components of bug reports.
-    However none of the proposed approaches explicitly models a developers expertise.
-    In most cases these algorithms are treated as black box, as they allow no explanation about their recommendation.
-    In this work, we show how the Author-Topic Model (ATM), a variant of LDA, can be used to capture a developer's expertise in the latent topics of a corpus of bug reports from the model itself.
-    Furthermore, we present three novel bug triaging techniques based on the ATM.
-    We compare our approach against a baesline model, that is based on LDA, on a dataset of 18.269 bug reports from the Mozilla Firefox project collected between July 1999 to June 2016.
-    The results show that the ATM can outperform the LDA-based approach in terms of the Mean Reciprocal Rank (MRR).
+    This task, known as bug triaging, requires in-depth knowledge about a developer's skills.
+    Various machine learning techniques have been proposed to automate this task, most of these approaches apply topic models, especially Latent Dirichlet Allocation, for mining the textual components of bug reports.
+    However, none of the proposed approaches explicitly models a developer's expertise.
+    In most cases, these algorithms are treated as a black box, as they allow no explanation about their recommendation.
+    In this work, we show how the Author-Topic Model, a variant of Latent Dirichlet Allocation, can be used to capture a developer's expertise in the latent topics of a corpus of bug reports from the model itself.
+    Furthermore, we present three novel bug triaging techniques based on the Author-Topic Model.
+    We compare our approach against a baseline model, that is based on Latent Dirichlet Allocation, on a dataset of 18269 bug reports from the Mozilla Firefox project collected between July 1999 to June 2016.
+    The results show that the Author-Topic Model can outperform the baseline approach in terms of the Mean Reciprocal Rank.
   thumbnail: 2022-enase-mining-expertise.webp
 
 
+- key: 2022-enase-downstream-mining
+  title: 'Augmenting Library Development by Mining Usage Data from Downstream Dependencies'
+  date: '2022-04-25'
+  authors:
+  - Christoph Thiede
+  - Willy Scheibel
+  - Daniel Limberger
+  - Jürgen Döllner
+  published: Proc. Int. Conf. on Evaluation of Novel Approaches to Software Engineering (ENASE)
+  abstract:
+    In the dependency graph of a software ecosystem, downstream dependencies are the nodes that depend on a package.
+    Apart from end-user APIs, these dependencies make up the bulk of a library's usage for most packages.
+    Other than for upstream dependencies, tools that provide individual package developers with this kind of information rarely exist to date.
+    This paper proposes methods for (1) efficiently gathering downstream dependencies of a single package and (2) extracting usage samples from them using a static type analyzer.
+    It also presents a tool that allows developers of \emph{npm} packages to explore the aggregated usage data directly in their IDE, i.e., Visual Studio Code, in an interactive and context-sensitive way.
+    The tool exposes which other packages rely on specific functions and, more interestingly, why and how the package's functions are used.
+    This can help prioritize and steer development and uncover unexpected usage patterns, inappropriate function signatures, or misleading interface design.
+    Our methods return over 8000 dependencies for popular packages with an average precision of \SI{98.7}{\percent} and \SI{68.4}{\percent}, respectively, but tend to exclude unpopular dependencies.
+    Usage pattern extraction is very precise but not easily available for repositories with complex build configurations or metaprogramming patterns.
+    We show that usage data from downstream dependency repositories is a promising and diverse source of information for mining software repositories and that our approach supports package developers in maintain their APIs.
+  thumbnail: 2022-enase-downstream-mining.webp

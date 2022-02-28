@@ -92,6 +92,7 @@ export default (env, __dirname) => {
             new CopyWebpackPlugin({
                 patterns: [
                     { from: 'images/**/*.webp', to: '[path]/[name][ext]', force: false },
+                    { from: 'resources/**/*', to: '[path]/[name][ext]', force: false },
                     { from: 'data/bibliography/*.bib', to: 'bibliography/[name][ext]', force: false },
                     { from: 'vcard.vcf', to: '[name][ext]', force: false },
                     /* third party scripts */
