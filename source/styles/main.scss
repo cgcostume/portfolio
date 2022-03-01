@@ -111,9 +111,8 @@ $aspect-ratios: (
 @import "bootstrap/scss/utilities/api";
 // scss-docs-end import-stack
 
-@import "blueimp-gallery/css/blueimp-gallery.css";
-@import "blueimp-gallery/css/blueimp-gallery-indicator.css";
 
+@import "glightbox/dist/css/glightbox.min.css";
 
 // common
 
@@ -181,42 +180,6 @@ header  {
   }
 }
 
-// .navbar {
-
-//   background-color: $body-bg;
-
-//   #lang-select {
-
-//     margin-left: 1rem;
-
-//     > li.nav-item + .nav-item {
-//       margin-left: 0.25rem;
-//     }
-//   }
-
-//   .navbar-toggler {
-//     border: none;
-//     margin-bottom: -1rem;
-//     cursor: pointer;
-//   }
-
-//   .dropdown-menu {
-//     border: none;
-//   }
-
-//   .dropdown-item {
-//     color: $navbar-light-color;
-
-//     @include hover-focus {
-//       color: $navbar-light-hover-color;
-//       background: none;
-//     }
-//   }
-//   .dropdown-item.active {
-//     color: $navbar-light-active-color;
-//     background: none;
-//   }
-// }
 
 .text-justify {
   text-align: justify;
@@ -239,31 +202,26 @@ footer {
    margin-bottom: 2rem;
 }
 
-// .flickr {
-
 .badge {
   font-weight: $font-weight-normal;
   text-align: right;
   border-radius: $border-radius 0;
 }
 
+.gslide-description {
+  background: transparent !important;
 
-// }
+  .gdesc-inner {
+    padding: 0.5rem 0;
+  }
+  .gslide-desc {
+    color: white;
+    font-family: $font-family-sans-serif;
+  }
+}
 
 .project {
   padding-bottom: 1rem; }
-
-.blueimp-gallery {
-  background: rgba(0,0,0,0.85);
-}
-
-.blueimp-gallery {
-
-  > .prev, > .next {
-    background: transparent;
-    border: none;
-  }
-}
 
 .badge.animate {
   -webkit-animation: sk-scaleout 0.66s infinite ease-in-out;

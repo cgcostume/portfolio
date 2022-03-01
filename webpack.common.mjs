@@ -98,7 +98,6 @@ export default (env, __dirname) => {
                     { from: 'data/bibliography/*.bib', to: 'bibliography/[name][ext]', force: false },
                     { from: 'vcard.vcf', to: '[name][ext]', force: false },
                     /* third party scripts and assets */
-                    { from: '../node_modules/blueimp-gallery/img/**/*', to: 'img/[name][ext]', force: false },
                     { from: '../node_modules/jquery/dist/jquery.min.js', to: '[name][ext]' },
                 ]
             }),
