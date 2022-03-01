@@ -4,7 +4,6 @@ import path from 'path';
 import { merge } from 'webpack-merge';
 import common from './webpack.common.mjs';
 
-
 import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 

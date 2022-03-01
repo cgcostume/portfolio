@@ -1,13 +1,10 @@
 import path from 'path';
 import glob from 'glob';
-import fs from 'fs';
 
 import { merge } from 'webpack-merge';
 import common from './webpack.common.mjs';
 
 import PurgecssWebpackPlugin from 'purgecss-webpack-plugin';
-import WebpackShellPluginNext from 'webpack-shell-plugin-next';
-
 
 import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -22,15 +19,8 @@ export default function (env) {
 
                 new PurgecssWebpackPlugin({
                     paths: glob.sync(path.join(__dirname, 'source', '/**/*'), { nodir: true }),
+                    safelist: { greedy: [/^(gslide|gdesc)-/] }
                 }),
-
-                // new WebpackShellPluginNext({
-                //     onBuildEnd: {
-                //         scripts: [() => {
-                //             fs.unlinkSync(path.resolve(__dirname, "./build/styles.js"));
-                //         }],
-                //     },
-                // }),
 
             ],
         });

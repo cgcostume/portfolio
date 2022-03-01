@@ -99,6 +99,7 @@ export default (env, __dirname) => {
                     { from: 'vcard.vcf', to: '[name][ext]', force: false },
                     /* third party scripts and assets */
                     { from: '../node_modules/jquery/dist/jquery.min.js', to: '[name][ext]' },
+                    { from: '../node_modules/glightbox/dist/css/glightbox.min.css', to: '[name][ext]' },
                 ]
             }),
             new webpack.DefinePlugin({
