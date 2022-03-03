@@ -973,3 +973,28 @@ publications:
     Usage pattern extraction is very precise but not easily available for repositories with complex build configurations or metaprogramming patterns.
     We show that usage data from downstream dependency repositories is a promising and diverse source of information for mining software repositories and that our approach supports package developers in maintain their APIs.
   thumbnail: 2022-enase-downstream-mining.webp
+
+
+- key: 2022-iccq-defect-prediction
+  title: 'Outlier Mining Techniques for Software Defect Prediction'
+  date: '2022-04-23'
+  authors:
+  - Tim Cech
+  - Daniel Atzberger
+  - Willy Scheibel
+  - Daniel Limberger
+  - Matthias Trapp
+  - Jürgen Döllner
+  published: Proc. Int. Conf. on Code Quality (ICCQ)
+  abstract:
+    Software metrics measure aspects related to the quality of software.
+    Using software metrics as a method of quantification of software, various approaches were proposed for locating defect-prone source code units within software projects.
+    Most of these approaches rely on supervised learning algorithms, which require labeled data for adjusting their parameters during the learning phase. Usually, such labeled training data is not available.
+    Unsupervised algorithms do not require training data and can therefore help to overcome this limitation.
+    In this work we evaluate the effect of unsupervised learning&mdash;especially outlier mining algorithms&mdash;for the task of defect prediction, i.e., locating defect-prone source code units.
+    We investigate the effect of various class balancing and feature compressing techniques as preprocessing steps and show how sliding windows can be used to capture time series of source code metrics.
+    We evaluate the Isolation Forest and Local Outlier Factor, as representants of outlier mining techniques.
+    Our experiments on three publicly available datasets, containing a total of 11 software projects, indicate that the consideration of time series can improve static examinations by up to 3%.
+    The results further show that supervised algorithms are able to outperform unsupervised approaches on all projects.
+    Among all unsupervised approaches, the Isolation Forest achieves the best accuracy on 10 out of 11 projects.
+  thumbnail: 2022-iccq-defect-prediction.webp
