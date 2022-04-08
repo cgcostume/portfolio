@@ -108,6 +108,10 @@ $aspect-ratios: ("1x1": 100%,
 
 // common
 
+.mt-2rem {
+  margin-top: 2rem;
+}
+
 p {
   hyphens: auto;
   // @hyphenation-resource
@@ -116,6 +120,7 @@ p {
 header {
   margin-top: 5rem;
 }
+
 
 h1 {
   @extend .display-4;

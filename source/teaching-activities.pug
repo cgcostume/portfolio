@@ -1,4 +1,3 @@
-
 doctype html
 html(lang = 'en')
 
@@ -8,52 +7,8 @@ html(lang = 'en')
 
   body#page-top(data-spy = 'scroll')
 
-    -
-      let terms = data.teaching_activities.terms;
-      let translations = data.teaching_activities.translations;
-
-      terms = terms.sort((a, b) => {
-        const aTerm = a.term;
-        const bTerm = b.term;
-        return aTerm < bTerm ? +1 : aTerm > bTerm ? -1 : 0; });
-
-      const roles = (tags) => [... tags.matchAll(/\btutor\b|\bsupervisor\b|\blecturer\b|\bco-lecturer\b/g)].flat();
-      const types = (tags) => [... tags.matchAll(/\blecture\b|\bseminar\b|\bproject\b|\bthesis\b/g)].flat();
-      const programs = (tags) => [... tags.matchAll(/\bba\b|\bma\b|\bmooc\b|\byouth\b/g)].flat();
-
-      const translate = (roles) => roles.map((role) => translations[role]);
-
     section#teaching.container
-
-      .row.text-center
-        .col-12
-
-          h2 All #[strong #{data.teaching_activities.heading}]
-          p
-            a.text-secondary(href = '/index.html#teaching') by #[strong #{data.header.name} #{data.header.surname}]
-          p.pt-0
-
-          mixin inner(t, index)
-            .col-md-5.col-sm-10(class = `${index % 2 ? 'text-start' : 'text-md-end text-start'}`)
-              h3.mt-2 !{t.term}
-              each c in t.courses
-                p #{c.course}
-                  br
-                  if types(c.tags) || roles(c.tags)
-                    small
-                      | #{translate(types(c.tags)).join(', ')}
-                      | (#{translate(programs(c.tags)).join(' | ')}),
-                      | #{translate(roles(c.tags)).join(' & ')}
-
-        - let i = 0;
-        while i < terms.length
-          .row.justify-content-md-center
-            +inner(terms[i], i, 'bar')
-            - ++i;
-            if i < terms.length
-              +inner(terms[i], i, 'foo')
-            - ++i;
-
+      include partials/teaching-activities
 
     section#footer.container
       include partials/footer

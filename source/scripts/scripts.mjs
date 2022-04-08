@@ -12,7 +12,7 @@ $(function () {
   flickr('.flickr');
   $('.bars').peity('bar', {
     fill: function (value) {
-      return value > 4 ? 'lightgray' : '#343a40'
+      return value > 4 ? '#adb5bd' : '#343a40'
     },
     max: 4.0,
     min: 0.0,
