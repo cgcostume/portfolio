@@ -136,19 +136,19 @@ mixin tdStats(countsBA, countsMA)
           +tdStats(grades.ba.graphics.others, grades.ma.graphics.others)
         tr
           td.pe-2 Programming &amp; Software Engineering
-          td.ps-2 Tutor or Co-Lecturer
+          td.ps-2 Tutor and/or Co-Lecturer
           +tdStats(grades.ba.engineering.others, grades.ma.engineering.others)
         tr
           td.pe-2 Visualization &amp; Visual Analytics
-          td.ps-2 Tutor or Co-Lecturer
+          td.ps-2 Tutor and/or Co-Lecturer
           +tdStats(grades.ba.visualization.others, grades.ma.visualization.others)
       tfoot
         tr
-          td.pe-2 Bachelor's or Master's Projects
+          td.pe-2 #[span.text-muted Bachelor's and Master's] Projects
           td.ps-2 Supervisor
           +tdStats(grades.ba.projects, grades.ma.projects)
         tr
-          td.pe-2 Bachelor's or Master's Theses
+          td.pe-2 #[span.text-muted Bachelor's and Master's] Theses
           td.ps-2 Supervisor
           +tdStats(grades.ba.theses, grades.ma.theses)
 
