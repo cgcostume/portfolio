@@ -1,4 +1,6 @@
 
+import $ from 'jquery';
+import peity from 'peity';
 import clipboard from 'clipboard';
 
 import flickr from './flickr.mjs';
@@ -7,12 +9,18 @@ import flickr from './flickr.mjs';
 // window.addEventListener('DOMContentLoaded', (event) => {
 $(function () {
 
-  console.log(flickr);
-
   flickr('.flickr');
-
+  $('.bars').peity('bar', {
+    fill: function (value) {
+      return value > 4 ? 'lightgray' : '#343a40'
+    },
+    max: 4.0,
+    min: 0.0,
+    padding: 0.2,
+  });
 
   new clipboard('.btn-clipboard');
+
 
   if ($('#picture-input-toggle')[0]) {
     const togglePortrait = function () {

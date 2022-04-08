@@ -1,6 +1,6 @@
 
+import $ from 'jquery';
 import GLightbox from 'glightbox';
-
 
 const API = 'https://api.flickr.com/services/rest/';
 const API_KEY = data.config.flickr_api_key;

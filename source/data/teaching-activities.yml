@@ -1,133 +1,221 @@
 
 heading: Teaching Activities
 
-selected:
+translations:
 
-- course: 3D Computer Graphics I
-  years: [ \'21/22, \'20/21, \'19/20, \'13 ]
-  type: Lecture (BA)
-  roles: Lecturer, Co-Lecturer, and Tutor
+  lecture: Lecture
+  seminar: Seminar
+  project: Project
 
-- course: 3D Computer Graphics II
-  years: [ \'21, \'20, \'19, \'16, \'13/14', \'12/13 ]
-  type: Lecture (BA)
-  roles: Lecturer, Co-Lecturer, and Tutor
+  youth: Youth Academy
+  mooc: Massive Open Online Course
+  ma: MA
+  ba: BA
 
-- course: Advanced Graphics Programming with OpenGL and C++
-  years: [ \'17/18, \'14, \'13 ]
-  type: Lecture (BA)
-  roles: Tutor and Co-Lecturer
+  lecturer: Lecturer
+  co-lecturer: Co-Lecturer
+  tutor: Tutor
+  supervisor: Supervisor
 
-- course: (Advanced) Game Programming
-  years: [ \'21/22, \'19/20, \'18, \'14/15, \'14/15, \'12/13 ]
-  type: Seminar (BA, MA)
-  roles: Supervisor, Tutor, and Co-Lecturer
 
-- course: User Interface Programming
-  years: [ \'20/21, \'18/19 ]
-  type: Lecture (BA)
-  roles: Co-Lecturer and Tutor
+theses:
+
+- title: Interactive Rendering for dynamic Annotation in 2.5D Circular Bundleviews
+  student: Anne Gropler
+  year: 2014
+  tags: ba, thesis, supervisor
+
+- title: Development, integration and evaluation of a browser-based user-interface for interactive exploration of 2.5D Circular Bundleviews
+  student: Judith Hartmann
+  year: 2014
+  tags: ba, thesis, supervisor
+
+- title: Developing of Level of Detail Methods for 2.5D Circular Bundle Views
+  student: Pavel Belskiy
+  year: 2014
+  tags: ba, thesis, supervisor
+
+- title: Interactive filtering and interaction techniques for 2.5D Circular Bundleviews
+  student: Tobias Stengel
+  year: 2014
+  tags: ba, thesis, supervisor
+
+- title: Concept and Implementation of Navigation Techniques for Softwaremaps with GPU-based Geometry Creation
+  student: Florian Wagner
+  year: 2016
+  tags: ba, thesis, supervisor
+
+- title: Implementation of Rendering and Interaction Techniques for Height Comparison and Filtering in Software Maps
+  student: Jan-Tobias Matysik
+  year: 2016
+  tags: ba, thesis, supervisor
+
+- title: Design and Implementation of Rendering- and Interactiontechniques for Annotations and Legends in Softwaremaps
+  student: Juliane Waack
+  year: 2016
+  tags: ba, thesis, supervisor
+
+- title: undefined
+  student: Tobias Müller
+  year: 0
+  tags: ba, thesis, supervisor
+
+- title: Progressives, hybrides, GPU-basiertes Rendering von 2.5D Treemaps
+  student: Roland Lux
+  year: 2014
+  tags: ma, thesis, supervisor
+
+- title: Natural Phenomena as Metaphors for Visualization of Trend Data in Interactive Software Maps
+  student: Hannes Würfel
+  year: 2015
+  tags: ma, thesis, supervisor
+
+- title: Design and Implementation of a Many-Light Method for Real-Time Dynamic Global Illumination
+  student: Johannes Linke
+  year: 2016
+  tags: ma, thesis, supervisor
+
+- title: Concept and Implementation of Dynamic and Semantic-driven Labeling of Treemaps
+  student: Anne Gropler
+  year: 2018
+  tags: ma, thesis, supervisor
+
+- title: Development of a Framework for Controlled Experiments in Information Visualisation
+  student: Carolin Fiedler
+  year: 2018
+  tags: ma, thesis, supervisor
+
+- title: Conception and Implementation of a System for an Animated Introduction into 2.5-Dimensional Treemaps
+  student: Georg Höfer
+  year: 2018
+  tags: ma, thesis, supervisor
+
+- title: Concepts and Techniques for Animation of 2.5D Treemaps
+  student: Jan van Dieken
+  year: 2020
+  tags: ma, thesis, supervisor
+
+- title: Design and Implementation of a Physically-Based Renderer using Multi-Frame Sampling
+  student: Philipp Otto
+  year: 2020
+  tags: ma, thesis, supervisor
+
+- title: Using Heuristics for Decision Tree Generation in Image Processing
+  student: Maximilian Söchting
+  year: 2020
+  tags: ma, thesis, supervisor
+
+- title: Design and Implementation of a Visualization System for Displaying Spatio-temporal Temperature Sensor Data in Building Models
+  student: Bastian König
+  year: 2021
+  tags: ma, thesis, supervisor
 
 
 terms:
 
 - term: '2022 | Summer Term'
   courses:
-  - course: tbd
+  - course: 3D Computer Graphics II
+    tags: graphics, lecture, ba, lecturer
 
 - term: '2021/22 | Winter Term'
   courses:
   - course: 3D Computer Graphics I
-    type: Lecture (BA)
-    role: Lecturer
+    tags: graphics, lecture, ba, lecturer
   - course: AI-based Systems with a Dark Twist
-    type: Seminar (BA)
-    role: Tutor & Supervisor
+    tags: engineering, seminar, ba, tutor, supervisor
 
 
 - term: '2021 | Summer Term'
   courses:
   - course: 3D Computer Graphics II
-    type: Lecture (BA)
-    role: Lecturer
+    tags: graphics, lecture, ba, lecturer
+    grade_overall: 1.8
+    grade_personal: 1.3
   - course: Lidar-based Building Models for Sensor Data Visualization
-    type: Project (MA)
-    role: Supervisor
+    tags: graphics, project, ma, supervisor
+    grade_overall: 1.3
+    grade_personal: 1.5
   - course: Software Mining and Applications
-    type: Seminar (MA)
-    role: Tutor & Supervisor
+    tags: visualization, seminar, ma, tutor, supervisor
+    grade_overall: 1.6
+    grade_personal: 1.3
   - course: Visualization and Analysis of Multidimensional Data
-    type: Seminar (MA)
-    role: Tutor
+    tags: visualization, seminar, ma, tutor
+    grade_overall: 1.6
+    grade_personal: 1.6
 
 - term: '2020/21 | Winter Term'
   courses:
   - course: 3D Computer Graphics I
-    type: Lecture (BA)
-    role: Lecturer
+    tags: graphics, lecture, ba, lecturer
+    grade_overall: 1.6
+    grade_personal: 1.2
   - course: Analysis and Visualization of Similarities of Software Systems
-    type: Project (MA)
-    role: Supervisor
+    tags: visualization, project, ma, supervisor
+    grade_overall: n.a.
+    grade_personal: n.a.
   - course: User Interface Programming
-    type: Lecture (BA)
-    role: Tutor & Co-Lecturer
-  - course: Advanced Topics in Information Visualization
-    type: Seminar (MA)
-    role: Tutor & Supervisor
-  - course: Introduction to Data Visualization
-    type: Seminar (BA)
-    role: Tutor
+    tags: engineering, lecture, ba, tutor, co-lecturer
+    grade_overall: 1.8
+    grade_personal: 1.2
 
 
 - term: '2020 | Summer Term'
   courses:
   - course: 3D Computer Graphics II
-    type: Lecture (BA)
-    role: Lecturer
+    tags: graphics, lecture, ba, lecturer
+    grade_overall: 1.2
+    grade_personal: 1.1
   - course: Visual Analytics of Multi-dimensional Data using Topic Maps
-    type: Project (MA)
-    role: Supervisor
+    tags: visualization, project, ma, supervisor
+    grade_overall: 1.7
+    grade_personal: 1.5
 
 - term: '2019/20 | Winter Term'
   courses:
   - course: 3D Computer Graphics I
-    type: Lecture (BA)
-    role: Lecturer
+    tags: graphics, lecture, ba, lecturer
+    grade_overall: 1.8
+    grade_personal: 1.3
   - course: Game Programming
-    type: Seminar (BA)
-    role: Tutor & Supervisor
+    tags: graphics, seminar, ba, tutor, supervisor
+    grade_overall: 1.7
+    grade_personal: 2.0
   - course:  Selected Topics in Visual Analytics
-    type: Seminar (MA)
-    role: Tutor
+    tags: visualization, seminar, ma, tutor
+    grade_overall: 1.6
+    grade_personal: 1.0
 
 
 - term: '2019 | Summer Term'
   courses:
   - course: 3D Computer Graphics II
-    type: Lecture (BA)
-    role: Co-Lecturer
-  - course: Fundamentals of Software Analytics
-    type: Lecture (MA)
-    role: Tutor
+    tags: graphics, lecture, ba, co-lecturer
+    grade_overall: 2.1
+    grade_personal: 1.6
 
 - term: '2018/19 | Winter Term'
   courses:
   - course: User Interface Programming
-    type: Lecture (BA)
-    role: Tutor
+    tags: engineering, lecture, ba, tutor
+    grade_overall: 1.5
+    grade_personal: 1.3
 
 
 - term: '2018 | Summer Term'
   courses:
   - course: Advanced Games of Life
-    type: Seminar (BA, MA)
-    role: Tutor & Supervisor
+    tags: engineering, seminar, ma, ba, tutor, supervisor
+    grade_overall: 1.9
+    grade_personal: 1.7
 
 - term: '2017/18 | Winter Term'
   courses:
-  - course: Graphics Programming with OpenGL and C++
-    type: Seminar (BA)
-    role: Tutor & Co-Lecturer
+  - course: Advanced Development in C++
+    tags: engineering, seminar, ma, tutor, co-lecturer
+    grade_overall: 1.6
+    grade_personal: 1.2
 
 
 - term: '2017 | Summer Term'
@@ -136,120 +224,130 @@ terms:
 - term: '2016/17 | Winter Term'
   courses:
   - course: Advanced Programming in C++
-    type: Lecture (MA)
-    role: Tutor & Co-Lecturer
+    tags: engineering, lecture, ma, tutor, co-lecturer
+    grade_overall: 1.9
+    grade_personal: 1.4
   - course: Real-time Monitoring of Massive File Systems
-    type: Project (MA)
-    role: Supervisor
+    tags: engineering, project, ma, supervisor
+    grade_overall: 1.7
+    grade_personal: 1.1
   - course: Methods and Techniques of Information Visualization
-    type: Seminar (MA)
-    role: Tutor
+    tags: visualization, seminar, ma, tutor
+    grade_overall: 1.6
+    grade_personal: 1.6
 
 
 - term: '2016 | Summer Term'
   courses:
   - course: 3D Computer Graphics II
-    type: Lecture (BA)
-    role: Tutor & Co-Lecturer
+    tags: graphics, lecture, ba, tutor, co-lecturer
+    grade_overall: 1.3
+    grade_personal: 1.1
   - course: Massive Information Mining for Software Analytics
-    type: Project (BA)
-    role: Supervisor
+    tags: visualization, project, ba, supervisor
+    grade_overall: 1.2
+    grade_personal: 1.2
   - course: Methods and Techniques of Software Visualization
-    type: Seminar (MA)
-    role: Tutor
+    tags: visualization, seminar, ma, tutor
+    grade_overall: 1.7
+    grade_personal: n.a.
   - course: Introduction to Visual Analytics
-    type: Seminar (BA)
-    role: Tutor
+    tags: visualization, seminar, ba, tutor
+    grade_overall: 1.4
+    grade_personal: 1.0
 
 - term: '2015/16 | Winter Term'
   courses:
   - course: Systems Engineering for Software Analytics
-    type: Seminar (MA)
-    role: Tutor
+    tags: visualization, seminar, ma, tutor
+    grade_overall: 1.5
+    grade_personal: 1.1
 
 
 - term: '2015 | Summer Term'
   courses:
   - course: Automated Visual Software Analytics
-    type: Lecture (massive open online course)
-    role: Tutor
-  - course: Programming Technique II
-    type: Lecture (BA)
-    role: Tutor & Co-Lecturer
+    tags: visualization, lecture, mooc, tutor
+    grade_overall: 1.7
+    grade_personal: 2.0
+  - course: Programming Techniques II
+    tags: engineering, lecture, ba, tutor, co-lecturer
+    grade_overall: 1.5
+    grade_personal: 1.2
+  - course: Graphics Programming with OpenGL and C++
+    tags: graphics, lecture, seminar, ba, tutor, lecturer
+    grade_overall: 1.4
+    grade_personal: 1.3
   - course: Software Analysis and Visualization
-    type: Project (BA)
-    role: Supervisor
+    tags: visualization, project, ba, supervisor
   - course: Visualization of System Evolution
-    type: Seminar (MA)
-    role: Tutor
+    tags: visualization, seminar, ma, tutor
 
 - term: '2014/15 | Winter Term'
   courses:
   - course: Game Programming
-    type: Lecture/Seminar (BA)
-    role: Tutor & Co-Lecturer
-  - course: Introduction to Programming C++
-    type: Lecture (MA)
-    role: Lecturer
+    tags: graphics, lecture, seminar, ba, tutor, co-lecturer
+    grade_overall: 1.2
+    grade_personal: 1.1
   - course: Visualization for Interactive Software Analytics
-    type: Seminar (MA)
-    role: Tutor
+    tags: visualization, seminar, ma, tutor
+    grade_overall: 1.3
+    grade_personal: 1.1
   - course: Introduction to 3D Computer Graphics
-    type: Youth Academy
-    role: Lecturer
+    tags: graphics, lecture, youth, lecturer
 
 
 - term: '2014 | Summer Term'
   courses:
   - course: Graphics Programming with OpenGL and C++
-    type: Lecture/Seminar (BA)
-    role: Tutor & Lecturer
+    tags: graphics, lecture, seminar, ba, tutor, lecturer
+    grade_overall: 1.4
+    grade_personal: 1.1
   - course: Software Analysis and Visualization
-    type: Project (BA)
-    role: Supervisor
+    tags: visualization, project, ba, supervisor
+    grade_overall: 1.3
+    grade_personal: 1.3
   - course: Information Visualization
-    type: Seminar (MA)
-    role: Tutor
+    tags: visualization, seminar, ma, tutor
 
 - term: '2013/14 | Winter Term'
   courses:
   - course: 3D Computer Graphics II
-    type: Lecture (BA)
-    role: Tutor & Co-Lecturer
+    tags: graphics, lecture, ba, tutor, co-lecturer
+    grade_overall: 1.5
+    grade_personal: 1.0
   - course: Game Programming
-    type: Lecture/Seminar (BA)
-    role: Tutor & Co-Lecturer
+    tags: engineering, lecture, seminar, ba, tutor, co-lecturer
+    grade_overall: 1.4
+    grade_personal: 1.1
   - course: Introduction to 3D Computer Graphics
-    type: Youth Academy
-    role: Lecturer
+    tags: graphics, lecture, youth, lecturer
   - course: Software Analytics
-    type: Seminar (MA)
-    role: Tutor
+    tags: visualization, seminar, ma, tutor
 
 
 - term: '2013 | Summer Term'
   courses:
   - course: 3D Computer Graphics I
-    type: Lecture (BA)
-    role: Tutor & Co-Lecturer
+    tags: graphics, lecture, ba, tutor, co-lecturer
+    grade_overall: 1.6
+    grade_personal: 1.2
   - course: Graphics Programming with OpenGL and C++
-    type: Lecture/Seminar (BA)
-    role: Tutor & Lecturer
+    tags: graphics, lecture, seminar, ba, tutor, lecturer
+    grade_overall: 1.3
+    grade_personal: 1.0
   - course: Software Visualization Techniques
-    type: Seminar (MA)
-    role: Tutor
+    tags: visualization, seminar, ma, tutor
 
 - term: '2012/13 | Winter Term'
   courses:
   - course: 3D Computer Graphics II
-    type: Lecture (BA)
-    role: Tutor & Co-Lecturer
+    tags: graphics, lecture, ba, tutor, co-lecturer
+    grade_overall: 1.2
+    grade_personal: 1.0
   - course: Introduction to 3D Computer Graphics
-    type: Youth Academy
-    role: Lecturer
+    tags: graphics, lecture, youth, lecturer
   - course: Game Programming
-    type: Lecture/Seminar (BA)
-    role: Tutor & Co-Lecturer
+    tags: engineering, lecture, seminar, ba, tutor, co-lecturer
   - course: Concepts and Techniques for 3D Visualization
-    type: Seminar (MA)
-    role: Tutor
+    tags: visualization, seminar, ma, tutor

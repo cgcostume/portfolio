@@ -10,12 +10,18 @@ html(lang = 'en')
 
     -
       let terms = data.teaching_activities.terms;
+      let translations = data.teaching_activities.translations;
 
       terms = terms.sort((a, b) => {
         const aTerm = a.term;
         const bTerm = b.term;
         return aTerm < bTerm ? +1 : aTerm > bTerm ? -1 : 0; });
 
+      const roles = (tags) => [... tags.matchAll(/\btutor\b|\bsupervisor\b|\blecturer\b|\bco-lecturer\b/g)].flat();
+      const types = (tags) => [... tags.matchAll(/\blecture\b|\bseminar\b|\bproject\b|\bthesis\b/g)].flat();
+      const programs = (tags) => [... tags.matchAll(/\bba\b|\bma\b|\bmooc\b|\byouth\b/g)].flat();
+
+      const translate = (roles) => roles.map((role) => translations[role]);
 
     section#teaching.container
 
@@ -24,7 +30,7 @@ html(lang = 'en')
 
           h2 All #[strong #{data.teaching_activities.heading}]
           p
-            a.text-secondary(href = '/index.html') by #[strong #{data.header.name} #{data.header.surname}]
+            a.text-secondary(href = '/index.html#teaching') by #[strong #{data.header.name} #{data.header.surname}]
           p.pt-0
 
           mixin inner(t, index)
@@ -33,8 +39,11 @@ html(lang = 'en')
               each c in t.courses
                 p #{c.course}
                   br
-                  if c.type || c.role
-                    small #{c.type}, #{c.role}
+                  if types(c.tags) || roles(c.tags)
+                    small
+                      | #{translate(types(c.tags)).join(', ')}
+                      | (#{translate(programs(c.tags)).join(' | ')}),
+                      | #{translate(roles(c.tags)).join(' & ')}
 
         - let i = 0;
         while i < terms.length

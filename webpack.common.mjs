@@ -98,9 +98,13 @@ export default (env, __dirname) => {
                     { from: 'data/bibliography/*.bib', to: 'bibliography/[name][ext]', force: false },
                     { from: 'vcard.vcf', to: '[name][ext]', force: false },
                     /* third party scripts and assets */
-                    { from: '../node_modules/jquery/dist/jquery.min.js', to: '[name][ext]' },
+                    // { from: '../node_modules/jquery/dist/jquery.min.js', to: '[name][ext]' },
                     { from: '../node_modules/glightbox/dist/css/glightbox.min.css', to: '[name][ext]' },
                 ]
+            }),
+            new webpack.ProvidePlugin({
+                $: 'jquery',
+                jQuery: 'jquery',
             }),
             new webpack.DefinePlugin({
                 data: data,

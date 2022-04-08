@@ -14,6 +14,10 @@
     const bDate = Date.parse(b.date);
     return aDate < bDate ? +1 : aDate > bDate ? -1 : 0; });
 
+  const happyAnd = (strings) =>
+    strings.length === 0 ? '' : strings.reduce((text, value, i, array) =>
+      text + (i < array.length - 1 ? ', ' : array.length > 2 ? ', and ' : ' and ') + value);
+
 
 .row.text-center
   .col-12
@@ -25,7 +29,7 @@
     else
       h2 All #[strong #{data.publications.heading}]
       p
-        a.text-secondary(href = '/index.html') by #[strong #{data.header.name} #{data.header.surname}]
+        a.text-secondary(href = '/index.html#publications') by #[strong #{data.header.name} #{data.header.surname}]
 
     p.pt-0 Research Profiles:&ensp;
       a(href = `https://orcid.org/${data.publications.orcid}`) ORCID
@@ -61,7 +65,7 @@ each p in publications
           else
             | #{p.lead_note}
         p
-          small #{p.authors.reduce((text, value, i, array) => text + (i < array.length - 1 ? ', ' : array.length > 2 ? ', and ' : ' and ') + value)}
+          small #{happyAnd(p.authors)}
 
         p
           if p.abstract

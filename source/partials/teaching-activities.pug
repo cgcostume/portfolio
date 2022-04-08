@@ -1,6 +1,6 @@
 
--
-  let selected = data.teaching_activities.selected;
+//- -
+//-   let selected = data.teaching_activities.selected;
 
   //- // sort by data
   //- terms = terms.sort((a, b) => {
@@ -8,24 +8,153 @@
   //-   const bTerm = b.term;
   //-   return aTerm < bTerm ? +1 : aTerm > bTerm ? -1 : 0; });
 
+-
+  let terms = data.teaching_activities.terms;
+  let courses = [];
+  let courseTags = [];
+  for(let i = 0; i < terms.length; ++i)
+    for(let j = 0; j < terms[i].courses.length; ++j) {
+      courses.push(terms[i].courses[j]);
+      courseTags.push(terms[i].courses[j].tags.replaceAll(' ', '').split(','));
+    }
 
-.row.text-center
+  let theses = data.teaching_activities.theses;
+  let thesisTags = [];
+  for(let i = 0; i < theses.length; ++i)
+    thesisTags.push(theses[i].tags.replaceAll(' ', '').split(','));
+
+  let gradesForTags = (include, exclude) => [
+    ... courseTags.flatMap((values, index) => {
+    let grade = 5.0 - parseFloat(courses[index]['grade_personal']);
+    return include.reduce((previous, current) => previous &= values.indexOf(current) > -1, true)
+        && exclude.reduce((previous, current) => previous &= values.indexOf(current) < 0, true)  ?
+      [ grade ? grade : 4.0001 ] : [];
+    }),
+    ... thesisTags.flatMap((values, index) => {
+    let grade = 5.0 - parseFloat(theses[index]['grade_personal']);
+    return include.reduce((previous, current) => previous &= values.indexOf(current) > -1, true)
+        && exclude.reduce((previous, current) => previous &= values.indexOf(current) < 0, true)  ?
+      [ grade ? grade : 4.0001 ] : [];
+    })
+  ];
+
+  const grades = {
+    ba: {
+      graphics: {
+        lecturer: gradesForTags(['ba', 'lecturer', 'graphics'], []),
+        others: gradesForTags(['ba', 'graphics'], ['lecturer', 'thesis', 'project']),
+      },
+      engineering: {
+        others: gradesForTags(['ba', 'engineering'], ['project', 'thesis']),
+      },
+      visualization: {
+        others: gradesForTags(['ba', 'visualization'], ['project', 'thesis']),
+      },
+      projects: gradesForTags(['ba', 'project'], []),
+      theses: gradesForTags(['ba', 'thesis'], []),
+    },
+    ma: {
+      graphics: {
+        lecturer: gradesForTags(['ma', 'lecturer', 'graphics'], []),
+        others: gradesForTags(['ma', 'graphics'], ['lecturer']),
+      },
+      engineering: {
+        others: gradesForTags(['ma', 'engineering'], ['project']),
+      },
+      visualization: {
+        others: gradesForTags(['ma', 'visualization'], ['project']),
+      },
+      projects: gradesForTags(['ma', 'project'], []),
+      theses: gradesForTags(['ma', 'thesis'], []),
+    },
+  };
+
+  //- grades.ba.lecturer.engineering =
+  //-   gradesForTags(['ba', 'lecturer', 'engineering'], []);
+  //- grades.ma.lecturer.engineering =
+  //-   gradesForTags(['ma', 'engineering'], ['lecturer', 'supervisor']);
+
+  //- grades.ba.lecturer.others =
+  //-   gradesForTags(['ba', 'lecture'], ['graphics', 'engineering']);
+  //- grades.ma.lecturer.others =
+  //-   gradesForTags(['ma', 'lecture'], ['graphics', 'engineering']);
+
+  //- grades.ba.seminars =
+  //-   gradesForTags(['ba', 'seminar'], []);
+  //- grades.ma.seminars =
+  //-   gradesForTags(['ma', 'seminar'], []);
+
+
+  //- terms.reduce((term) => term.tags.)
+
+.row.text-center.justify-content-md-center
   .col-12
 
     h2 Selected #[strong #{data.teaching_activities.heading}]
-    p
+    p.py-0
       a.text-secondary(href = '/teaching-activities.html') Show #[strong all #{data.teaching_activities.heading}]
-    p.pt-0
+
+.row.text-center.justify-content-md-center.mt-2.mb-5
+
+  .col-3
+    +thumbnail('teaching-triangle-rasterization.webp', "Triangle Rasterization Algorithms")
+  .col-3
+    +thumbnail('teaching-terrain-rendering.webp', "Tile-based Terrain Rendering")
+  .col-3
+    +thumbnail('teaching-arboretum.webp', "Arboretum")
+  .col-3
+    +thumbnail('teaching-cornell-box-webgl.webp', "Cornell Box Path traced using WebGL and TypeScript")
 
 
-  each c, index in selected
-    .row.text-start
-      .col-lg-8.col-sm-6.offset-lg-2.offset-sm-3
-        h3 #{c.course}
-//-     {% for c in t.courses %}
-//-     <p>{{ c.course | escape }}<br>
-//-     <small>{{ c.type | escape }}, {{ c.role | escape }}</small></p>
-//-     {% endfor %}
-//-   </div>
-//-   {% if i == '1' || t != terms.first %}</div>{% endif %}
-//- {% endfor %}
+include thumbnail
+
+mixin tdStats(countsBA, countsMA)
+  td.ba #[span.bars(data-peity = `{ "width": ${8.0 * countsBA.length} }`)=countsBA]
+  td.ma #[span.bars(data-peity = `{ "width": ${8.0 * countsMA.length} }`)=countsMA]
+
+
+.row.justify-content-md-center
+  .col-12
+    p
+      | For nearly a decade I have supported and actively steered the teaching efforts within the Computer Graphics Systems Group at the Hasso Plattner Institute.
+      | The following shows a summary of selected teaching activities:
+
+    table.table.table-sm.table-borderless
+      thead
+        tr
+          th(scope = 'col').pe-2 #[span.d-block.d-lg-none Focus]#[span.d-none.d-lg-block Teaching Focus]
+          th(scope = 'col').ps-2 #[span.d-block.d-lg-none Role]#[span.d-none.d-lg-block Active Role]
+          th(scope = 'col').ba #[span.d-block.d-lg-none Bachelor]#[span.d-none.d-lg-block Bachelors's Program]
+          th(scope = 'col').ma #[span.d-block.d-lg-none Master]#[span.d-none.d-lg-block Masters's Program]
+      tbody
+        tr
+          td(rowspan = '2').border-end.pe-2 #[span.text-muted Real-time] Computer Graphics
+          td.ps-2 Lecturer
+          +tdStats(grades.ba.graphics.lecturer, grades.ma.graphics.lecturer)
+        tr
+          td.ps-2 Tutor and/or Co-Lecturer
+          +tdStats(grades.ba.graphics.others, grades.ma.graphics.others)
+        tr
+          td.pe-2 Programming &amp; Software Engineering
+          td.ps-2 Tutor or Co-Lecturer
+          +tdStats(grades.ba.engineering.others, grades.ma.engineering.others)
+        tr
+          td.pe-2 Visualization &amp; Visual Analytics
+          td.ps-2 Tutor or Co-Lecturer
+          +tdStats(grades.ba.visualization.others, grades.ma.visualization.others)
+      tfoot
+        tr
+          td.pe-2 Bachelor's or Master's Projects
+          td.ps-2 Supervisor
+          +tdStats(grades.ba.projects, grades.ma.projects)
+        tr
+          td.pe-2 Bachelor's or Master's Theses
+          td.ps-2 Supervisor
+          +tdStats(grades.ba.theses, grades.ma.theses)
+
+    p.text-end.text-muted
+      small
+        | #[span.bars(data-peity = `{ "width": 8 }`) 4.0000] Each bar represents one semester with the evaluation score (given by students) mapped to its height:
+        | #[span.bars(data-peity = `{ "width": 8 }`) 4.0] &wedgeq; 1.0, #[span.bars(data-peity = `{ "width": 8 }`) 1.0] &wedgeq; 4.0.
+        | #[br]
+        | #[span.bars(data-peity = `{ "width": 8 }`) 4.0001] Bars colored gray  indicate that no evaluation was available, most likely due to an insufficient number of votes.

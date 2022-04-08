@@ -1,32 +1,26 @@
 @charset "utf-8";
 
-@use "@fontsource/roboto/scss/mixins" as Roboto;
-@use "@fontsource/roboto-mono/scss/mixins" as RobotoMono;
+@use "@fontsource/roboto/scss/mixins"as Roboto;
+@use "@fontsource/roboto-mono/scss/mixins"as RobotoMono;
 
-@include Roboto.fontFaceCustom(
-  $weight: 300,
+@include Roboto.fontFaceCustom($weight: 300,
   $display: normal,
-  $woffPath:  "~@fontsource/roboto/files/roboto-latin-300-normal.woff",
+  $woffPath: "~@fontsource/roboto/files/roboto-latin-300-normal.woff",
   $woff2Path: "~@fontsource/roboto/files/roboto-latin-300-normal.woff2",
-  $unicodeRange: false
-);
+  $unicodeRange: false);
 
-@include Roboto.fontFaceCustom(
-  $weight: 700,
+@include Roboto.fontFaceCustom($weight: 700,
   $display: normal,
-  $woffPath:  "~@fontsource/roboto/files/roboto-latin-700-normal.woff",
+  $woffPath: "~@fontsource/roboto/files/roboto-latin-700-normal.woff",
   $woff2Path: "~@fontsource/roboto/files/roboto-latin-700-normal.woff2",
-  $unicodeRange: false
-);
+  $unicodeRange: false);
 
-@include RobotoMono.fontFaceCustom(
-  $weight: 400,
+@include RobotoMono.fontFaceCustom($weight: 400,
   $display: normal,
   $fontName: "Roboto Mono",
-  $woffPath:  "~@fontsource/roboto-mono/files/roboto-mono-latin-400-normal.woff",
+  $woffPath: "~@fontsource/roboto-mono/files/roboto-mono-latin-400-normal.woff",
   $woff2Path: "~@fontsource/roboto-mono/files/roboto-mono-latin-400-normal.woff2",
-  $unicodeRange: false
-);
+  $unicodeRange: false);
 
 // variables override
 
@@ -50,6 +44,8 @@ $font-family-monospace: 'Roboto Mono';
 $headings-font-weight: 300;
 $font-weight-bold: 700;
 
+// $small-font-size: .875em !default;
+
 // $jumbotron-bg: transparent;
 // $jumbotron-padding: 0rem;
 
@@ -58,13 +54,11 @@ $link-decoration: none;
 
 $enable-negative-margins: true;
 
-$aspect-ratios: (
-  "1x1": 100%,
+$aspect-ratios: ("1x1": 100%,
   "4x3": calc(3 / 4 * 100%),
   "16x9": calc(9 / 16 * 100%),
   "21x9": calc(9 / 21 * 100%),
-  "4x1": calc(1 / 4 * 100%)
-);
+  "4x1": calc(1 / 4 * 100%));
 
 
 // bootstrap modules - include path set by package script "sass"
@@ -81,7 +75,7 @@ $aspect-ratios: (
 @import "bootstrap/scss/images";
 @import "bootstrap/scss/containers";
 @import "bootstrap/scss/grid";
-// @import "bootstrap/scss/tables";
+@import "bootstrap/scss/tables";
 @import "bootstrap/scss/forms";
 @import "bootstrap/scss/buttons";
 @import "bootstrap/scss/transitions";
@@ -135,7 +129,8 @@ h2 {
   @extend .my-5;
 }
 
-h1, h2 {
+h1,
+h2 {
   strong {
     font-weight: $font-weight-bold;
   }
@@ -147,7 +142,7 @@ h3 {
   @extend .mb-3;
 }
 
-header  {
+header {
 
   .figure-with-overlay {
     position: relative;
@@ -168,7 +163,8 @@ header  {
       @extend .text-white;
     }
 
-    .btn-check:focus + .btn, .btn:focus {
+    .btn-check:focus+.btn,
+    .btn:focus {
       box-shadow: none !important;
     }
   }
@@ -188,16 +184,18 @@ header  {
 }
 
 @media (min-width: 75em) {
-.container {
+  .container {
     max-width: 60rem;
-}}
+  }
+}
 
-section, footer {
+section,
+footer {
   padding: 4rem 0 0;
 }
 
 footer {
-   margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .badge {
@@ -212,6 +210,7 @@ footer {
   .gdesc-inner {
     padding: 0.5rem 0;
   }
+
   .gslide-desc {
     color: white;
     font-family: $font-family-sans-serif;
@@ -219,7 +218,8 @@ footer {
 }
 
 .project {
-  padding-bottom: 1rem; }
+  padding-bottom: 1rem;
+}
 
 .badge.animate {
   -webkit-animation: sk-scaleout 0.66s infinite ease-in-out;
@@ -249,14 +249,42 @@ footer {
 }
 
 
+.ba {
+  @extend .text-end;
+  @extend .pe-2;
+}
+
+.ma {
+  @extend .text-start;
+  @extend .ps-2;
+  @extend .border-start;
+}
+
+
 @-webkit-keyframes sk-scaleout {
-    0% { opacity: 1.00; }
-   50% { opacity: 0.66; }
-  100% { opacity: 1.00; }
+  0% {
+    opacity: 1.00;
+  }
+
+  50% {
+    opacity: 0.66;
+  }
+
+  100% {
+    opacity: 1.00;
+  }
 }
 
 @keyframes sk-scaleout {
-    0% { opacity: 1.00; }
-   50% { opacity: 0.66; }
-  100% { opacity: 1.00; }
+  0% {
+    opacity: 1.00;
+  }
+
+  50% {
+    opacity: 0.66;
+  }
+
+  100% {
+    opacity: 1.00;
+  }
 }
