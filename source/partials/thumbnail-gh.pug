@@ -1,0 +1,3 @@
+mixin thumbnail_gh(src, userorg)
+  a(href = `https://github.com/${userorg}`).thumbnail.gh-thumbnail.position-relative
+    img.img-fluid.rounded(width = `${data.config.img_defaults.thumbnail.w}` height = `${data.config.img_defaults.thumbnail.h}` src = `/images/${src}` alt = `Thumbnail of ${alt}`)

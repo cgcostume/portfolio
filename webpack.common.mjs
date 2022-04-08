@@ -47,6 +47,7 @@ export default (env, __dirname) => {
         contact: parseYAMLThenStringifySync('contact.yml'),
         header: parseYAMLThenStringifySync('header.yml'),
         publications: parseYAMLThenStringifySync('publications.yml'),
+        repositories: parseYAMLThenStringifySync('repositories.yml'),
         teaching_activities: parseYAMLThenStringifySync('teaching-activities.yml'),
         bibliography: createBibliographyFromBibFilesSync(bibFiles)
     };

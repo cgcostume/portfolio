@@ -1,0 +1,96 @@
+
+-
+  let repositories = selected ?
+      data.repositories.repositories.filter(p => p.selected && p.selected === true) :
+      data.repositories.repositories;
+
+  if (selected && repositories.length < 1 && data.repositories.repositories.length > 0) {
+      repositories = data.repositories.repositories;
+  }
+
+  // sort by data
+  repositories = repositories.sort((a, b) => {
+    const aDate = Date.parse(a.date);
+    const bDate = Date.parse(b.date);
+    return aDate < bDate ? +1 : aDate > bDate ? -1 : 0; });
+
+
+include thumbnail-gh
+
+.row.text-center
+  .col-12
+
+    if selected === true
+      h2 Selected #[strong #{data.repositories.heading}]
+      p
+        a.text-secondary(href = '/repositories.html') Show #[strong more #{data.repositories.heading}]
+    else
+      h2 More #[strong #{data.repositories.heading}]
+      p
+        a.text-secondary(href = '/index.html#repositories') by #[strong #{data.header.name} #{data.header.surname}]
+
+    .row.justify-content-center.mt-0
+      .col-2.col-lg-1 #[+thumbnail_gh('gh-cgcostume.webp', "cgcostume")]
+      .col-2.col-lg-1 #[+thumbnail_gh('gh-halb3.webp', "halb3")]
+      .col-2.col-lg-1 #[+thumbnail_gh('gh-cginternals.webp', "cginternals")]
+      .col-2.col-lg-1 #[+thumbnail_gh('gh-hpicgs.webp', "hpicgs")]
+      .col-2.col-lg-1 #[+thumbnail_gh('gh-varg.webp', "varg-dev")]
+
+
+//- include thumbnail
+
+//- each r in repositories
+//-   if r.key === 'separator'
+//-     hr.row.separator
+//-   else
+//-     .row(id =`${r.key}`)
+
+//-       .col-lg-10.col-sm-9
+//-         h3 #{r.title}
+
+      //- .col-lg-2.col-sm-3
+      //-   +thumbnail(p.thumbnail, p.title, p.flickr)
+      //- .d-block.d-sm-none.mb-3.col-12
+
+      //- .col-lg-10.col-sm-9
+      //-   h3 #{p.title}
+      //-   p
+      //-   | #{p.published},
+      //-   | #{p.date.slice(0, 4)}
+      //-   if p.lead_note
+      //-     | ,&nbsp;
+      //-     if p.lead_href
+      //-       a(href = `${p.lead_href}`) #{p.lead_note}
+      //-     else
+      //-       | #{p.lead_note}
+      //-   p
+      //-     small #{happyAnd(p.authors)}
+
+      //-   p
+      //-     if p.abstract
+      //-       a(data-bs-toggle = 'collapse' href = `#abstract-${p.key}`) Abstract
+      //-       if p.bibtex || p.downloads
+      //-         | &ensp;|&ensp;
+
+      //-     if p.bibtex
+      //-       a(data-bs-toggle = 'collapse' href = `#bibtex-${p.key}`) BibTeX
+      //-       if p.downloads
+      //-         | &ensp;|&ensp;
+
+      //-     if p.downloads
+      //-       each download, index in p.downloads
+      //-         a(href = `${download.href}`) #{download.desc}
+      //-         if index < p.downloads.length - 1
+      //-           | &ensp;|&ensp;
+
+      //-   if p.abstract
+      //-     .collapse.abstract(data-bs-target id = `abstract-${p.key}`)
+      //-       p !{p.abstract}
+
+      //-   if p.bibtex
+      //-     .collapse.bibtex(data-bs-target id = `bibtex-${p.key}`)
+      //-       .position-absolute.top-0.end-0
+      //-         a.btn.btn-sm(type = 'button' download = `${p.bibtex}.bib` href = `/bibliography/${p.bibtex}.bib`) Download
+      //-         button.btn.btn-sm.btn-clipboard(type = 'button' data-clipboard-target = `#bibtex-data-${p.key}` data-clipboard-action = 'copy') Copy to Clipboard
+      //-       .card-body
+      //-         pre(id = `bibtex-data-${p.key}`) #{data.bibliography[p.bibtex]}
