@@ -122,8 +122,12 @@ terms:
   courses:
   - course: 3D Computer Graphics I
     tags: graphics, lecture, ba, lecturer
+    grade_overall: 2.0
+    grade_personal: 1.7
   - course: AI-based Systems with a Dark Twist
     tags: engineering, seminar, ba, tutor, supervisor
+    grade_overall: 1.4
+    grade_personal: 1.0
 
 
 - term: '2021 | Summer Term'
