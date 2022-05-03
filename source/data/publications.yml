@@ -928,6 +928,7 @@ publications:
 
 
 - key: 2022-enase-mining-expertise
+  bibtex: atzberger2022-mining-expertise
   title: 'Mining Developer Expertise from Bug Tracking Systems using the Author-Topic Model'
   date: '2022-04-25'
   authors:
@@ -952,9 +953,15 @@ publications:
     We compare our approach against a baseline model, that is based on Latent Dirichlet Allocation, on a dataset of 18269 bug reports from the Mozilla Firefox project collected between July 1999 to June 2016.
     The results show that the Author-Topic Model can outperform the baseline approach in terms of the Mean Reciprocal Rank.
   thumbnail: 2022-enase-mining-expertise.webp
+  downloads:
+    - href: https://doi.org/10.5220/0011045100003176
+      desc: DOI
+    - href: https://www.researchgate.net/profile/Willy-Scheibel/publication/360230384/inline/jsViewer/626ba74705d79a3968aa8968
+      desc: Paper
 
 
 - key: 2022-enase-downstream-mining
+  bibtex: thiede2022-downstream-mining
   title: 'Augmenting Library Development by Mining Usage Data from Downstream Dependencies'
   date: '2022-04-25'
   authors:
@@ -975,4 +982,14 @@ publications:
     Usage pattern extraction is very precise but not easily available for repositories with complex build configurations or metaprogramming patterns.
     We show that usage data from downstream dependency repositories is a promising and diverse source of information for mining software repositories and that our approach supports package developers in maintain their APIs.
   thumbnail: 2022-enase-downstream-mining.webp
+  downloads:
+    - href: https://doi.org/10.5220/0011093700003176
+      desc: DOI
+    - href: https://www.researchgate.net/profile/Willy-Scheibel/publication/360231022/inline/jsViewer/626ba510bfd24037e9dd1eee
+      desc: Paper
+    - href: https://github.com/LinqLover/downstream-repository-mining
+      desc: Project Page
+    - href: https://doi.org/10.5281/zenodo.6338060
+      desc: Sources
+
 
