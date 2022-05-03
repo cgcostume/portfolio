@@ -153,7 +153,7 @@ publications:
   - Jan Eric Kyprianidis
   - Jürgen Döllner
   published: Proc. EG Computational Aesthetics (CAe)
-  lead_note: Best Paper Award
+  lead_note: Best Paper
   lead_href: http://expressive.richardt.name/2015/Prizes
   abstract:
     This paper presents an approach for transforming images into an oil paint look.
@@ -357,7 +357,7 @@ publications:
   - Jan Klimke
   - Jürgen Döllner
   published: Proc. ACM Int. Conf. on 3D Web Technology (Web3D)
-  lead_note: Best Paper Award
+  lead_note: Best Paper
   lead_href: https://twitter.com/Web3DConsortium/status/872336310027079683/photo/1
   abstract:
     Information cartography services provided via web-based clients using real-time rendering do not always necessitate a continuous stream of updates in the visual display.
@@ -938,7 +938,7 @@ publications:
   - Matthias Trapp
   - Jürgen Döllner
   published: Proc. Int. Conf. on Evaluation of Novel Approaches to Software Engineering (ENASE)
-  lead_note: Best Student Paper Award
+  lead_note: Best Student Paper
   lead_href: https://enase.scitevents.org/PreviousAwards.aspx?y=2023
   abstract:
     During the software development process, software defects, so-called bugs, are captured in a semi-structured manner in a bug tracking system using textual components and categorical features.
