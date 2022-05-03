@@ -938,6 +938,8 @@ publications:
   - Matthias Trapp
   - Jürgen Döllner
   published: Proc. Int. Conf. on Evaluation of Novel Approaches to Software Engineering (ENASE)
+  lead_note: Best Student Paper Award
+  lead_href: https://enase.scitevents.org/PreviousAwards.aspx?y=2023
   abstract:
     During the software development process, software defects, so-called bugs, are captured in a semi-structured manner in a bug tracking system using textual components and categorical features.
     It is the task of the triage owner to assign open bugs to developers with the required skills and expertise.
