@@ -993,6 +993,27 @@ publications:
       desc: Sources
 
 
+- key: 2022-vinci-topicmodel-benchmark
+  bibtex: atzberger2022-topicmodel-benchmark
+  title: 'A Benchmark for the Use of Topic Models for Text Visualization Tasks'
+  date: '2022-08-16'
+  authors:
+  - Daniel Atzberger
+  - Tim Cech
+  - Willy Scheibel
+  - Daniel Limberger
+  - Jürgen Döllner
+  - Matthias Trapp
+  published: Proc. ACM Int. Symp. on Visual Information Communication and Interaction (VINCI)
+  abstract:
+    Based on the assumption that semantic relatedness between documents is reflected in the distribution of the vocabulary, topic models are a widely used technique for different analysis tasks.
+    Their application results in concepts, the so-called topics, and a high-dimensional description of the documents.
+    For visualization tasks, they can further be projected onto a lower-dimensional space using a dimension reduction technique.
+    Though the quality of the resulting scatter plot mainly depends on the chosen layout technique and the choice of its hyperparameters, it is unclear which particular combinations of topic models and dimension reduction techniques are suitable for displaying the semantic relatedness between the documents.
+    In this work, we propose a benchmark comprising various datasets, layout techniques, and quality metrics for conducting an empirical study on different such layout algorithms.
+  thumbnail: 2022-vinci-topicmodel-benchmark.webp
+
+
 - key: 2022-eurocarto-pointcloud-cartography
   bibtex: wegen2022-pointcloud-cartography
   title: 'Non-Photorealistic Rendering of Point Clouds for Cartographic Visualization'
