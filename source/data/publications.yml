@@ -991,3 +991,30 @@ publications:
       desc: Project Page
     - href: https://doi.org/10.5281/zenodo.6338060
       desc: Sources
+
+
+- key: 2022-eurocarto-pointcloud-cartography
+  bibtex: wegen2022-pointcloud-cartography
+  title: 'Non-Photorealistic Rendering of Point Clouds for Cartographic Visualization'
+  date: '2022-09-18'
+  authors:
+  - Ole Wegen
+  - Jürgen Döllner
+  - Ronja Wagner
+  - Daniel Limberger
+  - Rico Richter
+  - Matthias Trapp
+  published: Extended Abstracts of Proc. ICA European Symp. on Cartography (EuroCarto)
+  abstract:
+    We present an approach for real-time non-photorealistic rendering (NPR) of 3D point clouds that provides a general-purpose component for their cartographic visualization. 
+    For a given 3D point cloud, per-point attributes are derived in the preprocessing phase, e.g., for geometric, semantic, and instance information. 
+    The point cloud thus attributed is then segmented into point clusters according to thematic or semantic criteria. 
+    Different NPR styles configured by style descriptors can be bound to this information, i.e., the NPR style is parameterized by the point attributes found in the clusters. 
+    The approach demonstrates that NPR applied to an enriched, clustered point cloud enables a generalized, abstract, and graphically styled visualization without the need to derive intermediate 3D representations. 
+    We have implemented, as a proof-of-concept, several styles and mappings typically required for cartographic 3D visualizations. 
+    Figure 1 shows an example of tree detection and its NPR depiction. 
+  thumbnail: 2022-eurocarto-pointcloud-cartography.webp
+  downloads:
+    - href: https://hpi.de/doellner/people/daniel-limberger/Document/matthias.trapp/EuroCarto-2022.Non-Photorealistic%20Rendering%20of%203D%20Point%20Clouds%20for%20Cartographic%20Visualization.pdf/1e5aa9c3f0251ef03d1d408aa0b06137.html?cHash=755590e0e12cd9e6d54660a459d6d6e5
+      desc: Extended Abstract
+
