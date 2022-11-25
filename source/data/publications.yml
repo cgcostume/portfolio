@@ -1119,3 +1119,24 @@ publications:
     desc: Paper
 
 
+- key: 2023-ivapp-software-forest-extended
+  bibtex: atzberger2023-code-similarity
+  title: 'Visualization of Source Code Similarity using 2.5D Semantic Software Maps'
+  date: '2023-02-01'
+  authors:
+  - Daniel Atzberger
+  - Tim Cech
+  - Willy Scheibel
+  - Daniel Limberger
+  - Jürgen Döllner
+  published: VISIGRAPP 2021: Computer Vision, Imaging and Computer Graphics Theory and Applications
+  abstract:
+    For various program comprehension tasks, software visualization techniques can be beneficial by displaying aspects related to the behavior, structure, or evolution of software. 
+    In many cases, the question is related to the semantics of the source code files, e.g., the localization of files that implement specific features or the detection of files with similar semantics. 
+    This work presents a general software visualization technique for source code documents, which uses 3D glyphs placed on a two-dimensional reference plane. 
+    The relative positions of the glyphs captures their semantic relatedness. 
+    Our layout originates from applying Latent Dirichlet Allocation and Multidimensional Scaling on the comments and identifier names found in the source code files. 
+    Though different variants for 3D glyphs can be applied, we focus on cylinders, trees, and avatars. 
+    We discuss various mappings of data associated with source code documents to the visual variables of 3D glyphs for selected use cases and provide details on our visualization system. 
+  thumbnail: 2023-ivapp-software-forest-extended.webp
+
