@@ -4,7 +4,7 @@ import glob from 'glob';
 import { merge } from 'webpack-merge';
 import common from './webpack.common.mjs';
 
-import PurgecssWebpackPlugin from 'purgecss-webpack-plugin';
+import { PurgeCSSPlugin } from 'purgecss-webpack-plugin';
 
 import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -17,7 +17,7 @@ export default function (env) {
             cache: false,
             plugins: [
 
-                new PurgecssWebpackPlugin({
+                new PurgeCSSPlugin({
                     paths: glob.sync(path.join(__dirname, 'source', '/**/*'), { nodir: true }),
                     safelist: { greedy: [/^(gslide|gdesc)-/] }
                 }),
