@@ -1129,7 +1129,7 @@ publications:
   - Willy Scheibel
   - Daniel Limberger
   - Jürgen Döllner
-  published: VISIGRAPP 2021: Computer Vision, Imaging and Computer Graphics Theory and Applications
+  published: 'VISIGRAPP 2021: Computer Vision, Imaging and Computer Graphics Theory and Applications'
   abstract:
     For various program comprehension tasks, software visualization techniques can be beneficial by displaying aspects related to the behavior, structure, or evolution of software. 
     In many cases, the question is related to the semantics of the source code files, e.g., the localization of files that implement specific features or the detection of files with similar semantics. 
