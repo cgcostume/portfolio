@@ -1039,3 +1039,29 @@ publications:
     - href: https://hpi.de/doellner/people/daniel-limberger/Document/matthias.trapp/EuroCarto-2022.Non-Photorealistic%20Rendering%20of%203D%20Point%20Clouds%20for%20Cartographic%20Visualization.pdf/1e5aa9c3f0251ef03d1d408aa0b06137.html?cHash=755590e0e12cd9e6d54660a459d6d6e5
       desc: Extended Abstract
 
+
+- key: 2022-web3d-scatter-plot-density
+  bibtex: wagner2022-scatter-plot-density
+  title: Hardware-accelerated Rendering of Web-based 3D Scatter Plots with Projected Density Fields and Embedded Controls
+  date: '2022-11-02'
+  authors:
+  - Lukas Wagner
+  - Daniel Limberger
+  - Willy Scheibel
+  - Jürgen Döllner
+  published: Proc. ACM Int. Conf. on Web3D Technology (Web3D)
+  lead_note: Best Paper
+  lead_href: https://web3d.siggraph.org/awards/
+  abstract:
+    3D scatter plots depicting massive data suffer from occlusion, which makes it difficult to get an overview and perceive structure. 
+    This paper presents a technique that facilitates the comprehension of heavily occluded 3D scatter plots. 
+    Data points are projected to axial planes, creating x-ray-like 2D views that support the user in analyzing the data's density and layout. 
+    We showcase our open-source web application with a hardware-accelerated rendering component written in WebGL. 
+    It allows for interactive interaction, filtering, and navigation with datasets up to hundreds of thousands of nodes. 
+    The implementation is detailed and discussed with respect to challenges posed by API and performance limitations.
+  thumbnail: 2022-web3d-scatter-plot-density.webp
+  downloads:
+  - href: https://doi.org/10.1145/3564533.3564566
+    desc: DOI
+  - href: https://dl.acm.org/doi/pdf/10.1145/3564533.3564566
+    desc: Paper
