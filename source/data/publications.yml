@@ -520,7 +520,6 @@ publications:
 
 
 - key: 2019-vinci-advanced
-  selected: true
   bibtex: limberger2019-advanced
   title: Advanced Visual Metaphors and Techniques for Software Maps
   date: '2019-09-20'
@@ -1065,3 +1064,58 @@ publications:
     desc: DOI
   - href: https://dl.acm.org/doi/pdf/10.1145/3564533.3564566
     desc: Paper
+
+
+- key: 2022-jov-visvars
+  selected: true
+  bibtex: limberger2022-visvars
+  title: Visual Variables and Configuration of Software Maps
+  date: '2022-09-16'
+  authors:
+  - Daniel Limberger
+  - Willy Scheibel
+  - Jürgen Döllner
+  - Matthias Trapp
+  published: Journal of Visualization
+  abstract:
+    Software maps provide a general-purpose interactive user interface and information display in software analytics. 
+    This paper classifies software maps as a containment-based treemap embedded into a 3D attribute space and introduces respective terminology. 
+    It provides a comprehensive overview of advanced visual metaphors and techniques, each suitable for interactive visual analytics tasks. 
+    The metaphors and techniques are briefly described, located within a visualization pipeline model, and considered within a software map design space. 
+    The general expressiveness and applicability of visual variables are detailed and discussed. 
+    Consequent applications and use cases for different software system data and software engineering data are discussed, arguing for the versatile use of software maps in visual software analytics.    
+  thumbnail: 2022-jov-visvars.webp
+  downloads:
+  - href: https://doi.org/10.1007/s12650-022-00868-1
+    desc: DOI
+  - href: https://rdcu.be/c0o2F
+    desc: Paper
+
+
+- key: 2022-jov-changes
+  bibtex: limberger2022-changes
+  title: Procedural Texture Patterns for Encoding Changes in Color in 2.5D Treemap Visualizations
+  date: '2022-10-03'
+  authors:
+  - Daniel Limberger
+  - Willy Scheibel
+  - Jan van Dieken
+  - Jürgen Döllner
+  published: Journal of Visualization
+  abstract:
+    Treemaps depict tree-structured data while maintaining flexibility in mapping data to different visual variables. 
+    This work explores how changes in data mapped to color can be represented with rectangular 2.5D treemaps using procedural texture patterns. 
+    The patterns are designed to function for both static images and interactive visualizations with animated transitions. 
+    During rendering, the procedural texture patterns are superimposed onto the existing color mapping. 
+    We present a pattern catalog with seven exemplary patterns having different characteristics in representing the mapped data. 
+    This pattern catalog is implemented in a WebGL-based treemap rendering prototype and is evaluated using performance measurements and case studies on two software projects. 
+    As a result, this work extends the toolset of visual encodings for 2.5D treemaps by procedural texture patterns to represent changes in color. 
+    It serves as a starting point for user-centered evaluation.
+  thumbnail: 2022-jov-changes.webp
+  downloads:
+  - href: https://doi.org/10.1007/s12650-022-00874-3
+    desc: DOI
+  - href: https://rdcu.be/c0o0E
+    desc: Paper
+
+
