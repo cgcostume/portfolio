@@ -5,18 +5,18 @@
     "[json]": {
         "editor.insertSpaces": true,
         "editor.tabSize": 4,
-        "editor.autoIndent": false,
+        "editor.autoIndent": "advanced",
         "editor.formatOnSave": false
     },
     "[pug]": {
         "editor.insertSpaces": true,
         "editor.tabSize": 2,
-        "editor.autoIndent": true
+        "editor.autoIndent": "full"
     },
     "[bibtex]": {
         "editor.insertSpaces": false,
         "editor.tabSize": 2,
-        "editor.autoIndent": false,
+        "editor.autoIndent": "advanced",
         "editor.formatOnSave": false
     },
     "files.associations": {

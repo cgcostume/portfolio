@@ -12,10 +12,10 @@
         "build": "webpack --config webpack.prod.mjs"
     },
     "devDependencies": {
-        "@fontsource/roboto": "^4.5.1",
-        "@fontsource/roboto-mono": "^4.5.0",
-        "bootstrap": "^5.1.3",
-        "clipboard": "^2.0.8",
+        "@fontsource/roboto": "^4.5.8",
+        "@fontsource/roboto-mono": "^4.5.8",
+        "bootstrap": "^5.2.3",
+        "clipboard": "^2.0.11",
         "copy-webpack-plugin": "^10.0.0",
         "css-loader": "^6.5.1",
         "exports-loader": "^3.1.0",

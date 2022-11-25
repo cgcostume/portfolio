@@ -1,7 +1,7 @@
 @charset "utf-8";
 
-@use "@fontsource/roboto/scss/mixins"as Roboto;
-@use "@fontsource/roboto-mono/scss/mixins"as RobotoMono;
+@use "@fontsource/roboto/scss/mixins" as Roboto;
+@use "@fontsource/roboto-mono/scss/mixins" as RobotoMono;
 
 @include Roboto.fontFaceCustom($weight: 300,
   $display: normal,
@@ -54,22 +54,27 @@ $link-decoration: none;
 
 $enable-negative-margins: true;
 
-$aspect-ratios: ("1x1": 100%,
+$aspect-ratios: (
+  "1x1": 100%,
   "4x3": calc(3 / 4 * 100%),
   "16x9": calc(9 / 16 * 100%),
   "21x9": calc(9 / 21 * 100%),
-  "4x1": calc(1 / 4 * 100%));
+  "4x1": calc(1 / 4 * 100%)
+);
 
+@import "bootstrap/scss/bootstrap";
 
 // bootstrap modules - include path set by package script "sass"
 
 @import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
+@import "bootstrap/scss/maps";
 @import "bootstrap/scss/mixins";
-@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/root";
+
 
 // Layout & components
-@import "bootstrap/scss/root";
+@import "bootstrap/scss/utilities";
 @import "bootstrap/scss/reboot";
 @import "bootstrap/scss/type";
 @import "bootstrap/scss/images";
