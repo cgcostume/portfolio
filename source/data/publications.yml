@@ -57,6 +57,8 @@ publications:
   downloads:
   - href: resources/2012 – Mueller (now Limberger) – Photorealistisches Rendering atmosphaerischer Effekte in geovirtuellen 3D-Umgebungen in Echtzeit.pdf
     desc: Master's Thesis [de]
+  - href: https://hpi.de/doellner/publications/Document/import_cgs/Daniel_Limberger_Poster.pdf/0a97da2ebbc45e05526cddc3939235b0.html?cHash=de90ef51b450714b6ab5b86ea70f755b
+    desc: Poster
   - href: https://github.com/hpicgs/osghimmel
     desc: Source Code
 
@@ -1011,6 +1013,11 @@ publications:
     Though the quality of the resulting scatter plot mainly depends on the chosen layout technique and the choice of its hyperparameters, it is unclear which particular combinations of topic models and dimension reduction techniques are suitable for displaying the semantic relatedness between the documents.
     In this work, we propose a benchmark comprising various datasets, layout techniques, and quality metrics for conducting an empirical study on different such layout algorithms.
   thumbnail: 2022-vinci-topicmodel-benchmark.webp
+  downloads:
+    - href: https://doi.org/10.1145/3554944.3554961
+      desc: DOI
+    - href: https://www.researchgate.net/profile/Matthias-Trapp-2/publication/363174697/inline/jsViewer/63452011ff870c55ce17f64d
+      desc: Paper
 
 
 - key: 2022-eurocarto-pointcloud-cartography
@@ -1032,11 +1039,12 @@ publications:
     Different NPR styles configured by style descriptors can be bound to this information, i.e., the NPR style is parameterized by the point attributes found in the clusters. 
     The approach demonstrates that NPR applied to an enriched, clustered point cloud enables a generalized, abstract, and graphically styled visualization without the need to derive intermediate 3D representations. 
     We have implemented, as a proof-of-concept, several styles and mappings typically required for cartographic 3D visualizations. 
-    Figure 1 shows an example of tree detection and its NPR depiction. 
   thumbnail: 2022-eurocarto-pointcloud-cartography.webp
   downloads:
-    - href: https://hpi.de/doellner/people/daniel-limberger/Document/matthias.trapp/EuroCarto-2022.Non-Photorealistic%20Rendering%20of%203D%20Point%20Clouds%20for%20Cartographic%20Visualization.pdf/1e5aa9c3f0251ef03d1d408aa0b06137.html?cHash=755590e0e12cd9e6d54660a459d6d6e5
-      desc: Extended Abstract
+  - href: https://doi.org/10.5194/ica-abs-5-161-2022
+    desc: DOI
+  - href: https://www.researchgate.net/profile/Matthias-Trapp-2/publication/358523901/inline/jsViewer/62061b63cf7c2349ca08c7fb/
+    desc: Extended Abstract
 
 
 - key: 2022-web3d-scatter-plot-density
@@ -1139,4 +1147,8 @@ publications:
     Though different variants for 3D glyphs can be applied, we focus on cylinders, trees, and avatars. 
     We discuss various mappings of data associated with source code documents to the visual variables of 3D glyphs for selected use cases and provide details on our visualization system. 
   thumbnail: 2023-ivapp-software-forest-extended.webp
-
+  downloads:
+  - href: https://doi.org/10.1007/978-3-031-25477-2_8
+    desc: DOI
+  - href: https://www.researchgate.net/profile/Matthias-Trapp-2/publication/358523984/inline/jsViewer/62061c62afa8884cabd8675c
+    desc: Paper
