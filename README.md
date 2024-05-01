@@ -35,40 +35,15 @@ The complete site's content is based on a json/yaml file per section (e.g., `con
 
 ## Development
 
-This website uses [Jekyll](http://jekyllrb.com/), [Bootstrap 4](http://getbootstrap.com/), [Blueimp Gallery](https://github.com/blueimp/Bootstrap-Image-Gallery), can access the [Flickr API](https://www.flickr.com/services/api/), and [Formspree](http://formspree.io/).
+This website uses [Pug](https://pugjs.org/api/getting-started.html), [Bootstrap 5](http://getbootstrap.com/), [GLightbox](https://biati-digital.github.io/glightbox/), and can access the [Flickr API](https://www.flickr.com/services/api/).
 
-#### Setting up the Build Environment (on Windows)
+### Prerequisites
+- [Node.js](https://nodejs.org/en) and [npm](https://www.npmjs.com/) are required for development and testing.
 
-For the development and testing of the website jekyll (https://jekyllrb.com/) is required. A fast and simple setup of jekyll, is possible via chocolatey (https://chocolatey.org/) either using the ```setup.bat``` script or proceed as follows (for non-Windows platforms the specific package managers, e.g., apt-get, can be used instead of Chocolatey):
+### Development Commands
+- `npm install` installs all necessary dependencies.
+- `npm start` launches a local server for development and testing.
+- `npm run build:dev` and `npm run build` are used to create the static site.
 
-* For installing chocolatey open a command prompt as administrator and run the following command:
-```
-@powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
-```
-* Now close the command prompt and open a new one (not necessarily with administrative priviliges) to install jekyll (which requires ruby) by running:
-```
-choco install ruby -y
-gem install jekyll
-```
-
-For deployment of the website, the following optimizations (mostly minimizations) that require node, npm as well as uncss, cssmin, and svgo should be considered.
-
-* Open a command prompt and run;
-```
-choco install nodejs -y
-npm install
-npm update
-```
-This should already install all required packages listed in ```package.json```.
-* However, if a package was not found (e.g., svgo), try manually installing it by running:
-```
-npm install -g svgo
-```
-
-#### Building the Website (any platform)
-
-* Auto rebuilding (on any change) and watching the website (stored in '_site') can be done by running (requires only jekyll)
-```
-jekyll serve
-```
-With the server running, the website should be available at http://localhost:4000.
+### Deployment
+- Commits trigger GitHub Actions, which deploy updates to the `gh-pages` branch and are served directly from there.
