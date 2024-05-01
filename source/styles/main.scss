@@ -1,26 +1,8 @@
 @charset "utf-8";
 
-@use "@fontsource/roboto/scss/mixins" as Roboto;
-@use "@fontsource/roboto-mono/scss/mixins" as RobotoMono;
-
-@include Roboto.fontFaceCustom($weight: 300,
-  $display: normal,
-  $woffPath: "~@fontsource/roboto/files/roboto-latin-300-normal.woff",
-  $woff2Path: "~@fontsource/roboto/files/roboto-latin-300-normal.woff2",
-  $unicodeRange: false);
-
-@include Roboto.fontFaceCustom($weight: 700,
-  $display: normal,
-  $woffPath: "~@fontsource/roboto/files/roboto-latin-700-normal.woff",
-  $woff2Path: "~@fontsource/roboto/files/roboto-latin-700-normal.woff2",
-  $unicodeRange: false);
-
-@include RobotoMono.fontFaceCustom($weight: 400,
-  $display: normal,
-  $fontName: "Roboto Mono",
-  $woffPath: "~@fontsource/roboto-mono/files/roboto-mono-latin-400-normal.woff",
-  $woff2Path: "~@fontsource/roboto-mono/files/roboto-mono-latin-400-normal.woff2",
-  $unicodeRange: false);
+@import "~@fontsource/roboto/latin-300.css";
+@import "~@fontsource/roboto/latin-700.css";
+@import "~@fontsource/roboto-mono/latin-400.css";
 
 // variables override
 

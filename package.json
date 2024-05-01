@@ -12,8 +12,8 @@
         "build": "webpack --config webpack.prod.mjs"
     },
     "devDependencies": {
-        "@fontsource/roboto": "^4.5.8",
-        "@fontsource/roboto-mono": "^4.5.8",
+        "@fontsource/roboto": "^5.0.13",
+        "@fontsource/roboto-mono": "^5.0.18",
         "bootstrap": "^5.3.3",
         "clipboard": "^2.0.11",
         "copy-webpack-plugin": "^11.0.0",
