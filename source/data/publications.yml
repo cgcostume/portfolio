@@ -776,7 +776,7 @@ publications:
 
 - key: 2021-vinci-etf-visualization
   bibtex: buessemeyer2021-etf-visualization
-  title: 'Interactive Simulation and Visualization of Long-Term, ETF-based Investment Strategies'
+  title: Interactive Simulation and Visualization of Long-Term, ETF-based Investment Strategies
   date: '2021-09-08'
   authors:
   - Martin Büßemeyer
@@ -799,7 +799,7 @@ publications:
 
 - key: 2021-vinci-procedural-textures
   bibtex: limberger2021-procedural
-  title: 'Visualization of Data Changes in 2.5D Treemaps using Procedural Textures and Animated Transitions'
+  title: Visualization of Data Changes in 2.5D Treemaps using Procedural Textures and Animated Transitions
   date: '2021-09-08'
   authors:
   - Daniel Limberger
@@ -848,7 +848,7 @@ publications:
 
 - key: 2021-web3d-tumor-segmentation
   bibtex: kordt2021-tumor-segmentation
-  title: 'Interactive Volumetric Region Growing for Brain Tumor Segmentation on MRI using WebGL'
+  title: Interactive Volumetric Region Growing for Brain Tumor Segmentation on MRI using WebGL
   date: '2021-11-10'
   authors:
   - Jonas Kordt
@@ -873,7 +873,7 @@ publications:
 
 - key: 2022-grapp-pointcloud-stylization
   bibtex: wagner2022-pointcloud-stylization
-  title: 'A Non-Photorealistic Rendering Technique for Art-directed Hatching of 3D Point Clouds'
+  title: A Non-Photorealistic Rendering Technique for Art-directed Hatching of 3D Point Clouds
   date: '2022-02-08'
   authors:
   - Ronja Wagner
@@ -901,7 +901,7 @@ publications:
 
 - key: 2022-ivapp-knowhow-map
   bibtex: atzberger2022-knowhow-map
-  title: 'Visualization of Knowledge Distribution across Development Teams using 2.5D Semantic Software Maps'
+  title: Visualization of Knowledge Distribution across Development Teams using 2.5D Semantic Software Maps
   date: '2022-02-08'
   authors:
   - Daniel Atzberger
@@ -930,7 +930,7 @@ publications:
 
 - key: 2022-enase-mining-expertise
   bibtex: atzberger2022-mining-expertise
-  title: 'Mining Developer Expertise from Bug Tracking Systems using the Author-Topic Model'
+  title: Mining Developer Expertise from Bug Tracking Systems using the Author-Topic Model
   date: '2022-04-25'
   authors:
   - Daniel Atzberger
@@ -963,7 +963,7 @@ publications:
 
 - key: 2022-enase-downstream-mining
   bibtex: thiede2022-downstream-mining
-  title: 'Augmenting Library Development by Mining Usage Data from Downstream Dependencies'
+  title: Augmenting Library Development by Mining Usage Data from Downstream Dependencies
   date: '2022-04-25'
   authors:
   - Christoph Thiede
@@ -996,7 +996,7 @@ publications:
 
 - key: 2022-vinci-topicmodel-benchmark
   bibtex: atzberger2022-topicmodel-benchmark
-  title: 'A Benchmark for the Use of Topic Models for Text Visualization Tasks'
+  title: A Benchmark for the Use of Topic Models for Text Visualization Tasks
   date: '2022-08-16'
   authors:
   - Daniel Atzberger
@@ -1022,7 +1022,7 @@ publications:
 
 - key: 2022-eurocarto-pointcloud-cartography
   bibtex: wegen2022-pointcloud-cartography
-  title: 'Non-Photorealistic Rendering of Point Clouds for Cartographic Visualization'
+  title: Non-Photorealistic Rendering of Point Clouds for Cartographic Visualization
   date: '2022-09-18'
   authors:
   - Ole Wegen
@@ -1033,12 +1033,12 @@ publications:
   - Matthias Trapp
   published: Extended Abstracts of Proc. ICA European Symp. on Cartography (EuroCarto)
   abstract:
-    We present an approach for real-time non-photorealistic rendering (NPR) of 3D point clouds that provides a general-purpose component for their cartographic visualization. 
-    For a given 3D point cloud, per-point attributes are derived in the preprocessing phase, e.g., for geometric, semantic, and instance information. 
-    The point cloud thus attributed is then segmented into point clusters according to thematic or semantic criteria. 
-    Different NPR styles configured by style descriptors can be bound to this information, i.e., the NPR style is parameterized by the point attributes found in the clusters. 
-    The approach demonstrates that NPR applied to an enriched, clustered point cloud enables a generalized, abstract, and graphically styled visualization without the need to derive intermediate 3D representations. 
-    We have implemented, as a proof-of-concept, several styles and mappings typically required for cartographic 3D visualizations. 
+    We present an approach for real-time non-photorealistic rendering (NPR) of 3D point clouds that provides a general-purpose component for their cartographic visualization.
+    For a given 3D point cloud, per-point attributes are derived in the preprocessing phase, e.g., for geometric, semantic, and instance information.
+    The point cloud thus attributed is then segmented into point clusters according to thematic or semantic criteria.
+    Different NPR styles configured by style descriptors can be bound to this information, i.e., the NPR style is parameterized by the point attributes found in the clusters.
+    The approach demonstrates that NPR applied to an enriched, clustered point cloud enables a generalized, abstract, and graphically styled visualization without the need to derive intermediate 3D representations.
+    We have implemented, as a proof-of-concept, several styles and mappings typically required for cartographic 3D visualizations.
   thumbnail: 2022-eurocarto-pointcloud-cartography.webp
   downloads:
   - href: https://doi.org/10.5194/ica-abs-5-161-2022
@@ -1060,11 +1060,11 @@ publications:
   lead_note: Best Paper
   lead_href: https://web3d.siggraph.org/awards/
   abstract:
-    3D scatter plots depicting massive data suffer from occlusion, which makes it difficult to get an overview and perceive structure. 
-    This paper presents a technique that facilitates the comprehension of heavily occluded 3D scatter plots. 
-    Data points are projected to axial planes, creating x-ray-like 2D views that support the user in analyzing the data's density and layout. 
-    We showcase our open-source web application with a hardware-accelerated rendering component written in WebGL. 
-    It allows for interactive interaction, filtering, and navigation with datasets up to hundreds of thousands of nodes. 
+    3D scatter plots depicting massive data suffer from occlusion, which makes it difficult to get an overview and perceive structure.
+    This paper presents a technique that facilitates the comprehension of heavily occluded 3D scatter plots.
+    Data points are projected to axial planes, creating x-ray-like 2D views that support the user in analyzing the data's density and layout.
+    We showcase our open-source web application with a hardware-accelerated rendering component written in WebGL.
+    It allows for interactive interaction, filtering, and navigation with datasets up to hundreds of thousands of nodes.
     The implementation is detailed and discussed with respect to challenges posed by API and performance limitations.
   thumbnail: 2022-web3d-scatter-plot-density.webp
   downloads:
@@ -1086,12 +1086,12 @@ publications:
   - Matthias Trapp
   published: Journal of Visualization
   abstract:
-    Software maps provide a general-purpose interactive user interface and information display in software analytics. 
-    This paper classifies software maps as a containment-based treemap embedded into a 3D attribute space and introduces respective terminology. 
-    It provides a comprehensive overview of advanced visual metaphors and techniques, each suitable for interactive visual analytics tasks. 
-    The metaphors and techniques are briefly described, located within a visualization pipeline model, and considered within a software map design space. 
-    The general expressiveness and applicability of visual variables are detailed and discussed. 
-    Consequent applications and use cases for different software system data and software engineering data are discussed, arguing for the versatile use of software maps in visual software analytics.    
+    Software maps provide a general-purpose interactive user interface and information display in software analytics.
+    This paper classifies software maps as a containment-based treemap embedded into a 3D attribute space and introduces respective terminology.
+    It provides a comprehensive overview of advanced visual metaphors and techniques, each suitable for interactive visual analytics tasks.
+    The metaphors and techniques are briefly described, located within a visualization pipeline model, and considered within a software map design space.
+    The general expressiveness and applicability of visual variables are detailed and discussed.
+    Consequent applications and use cases for different software system data and software engineering data are discussed, arguing for the versatile use of software maps in visual software analytics.
   thumbnail: 2022-jov-visvars.webp
   downloads:
   - href: https://doi.org/10.1007/s12650-022-00868-1
@@ -1111,13 +1111,13 @@ publications:
   - Jürgen Döllner
   published: Journal of Visualization
   abstract:
-    Treemaps depict tree-structured data while maintaining flexibility in mapping data to different visual variables. 
-    This work explores how changes in data mapped to color can be represented with rectangular 2.5D treemaps using procedural texture patterns. 
-    The patterns are designed to function for both static images and interactive visualizations with animated transitions. 
-    During rendering, the procedural texture patterns are superimposed onto the existing color mapping. 
-    We present a pattern catalog with seven exemplary patterns having different characteristics in representing the mapped data. 
-    This pattern catalog is implemented in a WebGL-based treemap rendering prototype and is evaluated using performance measurements and case studies on two software projects. 
-    As a result, this work extends the toolset of visual encodings for 2.5D treemaps by procedural texture patterns to represent changes in color. 
+    Treemaps depict tree-structured data while maintaining flexibility in mapping data to different visual variables.
+    This work explores how changes in data mapped to color can be represented with rectangular 2.5D treemaps using procedural texture patterns.
+    The patterns are designed to function for both static images and interactive visualizations with animated transitions.
+    During rendering, the procedural texture patterns are superimposed onto the existing color mapping.
+    We present a pattern catalog with seven exemplary patterns having different characteristics in representing the mapped data.
+    This pattern catalog is implemented in a WebGL-based treemap rendering prototype and is evaluated using performance measurements and case studies on two software projects.
+    As a result, this work extends the toolset of visual encodings for 2.5D treemaps by procedural texture patterns to represent changes in color.
     It serves as a starting point for user-centered evaluation.
   thumbnail: 2022-jov-changes.webp
   downloads:
@@ -1129,7 +1129,7 @@ publications:
 
 - key: 2023-ivapp-software-forest-extended
   bibtex: atzberger2023-code-similarity
-  title: 'Visualization of Source Code Similarity using 2.5D Semantic Software Maps'
+  title: Visualization of Source Code Similarity using 2.5D Semantic Software Maps
   date: '2023-02-01'
   authors:
   - Daniel Atzberger
@@ -1139,16 +1139,60 @@ publications:
   - Jürgen Döllner
   published: 'VISIGRAPP 2021: Computer Vision, Imaging and Computer Graphics Theory and Applications'
   abstract:
-    For various program comprehension tasks, software visualization techniques can be beneficial by displaying aspects related to the behavior, structure, or evolution of software. 
-    In many cases, the question is related to the semantics of the source code files, e.g., the localization of files that implement specific features or the detection of files with similar semantics. 
-    This work presents a general software visualization technique for source code documents, which uses 3D glyphs placed on a two-dimensional reference plane. 
-    The relative positions of the glyphs captures their semantic relatedness. 
-    Our layout originates from applying Latent Dirichlet Allocation and Multidimensional Scaling on the comments and identifier names found in the source code files. 
-    Though different variants for 3D glyphs can be applied, we focus on cylinders, trees, and avatars. 
-    We discuss various mappings of data associated with source code documents to the visual variables of 3D glyphs for selected use cases and provide details on our visualization system. 
+    For various program comprehension tasks, software visualization techniques can be beneficial by displaying aspects related to the behavior, structure, or evolution of software.
+    In many cases, the question is related to the semantics of the source code files, e.g., the localization of files that implement specific features or the detection of files with similar semantics.
+    This work presents a general software visualization technique for source code documents, which uses 3D glyphs placed on a two-dimensional reference plane.
+    The relative positions of the glyphs captures their semantic relatedness.
+    Our layout originates from applying Latent Dirichlet Allocation and Multidimensional Scaling on the comments and identifier names found in the source code files.
+    Though different variants for 3D glyphs can be applied, we focus on cylinders, trees, and avatars.
+    We discuss various mappings of data associated with source code documents to the visual variables of 3D glyphs for selected use cases and provide details on our visualization system.
   thumbnail: 2023-ivapp-software-forest-extended.webp
   downloads:
   - href: https://doi.org/10.1007/978-3-031-25477-2_8
     desc: DOI
   - href: https://www.researchgate.net/profile/Matthias-Trapp-2/publication/358523984/inline/jsViewer/62061c62afa8884cabd8675c
     desc: Paper
+
+
+- key: separator
+  selected: true
+  date: '2024-02-08'
+
+
+- key: 2024-dt-embedded-treemaps
+  bibtex: limberger2024-embedded-treemaps
+  selected: true
+  title: Concepts and Techniques for 3D-Embedded Treemaps and their Application to Software Visualization
+  date: '2024-04-12'
+  authors:
+  - Daniel Limberger
+  published: Doctoral Thesis, Digital Engineering Faculty / Hasso Plattner Institute for Digital Engineering
+  abstract:
+    This thesis addresses concepts and techniques for interactive visualization of hierarchical data using treemaps.
+    It explores (1) how treemaps can be embedded in 3D space to improve their information content and expressiveness, (2) how the readability of treemaps can be improved using level-of-detail and degree-of-interest techniques, and (3) how to design and implement a software framework for the real-time web-based rendering of treemaps embedded in 3D.
+    With a particular emphasis on their application, use cases from software analytics are taken to test and evaluate the presented concepts and techniques.
+    <br><br>
+    Concerning the first challenge, this thesis shows that a 3D attribute space offers enhanced possibilities for the visual mapping of data compared to classical 2D treemaps.
+    In particular, embedding in 3D allows for improved implementation of visual variables (e.g., by sketchiness and color weaving), provision of new visual variables (e.g., by physically based materials and in situ templates), and integration of visual metaphors (e.g., by reference surfaces and renderings of natural phenomena) into the three-dimensional representation of treemaps.
+    <br><br>
+    For the second challenge—the readability of an information visualization—the work shows that the generally higher visual clutter and increased cognitive load typically associated with three-dimensional information representations can be kept low in treemap-based representations of both small and large hierarchical datasets.
+    By introducing an adaptive level-of-detail technique, we cannot only declutter the visualization results, thereby reducing cognitive load and mitigating occlusion problems, but also summarize and highlight relevant data.
+    Furthermore, this approach facilitates automatic labeling, supports the emphasis on data outliers, and allows visual variables to be adjusted via degree-of-interest measures.
+    <br><br>
+    The third challenge is addressed by developing a real-time rendering framework with WebGL and accumulative multi-frame rendering.
+    The framework removes hardware constraints and graphics API requirements, reduces interaction response times, and simplifies high-quality rendering.
+    At the same time, the implementation effort for a web-based deployment of treemaps is kept reasonable.
+    <br><br>
+    The presented visualization concepts and techniques are applied and evaluated for use cases in software analysis.
+    In this domain, data about software systems, especially about the state and evolution of the source code, does not have a descriptive appearance or natural geometric mapping, making information visualization a key technology here.
+    In particular, software source code can be visualized with treemap-based approaches because of its inherently hierarchical structure.
+    With treemaps embedded in 3D, we can create interactive software maps that visually map, software metrics, software developer activities, or information about the evolution of software systems alongside their hierarchical module structure.
+    <br><br>
+    Discussions on remaining challenges and opportunities for future research for 3D-embedded treemaps and their applications conclude the thesis.
+  thumbnail: 2024-dt-embedded-treemaps.webp
+  downloads:
+  - href: https://doi.org/10.25932/publishup-63201
+    desc: DOI
+  - href: https://publishup.uni-potsdam.de/files/63201/limberger_diss.pdf
+    desc: Doctoral Thesis
+

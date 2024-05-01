@@ -20,7 +20,7 @@ header
           figcaption.figure-caption.mt-1.text-start#picture-copyright &copy; #{header.picture_copyright}
 
     .col-12
-      h1 #{header.name} #[br] #[strong #{header.surname}]
+      h1 #{header.title ? `${header.title} ` : ''}#{header.name} #[br] #[strong #{header.surname}]
 
       p.lead
         each lead, index in header.leads

@@ -14,7 +14,7 @@
     "devDependencies": {
         "@fontsource/roboto": "^4.5.8",
         "@fontsource/roboto-mono": "^4.5.8",
-        "bootstrap": "^5.2.3",
+        "bootstrap": "^5.3.3",
         "clipboard": "^2.0.11",
         "copy-webpack-plugin": "^11.0.0",
         "css-loader": "^6.7.2",
@@ -29,7 +29,6 @@
         "imagemin-webp": "^7.0.0",
         "jquery": "^3.6.1",
         "mini-css-extract-plugin": "^2.7.0",
-        "node-sass": "^8.0.0",
         "peity": "^3.3.0",
         "pug": "^2.0.4",
         "pug-loader": "^2.4.0",
