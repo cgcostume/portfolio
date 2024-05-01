@@ -1,4 +1,28 @@
-@font-face{font-family:"Roboto";font-style:normal;font-display:normal;font-weight:300;src:url(c48fb6765a9fcb00b330.woff2) format("woff2"),url(c2f7ab22cb9cbd074c3a.woff) format("woff")}@font-face{font-family:"Roboto";font-style:normal;font-display:normal;font-weight:700;src:url(227c93190fe7f82de3f8.woff2) format("woff2"),url(77ecb942e56f9b036426.woff) format("woff")}@font-face{font-family:"Roboto Mono";font-style:normal;font-display:normal;font-weight:400;src:url(d3026ee29728abffa752.woff2) format("woff2"),url(635c393bc288b89d560f.woff) format("woff")}/*!
+/* roboto-latin-300-normal */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src: url(c48fb6765a9fcb00b330.woff2) format('woff2'), url(0515ab82dae6923cab85.woff) format('woff');
+}
+/* roboto-latin-700-normal */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url(227c93190fe7f82de3f8.woff2) format('woff2'), url(666d7a2f9db53cf52e2d.woff) format('woff');
+}
+/* roboto-mono-latin-400-normal */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(6f5d6510e56fac3cd609.woff2) format('woff2'), url(e0b5f02f135e97203b86.woff) format('woff');
+}
+/*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)

@@ -1,15 +1,4 @@
 /*!
- * Sizzle CSS Selector Engine v2.3.6
- * https://sizzlejs.com/
- *
- * Copyright JS Foundation and other contributors
- * Released under the MIT license
- * https://js.foundation/
- *
- * Date: 2021-02-16
- */
-
-/*!
  * clipboard.js v2.0.11
  * https://clipboardjs.com/
  *
@@ -17,15 +6,12 @@
  */
 
 /*!
- * jQuery JavaScript Library v3.6.1
+ * jQuery JavaScript Library v3.7.1
  * https://jquery.com/
- *
- * Includes Sizzle.js
- * https://sizzlejs.com/
  *
  * Copyright OpenJS Foundation and other contributors
  * Released under the MIT license
  * https://jquery.org/license
  *
- * Date: 2022-08-26T17:52Z
+ * Date: 2023-08-28T13:37Z
  */
