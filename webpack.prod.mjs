@@ -9,8 +9,8 @@ import { PurgeCSSPlugin } from 'purgecss-webpack-plugin';
 import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-export default function (env) {
-    const config = common(env, __dirname);
+export default async function (env) {
+    const config = await common(env, __dirname);
     return merge(config,
         {
             mode: 'production',

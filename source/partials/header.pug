@@ -1,16 +1,24 @@
 
 - const header = data.header;
 - const contact = data.contact;
+- const pictureBase = header.picture.replace(/\.(jpg|jpeg|png|webp|avif)$/i, '');
+- const pictureInputBase = header.picture_input.replace(/\.(jpg|jpeg|png|webp|avif)$/i, '');
 
 header
   .row.text-center
     .col-lg-6.offset-lg-3.col-sm-8.offset-sm-2
       figure.figure.figure-with-overlay
 
-        img.figure-img.img-fluid.mb-0.rounded(src = `/images/${header.picture}` alt = `${header.picture_label}`)
+        picture
+          source(srcset = `/images/${pictureBase}.avif` type = 'image/avif')
+          source(srcset = `/images/${pictureBase}.webp` type = 'image/webp')
+          img.figure-img.img-fluid.mb-0.rounded(src = `/images/${header.picture}` alt = `${header.picture_label}`)
 
         .figure-overlay
-          img.img-fluid.rounded(src = `/images/${header.picture_input}` alt = `${header. picture_label}` hidden)#picture-input
+          picture
+            source(srcset = `/images/${pictureInputBase}.avif` type = 'image/avif')
+            source(srcset = `/images/${pictureInputBase}.webp` type = 'image/webp')
+            img.img-fluid.rounded(src = `/images/${header.picture_input}` alt = `${header. picture_label}` hidden)#picture-input
 
         .figure-toggle
           input.btn-check(type = 'checkbox' id = 'picture-input-toggle' autocomplete = 'off')

@@ -10,15 +10,7 @@ import yaml from 'yaml';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
-
-
-// import ImageMinimizerPlugin from 'image-minimizer-webpack-plugin';
-
-/* For now, all image sources are specified at pug-compile-time based on the respective yaml files. This makes it
-   difficult to use webpack loader for webp-optimization, since this implies require with expressions... */
-
-import imagemin from 'imagemin';
-import webp from 'imagemin-webp';
+import sharp from 'sharp';
 
 
 const parseYAMLThenStringifySync = (filename) => {
@@ -37,9 +29,9 @@ const createBibliographyFromBibFilesSync = (filenames) => {
 }
 
 
-export default (env, __dirname) => {
+export default async (env, __dirname) => {
 
-    const bibFiles = globSync(path.join('source/data/bibliography', '/*.bib'));
+    const bibFiles = globSync(path.join('source/data/bibliography', '*.bib'));
 
     const data = {
         revision: JSON.stringify(git.short(__dirname)),
@@ -54,7 +46,7 @@ export default (env, __dirname) => {
 
     // Pug Configuration
 
-    const pugFiles = globSync(path.join(__dirname, 'source', '/*.pug'));
+    const pugFiles = globSync(path.join(__dirname, 'source', '*.pug').replace(/\\/g, '/'));
     console.log(`collecting pug files in "${path.join(__dirname, 'source')}":`, pugFiles);
 
     const templates = [];
@@ -67,17 +59,55 @@ export default (env, __dirname) => {
         }));
     });
 
-    // Image Optimization (webp)
+    // Image Optimization (AVIF + WebP) - must complete before webpack processes files
 
-    const images = globSync(path.join(__dirname, 'source/images', '/*.{jpg,jpeg,png}'));
+    const imagesPattern = path.join(__dirname, 'source', 'images', '*.{jpg,jpeg,png}').replace(/\\/g, '/');
+    console.log(`Looking for images with pattern: ${imagesPattern}`);
+    const images = globSync(imagesPattern);
     console.log(`optimizing images in "${path.join(__dirname, 'source/images')}":`, images);
 
-    imagemin(images, {
-        destination: 'source/images',
-        plugins: [
-            webp({ quality: [88, 96] })
-        ]
-    })
+    // Generate AVIF and WebP versions for each source image
+    const promises = [];
+    for (const imagePath of images) {
+        const outputBase = imagePath.replace(/\.(jpg|jpeg|png)$/i, '');
+        const avifPath = `${outputBase}.avif`;
+        const webpPath = `${outputBase}.webp`;
+
+        // Get source file modification time
+        const sourceStats = fs.statSync(imagePath);
+        const sourceMtime = sourceStats.mtime;
+
+        // Check if files need regeneration (missing or older than source)
+        const avifExists = fs.existsSync(avifPath);
+        const webpExists = fs.existsSync(webpPath);
+
+        const needsAvif = !avifExists || (avifExists && fs.statSync(avifPath).mtime < sourceMtime);
+        const needsWebp = !webpExists || (webpExists && fs.statSync(webpPath).mtime < sourceMtime);
+
+        if (needsAvif) {
+            // Generate AVIF (best compression, max effort for smallest file size)
+            promises.push(
+                sharp(imagePath).avif({ quality: 50, effort: 9 }).toFile(avifPath)
+                    .then(() => console.log(`Generated: ${path.basename(outputBase)}.avif`))
+                    .catch(err => console.error(`Failed to generate AVIF for ${imagePath}:`, err.message))
+            );
+        }
+
+        if (needsWebp) {
+            // Generate WebP (fallback)
+            promises.push(
+                sharp(imagePath).webp({ quality: 85, effort: 6 }).toFile(webpPath)
+                    .then(() => console.log(`Generated: ${path.basename(outputBase)}.webp`))
+                    .catch(err => console.error(`Failed to generate WebP for ${imagePath}:`, err.message))
+            );
+        }
+    }
+
+    // Wait for all image processing to complete before webpack continues
+    if (promises.length > 0) {
+        await Promise.all(promises);
+        console.log(`Completed processing ${promises.length} image conversions`);
+    }
 
 
     return {
@@ -93,6 +123,7 @@ export default (env, __dirname) => {
             ...templates,
             new CopyWebpackPlugin({
                 patterns: [
+                    { from: 'images/**/*.avif', to: '[path]/[name][ext]', force: false },
                     { from: 'images/**/*.webp', to: '[path]/[name][ext]', force: false },
                     { from: 'favicon*', to: '[path]/[name][ext]', force: false },
                     { from: 'resources/**/*', to: '[path]/[name][ext]', force: false },
@@ -123,11 +154,6 @@ export default (env, __dirname) => {
 
         module: {
             rules: [
-                // {
-                //     test: /\.(jpe?g|png)$/i,
-                //     type: 'asset/resource',
-                //     generator: { filename: 'webp-generated/[name][ext]' }
-                // },
                 {
                     test: /\.pug$/,
                     include: /source/,
@@ -154,27 +180,5 @@ export default (env, __dirname) => {
                 },
             ]
         },
-
-        // optimization: {
-        //     minimizer: [
-        //         '...',
-        //         new ImageMinimizerPlugin({
-        //             minimizer: {
-        //                 implementation: ImageMinimizerPlugin.imageminMinify,
-        //                 options: {
-        //                     plugins: ['imagemin-mozjpeg', 'imagemin-pngquant']
-        //                 }
-        //             },
-        //             generator: [
-        //                 { // use `?as=webp`
-        //                     preset: 'webp',
-        //                     implementation: ImageMinimizerPlugin.imageminGenerate,
-        //                     options: {
-        //                         plugins: [['imagemin-webp', { quality: [88, 96] }]],
-        //                     },
-        //                 }]
-        //         })
-        //     ]
-        // }
     };
 }

@@ -1,6 +1,10 @@
 mixin thumbnail(src, alt, flickr)
+  - const srcBase = src.replace(/\.(jpg|jpeg|png|webp|avif)$/i, '');
   .thumbnail.position-relative
     if flickr
       a.thumbnail.flickr(href = `https://www.flickr.com/photos/${data.config.flickr_user}/sets/${flickr}/` data-photoset-id = `${flickr}`)
         span.badge.bg-primary.position-absolute.top-0.start-0 Flickr
-    img.img-fluid.rounded(width = `${data.config.img_defaults.thumbnail.w}` height = `${data.config.img_defaults.thumbnail.h}` src = `/images/${src}` alt = `Thumbnail of ${alt}`)
+    picture
+      source(srcset = `/images/${srcBase}.avif` type = 'image/avif')
+      source(srcset = `/images/${srcBase}.webp` type = 'image/webp')
+      img.img-fluid.rounded(width = `${data.config.img_defaults.thumbnail.w}` height = `${data.config.img_defaults.thumbnail.h}` src = `/images/${src}` alt = `Thumbnail of ${alt}`)
