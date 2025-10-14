@@ -159,6 +159,12 @@ header {
     .btn:focus {
       box-shadow: none !important;
     }
+
+    .btn-check:checked+.btn {
+      color: white !important;
+      border-color: transparent !important;
+      background-color: var(--bs-dark) !important;
+    }
   }
 
   .figure-caption {
