@@ -13,16 +13,18 @@ jobs:
     steps:
 
       - name: Check out code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
+        with:
+          lfs: true
 
       - name: Initialize Node.js environment
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 22
           cache: 'npm'
 
       - name: Check out deploy branch
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           ref: deploy
           path: deploy
