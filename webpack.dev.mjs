@@ -14,7 +14,12 @@ export default function (env) {
             mode: 'development',
             cache: true,
             devServer: {
-                hot: false
+                hot: false,
+                static: {
+                    directory: path.resolve(__dirname, 'build'),
+                },
+                port: 8080,
+                open: false
             },
             optimization: {
                 minimize: true,

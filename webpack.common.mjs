@@ -1,6 +1,6 @@
 
 import fs from 'fs';
-import glob from 'glob';
+import { globSync } from 'glob';
 import path from 'path';
 import webpack from 'webpack';
 import git from 'git-rev-sync';
@@ -39,7 +39,7 @@ const createBibliographyFromBibFilesSync = (filenames) => {
 
 export default (env, __dirname) => {
 
-    const bibFiles = glob.sync(path.join('source/data/bibliography', '/*.bib'));
+    const bibFiles = globSync(path.join('source/data/bibliography', '/*.bib'));
 
     const data = {
         revision: JSON.stringify(git.short(__dirname)),
@@ -54,7 +54,7 @@ export default (env, __dirname) => {
 
     // Pug Configuration
 
-    const pugFiles = glob.sync(path.join(__dirname, 'source', '/*.pug'));
+    const pugFiles = globSync(path.join(__dirname, 'source', '/*.pug'));
     console.log(`collecting pug files in "${path.join(__dirname, 'source')}":`, pugFiles);
 
     const templates = [];
@@ -69,7 +69,7 @@ export default (env, __dirname) => {
 
     // Image Optimization (webp)
 
-    const images = glob.sync(path.join(__dirname, 'source/images', '/*.{jpg,jpeg,png}'));
+    const images = globSync(path.join(__dirname, 'source/images', '/*.{jpg,jpeg,png}'));
     console.log(`optimizing images in "${path.join(__dirname, 'source/images')}":`, images);
 
     imagemin(images, {

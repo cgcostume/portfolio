@@ -1,5 +1,5 @@
 import path from 'path';
-import glob from 'glob';
+import { globSync } from 'glob';
 
 import { merge } from 'webpack-merge';
 import common from './webpack.common.mjs';
@@ -18,7 +18,7 @@ export default function (env) {
             plugins: [
 
                 new PurgeCSSPlugin({
-                    paths: glob.sync(path.join(__dirname, 'source', '/**/*'), { nodir: true }),
+                    paths: globSync(path.join(__dirname, 'source', '/**/*'), { nodir: true }),
                     safelist: { greedy: [/^(gslide|gdesc)-/] }
                 }),
 
