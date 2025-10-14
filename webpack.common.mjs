@@ -141,7 +141,15 @@ export default (env, __dirname) => {
                     use: [
                         MiniCssExtractPlugin.loader,
                         'css-loader',
-                        'sass-loader',
+                        {
+                            loader: 'sass-loader',
+                            options: {
+                                api: 'modern-compiler',
+                                sassOptions: {
+                                    silenceDeprecations: ['import', 'global-builtin', 'color-functions'],
+                                },
+                            },
+                        },
                     ],
                 },
             ]
