@@ -25,7 +25,7 @@
         "jquery": "^3.7.1",
         "mini-css-extract-plugin": "^2.9.0",
         "peity": "^3.3.0",
-        "pug": "^3.0.3",
+        "pug": "^2.0.4",
         "pug-loader": "^2.4.0",
         "purgecss-webpack-plugin": "^7.0.2",
         "sass": "^1.76.0",
