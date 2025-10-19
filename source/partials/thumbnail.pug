@@ -5,6 +5,10 @@ mixin thumbnail(src, alt, flickr)
       a.thumbnail.flickr(href = `https://www.flickr.com/photos/${data.config.flickr_user}/sets/${flickr}/` data-photoset-id = `${flickr}`)
         span.badge.bg-primary.position-absolute.top-0.start-0 Flickr
     picture
-      source(srcset = `/images/${srcBase}.avif` type = 'image/avif')
-      source(srcset = `/images/${srcBase}.webp` type = 'image/webp')
+      // Multi-column layout (≥576px, col-sm-3 or col-lg-2): serve 384px images
+      source(media = "(min-width: 576px)" srcset = `/images/${srcBase}-384w.avif` type = "image/avif")
+      source(media = "(min-width: 576px)" srcset = `/images/${srcBase}-384w.webp` type = "image/webp")
+      // Single-column layout (<576px, full width): serve 768px images
+      source(media = "(max-width: 575px)" srcset = `/images/${srcBase}-768w.avif` type = "image/avif")
+      source(media = "(max-width: 575px)" srcset = `/images/${srcBase}-768w.webp` type = "image/webp")
       img.img-fluid.rounded(width = `${data.config.img_defaults.thumbnail.w}` height = `${data.config.img_defaults.thumbnail.h}` src = `/images/${src}` alt = `Thumbnail of ${alt}`)

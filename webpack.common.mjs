@@ -66,40 +66,41 @@ export default async (env, __dirname) => {
     const images = globSync(imagesPattern);
     console.log(`optimizing images in "${path.join(__dirname, 'source/images')}":`, images);
 
-    // Generate AVIF and WebP versions for each source image
+    // Generate AVIF and WebP versions for each source image in multiple resolutions
     const promises = [];
+    const resolutions = [
+        { width: 384, postfix: '-384w' },
+        { width: 768, postfix: '-768w' }
+    ];
+
     for (const imagePath of images) {
         const outputBase = imagePath.replace(/\.(jpg|jpeg|png)$/i, '');
-        const avifPath = `${outputBase}.avif`;
-        const webpPath = `${outputBase}.webp`;
 
         // Get source file modification time
         const sourceStats = fs.statSync(imagePath);
         const sourceMtime = sourceStats.mtime;
 
-        // Check if files need regeneration (missing or older than source)
-        const avifExists = fs.existsSync(avifPath);
-        const webpExists = fs.existsSync(webpPath);
+        // Generate each resolution variant
+        for (const { width, postfix } of resolutions) {
+            const avifPath = `${outputBase}${postfix}.avif`;
+            const webpPath = `${outputBase}${postfix}.webp`;
 
-        const needsAvif = !avifExists || (avifExists && fs.statSync(avifPath).mtime < sourceMtime);
-        const needsWebp = !webpExists || (webpExists && fs.statSync(webpPath).mtime < sourceMtime);
+            // Check if files need regeneration (missing or older than source)
+            const avifExists = fs.existsSync(avifPath);
+            const webpExists = fs.existsSync(webpPath);
 
-        if (needsAvif) {
-            // Generate AVIF (best compression, max effort for smallest file size)
-            promises.push(
-                sharp(imagePath).avif({ quality: 50, effort: 9 }).toFile(avifPath)
-                    .then(() => console.log(`Generated: ${path.basename(outputBase)}.avif`))
-                    .catch(err => console.error(`Failed to generate AVIF for ${imagePath}:`, err.message))
-            );
-        }
+            const needsAvif = !avifExists || (avifExists && fs.statSync(avifPath).mtime < sourceMtime);
+            const needsWebp = !webpExists || (webpExists && fs.statSync(webpPath).mtime < sourceMtime);
 
-        if (needsWebp) {
-            // Generate WebP (fallback)
-            promises.push(
-                sharp(imagePath).webp({ quality: 85, effort: 6 }).toFile(webpPath)
-                    .then(() => console.log(`Generated: ${path.basename(outputBase)}.webp`))
-                    .catch(err => console.error(`Failed to generate WebP for ${imagePath}:`, err.message))
-            );
+            needsAvif && promises.push(sharp(imagePath).resize(width, width, { fit: 'cover' })
+                .avif({ quality: 60, effort: 9, chromaSubsampling: '4:4:4' }).toFile(avifPath)
+                .then(() => console.log(`Generated: ${path.basename(outputBase)}${postfix}.avif`))
+                .catch(err => console.error(`Failed to generate AVIF for ${imagePath} at ${width}px:`, err.message)));
+
+            needsWebp && promises.push(sharp(imagePath).resize(width, width, { fit: 'cover' })
+                .webp({ quality: 80, effort: 6 }).toFile(webpPath)
+                .then(() => console.log(`Generated: ${path.basename(outputBase)}${postfix}.webp`))
+                .catch(err => console.error(`Failed to generate WebP for ${imagePath} at ${width}px:`, err.message)));
         }
     }
 

@@ -9,7 +9,9 @@
     "scripts": {
         "start": "webpack serve --config webpack.dev.mjs",
         "build:dev": "webpack --config webpack.dev.mjs",
-        "build": "webpack --config webpack.prod.mjs"
+        "build": "webpack --config webpack.prod.mjs",
+        "rimraf": "./node_modules/rimraf/bin.js",
+        "clean:images": "rimraf --glob source/images/**/*.{avif,webp}"
     },
     "devDependencies": {
         "@fontsource/roboto": "^5.0.13",
@@ -28,6 +30,7 @@
         "pug": "^2.0.4",
         "pug-loader": "^2.4.0",
         "purgecss-webpack-plugin": "^7.0.2",
+        "rimraf": "^6.0.1",
         "sass": "^1.76.0",
         "sass-loader": "^16.0.5",
         "sharp": "^0.34.4",
