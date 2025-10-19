@@ -70,7 +70,7 @@ export default async (env, __dirname) => {
     const promises = [];
     const resolutions = [
         { width: 384, postfix: '-384w' },
-        { width: 768, postfix: '-768w' }
+        { width: 768, postfix: '' }  // 768px is the default, no postfix
     ];
 
     for (const imagePath of images) {

@@ -8,7 +8,7 @@ mixin thumbnail(src, alt, flickr)
       // Multi-column layout (≥576px, col-sm-3 or col-lg-2): serve 384px images
       source(media = "(min-width: 576px)" srcset = `/images/${srcBase}-384w.avif` type = "image/avif")
       source(media = "(min-width: 576px)" srcset = `/images/${srcBase}-384w.webp` type = "image/webp")
-      // Single-column layout (<576px, full width): serve 768px images
-      source(media = "(max-width: 575px)" srcset = `/images/${srcBase}-768w.avif` type = "image/avif")
-      source(media = "(max-width: 575px)" srcset = `/images/${srcBase}-768w.webp` type = "image/webp")
+      // Single-column layout (<576px, full width): serve 768px images (default size)
+      source(media = "(max-width: 575px)" srcset = `/images/${srcBase}.avif` type = "image/avif")
+      source(media = "(max-width: 575px)" srcset = `/images/${srcBase}.webp` type = "image/webp")
       img.img-fluid.rounded(width = `${data.config.img_defaults.thumbnail.w}` height = `${data.config.img_defaults.thumbnail.h}` src = `/images/${src}` alt = `Thumbnail of ${alt}`)
