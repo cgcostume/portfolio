@@ -26,7 +26,7 @@ publications:
   thumbnail: 2009-bt-pencil-synthesis.webp
   flickr: '72157690157643673'
   downloads:
-  - href: resources/2009 – Mueller (now Limberger) – Computergenerierte Bleistiftzeichnungen von 3D-Stadtmodellen.pdf
+  - href: https://github.com/cgcostume/portfolio/releases/download/theses/2009-mueller-bachelors-thesis.pdf
     desc: Bachelor's Thesis [de]
 
 
@@ -55,7 +55,7 @@ publications:
   thumbnail: 2012-mt-sky-rendering.webp
   flickr: '72157650186586300'
   downloads:
-  - href: resources/2012 – Mueller (now Limberger) – Photorealistisches Rendering atmosphaerischer Effekte in geovirtuellen 3D-Umgebungen in Echtzeit.pdf
+  - href: https://github.com/cgcostume/portfolio/releases/download/theses/2012-mueller-masters-thesis.pdf
     desc: Master's Thesis [de]
   - href: https://hpi.de/doellner/publications/Document/import_cgs/Daniel_Limberger_Poster.pdf/0a97da2ebbc45e05526cddc3939235b0.html?cHash=de90ef51b450714b6ab5b86ea70f755b
     desc: Poster

@@ -28,7 +28,7 @@ The site's content is based on a YAML file per section (`header.yml`, `contact.y
 
 This website uses [Astro](https://astro.build/), [Bootstrap 5](http://getbootstrap.com/), [GLightbox](https://biati-digital.github.io/glightbox/), and can access the [Flickr API](https://www.flickr.com/services/api/).
 
-Content lives in `src/data/` (YAML and BibTeX), source images in `src/assets/images/` (AVIF/WebP variants are generated at build time), and static files such as PDFs in `public/`.
+Content lives in `src/data/` (YAML and BibTeX), source images in `src/assets/images/` (AVIF/WebP variants are generated at build time), and static files in `public/`. PDFs of the theses are kept in `resources/` and published as assets of the [theses release](https://github.com/cgcostume/portfolio/releases/tag/theses).
 
 ### Prerequisites
 - [Node.js](https://nodejs.org/en) and [pnpm](https://pnpm.io/) are required for development and testing.

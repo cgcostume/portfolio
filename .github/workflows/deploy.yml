@@ -25,10 +25,6 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v4
 
-      # only fetch LFS files that are published, e.g., not the archived resources
-      - name: Fetch published LFS files
-        run: git lfs pull --include "public/**"
-
       - name: Set up pnpm
         uses: pnpm/action-setup@v4
 
