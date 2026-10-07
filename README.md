@@ -1,36 +1,27 @@
-# Daniel's Portfolio Theme
+# Daniel's Portfolio
 
 This portfolio is optimized for researchers and those who strive for a minimal, file-based content management.
-The complete site's content is based on a json/yaml file per section (e.g., `contact.json`, `projects.json`, `publications.json`, `talks.json`, and `teaching.json`) as well as the pages `_config.yml` information. 
+The site's content is based on a YAML file per section (`header.yml`, `contact.yml`, `publications.yml`, `repositories.yml`, and `teaching-activities.yml`) and a BibTeX file per publication.
 
-[![Build Status](https://travis-ci.org/cgcostume/cgcostume.github.io.svg?branch=master)](https://travis-ci.org/cgcostume/cgcostume.github.io)
+[![Deploy website](https://github.com/cgcostume/portfolio/actions/workflows/deploy.yml/badge.svg)](https://github.com/cgcostume/portfolio/actions/workflows/deploy.yml)
 
 ## Examples
 
-* [Carolin Fiedler](http://www.carolinfiedler.de)
-* [Daniel Limberger](http://www.daniellimberger.de) (my personal website)
-* [Willy Scheibel](http://www.willyscheibel.de)
-* [Amir Semmo](http://www.amirsemmo.de)
-* [Maximilian Söchting](http://msoechting.de)
-* [Tim Cech](http://www.timcech.de)
+* [Daniel Limberger](https://www.daniellimberger.de) (my personal website)
+* Earlier versions of this theme were used by [Carolin Fiedler](http://www.carolinfiedler.de), [Willy Scheibel](http://www.willyscheibel.de), [Amir Semmo](http://www.amirsemmo.de), [Maximilian Söchting](http://msoechting.de), and [Tim Cech](http://www.timcech.de)
 
 
 ## Features
 
-* responsive single-page using [Bootstrap 4](http://getbootstrap.com/)
-* multi-language support
-* sections for publications, projects, talks/keynotes, teaching, contact, and more
-* section contents loaded from json/yaml data-files (_data)
-* unique, distinguishable layouts per section
-* dynamic integration of [Flickr photo sets](https://www.flickr.com/services/api/) (with basic caching)
-* php and javascript free contact form using [Formspree](http://formspree.io/)
-* supports deployment using [GitHub Pages](https://pages.github.com/) 
-* minimizes html and css (currently using compress layout method)
-* easy BibTeX provisioning (show, select, and copy to clipboard, or download)
-* valid html5 output (nearly-valid css, due to some issues in bootstrap)
-* responsive navigation (with scrollspy) comprising a top-page link (author or icon), section links (nav-links or dropdown-items), and a language toggle for all used languages
-* support for vCard via file and QR Code
-* basic [Travis CI](https://travis-ci.org/) integration
+* static, responsive site using [Astro](https://astro.build/) and [Bootstrap 5](http://getbootstrap.com/)
+* sections for publications, repositories, and teaching activities, each with a selected (index) and a complete page
+* section contents loaded from YAML data files (`src/data/`)
+* easy BibTeX provisioning (show, copy to clipboard, or download)
+* teaching evaluation summary as static SVG bar charts
+* dynamic integration of [Flickr photo sets](https://www.flickr.com/services/api/) via [GLightbox](https://biati-digital.github.io/glightbox/)
+* AVIF/WebP thumbnails generated at build time
+* unused CSS removed at build time via PurgeCSS
+* deployment to [GitHub Pages](https://pages.github.com/) via GitHub Actions
 
 
 ## Development
