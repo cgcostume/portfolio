@@ -1,14 +1,16 @@
-import fs from 'node:fs';
 import path from 'node:path';
 import { execSync } from 'node:child_process';
 import { parse } from 'yaml';
 import type { z } from 'astro/zod';
 import * as schema from './schema';
 
+// imported via vite (not fs) so that the dev server reloads on changes
+const yamlFiles = import.meta.glob<string>('../data/*.yml', { query: '?raw', import: 'default', eager: true });
+
 /** Loads a YAML data file and validates it against its schema, failing the build on mismatch. */
 function load<T extends z.ZodType>(name: string, type: T): z.infer<T> {
-    const file = path.join(process.cwd(), 'src/data', `${name}.yml`);
-    const result = type.safeParse(parse(fs.readFileSync(file, 'utf8')));
+    const file = `../data/${name}.yml`;
+    const result = type.safeParse(parse(yamlFiles[file] ?? ''));
     if (!result.success) throw new Error(`invalid data in ${file}:\n${result.error.issues
         .map((issue) => `  ${issue.path.join('.')}: ${issue.message}`).join('\n')}`);
     return result.data;
