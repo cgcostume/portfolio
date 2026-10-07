@@ -1,7 +1,8 @@
 heading: Repositories
 
 # GitHub accounts and organizations, in display order.
-# status: active | maintained | inactive | archived
+# projects are limited to those I mainly developed or actively contributed to
+# project status: active | maintained | inactive | archived
 
 accounts:
 
@@ -9,66 +10,50 @@ accounts:
   name: CG Internals
   thumbnail: gh-cginternals.png
   active: 2013 – today
-  status: maintained
   summary:
     Open-source C++ and TypeScript libraries for real-time computer graphics of CG Internals, the computer graphics company I co-founded.
     The company has since been dissolved, but some of the libraries are still loosely maintained.
     I initiated and co-designed several of them and was the main developer of webgl-operate.
   projects:
-  - name: glbinding
-    description: Cross-platform C++ binding for the OpenGL API, generated from the gl.xml specification.
-    status: maintained
   - name: webgl-operate
-    description: TypeScript-based WebGL rendering framework with progressive, multi-frame rendering.
+    description: TypeScript-based WebGL rendering framework with progressive, multi-frame rendering (main developer).
     status: inactive
-  - name: cmake-init
-    description: Template for reliable, cross-platform C++ project setup using CMake.
+  - name: glbinding
+    description: Cross-platform C++ binding for the OpenGL API, generated from the gl.xml specification (initiated and co-designed).
     status: maintained
-  - name: globjects
-    description: C++ library strictly wrapping OpenGL objects.
-    status: maintained
-  - name: cppfs
-    description: Cross-platform C++ file system library supporting multiple backends.
+  - name: openll
+    description: Open Label Library, an API specification for glyph rendering and labeling in 2D and 3D (iV 2018).
     status: inactive
+  - name: blog-demos
+    description: Source code for topics discussed in the CG Internals blog.
+    status: archived
 
 - github: varg-dev
   name: Visual Analytics Research Group
   thumbnail: gh-varg.png
   active: 2020 – 2024
-  status: inactive
   summary:
     Research prototypes of the Visual Analytics Research Group at the Hasso Plattner Institute, mostly accompanying publications on treemaps, software visualization, and sensor data visualization.
   projects:
-  - name: roomcanvas
-    description: Web application for visualizing spatiotemporal sensor data in 3D building models (EuroVis 2021).
-    status: archived
-  - name: treemap-renderer
-    description: Treemap renderer based on WebGL using webgl-operate.
+  - name: treemap-hub
+    description: Hub for treemap research prototypes and datasets.
     status: inactive
-  - name: hilbert-moore-treemap-layouts-prototype
-    description: Prototype of Hilbert and Moore treemap layouts.
-    status: archived
+  - name: font-asset-gui
+    description: User interface for generating font assets for distance-field based text rendering.
+    status: inactive
 
 - github: hpicgs
   name: Computer Graphics Systems Group
   thumbnail: gh-hpicgs.png
   active: 2013 – 2022
-  status: inactive
   summary:
     Teaching and research code of the Computer Graphics Systems Group at the Hasso Plattner Institute, e.g., lecture sandboxes as well as seminar and student projects I supervised.
-  projects:
-  - name: node-embed
-    description: Template for embedding Node.js into C++ applications.
-    status: archived
-  - name: github-software-analytics-embedding
-    description: Seminar project on analysis and visualization of software data (summer term 2022).
-    status: archived
+  projects: []
 
 - github: cgcostume
   name: Daniel Limberger
   thumbnail: gh-cgcostume.png
   active: 2013 – today
-  status: active
   summary:
     Personal projects and code accompanying my theses and publications.
   projects:
@@ -89,16 +74,18 @@ accounts:
   name: halb3
   thumbnail: gh-halb3.png
   active: 2021 – 2023
-  status: inactive
   summary:
     Modular TypeScript packages for building 2.5D visualization tools on the web, from WebGL rendering of points, lines, text, and charts to color schemes, math, and navigation.
   projects:
-  - name: haeley-webgl
-    description: WebGL rendering core with extensions for points, lines, text, charts, glTF, and physically based rendering.
+  - name: math
+    description: Math utilities for 2.5D visualization and rendering.
     status: inactive
   - name: colors
     description: Color and color scheme handling for visualization.
     status: inactive
   - name: navigation
     description: Camera navigation for interactive 2.5D and 3D views.
+    status: inactive
+  - name: auxiliaries
+    description: Shared helpers used across the packages.
     status: inactive

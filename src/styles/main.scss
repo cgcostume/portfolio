@@ -215,22 +215,21 @@ footer {
 
 .projects li {
   margin-bottom: 0.5rem;
-
-  .badge {
-    margin-left: 0.5em;
-    border-radius: $border-radius-sm;
-    vertical-align: text-bottom;
-  }
 }
 
-// shown for inactive repositories
-.bg-gray {
-  background-color: $gray-600;
+// project status as small caps, top-aligned with the project name
+.status {
+  margin-left: 0.6em;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  vertical-align: text-top;
+  color: $gray-600;
 }
 
-h3 .badge,
-small .badge {
-  border-radius: $border-radius-sm;
+.status-active,
+.status-maintained {
+  color: $primary;
 }
 
 // email directly below the name

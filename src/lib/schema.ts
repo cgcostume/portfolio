@@ -71,7 +71,6 @@ export const repositories = z.object({
         name: z.string(),
         thumbnail: z.string(),
         active: z.string(),
-        status,
         summary: z.string(),
         projects: z.array(z.object({
             name: z.string(),

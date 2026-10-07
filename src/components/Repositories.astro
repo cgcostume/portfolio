@@ -5,8 +5,6 @@ import { header, repositories as data } from '../lib/data';
 interface Props { selected?: boolean; }
 const { selected = false } = Astro.props;
 
-// note: bootstrap's secondary color is customized (pink), so gray is used for inactive projects
-const badge = { active: 'bg-success', maintained: 'bg-primary', inactive: 'bg-gray', archived: 'bg-dark' } as const;
 ---
 
 <div class="row text-center">
@@ -41,14 +39,14 @@ const badge = { active: 'bg-success', maintained: 'bg-primary', inactive: 'bg-gr
     </div>
     <div class="col-lg-10 col-sm-9 col-12 mt-3 mt-sm-0">
       <h3><a class="text-body" href={`https://github.com/${account.github}`}>{account.name}</a></h3>
-      <p><small>github.com/{account.github}&ensp;|&ensp;{account.active}&ensp;<span class={`badge ${badge[account.status]}`}>{account.status}</span></small></p>
+      <p><small>github.com/{account.github}&ensp;|&ensp;{account.active}</small></p>
       <p>{account.summary}</p>
       {account.projects.length > 0 && (
         <ul class="list-unstyled projects">
           {account.projects.map((project) => (
             <li>
               <a href={`https://github.com/${account.github}/${project.name}`}>{project.name}</a>
-              <span class={`badge ${badge[project.status]}`}>{project.status}</span>
+              <span class={`status status-${project.status}`}>{project.status}</span>
               <br /><small>{project.description}</small>
             </li>
           ))}
