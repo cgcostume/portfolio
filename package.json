@@ -12,7 +12,8 @@
         "start": "astro dev",
         "check": "astro check",
         "build": "astro check && astro build",
-        "preview": "astro preview"
+        "preview": "astro preview",
+        "check:publications": "node scripts/check-publications.ts"
     },
     "devDependencies": {
         "@astrojs/check": "^0.9.10",

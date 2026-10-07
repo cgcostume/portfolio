@@ -38,6 +38,7 @@ Content lives in `src/data/` (YAML and BibTeX), source images in `src/assets/ima
 - `pnpm install` installs all necessary dependencies.
 - `pnpm dev` launches a local server for development and testing.
 - `pnpm build` creates the static site in `dist/`, `pnpm preview` serves it.
+- `pnpm check:publications` compares the publication list with ORCID and Crossref (also run monthly via GitHub Actions).
 
 ### Deployment
 - Commits to `main` trigger GitHub Actions, which build the site and push it to the `deploy` branch it is served from.
