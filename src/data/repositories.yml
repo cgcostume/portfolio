@@ -11,15 +11,16 @@ accounts:
   active: 2013 – today
   status: maintained
   summary:
-    Open-source C++ and TypeScript libraries for real-time computer graphics, originating from research and teaching at the Hasso Plattner Institute and continued by CG Internals.
-    I initiated and co-designed several of these libraries and was the main developer of webgl-operate.
+    Open-source C++ and TypeScript libraries for real-time computer graphics of CG Internals, the computer graphics company I co-founded.
+    The company has since been dissolved, but some of the libraries are still loosely maintained.
+    I initiated and co-designed several of them and was the main developer of webgl-operate.
   projects:
   - name: glbinding
     description: Cross-platform C++ binding for the OpenGL API, generated from the gl.xml specification.
     status: maintained
   - name: webgl-operate
     description: TypeScript-based WebGL rendering framework with progressive, multi-frame rendering.
-    status: maintained
+    status: inactive
   - name: cmake-init
     description: Template for reliable, cross-platform C++ project setup using CMake.
     status: maintained
