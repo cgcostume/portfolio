@@ -90,5 +90,14 @@ accounts:
   active: 2021 – 2023
   status: inactive
   summary:
-    TODO
-  projects: []
+    Modular TypeScript packages for building 2.5D visualization tools on the web, from WebGL rendering of points, lines, text, and charts to color schemes, math, and navigation.
+  projects:
+  - name: haeley-webgl
+    description: WebGL rendering core with extensions for points, lines, text, charts, glTF, and physically based rendering.
+    status: inactive
+  - name: colors
+    description: Color and color scheme handling for visualization.
+    status: inactive
+  - name: navigation
+    description: Camera navigation for interactive 2.5D and 3D views.
+    status: inactive
