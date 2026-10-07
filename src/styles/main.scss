@@ -1,8 +1,8 @@
 @charset "utf-8";
 
-@import "~@fontsource/roboto/latin-300.css";
-@import "~@fontsource/roboto/latin-700.css";
-@import "~@fontsource/roboto-mono/latin-400.css";
+@import "@fontsource/roboto/latin-300.css";
+@import "@fontsource/roboto/latin-700.css";
+@import "@fontsource/roboto-mono/latin-400.css";
 
 // variables override
 
@@ -43,8 +43,6 @@ $aspect-ratios: (
   "21x9": calc(9 / 21 * 100%),
   "4x1": calc(1 / 4 * 100%)
 );
-
-@import "bootstrap/scss/bootstrap";
 
 // bootstrap modules - include path set by package script "sass"
 
@@ -217,6 +215,10 @@ footer {
 
 .project {
   padding-bottom: 1rem;
+}
+
+.bars {
+  vertical-align: middle;
 }
 
 .badge.animate {

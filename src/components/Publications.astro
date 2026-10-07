@@ -1,0 +1,84 @@
+---
+import Thumbnail from './Thumbnail.astro';
+import { bibliography, byDateDesc, happyAnd, header, publications as data, selection } from '../lib/data';
+
+interface Props { selected?: boolean; }
+const { selected = false } = Astro.props;
+
+const publications = selection(data.publications, selected).sort(byDateDesc);
+---
+
+<div class="row text-center">
+  <div class="col-12">
+    {selected ? (
+      <>
+        <h2>Selected <strong>{data.heading}</strong></h2>
+        <p><a class="text-secondary" href="/publications.html">Show <strong>all {data.heading}</strong></a></p>
+      </>
+    ) : (
+      <>
+        <h2>All <strong>{data.heading}</strong></h2>
+        <p><a class="text-secondary" href="/index.html#publications">by <strong>{header.name} {header.surname}</strong></a></p>
+      </>
+    )}
+
+    <p class="pt-0">Research Profiles:&ensp;
+      <a href={`https://orcid.org/${data.orcid}`}>ORCID</a>
+      <br class="d-inline d-sm-none" /><span class="d-none d-sm-inline">&ensp;|&ensp;</span>
+      <a href={`https://www.researchgate.net/profile/${data.researchgate}`}>Research Gate</a>
+      <br class="d-inline d-sm-none" /><span class="d-none d-sm-inline">&ensp;|&ensp;</span>
+      <a href={`https://scholar.google.de/citations?user=${data.scholar}`}>Google Scholar</a>
+    </p>
+  </div>
+</div>
+
+{publications.map((p: any) => p.key === 'separator' ? <hr class="row separator" /> : (
+  <div class="row" id={p.key}>
+    <div class="col-lg-2 col-sm-3">
+      <Thumbnail src={p.thumbnail} alt={p.title} flickr={p.flickr} />
+    </div>
+    <div class="d-block d-sm-none mb-3 col-12"></div>
+
+    <div class="col-lg-10 col-sm-9">
+      <h3>{p.title}</h3>
+      <p>
+        {p.published}, {p.date.slice(0, 4)}
+        {p.lead_note && <>,&nbsp;{p.lead_href ? <a href={p.lead_href}>{p.lead_note}</a> : p.lead_note}</>}
+      </p>
+      <p><small>{happyAnd(p.authors)}</small></p>
+
+      <p>
+        {p.abstract && <>
+          <a data-bs-toggle="collapse" href={`#abstract-${p.key}`}>Abstract</a>
+          {(p.bibtex || p.downloads) && <Fragment set:html="&ensp;|&ensp;" />}
+        </>}
+        {p.bibtex && <>
+          <a data-bs-toggle="collapse" href={`#bibtex-${p.key}`}>BibTeX</a>
+          {p.downloads && <Fragment set:html="&ensp;|&ensp;" />}
+        </>}
+        {p.downloads?.map((download: any, index: number) => <>
+          <a href={download.href}>{download.desc}</a>
+          {index < p.downloads.length - 1 && <Fragment set:html="&ensp;|&ensp;" />}
+        </>)}
+      </p>
+
+      {p.abstract && (
+        <div class="collapse abstract" id={`abstract-${p.key}`}>
+          <p set:html={p.abstract} />
+        </div>
+      )}
+
+      {p.bibtex && (
+        <div class="collapse bibtex" id={`bibtex-${p.key}`}>
+          <div class="position-absolute top-0 end-0">
+            <a class="btn btn-sm" download={`${p.bibtex}.bib`} href={`/bibliography/${p.bibtex}.bib`}>Download</a>
+            <button class="btn btn-sm btn-clipboard js-only" type="button" data-clipboard-target={`#bibtex-data-${p.key}`}>Copy to Clipboard</button>
+          </div>
+          <div class="card-body">
+            <pre id={`bibtex-data-${p.key}`}>{bibliography[p.bibtex]}</pre>
+          </div>
+        </div>
+      )}
+    </div>
+  </div>
+))}

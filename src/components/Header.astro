@@ -1,0 +1,57 @@
+---
+import { contact, header } from '../lib/data';
+import { square } from '../lib/images';
+
+const [picture, pictureInput] = await Promise.all([square(header.picture, 768), square(header.picture_input, 768)]);
+---
+
+<header>
+  <div class="row text-center">
+    <div class="col-lg-6 offset-lg-3 col-sm-8 offset-sm-2">
+      <figure class="figure figure-with-overlay">
+        <picture>
+          <source srcset={picture.avif} type="image/avif" />
+          <img class="figure-img img-fluid mb-0 rounded" src={picture.webp} alt={header.picture_label} width="768" height="768" />
+        </picture>
+
+        <div class="figure-overlay">
+          <picture>
+            <source srcset={pictureInput.avif} type="image/avif" />
+            <img class="img-fluid rounded" id="picture-input" src={pictureInput.webp} alt={header.picture_label} width="768" height="768" hidden />
+          </picture>
+        </div>
+
+        <div class="figure-toggle">
+          <input class="btn-check" type="checkbox" id="picture-input-toggle" autocomplete="off" />
+          <label class="btn badge bg-dark position-absolute bottom-0 end-0" for="picture-input-toggle">Show Photo</label>
+        </div>
+
+        {header.picture_copyright && (
+          <figcaption class="figure-caption mt-1 text-start" id="picture-copyright">&copy; {header.picture_copyright}</figcaption>
+        )}
+      </figure>
+    </div>
+
+    <div class="col-12">
+      <h1>{header.title ? `${header.title} ` : ''}{header.name} <br /> <strong>{header.surname}</strong></h1>
+
+      <p class="lead">
+        {header.leads.map((lead: string, index: number) => (
+          <>
+            {lead}
+            {index < header.leads.length - 1 && (
+              <><br class="d-inline d-sm-none" /><span class="d-none d-sm-inline">&ensp;&mdash;&ensp;</span></>
+            )}
+          </>
+        ))}
+      </p>
+
+      <p>
+        <a href={`mailto:${contact.email}`}>{contact.email}</a>
+        {contact.vcard && (
+          <><br class="d-inline d-sm-none" /><span class="d-none d-sm-inline">&ensp;|&ensp;</span><a href={contact.vcard}>{contact.vcard_label}</a></>
+        )}
+      </p>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,27 @@
+---
+// Static replacement for peity bar charts: one bar per value, scaled to [0, 4].
+// Values above 4 (i.e., no evaluation available) are drawn in gray.
+
+interface Props { values: number[]; }
+const { values } = Astro.props;
+
+const height = 16;
+const barWidth = 8;
+const padding = 0.2;
+const max = Math.max(4.0, ...values);
+
+const bars = values.map((value, i) => {
+  const h = Math.max(1, (value / max) * height);
+  return {
+    x: (i + padding) * barWidth,
+    y: height - h,
+    w: barWidth * (1 - 2 * padding),
+    h,
+    fill: value > 4 ? '#adb5bd' : '#343a40',
+  };
+});
+---
+
+<svg class="bars" width={barWidth * values.length} height={height} aria-label={values.join(', ')} role="img">
+  {bars.map((b) => <rect x={b.x} y={b.y} width={b.w} height={b.h} fill={b.fill} />)}
+</svg>

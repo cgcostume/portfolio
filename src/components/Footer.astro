@@ -1,0 +1,21 @@
+---
+import { header, revision } from '../lib/data';
+
+const today = new Date();
+---
+
+<footer>
+  <div class="row text-center">
+    <div class="col-12">
+      <p class="mt-5 mb-1">
+        &copy; 2015&thinsp;&ndash;&thinsp;{today.getFullYear()} {header.surname} {header.name}
+      </p>
+      <small class="mt-0 mb-5">
+        <span class="text-muted">This website was last updated on {today.toLocaleDateString('en-us', { day: '2-digit', month: '2-digit', year: 'numeric' })}</span>
+        &ensp;|&ensp;
+        <a href={header.sources} class="text-muted">{header.sources_label}</a>
+      </small>
+    </div>
+  </div>
+  <data hidden value={revision}>revision</data>
+</footer>

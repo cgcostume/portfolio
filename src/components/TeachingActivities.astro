@@ -1,0 +1,151 @@
+---
+import Bars from './Bars.astro';
+import Thumbnail from './Thumbnail.astro';
+import { header, teaching as data } from '../lib/data';
+
+interface Props { selected?: boolean; }
+const { selected = false } = Astro.props;
+
+const terms = [...data.terms].sort((a: any, b: any) => a.term < b.term ? +1 : a.term > b.term ? -1 : 0);
+const translations = data.translations;
+
+const match = (tags: string, pattern: RegExp) => [...tags.matchAll(pattern)].flat();
+const roles = (tags: string) => match(tags, /\btutor\b|\bsupervisor\b|\blecturer\b|\bco-lecturer\b/g);
+const types = (tags: string) => match(tags, /\blecture\b|\bseminar\b|\bproject\b|\bthesis\b/g);
+const programs = (tags: string) => match(tags, /\bba\b|\bma\b|\bmooc\b|\byouth\b/g);
+const translate = (keys: string[]) => keys.map((key) => translations[key]);
+
+// Each course and thesis contributes its (inverted) personal grade; 4.0001 marks a missing evaluation.
+const entries = [...terms.flatMap((t: any) => t.courses), ...data.theses].map((e: any) => ({
+  tags: e.tags.replaceAll(' ', '').split(','),
+  grade: 5.0 - parseFloat(e.grade_personal) || 4.0001,
+}));
+
+const grades = (include: string[], exclude: string[] = []) => entries
+  .filter(({ tags }) => include.every((t) => tags.includes(t)) && exclude.every((t) => !tags.includes(t)))
+  .map(({ grade }) => grade);
+
+const rows = (program: string) => ({
+  graphicsLecturer: grades([program, 'lecturer', 'graphics']),
+  graphicsOthers: grades([program, 'graphics'], program === 'ba' ? ['lecturer', 'thesis', 'project'] : ['lecturer']),
+  engineering: grades([program, 'engineering'], program === 'ba' ? ['project', 'thesis'] : ['project']),
+  visualization: grades([program, 'visualization'], program === 'ba' ? ['project', 'thesis'] : ['project']),
+  projects: grades([program, 'project']),
+  theses: grades([program, 'thesis']),
+});
+const ba = rows('ba');
+const ma = rows('ma');
+
+const thumbnails = [
+  ['teaching-triangle-rasterization.png', 'Triangle Rasterization Algorithms'],
+  ['teaching-terrain-rendering.png', 'Tile-based Terrain Rendering'],
+  ['teaching-arboretum.png', 'Arboretum'],
+  ['teaching-cornell-box-webgl.png', 'Cornell Box Path traced using WebGL and TypeScript'],
+];
+
+const pairs = Array.from({ length: Math.ceil(terms.length / 2) }, (_, i) => terms.slice(2 * i, 2 * i + 2));
+---
+
+<div class="row text-center justify-content-md-center">
+  <div class="col-12 mb-2">
+    {selected ? (
+      <>
+        <h2>Selected <strong>{data.heading}</strong></h2>
+        <p class="py-0"><a class="text-secondary" href="/teaching-activities.html">Show <strong>all {data.heading}</strong></a></p>
+      </>
+    ) : (
+      <>
+        <h2>All <strong>{data.heading}</strong></h2>
+        <p class="py-0"><a class="text-secondary" href="/index.html#teaching">by <strong>{header.name} {header.surname}</strong></a></p>
+      </>
+    )}
+  </div>
+  {thumbnails.map(([src, alt]) => <div class="col-3"><Thumbnail src={src} alt={alt} /></div>)}
+</div>
+
+<div class="row justify-content-md-center mt-2rem">
+  <div class="col-12">
+    <p class="text-start">
+      For nearly a decade, I have supported and actively steered the teaching efforts within the Computer Graphics Systems Group at the Hasso Plattner Institute.{" "}
+      {selected
+        ? 'The following shows a summary of selected teaching activities from 2012 to 2022:'
+        : 'The following shows a comprehensive list of my teaching activities:'}
+    </p>
+  </div>
+</div>
+
+{selected ? (
+  <div class="row justify-content-md-center">
+    <div class="col-12">
+      <table class="table table-sm table-borderless">
+        <thead>
+          <tr>
+            <th scope="col" class="pe-2"><span class="d-block d-lg-none">Focus</span><span class="d-none d-lg-block">Teaching Focus</span></th>
+            <th scope="col" class="ps-2"><span class="d-block d-lg-none">Role</span><span class="d-none d-lg-block">Active Role</span></th>
+            <th scope="col" class="ba"><span class="d-block d-lg-none">Bachelor</span><span class="d-none d-lg-block">Bachelors's Program</span></th>
+            <th scope="col" class="ma"><span class="d-block d-lg-none">Master</span><span class="d-none d-lg-block">Masters's Program</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2" class="border-end pe-2"><span class="text-muted">Real-time</span> Computer Graphics</td>
+            <td class="ps-2">Lecturer</td>
+            <td class="ba"><Bars values={ba.graphicsLecturer} /></td><td class="ma"><Bars values={ma.graphicsLecturer} /></td>
+          </tr>
+          <tr>
+            <td class="ps-2">Tutor and/or Co-Lecturer</td>
+            <td class="ba"><Bars values={ba.graphicsOthers} /></td><td class="ma"><Bars values={ma.graphicsOthers} /></td>
+          </tr>
+          <tr>
+            <td class="pe-2">Programming &amp; Software Engineering</td>
+            <td class="ps-2">Tutor and/or Co-Lecturer</td>
+            <td class="ba"><Bars values={ba.engineering} /></td><td class="ma"><Bars values={ma.engineering} /></td>
+          </tr>
+          <tr>
+            <td class="pe-2">Visualization &amp; Visual Analytics</td>
+            <td class="ps-2">Tutor and/or Co-Lecturer</td>
+            <td class="ba"><Bars values={ba.visualization} /></td><td class="ma"><Bars values={ma.visualization} /></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td class="pe-2"><span class="text-muted">Bachelor's and Master's</span> Projects</td>
+            <td class="ps-2">Supervisor</td>
+            <td class="ba"><Bars values={ba.projects} /></td><td class="ma"><Bars values={ma.projects} /></td>
+          </tr>
+          <tr>
+            <td class="pe-2"><span class="text-muted">Bachelor's and Master's</span> Theses</td>
+            <td class="ps-2">Supervisor</td>
+            <td class="ba"><Bars values={ba.theses} /></td><td class="ma"><Bars values={ma.theses} /></td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <p class="text-end text-muted">
+        <small>
+          <Bars values={[4.0]} /> Each bar represents one semester with the evaluation score (given by students) mapped to its height:
+          <Bars values={[4.0]} /> &wedgeq; 1.0, <Bars values={[1.0]} /> &wedgeq; 4.0.
+          <br />
+          <Bars values={[4.0001]} /> Bars colored gray indicate that no evaluation was available, most likely due to an insufficient number of votes.
+        </small>
+      </p>
+    </div>
+  </div>
+) : pairs.map((pair, p) => (
+  <div class="row justify-content-md-center">
+    {pair.map((t: any, j: number) => (
+      <div class={`col-md-5 col-sm-10 ${(2 * p + j) % 2 ? 'text-start' : 'text-md-end text-start'}`}>
+        <h3 class="mt-2" set:html={t.term} />
+        {t.courses.map((c: any) => (
+          <p>
+            {c.course}
+            <br />
+            <small>
+              {translate(types(c.tags)).join(', ')} ({translate(programs(c.tags)).join(' | ')}), {translate(roles(c.tags)).join(' & ')}
+            </small>
+          </p>
+        ))}
+      </div>
+    ))}
+  </div>
+))}

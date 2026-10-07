@@ -1,0 +1,25 @@
+---
+import { config } from '../lib/data';
+import { square } from '../lib/images';
+
+interface Props { src: string; alt: string; flickr?: string; }
+const { src, alt, flickr } = Astro.props;
+
+const { w, h } = config.img_defaults.thumbnail;
+const [small, large] = await Promise.all([square(src, 384), square(src, 768)]);
+---
+
+<div class="thumbnail position-relative">
+  {flickr && (
+    <a class="thumbnail flickr" href={`https://www.flickr.com/photos/${config.flickr_user}/sets/${flickr}/`} data-photoset-id={flickr}>
+      <span class="badge bg-primary position-absolute top-0 start-0">Flickr</span>
+    </a>
+  )}
+  <picture>
+    {/* multi-column layout (≥576px, col-sm-3 or col-lg-2): serve 384px images */}
+    <source media="(min-width: 576px)" srcset={small.avif} type="image/avif" />
+    <source media="(min-width: 576px)" srcset={small.webp} type="image/webp" />
+    <source srcset={large.avif} type="image/avif" />
+    <img class="img-fluid rounded" width={w} height={h} src={large.webp} alt={`Thumbnail of ${alt}`} loading="lazy" decoding="async" />
+  </picture>
+</div>

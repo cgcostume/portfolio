@@ -35,15 +35,18 @@ The complete site's content is based on a json/yaml file per section (e.g., `con
 
 ## Development
 
-This website uses [Pug](https://pugjs.org/api/getting-started.html), [Bootstrap 5](http://getbootstrap.com/), [GLightbox](https://biati-digital.github.io/glightbox/), and can access the [Flickr API](https://www.flickr.com/services/api/).
+This website uses [Astro](https://astro.build/), [Bootstrap 5](http://getbootstrap.com/), [GLightbox](https://biati-digital.github.io/glightbox/), and can access the [Flickr API](https://www.flickr.com/services/api/).
+
+Content lives in `src/data/` (YAML and BibTeX), source images in `src/assets/images/` (AVIF/WebP variants are generated at build time), and static files such as PDFs in `public/`.
 
 ### Prerequisites
-- [Node.js](https://nodejs.org/en) and [npm](https://www.npmjs.com/) are required for development and testing.
+- [Node.js](https://nodejs.org/en) and [pnpm](https://pnpm.io/) are required for development and testing.
+- PDFs are stored with [Git LFS](https://git-lfs.com/).
 
 ### Development Commands
-- `npm install` installs all necessary dependencies.
-- `npm start` launches a local server for development and testing.
-- `npm run build:dev` and `npm run build` are used to create the static site.
+- `pnpm install` installs all necessary dependencies.
+- `pnpm dev` launches a local server for development and testing.
+- `pnpm build` creates the static site in `dist/`, `pnpm preview` serves it.
 
 ### Deployment
-- Commits trigger GitHub Actions, which deploy updates to the `gh-pages` branch and are served directly from there.
+- Commits to `main` trigger GitHub Actions, which build the site and push it to the `deploy` branch it is served from.

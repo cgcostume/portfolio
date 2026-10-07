@@ -4,5 +4,4 @@ build
 node_modules
 dist
 deploy
-*.webp
-*.avif
+.astro

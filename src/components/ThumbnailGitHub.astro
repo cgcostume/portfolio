@@ -1,0 +1,17 @@
+---
+import { config } from '../lib/data';
+import { square } from '../lib/images';
+
+interface Props { src: string; userorg: string; }
+const { src, userorg } = Astro.props;
+
+const { w, h } = config.img_defaults.thumbnail;
+const image = await square(src, 384);
+---
+
+<a href={`https://github.com/${userorg}`} class="thumbnail gh-thumbnail position-relative">
+  <picture>
+    <source srcset={image.avif} type="image/avif" />
+    <img class="img-fluid rounded" width={w} height={h} src={image.webp} alt={`GitHub avatar of ${userorg}`} loading="lazy" decoding="async" />
+  </picture>
+</a>

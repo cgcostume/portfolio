@@ -1,0 +1,16 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Publications from '../components/Publications.astro';
+import Repositories from '../components/Repositories.astro';
+import TeachingActivities from '../components/TeachingActivities.astro';
+import Todo from '../components/Todo.astro';
+---
+
+<Layout>
+  <section id="header" class="container"><Header /></section>
+  <section id="publications" class="container"><Publications selected /></section>
+  <section id="repositories" class="container"><Repositories selected /></section>
+  <section id="teaching" class="container"><TeachingActivities selected /></section>
+  <section id="todo" class="container"><Todo /></section>
+</Layout>
