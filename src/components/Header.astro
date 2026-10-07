@@ -1,8 +1,15 @@
 ---
-import { contact, header } from '../lib/data';
+import { contact, header, publications } from '../lib/data';
 import { square } from '../lib/images';
 
 const [picture, pictureInput] = await Promise.all([square(header.picture, 768), square(header.picture_input, 768)]);
+
+const profiles = [
+  { name: 'ORCID', href: `https://orcid.org/${publications.orcid}` },
+  { name: 'Google Scholar', href: `https://scholar.google.de/citations?user=${publications.scholar}` },
+  { name: 'ResearchGate', href: `https://www.researchgate.net/profile/${publications.researchgate}` },
+  ...contact.refs,
+];
 ---
 
 <header>
@@ -21,7 +28,7 @@ const [picture, pictureInput] = await Promise.all([square(header.picture, 768), 
           </picture>
         </div>
 
-        <div class="figure-toggle">
+        <div class="figure-toggle js-only">
           <input class="btn-check" type="checkbox" id="picture-input-toggle" autocomplete="off" />
           <label class="btn badge bg-dark position-absolute bottom-0 end-0" for="picture-input-toggle">Show Photo</label>
         </div>
@@ -48,6 +55,9 @@ const [picture, pictureInput] = await Promise.all([square(header.picture, 768), 
 
       <p>
         <a href={`mailto:${contact.email}`}>{contact.email}</a>
+      </p>
+      <p class="pipes">
+        {profiles.map(({ name, href }) => <a href={href}>{name}</a>)}
       </p>
     </div>
   </div>

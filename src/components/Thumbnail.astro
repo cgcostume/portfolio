@@ -20,6 +20,6 @@ const [small, large] = await Promise.all([square(src, 384), square(src, 768)]);
     <source media="(min-width: 576px)" srcset={small.avif} type="image/avif" />
     <source media="(min-width: 576px)" srcset={small.webp} type="image/webp" />
     <source srcset={large.avif} type="image/avif" />
-    <img class="img-fluid rounded" width={w} height={h} src={large.webp} alt={`Thumbnail of ${alt}`} loading="lazy" decoding="async" />
+    <img class="img-fluid rounded" width={w} height={h} src={large.webp} alt={alt} loading="lazy" decoding="async" />
   </picture>
 </div>

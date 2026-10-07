@@ -29,7 +29,7 @@ const person = {
     `https://orcid.org/${publications.orcid}`,
     `https://scholar.google.de/citations?user=${publications.scholar}`,
     `https://www.researchgate.net/profile/${publications.researchgate}`,
-    'https://github.com/cgcostume',
+    ...contact.refs.map((ref) => ref.href),
   ],
 };
 ---

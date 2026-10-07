@@ -7,7 +7,7 @@
 // variables override
 
 $body-color: #343a40 !default;
-$primary: #0dcaf0 !default;
+$primary: #087f9e !default; // contrast 4.6:1 on white (WCAG AA)
 $secondary: #d63384 !default;
 // $primary: #6cbb23 !default;
 // $primary: #4e8aad !default;
@@ -103,7 +103,7 @@ p {
 }
 
 header {
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 
@@ -116,7 +116,7 @@ h1 {
 h2 {
   font-size: $font-size-base * 2.5;
   @extend .text-uppercase;
-  @extend .my-5;
+  @extend .my-4;
 }
 
 h1,
@@ -187,7 +187,7 @@ header {
 
 section,
 footer {
-  padding: 4rem 0 0;
+  padding: 2rem 0 0;
 }
 
 footer {
@@ -224,6 +224,26 @@ footer {
 .badge.animate {
   -webkit-animation: sk-scaleout 0.66s infinite ease-in-out;
   animation: sk-scaleout 0.66s infinite ease-in-out;
+}
+
+// inline lists separated by pipes, e.g., profile links
+
+// separator is appended to the preceding item, so wrapped lines never start with a pipe
+.pipes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pipes > * {
+  white-space: nowrap;
+
+  &:not(:last-child)::after {
+    content: '|';
+    display: inline-block;
+    padding: 0 0.5em;
+    color: $body-color;
+  }
 }
 
 // link row of a publication: summaries of abstract and bibtex stay in line with the other links,

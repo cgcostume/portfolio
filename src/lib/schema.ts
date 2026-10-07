@@ -14,6 +14,7 @@ export const config = z.object({
 export const contact = z.object({
     email: z.email(),
     email_label: z.string(),
+    refs: z.array(z.object({ name: z.string(), href: z.url() })).default([]),
 });
 
 export const header = z.object({

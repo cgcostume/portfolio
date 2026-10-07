@@ -22,13 +22,6 @@ const publications = selection(data.publications, selected).sort(byDateDesc);
       </>
     )}
 
-    <p class="pt-0">Research Profiles:&ensp;
-      <a href={`https://orcid.org/${data.orcid}`}>ORCID</a>
-      <br class="d-inline d-sm-none" /><span class="d-none d-sm-inline">&ensp;|&ensp;</span>
-      <a href={`https://www.researchgate.net/profile/${data.researchgate}`}>Research Gate</a>
-      <br class="d-inline d-sm-none" /><span class="d-none d-sm-inline">&ensp;|&ensp;</span>
-      <a href={`https://scholar.google.de/citations?user=${data.scholar}`}>Google Scholar</a>
-    </p>
   </div>
 </div>
 
