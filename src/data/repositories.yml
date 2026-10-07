@@ -6,6 +6,29 @@ heading: Repositories
 
 accounts:
 
+- github: cgcostume
+  name: Daniel Limberger
+  thumbnail: gh-cgcostume.png
+  active: 2013 – today
+  summary:
+    Personal projects and code accompanying my theses and publications.
+  projects:
+  - name: himmelszelt
+    description: Family of small, composable TypeScript and WebGPU libraries for rendering the sky, a port of osgHimmel.
+    status: active
+  - name: pubg-maps
+    description: Terrain maps (heights and normals) of PlayerUnknown's Battlegrounds and Fortnite.
+    status: inactive
+  - name: osghimmel
+    description: Real-time rendering of day and night sky phenomena for OpenSceneGraph (master's thesis, VMV 2012).
+    status: archived
+  - name: web3d-treemaps
+    description: Dynamic 2.5D treemaps using declarative 3D on the web (Web3D 2016).
+    status: archived
+  - name: portfolio
+    description: Source code of this website.
+    status: active
+
 - github: cginternals
   name: CG Internals
   thumbnail: gh-cginternals.png
@@ -49,26 +72,6 @@ accounts:
   summary:
     Teaching and research code of the Computer Graphics Systems Group at the Hasso Plattner Institute, e.g., lecture sandboxes as well as seminar and student projects I supervised.
   projects: []
-
-- github: cgcostume
-  name: Daniel Limberger
-  thumbnail: gh-cgcostume.png
-  active: 2013 – today
-  summary:
-    Personal projects and code accompanying my theses and publications.
-  projects:
-  - name: pubg-maps
-    description: Terrain maps (heights and normals) of PlayerUnknown's Battlegrounds and Fortnite.
-    status: inactive
-  - name: osghimmel
-    description: Real-time rendering of day and night sky phenomena for OpenSceneGraph (master's thesis, VMV 2012).
-    status: archived
-  - name: web3d-treemaps
-    description: Dynamic 2.5D treemaps using declarative 3D on the web (Web3D 2016).
-    status: archived
-  - name: portfolio
-    description: Source code of this website.
-    status: active
 
 - github: halb3
   name: halb3
