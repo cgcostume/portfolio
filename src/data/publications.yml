@@ -450,8 +450,8 @@ publications:
   - Daniel Limberger
   - Anne Gropler
   - Stefan Buschmann
-  - Jürgen Döllner
   - Benjamin Wasty
+  - Jürgen Döllner
   published: Proc. IEEE Int. Conf. Information Visualisation (iV)
   abstract:
     Today's rendering APIs lack robust functionality and capabilities for dynamic, real-time text rendering and labeling, which represent key requirements for 3D application design in many fields.
@@ -698,8 +698,8 @@ publications:
   date: '2020-11-09'
   authors:
   - Lukas Wagner
-  - Willy Scheibel
   - Daniel Limberger
+  - Willy Scheibel
   - Matthias Trapp
   - Jürgen Döllner
   published: Proc. ACM Int. Conf. on Web3D Technology (Web3D)
@@ -804,7 +804,7 @@ publications:
   authors:
   - Daniel Limberger
   - Willy Scheibel
-  - Jan Dieken
+  - Jan van Dieken
   - Jürgen Döllner
   published: Proc. ACM Int. Symp. on Visual Information Communication and Interaction (VINCI)
   abstract:
@@ -1022,7 +1022,7 @@ publications:
 
 - key: 2022-eurocarto-pointcloud-cartography
   bibtex: wegen2022-pointcloud-cartography
-  title: Non-Photorealistic Rendering of Point Clouds for Cartographic Visualization
+  title: Non-Photorealistic Rendering of 3D Point Clouds for Cartographic Visualization
   date: '2022-09-18'
   authors:
   - Ole Wegen
