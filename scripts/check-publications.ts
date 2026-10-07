@@ -13,8 +13,14 @@ interface Publication { key: string; title?: string; date: string; authors?: str
 const normalize = (text = '') => text.normalize('NFD').toLowerCase().replace(/[^a-z0-9]/g, '');
 const sameTitle = (a?: string, b?: string) => normalize(a).slice(0, 40) === normalize(b).slice(0, 40);
 
-async function json(url: string) {
+/** Fetches JSON, retrying on rate limits and server errors; returns undefined on 404. */
+async function json(url: string, attempts = 4): Promise<any> {
     const response = await fetch(url, { headers: { Accept: 'application/json', 'User-Agent': `portfolio-check (https://orcid.org/${ORCID})` } });
+    if (response.status === 404) return undefined;
+    if ((response.status === 429 || response.status >= 500) && attempts > 1) {
+        await new Promise((resolve) => setTimeout(resolve, 2000));
+        return json(url, attempts - 1);
+    }
     if (!response.ok) throw new Error(`${response.status} ${response.statusText}: ${url}`);
     return response.json();
 }
@@ -45,9 +51,8 @@ console.log('Crossref');
 for (const p of publications) {
     const dois = (p.downloads ?? []).map((d) => d.href.match(/doi\.org\/(.+)$/)?.[1]).filter((doi) => doi !== undefined);
     for (const doi of dois) {
-        let work;
-        try { work = (await json(`https://api.crossref.org/works/${encodeURIComponent(doi)}`)).message; }
-        catch { continue; } // DOI not registered with Crossref (e.g., Eurographics, Zenodo)
+        const work = (await json(`https://api.crossref.org/works/${encodeURIComponent(doi)}`))?.message;
+        if (!work) continue; // DOI not registered with Crossref (e.g., Eurographics, Zenodo)
 
         const title = work.title?.[0];
         const year = String(work.issued?.['date-parts']?.[0]?.[0]);
