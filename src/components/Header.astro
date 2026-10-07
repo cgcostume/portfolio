@@ -48,9 +48,6 @@ const [picture, pictureInput] = await Promise.all([square(header.picture, 768), 
 
       <p>
         <a href={`mailto:${contact.email}`}>{contact.email}</a>
-        {contact.vcard && (
-          <><br class="d-inline d-sm-none" /><span class="d-none d-sm-inline">&ensp;|&ensp;</span><a href={contact.vcard}>{contact.vcard_label}</a></>
-        )}
       </p>
     </div>
   </div>
