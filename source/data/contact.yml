@@ -5,9 +5,6 @@ vcard_label: vCard
 email: cgdaniel@outlook.com
 email_label: E-Mail
 
-phone: +49 163 568 2818
-phone_label: Phone
-
 refs:
 - name: GitHub
   href: https://github.com/cgcostume
