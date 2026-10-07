@@ -226,9 +226,13 @@ footer {
   animation: sk-scaleout 0.66s infinite ease-in-out;
 }
 
-// link row of a publication: abstract and bibtex expand in place, separated by pipes
+// link row of a publication: summaries of abstract and bibtex stay in line with the other links,
+// expanded content is moved below the row (details are flattened via display: contents)
 
 .links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
 
   > a:not(:first-child)::before,
   > details:not(:first-child) > summary::before {
@@ -238,20 +242,8 @@ footer {
     color: $body-color;
   }
 
-  // no separator directly below expanded content
-  > details[open] + a::before,
-  > details[open] + details > summary::before,
-  > details[open] > summary::before {
-    content: none;
-  }
-
-  // closed: inline with the other links, open: full width with content below the summary
   > details {
-    display: inline-block;
-
-    &[open] {
-      display: block;
-    }
+    display: contents;
 
     > summary {
       display: inline;
@@ -264,10 +256,14 @@ footer {
       }
     }
 
-    // expanded content is rendered as block between the summary and the following links
-    > :not(summary) {
-      display: block;
-      margin: 1rem 0;
+    &::details-content {
+      order: 1;
+      flex-basis: 100%;
+      margin-top: 1rem;
+    }
+
+    &:not([open])::details-content {
+      display: none;
     }
   }
 }
