@@ -46,7 +46,7 @@ const { selected = false } = Astro.props;
           {account.projects.map((project) => (
             <li>
               <a href={`https://github.com/${account.github}/${project.name}`}>{project.name}</a>
-              <span class={`status status-${project.status}`}>{project.status}</span>
+              {project.status !== 'maintained' && <span class={`status status-${project.status}`}>{project.status}</span>}
               <br /><small>{project.description}</small>
             </li>
           ))}

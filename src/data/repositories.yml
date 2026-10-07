@@ -2,7 +2,7 @@ heading: Repositories
 
 # GitHub accounts and organizations, in display order.
 # projects are limited to those I mainly developed or actively contributed to
-# project status: active | maintained | inactive | archived
+# project status: active | maintained | inactive | archived (maintained is the default and not shown)
 
 accounts:
 
