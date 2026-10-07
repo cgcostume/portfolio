@@ -5,13 +5,8 @@ import { header, repositories as data } from '../lib/data';
 interface Props { selected?: boolean; }
 const { selected = false } = Astro.props;
 
-const accounts = [
-  ['gh-cgcostume.png', 'cgcostume'],
-  ['gh-halb3.png', 'halb3'],
-  ['gh-cginternals.png', 'cginternals'],
-  ['gh-hpicgs.png', 'hpicgs'],
-  ['gh-varg.png', 'varg-dev'],
-];
+// note: bootstrap's secondary color is customized (pink), so gray is used for inactive projects
+const badge = { active: 'bg-success', maintained: 'bg-primary', inactive: 'bg-gray', archived: 'bg-dark' } as const;
 ---
 
 <div class="row text-center">
@@ -27,11 +22,38 @@ const accounts = [
         <p><a class="text-secondary" href="/index.html#repositories">by <strong>{header.name} {header.surname}</strong></a></p>
       </>
     )}
-
-    <div class="row justify-content-center mt-0">
-      {accounts.map(([src, userorg]) => (
-        <div class="col-2 col-lg-1"><ThumbnailGitHub src={src} userorg={userorg} /></div>
-      ))}
-    </div>
   </div>
 </div>
+
+{selected ? (
+  <div class="row justify-content-center text-center">
+    {data.accounts.map((account) => (
+      <div class="col-4 col-sm-2">
+        <ThumbnailGitHub src={account.thumbnail} userorg={account.github} />
+        <p class="mt-2"><small><a class="text-body" href={`https://github.com/${account.github}`}>{account.name}</a></small></p>
+      </div>
+    ))}
+  </div>
+) : data.accounts.map((account) => (
+  <div class="row" id={account.github}>
+    <div class="col-lg-2 col-sm-3 col-4">
+      <ThumbnailGitHub src={account.thumbnail} userorg={account.github} />
+    </div>
+    <div class="col-lg-10 col-sm-9 col-12 mt-3 mt-sm-0">
+      <h3><a class="text-body" href={`https://github.com/${account.github}`}>{account.name}</a></h3>
+      <p><small>github.com/{account.github}&ensp;|&ensp;{account.active}&ensp;<span class={`badge ${badge[account.status]}`}>{account.status}</span></small></p>
+      <p>{account.summary}</p>
+      {account.projects.length > 0 && (
+        <ul class="list-unstyled projects">
+          {account.projects.map((project) => (
+            <li>
+              <a href={`https://github.com/${account.github}/${project.name}`}>{project.name}</a>
+              <span class={`badge ${badge[project.status]}`}>{project.status}</span>
+              <br /><small>{project.description}</small>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  </div>
+))}

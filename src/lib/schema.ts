@@ -62,8 +62,23 @@ export const publications = z.object({
     publications: z.array(z.union([separator, publication])),
 });
 
+const status = z.enum(['active', 'maintained', 'inactive', 'archived']);
+
 export const repositories = z.object({
     heading: z.string(),
+    accounts: z.array(z.object({
+        github: z.string(),
+        name: z.string(),
+        thumbnail: z.string(),
+        active: z.string(),
+        status,
+        summary: z.string(),
+        projects: z.array(z.object({
+            name: z.string(),
+            description: z.string(),
+            status,
+        })).default([]),
+    })),
 });
 
 const tags = z.string();

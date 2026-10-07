@@ -213,8 +213,30 @@ footer {
   }
 }
 
-.project {
-  padding-bottom: 1rem;
+.projects li {
+  margin-bottom: 0.5rem;
+
+  .badge {
+    margin-left: 0.5em;
+    border-radius: $border-radius-sm;
+    vertical-align: text-bottom;
+  }
+}
+
+// shown for inactive repositories
+.bg-gray {
+  background-color: $gray-600;
+}
+
+h3 .badge,
+small .badge {
+  border-radius: $border-radius-sm;
+}
+
+// email directly below the name
+header .mail {
+  margin-top: -2rem;
+  margin-bottom: 2rem;
 }
 
 .bars {

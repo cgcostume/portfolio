@@ -1,19 +1,94 @@
----
 heading: Repositories
 
-repositories:
+# GitHub accounts and organizations, in display order.
+# status: active | maintained | inactive | archived
 
-- key: glbinding2014
-  selected: true
-  title: glbinding
-  date: '2014-05-02'
-  status: ongoing
-  caption: I initiated, (co-)designed, and continue to maintain this state-of-the-art, cross-platform C++ binding for the OpenGL API.
-  authors:
-  - Daniel Limberger
-  - Willy Scheibel
-  - Roland Lux
-  # thumbnail: 2014-glbinding.jpg
-  # flickr: '72157650197067747'
-  # href: https://github.com/hpicgs/glbinding
+accounts:
 
+- github: cginternals
+  name: CG Internals
+  thumbnail: gh-cginternals.png
+  active: 2013 – today
+  status: maintained
+  summary:
+    Open-source C++ and TypeScript libraries for real-time computer graphics, originating from research and teaching at the Hasso Plattner Institute and continued by CG Internals.
+    I initiated and co-designed several of these libraries and was the main developer of webgl-operate.
+  projects:
+  - name: glbinding
+    description: Cross-platform C++ binding for the OpenGL API, generated from the gl.xml specification.
+    status: maintained
+  - name: webgl-operate
+    description: TypeScript-based WebGL rendering framework with progressive, multi-frame rendering.
+    status: maintained
+  - name: cmake-init
+    description: Template for reliable, cross-platform C++ project setup using CMake.
+    status: maintained
+  - name: globjects
+    description: C++ library strictly wrapping OpenGL objects.
+    status: maintained
+  - name: cppfs
+    description: Cross-platform C++ file system library supporting multiple backends.
+    status: inactive
+
+- github: varg-dev
+  name: Visual Analytics Research Group
+  thumbnail: gh-varg.png
+  active: 2020 – 2024
+  status: inactive
+  summary:
+    Research prototypes of the Visual Analytics Research Group at the Hasso Plattner Institute, mostly accompanying publications on treemaps, software visualization, and sensor data visualization.
+  projects:
+  - name: roomcanvas
+    description: Web application for visualizing spatiotemporal sensor data in 3D building models (EuroVis 2021).
+    status: archived
+  - name: treemap-renderer
+    description: Treemap renderer based on WebGL using webgl-operate.
+    status: inactive
+  - name: hilbert-moore-treemap-layouts-prototype
+    description: Prototype of Hilbert and Moore treemap layouts.
+    status: archived
+
+- github: hpicgs
+  name: Computer Graphics Systems Group
+  thumbnail: gh-hpicgs.png
+  active: 2013 – 2022
+  status: inactive
+  summary:
+    Teaching and research code of the Computer Graphics Systems Group at the Hasso Plattner Institute, e.g., lecture sandboxes as well as seminar and student projects I supervised.
+  projects:
+  - name: node-embed
+    description: Template for embedding Node.js into C++ applications.
+    status: archived
+  - name: github-software-analytics-embedding
+    description: Seminar project on analysis and visualization of software data (summer term 2022).
+    status: archived
+
+- github: cgcostume
+  name: Daniel Limberger
+  thumbnail: gh-cgcostume.png
+  active: 2013 – today
+  status: active
+  summary:
+    Personal projects and code accompanying my theses and publications.
+  projects:
+  - name: pubg-maps
+    description: Terrain maps (heights and normals) of PlayerUnknown's Battlegrounds and Fortnite.
+    status: inactive
+  - name: osghimmel
+    description: Real-time rendering of day and night sky phenomena for OpenSceneGraph (master's thesis, VMV 2012).
+    status: archived
+  - name: web3d-treemaps
+    description: Dynamic 2.5D treemaps using declarative 3D on the web (Web3D 2016).
+    status: archived
+  - name: portfolio
+    description: Source code of this website.
+    status: active
+
+- github: halb3
+  name: halb3
+  thumbnail: gh-halb3.png
+  active: 2021 – 2023
+  status: inactive
+  summary:
+    TODO
+  projects: []

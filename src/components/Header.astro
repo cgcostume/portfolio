@@ -42,6 +42,10 @@ const profiles = [
     <div class="col-12">
       <h1>{header.title ? `${header.title} ` : ''}{header.name} <br /> <strong>{header.surname}</strong></h1>
 
+      <p class="mail">
+        <a href={`mailto:${contact.email}`}>{contact.email}</a>
+      </p>
+
       <p class="lead">
         {header.leads.map((lead: string, index: number) => (
           <>
@@ -53,9 +57,6 @@ const profiles = [
         ))}
       </p>
 
-      <p>
-        <a href={`mailto:${contact.email}`}>{contact.email}</a>
-      </p>
       <p class="pipes">
         {profiles.map(({ name, href }) => <a href={href}>{name}</a>)}
       </p>
