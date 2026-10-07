@@ -39,7 +39,7 @@ const { selected = false } = Astro.props;
     </div>
     <div class="col-lg-10 col-sm-9 col-12 mt-3 mt-sm-0">
       <h3><a class="text-body" href={`https://github.com/${account.github}`}>{account.name}</a></h3>
-      <p><small>github.com/{account.github}&ensp;|&ensp;{account.active}</small></p>
+      <p><small><a href={`https://github.com/${account.github}`}>github.com/{account.github}</a>&ensp;|&ensp;{account.active}</small></p>
       <p>{account.summary}</p>
       {account.projects.length > 0 && (
         <ul class="list-unstyled projects">
