@@ -787,8 +787,8 @@ publications:
   abstract:
     Personal, long-term investment products, especially ones for retirement savings, require thorough understanding to use them profitably.
     Even simple savings plans based on exchange-traded funds (ETFs) are subject to many variables and uncertainties to be considered for expected and planned-upon returns.
-    We present aninteractive simulation of an ETF-based savings plan that combinesforecasts, risk awareness, taxes and costs, inflation, and dynamicinflows and outflows into a single visualization.
-    The visualization consists of four parts; a form-fill interface for configuration, a savings and payout simulation, a cash flow chart, and a savings chart. Based on a specific use case, we discuss how private investors canbenefit from using our visualization after a short training period.
+    We present an interactive simulation of an ETF-based savings plan that combines forecasts, risk awareness, taxes and costs, inflation, and dynamic inflows and outflows into a single visualization.
+    The visualization consists of four parts; a form-fill interface for configuration, a savings and payout simulation, a cash flow chart, and a savings chart. Based on a specific use case, we discuss how private investors can benefit from using our visualization after a short training period.
   thumbnail: 2021-vinci-etf-visualization.webp
   downloads:
   - href: https://doi.org/10.1145/3481549.3481568
@@ -976,10 +976,10 @@ publications:
     Apart from end-user APIs, these dependencies make up the bulk of a library's usage for most packages.
     Other than for upstream dependencies, tools that provide individual package developers with this kind of information rarely exist to date.
     This paper proposes methods for (1) efficiently gathering downstream dependencies of a single package and (2) extracting usage samples from them using a static type analyzer.
-    It also presents a tool that allows developers of \emph{npm} packages to explore the aggregated usage data directly in their IDE, i.e., Visual Studio Code, in an interactive and context-sensitive way.
+    It also presents a tool that allows developers of npm packages to explore the aggregated usage data directly in their IDE, i.e., Visual Studio Code, in an interactive and context-sensitive way.
     The tool exposes which other packages rely on specific functions and, more interestingly, why and how the package's functions are used.
     This can help prioritize and steer development and uncover unexpected usage patterns, inappropriate function signatures, or misleading interface design.
-    Our methods return over 8000 dependencies for popular packages with an average precision of \SI{98.7}{\percent} and \SI{68.4}{\percent}, respectively, but tend to exclude unpopular dependencies.
+    Our methods return over 8000 dependencies for popular packages with an average precision of 98.7% and 68.4%, respectively, but tend to exclude unpopular dependencies.
     Usage pattern extraction is very precise but not easily available for repositories with complex build configurations or metaprogramming patterns.
     We show that usage data from downstream dependency repositories is a promising and diverse source of information for mining software repositories and that our approach supports package developers in maintain their APIs.
   thumbnail: 2022-enase-downstream-mining.webp
