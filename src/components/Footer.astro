@@ -1,17 +1,15 @@
 ---
-import { header, revision } from '../lib/data';
-
-const today = new Date();
+import { header, lastUpdated, revision } from '../lib/data';
 ---
 
 <footer>
   <div class="row text-center">
     <div class="col-12">
       <p class="mt-5 mb-1">
-        &copy; 2015&thinsp;&ndash;&thinsp;{today.getFullYear()} {header.surname} {header.name}
+        &copy; 2015&thinsp;&ndash;&thinsp;{lastUpdated.getFullYear()} {header.name} {header.surname}
       </p>
       <small class="mt-0 mb-5">
-        <span class="text-muted">This website was last updated on {today.toLocaleDateString('en-us', { day: '2-digit', month: '2-digit', year: 'numeric' })}</span>
+        <span class="text-muted">This website was last updated on <time datetime={lastUpdated.toISOString()}>{lastUpdated.toLocaleDateString('en-gb', { day: 'numeric', month: 'long', year: 'numeric' })}</time></span>
         &ensp;|&ensp;
         <a href={header.sources} class="text-muted">{header.sources_label}</a>
       </small>

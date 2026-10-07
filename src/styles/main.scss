@@ -226,17 +226,59 @@ footer {
   animation: sk-scaleout 0.66s infinite ease-in-out;
 }
 
-.bibtex {
+// link row of a publication: abstract and bibtex expand in place, separated by pipes
 
-  @extend .card;
+.links {
+
+  > a:not(:first-child)::before,
+  > details:not(:first-child) > summary::before {
+    content: '|';
+    display: inline-block;
+    padding: 0 0.5em;
+    color: $body-color;
+  }
+
+  // no separator directly below expanded content
+  > details[open] + a::before,
+  > details[open] + details > summary::before,
+  > details[open] > summary::before {
+    content: none;
+  }
+
+  // closed: inline with the other links, open: full width with content below the summary
+  > details {
+    display: inline-block;
+
+    &[open] {
+      display: block;
+    }
+
+    > summary {
+      display: inline;
+      color: $link-color;
+      cursor: pointer;
+      list-style: none;
+
+      &::-webkit-details-marker {
+        display: none;
+      }
+    }
+
+    // expanded content is rendered as block between the summary and the following links
+    > :not(summary) {
+      display: block;
+      margin: 1rem 0;
+    }
+  }
+}
+
+.bibtex .card {
   background-color: $card-cap-bg;
   border-radius: $border-radius-sm;
 
   pre {
     font-size: 75%;
     margin-bottom: 0;
-    // white-space: pre-wrap;
-    // word-break: keep-all
   }
 
   .btn {

@@ -5,10 +5,10 @@ const API = 'https://api.flickr.com/services/rest/';
 const lightbox = GLightbox({ touchNavigation: true, loop: true, autoplayVideos: true });
 const cache = new Map<string, object[]>();
 
-interface Photo { farm: number; server: string; id: string; secret: string; title: string; }
+interface Photo { server: string; id: string; secret: string; title: string; }
 
 const photoUrl = (photo: Photo) =>
-    `https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}_b.jpg`;
+    `https://live.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}_b.jpg`;
 
 async function fetchPhotoset(apiKey: string, photosetId: string) {
     const params = new URLSearchParams({
@@ -37,7 +37,9 @@ async function open(badge: HTMLElement, apiKey: string, photosetId: string) {
         try {
             cache.set(photosetId, await fetchPhotoset(apiKey, photosetId));
         } catch (error) {
-            alert(`flickr.photosets.getPhotos failed: ${error}`);
+            // fall back to the album on flickr itself
+            console.error('flickr.photosets.getPhotos failed:', error);
+            window.location.href = (badge.closest('a') as HTMLAnchorElement).href;
             return;
         } finally {
             badge.classList.remove('animate');

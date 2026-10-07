@@ -6,19 +6,19 @@ import { header, teaching as data } from '../lib/data';
 interface Props { selected?: boolean; }
 const { selected = false } = Astro.props;
 
-const terms = [...data.terms].sort((a: any, b: any) => a.term < b.term ? +1 : a.term > b.term ? -1 : 0);
+const terms = [...data.terms].sort((a, b) => a.term < b.term ? +1 : a.term > b.term ? -1 : 0);
 const translations = data.translations;
 
 const match = (tags: string, pattern: RegExp) => [...tags.matchAll(pattern)].flat();
 const roles = (tags: string) => match(tags, /\btutor\b|\bsupervisor\b|\blecturer\b|\bco-lecturer\b/g);
 const types = (tags: string) => match(tags, /\blecture\b|\bseminar\b|\bproject\b|\bthesis\b/g);
 const programs = (tags: string) => match(tags, /\bba\b|\bma\b|\bmooc\b|\byouth\b/g);
-const translate = (keys: string[]) => keys.map((key) => translations[key]);
+const translate = (keys: string[]) => keys.map((key) => translations[key] ?? key);
 
 // Each course and thesis contributes its (inverted) personal grade; 4.0001 marks a missing evaluation.
-const entries = [...terms.flatMap((t: any) => t.courses), ...data.theses].map((e: any) => ({
+const entries = [...terms.flatMap((t) => t.courses), ...data.theses].map((e) => ({
   tags: e.tags.replaceAll(' ', '').split(','),
-  grade: 5.0 - parseFloat(e.grade_personal) || 4.0001,
+  grade: 5.0 - (e.grade_personal ?? NaN) || 4.0001,
 }));
 
 const grades = (include: string[], exclude: string[] = []) => entries
@@ -133,10 +133,10 @@ const pairs = Array.from({ length: Math.ceil(terms.length / 2) }, (_, i) => term
   </div>
 ) : pairs.map((pair, p) => (
   <div class="row justify-content-md-center">
-    {pair.map((t: any, j: number) => (
+    {pair.map((t, j) => (
       <div class={`col-md-5 col-sm-10 ${(2 * p + j) % 2 ? 'text-start' : 'text-md-end text-start'}`}>
         <h3 class="mt-2" set:html={t.term} />
-        {t.courses.map((c: any) => (
+        {t.courses.map((c) => (
           <p>
             {c.course}
             <br />

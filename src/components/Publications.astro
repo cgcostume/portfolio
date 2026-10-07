@@ -32,7 +32,7 @@ const publications = selection(data.publications, selected).sort(byDateDesc);
   </div>
 </div>
 
-{publications.map((p: any) => p.key === 'separator' ? <hr class="row separator" /> : (
+{publications.map((p) => p.key === 'separator' || !('title' in p) ? <hr class="row separator" /> : (
   <div class="row" id={p.key}>
     <div class="col-lg-2 col-sm-3">
       <Thumbnail src={p.thumbnail} alt={p.title} flickr={p.flickr} />
@@ -47,38 +47,29 @@ const publications = selection(data.publications, selected).sort(byDateDesc);
       </p>
       <p><small>{happyAnd(p.authors)}</small></p>
 
-      <p>
-        {p.abstract && <>
-          <a data-bs-toggle="collapse" href={`#abstract-${p.key}`}>Abstract</a>
-          {(p.bibtex || p.downloads) && <Fragment set:html="&ensp;|&ensp;" />}
-        </>}
-        {p.bibtex && <>
-          <a data-bs-toggle="collapse" href={`#bibtex-${p.key}`}>BibTeX</a>
-          {p.downloads && <Fragment set:html="&ensp;|&ensp;" />}
-        </>}
-        {p.downloads?.map((download: any, index: number) => <>
-          <a href={download.href}>{download.desc}</a>
-          {index < p.downloads.length - 1 && <Fragment set:html="&ensp;|&ensp;" />}
-        </>)}
-      </p>
-
-      {p.abstract && (
-        <div class="collapse abstract" id={`abstract-${p.key}`}>
-          <p set:html={p.abstract} />
-        </div>
-      )}
-
-      {p.bibtex && (
-        <div class="collapse bibtex" id={`bibtex-${p.key}`}>
-          <div class="position-absolute top-0 end-0">
-            <a class="btn btn-sm" download={`${p.bibtex}.bib`} href={`/bibliography/${p.bibtex}.bib`}>Download</a>
-            <button class="btn btn-sm btn-clipboard js-only" type="button" data-clipboard-target={`#bibtex-data-${p.key}`}>Copy to Clipboard</button>
-          </div>
-          <div class="card-body">
-            <pre id={`bibtex-data-${p.key}`}>{bibliography[p.bibtex]}</pre>
-          </div>
-        </div>
-      )}
+      <div class="links mb-3">
+        {p.abstract && (
+          <details class="abstract">
+            <summary>Abstract</summary>
+            <p set:html={p.abstract} />
+          </details>
+        )}
+        {p.bibtex && (
+          <details class="bibtex">
+            <summary>BibTeX</summary>
+            <div class="card">
+              <div class="position-absolute top-0 end-0">
+                <a class="btn btn-sm" download={`${p.bibtex}.bib`} href={`/bibliography/${p.bibtex}.bib`}>Download</a>
+                <button class="btn btn-sm btn-clipboard js-only" type="button" data-clipboard-target={`#bibtex-data-${p.key}`}>Copy to Clipboard</button>
+              </div>
+              <div class="card-body">
+                <pre id={`bibtex-data-${p.key}`}>{bibliography[p.bibtex] ?? (() => { throw new Error(`missing bibtex file: ${p.bibtex}`); })()}</pre>
+              </div>
+            </div>
+          </details>
+        )}
+        {p.downloads?.map((download) => <a href={download.href}>{download.desc}</a>)}
+      </div>
     </div>
   </div>
 ))}

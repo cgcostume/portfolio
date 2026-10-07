@@ -1,4 +1,3 @@
-import 'bootstrap/js/dist/collapse.js';
 import { initializeFlickr } from './flickr';
 
 initializeFlickr('.flickr', document.body.dataset.flickrKey ?? '');

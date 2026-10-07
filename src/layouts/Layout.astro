@@ -1,8 +1,37 @@
 ---
 import '../styles/main.scss';
 import 'glightbox/dist/css/glightbox.min.css';
+import { getImage } from 'astro:assets';
 import Footer from '../components/Footer.astro';
-import { config, header } from '../lib/data';
+import { config, contact, header, publications } from '../lib/data';
+import { source } from '../lib/images';
+
+interface Props { title?: string; description?: string; }
+
+const name = `${header.name} ${header.surname}`;
+const { title, description = `${header.title ? `${header.title} ` : ''}${name}: ${header.leads.join(', ')}. Publications, open-source repositories, and teaching activities.` } = Astro.props;
+
+const pageTitle = title ? `${title} | ${name}` : name;
+const canonical = new URL(Astro.url.pathname.replace(/^\/index\.html$/, '/'), Astro.site);
+const image = await getImage({ src: await source(header.picture), width: 768, height: 768, fit: 'cover', format: 'jpg' });
+const imageUrl = new URL(image.src, Astro.site);
+
+const person = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name,
+  honorificPrefix: header.title,
+  jobTitle: header.leads,
+  email: `mailto:${contact.email}`,
+  url: Astro.site,
+  image: imageUrl,
+  sameAs: [
+    `https://orcid.org/${publications.orcid}`,
+    `https://scholar.google.de/citations?user=${publications.scholar}`,
+    `https://www.researchgate.net/profile/${publications.researchgate}`,
+    'https://github.com/cgcostume',
+  ],
+};
 ---
 
 <!doctype html>
@@ -10,9 +39,23 @@ import { config, header } from '../lib/data';
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{header.name} {header.surname}</title>
-    <meta name="description" content={`${header.title} ${header.name} ${header.surname} – ${header.leads.join(', ')}`} />
-    <meta name="robots" content="index, follow" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content={name} />
+    <link rel="canonical" href={canonical} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={imageUrl} />
+    <meta property="og:image:alt" content={header.picture_label} />
+    <meta property="profile:first_name" content={header.name} />
+    <meta property="profile:last_name" content={header.surname} />
+    <meta name="twitter:card" content="summary" />
+
+    <script type="application/ld+json" set:html={JSON.stringify(person)} />
 
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />

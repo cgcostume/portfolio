@@ -4,18 +4,30 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
 
 jobs:
 
-  deploy:
-    name: Deploy website
+  build:
+    name: Build website
     runs-on: ubuntu-latest
     steps:
 
       - name: Check out code
         uses: actions/checkout@v4
-        with:
-          lfs: true
+
+      # only fetch LFS files that are published, e.g., not the archived resources
+      - name: Fetch published LFS files
+        run: git lfs pull --include "public/**"
 
       - name: Set up pnpm
         uses: pnpm/action-setup@v4
@@ -26,31 +38,26 @@ jobs:
           node-version: 24
           cache: 'pnpm'
 
-      - name: Check out deploy branch
-        uses: actions/checkout@v4
-        with:
-          ref: deploy
-          path: deploy
-
-      - name: Clean up output
-        run: git rm -rf * || true
-        working-directory: deploy
-
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
       - name: Build
-        run: pnpm build && cp -r dist/. deploy/
+        run: pnpm build
 
-      - name: Create CNAME
-        run: echo "daniellimberger.de" > CNAME
-        working-directory: deploy
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
 
-      - name: Commit result
-        run: |
-          git config user.email "${{ github.event.pusher.email }}"
-          git config user.name "${{ github.event.pusher.name }}"
-          git add *
-          git diff-index --quiet HEAD || git commit -m "deploy: ${{ github.event.head_commit.message }}"
-          git push
-        working-directory: deploy
+  deploy:
+    name: Deploy website
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
