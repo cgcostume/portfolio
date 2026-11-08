@@ -772,8 +772,12 @@ publications:
   downloads:
   - href: https://doi.org/10.2312/evs.20211048
     desc: DOI
-  - href: https://diglib.eg.org/bitstream/handle/10.2312/evs20211048/013-017.pdf
+  - href: https://doi.org/10.5281/zenodo.24059174
     desc: Paper
+  - href: https://github.com/dl-archive/article.2021-eurovis-roomcanvas
+    desc: Sources
+  - href: https://zenodo.org/records/24059175/files/koenig2021-roomcanvas-slides.pdf
+    desc: Slides
   - href: https://roomcanvas.dev/
     desc: Demo
 
