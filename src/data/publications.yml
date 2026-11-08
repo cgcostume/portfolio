@@ -903,9 +903,11 @@ publications:
   downloads:
     - href: https://doi.org/10.5220/0010849500003124
       desc: DOI
-    - href: https://www.researchgate.net/profile/Matthias-Trapp-2/publication/358523901/inline/jsViewer/62061b63cf7c2349ca08c7fb
+    - href: https://doi.org/10.5281/zenodo.24059250
       desc: Paper
-    - href: https://www.researchgate.net/profile/Daniel-Limberger/publication/358850452_A_Non-Photorealistic_Rendering_Technique_for_Art-directed_Hatching_of_3D_Point_Clouds/data/6218c22f6738db292ac68599/2022-01-28-Wagner-2022-NPR-for-3D-Point-Clouds-Slides-GRAPP.pdf
+    - href: https://github.com/dl-archive/article.2022-grapp-pointcloud-stylization
+      desc: Sources
+    - href: https://zenodo.org/records/24059251/files/wagner2022-pointcloud-stylization-slides.pdf
       desc: Slides
 
 
