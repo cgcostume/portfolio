@@ -173,7 +173,7 @@ publications:
 
 
 - key: 2015-cgvc-natural-metaphors
-  bibtex: wuerfel2015-natural-metaphors
+  bibtex: wuerfel2015-natural-phenomena
   title: Natural Phenomena as Metaphors for Visualization of Trend Data in Interactive Software Maps
   date: '2015-09-16'
   authors:
@@ -223,7 +223,7 @@ publications:
 
 - key: 2016-gpupro-multi-frame-sampling
   selected: true
-  bibtex: limberger2016-multi-frame-sampling-pro
+  bibtex: limberger2016-multi-frame
   title: Progressive Rendering using Multi-frame Sampling
   date: '2016-03-18'
   authors:
@@ -242,7 +242,7 @@ publications:
 
 
 - key: 2016-iv-sketchiness-treemaps
-  bibtex: limberger2016-sketchiness-treemaps
+  bibtex: limberger2016-sketchiness
   title: Evaluation of Sketchiness as a Visual Variable for 2.5D Treemaps
   date: '2016-07-19'
   authors:
@@ -267,7 +267,7 @@ publications:
 
 
 - key: 2016-siggraph-multi-frame-sampling
-  bibtex: limberger2016-multi-frame-sampling
+  bibtex: limberger2016-multi-frame-poster
   title: Real-time Rendering of High-quality Effects using Multi-frame Sampling
   date: '2016-08-24'
   authors:
@@ -291,7 +291,7 @@ publications:
 
 
 - key: 2016-web3d-declarative-treemaps
-  bibtex: limberger2016-declarative-treemaps
+  bibtex: limberger2016-declarative3d
   title: Dynamic 2.5D Treemaps using Declarative 3D on the Web
   date: '2016-08-22'
   authors:
@@ -471,7 +471,7 @@ publications:
 
 
 - key: 2018-vinci-reference
-  bibtex: limberger2018-reference
+  bibtex: limberger2018-filtering
   title: Interactive, Height-based Filtering in 2.5D Treemaps
   date: '2018-08-10'
   authors:
@@ -546,7 +546,7 @@ publications:
 
 
 - key: 2019-hiviser-extended
-  bibtex: scheibel2019-hiviser-extended
+  bibtex: scheibel2019-hiviser
   title: Visualization of Tree-structured Data using Web Service Composition
   date: '2020-02-20'
   authors:
@@ -570,7 +570,7 @@ publications:
 
 
 - key: 2020-treemap-taxonomy
-  bibtex: scheibel2020-treemap-taxonomy
+  bibtex: scheibel2020-taxonomy
   title: A Taxonomy of Treemap Visualization Techniques
   date: '2020-02-27'
   authors:
@@ -597,7 +597,7 @@ publications:
 
 
 - key: 2020-vinci-survey-effectiveness
-  bibtex: fiedler2020-survey-effectiveness
+  bibtex: fiedler2020-effectiveness
   title: Survey on User Studies on the Effectiveness of Treemaps
   date: '2020-12-08'
   authors:
@@ -625,7 +625,7 @@ publications:
 
 
 - key: 2020-vinci-survey-layouts
-  bibtex: scheibel2020-survey-layouts
+  bibtex: scheibel2020-layouts
   title: Survey of Treemap Layout Algorithms
   date: '2020-12-08'
   authors:
@@ -664,8 +664,12 @@ publications:
   downloads:
   - href: https://doi.org/10.1145/3430036.3432753
     desc: DOI
-  - href: https://www.researchgate.net/profile/Matthias-Trapp-2/publication/347313642/inline/jsViewer/60acf193a6fdcc647ed752cc
+  - href: https://doi.org/10.5281/zenodo.24056633
     desc: Paper
+  - href: https://github.com/dl-archive/article.2020-vinci-uncertainty
+    desc: Sources
+  - href: https://zenodo.org/records/24057016/files/limberger2020-uncertainty-slides.pdf
+    desc: Slides
 
 
 - key: 2020-web3d-pbr-lighting
@@ -693,7 +697,7 @@ publications:
 
 
 - key: 2020-web3d-scatter-plot
-  bibtex: wagner2020-scatter-plot
+  bibtex: wagner2020-scatter
   title: A Framework for Interactive Exploration of Clusters in Massive Data using 3D Scatter Plots and WebGL
   date: '2020-11-09'
   authors:
@@ -717,7 +721,7 @@ publications:
 
 
 - key: 2021-ivapp-software-forest
-  bibtex: atzberger2021-software-forest
+  bibtex: atzberger2021-forest
   title: 'Software Forest: A Visualization of Semantic Similarities in Source Code using a Tree Metaphor'
   date: '2021-02-08'
   authors:
@@ -817,8 +821,10 @@ publications:
   downloads:
   - href: https://doi.org/10.1145/3481549.3481570
     desc: DOI
-  - href: https://www.researchgate.net/profile/Willy-Scheibel/publication/354331984/inline/jsViewer/61486d013c6cb310697e65f0
+  - href: https://doi.org/10.5281/zenodo.24056028
     desc: Paper
+  - href: https://github.com/dl-archive/article.2021-vinci-procedural-textures
+    desc: Sources
 
 
 - key: 2021-vinci-software-galaxy
