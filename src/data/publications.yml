@@ -744,8 +744,10 @@ publications:
   downloads:
   - href: https://doi.org/10.5220/0010267601120122
     desc: DOI
-  - href: https://www.researchgate.net/profile/Willy-Scheibel/publication/349382985/inline/jsViewer/6047926192851c077f2981ce
+  - href: https://doi.org/10.5281/zenodo.24060500
     desc: Paper
+  - href: https://github.com/dl-archive/article.2021-ivapp-software-forest
+    desc: Sources
 
 
 - key: 2021-eurovis-roomcanvas
