@@ -692,8 +692,10 @@ publications:
   downloads:
   - href: https://doi.org/10.1145/3424616.3424697
     desc: DOI
-  - href: https://www.researchgate.net/profile/Daniel-Limberger/publication/347578774/inline/jsViewer/60ae14d5a6fdcc647edc3760
+  - href: https://doi.org/10.5281/zenodo.24061872
     desc: Paper
+  - href: https://github.com/dl-archive/article.2020-web3d-pbr-lighting
+    desc: Sources
 
 
 - key: 2020-web3d-scatter-plot
