@@ -716,8 +716,12 @@ publications:
   downloads:
   - href: https://doi.org/10.1145/3424616.3424730
     desc: DOI
-  - href: https://www.researchgate.net/profile/Lukas-Wagner-17/publication/345770726/inline/jsViewer/5fbe75cb299bf104cf770132
+  - href: https://doi.org/10.5281/zenodo.24061447
     desc: Paper
+  - href: https://github.com/dl-archive/poster.2020-web3d-scatter-plot
+    desc: Sources
+  - href: https://zenodo.org/records/24061448/files/wagner2020-scatter-slides.pdf
+    desc: Slides
 
 
 - key: 2021-ivapp-software-forest
