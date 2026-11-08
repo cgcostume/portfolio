@@ -1088,8 +1088,10 @@ publications:
   downloads:
   - href: https://doi.org/10.1145/3564533.3564566
     desc: DOI
-  - href: https://dl.acm.org/doi/pdf/10.1145/3564533.3564566
+  - href: https://doi.org/10.5281/zenodo.24061770
     desc: Paper
+  - href: https://github.com/dl-archive/article.2022-web3d-scatter-plot-density
+    desc: Sources
 
 
 - key: 2022-jov-visvars
