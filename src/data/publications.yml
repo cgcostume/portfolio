@@ -1126,8 +1126,10 @@ publications:
   downloads:
   - href: https://doi.org/10.1007/s12650-022-00868-1
     desc: DOI
-  - href: https://rdcu.be/c0o2F
+  - href: https://doi.org/10.5281/zenodo.24121134
     desc: Paper
+  - href: https://github.com/dl-archive/journal.2022-jov-visvars
+    desc: Sources
 
 
 - key: 2022-jov-changes
