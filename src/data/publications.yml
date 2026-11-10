@@ -864,8 +864,10 @@ publications:
   downloads:
   - href: https://doi.org/10.1145/3481549.3481573
     desc: DOI
-  - href: https://www.researchgate.net/profile/Willy-Scheibel/publication/354332172/inline/jsViewer/61486d33519a1a381f70268d
+  - href: https://doi.org/10.5281/zenodo.24100140
     desc: Paper
+  - href: https://github.com/dl-archive/article.2021-vinci-software-galaxy
+    desc: Sources
 
 
 - key: 2021-web3d-tumor-segmentation
