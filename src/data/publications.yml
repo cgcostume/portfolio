@@ -891,8 +891,10 @@ publications:
   downloads:
   - href: https://doi.org/10.1145/3485444.3487640
     desc: DOI
-  - href: https://www.researchgate.net/profile/Jonas_Kordt/publication/356974519/inline/jsViewer/61bc6f3063bbd932429c6269
+  - href: https://doi.org/10.5281/zenodo.24101027
     desc: Paper
+  - href: https://github.com/dl-archive/article.2021-web3d-tumor-segmentation
+    desc: Sources
 
 
 - key: 2022-grapp-pointcloud-stylization
