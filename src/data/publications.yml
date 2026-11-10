@@ -590,9 +590,11 @@ publications:
   downloads:
   - href: https://doi.org/10.5220/0009153902730280
     desc: DOI
-  - href: https://www.researchgate.net/profile/Willy_Scheibel/publication/338402878/inline/jsViewer/5e5cd038a6fdccbeba12bf83
+  - href: https://doi.org/10.5281/zenodo.24121563
     desc: Paper
-  - href: https://www.researchgate.net/profile/Willy_Scheibel/publication/339617725/inline/jsViewer/5e5cd13ba6fdccbeba12bfea
+  - href: https://github.com/dl-archive/article.2020-treemap-taxonomy
+    desc: Sources
+  - href: https://zenodo.org/records/24121564/files/scheibel2020-taxonomy-slides.pdf
     desc: Slides
 
 
@@ -645,8 +647,12 @@ publications:
   downloads:
   - href: https://doi.org/10.1145/3430036.3430041
     desc: DOI
-  - href: https://www.researchgate.net/profile/Willy_Scheibel/publication/346565429/inline/jsViewer/6008e5e9a6fdccdcb86bb8d0
+  - href: https://doi.org/10.5281/zenodo.24121573
     desc: Paper
+  - href: https://github.com/dl-archive/article.2020-vinci-survey-layouts
+    desc: Sources
+  - href: https://www.researchgate.net/profile/Willy_Scheibel/publication/348647547/inline/jsViewer/6008e45f299bf14088adae8b
+    desc: Slides
 
 
 - key: 2020-vinci-uncertainty
@@ -985,8 +991,12 @@ publications:
   downloads:
     - href: https://doi.org/10.5220/0011045100003176
       desc: DOI
-    - href: https://www.researchgate.net/profile/Willy-Scheibel/publication/360230384/inline/jsViewer/626ba74705d79a3968aa8968
+    - href: https://doi.org/10.5281/zenodo.24121766
       desc: Paper
+    - href: https://github.com/dl-archive/article.2022-enase-mining-expertise
+      desc: Sources
+    - href: https://www.researchgate.net/profile/Willy-Scheibel/publication/365824562/inline/jsViewer/63f5c98f574950594534bad7
+      desc: Slides
 
 
 - key: 2022-enase-downstream-mining
@@ -1014,12 +1024,14 @@ publications:
   downloads:
     - href: https://doi.org/10.5220/0011093700003176
       desc: DOI
-    - href: https://www.researchgate.net/profile/Willy-Scheibel/publication/360231022/inline/jsViewer/626ba510bfd24037e9dd1eee
+    - href: https://doi.org/10.5281/zenodo.24121768
       desc: Paper
+    - href: https://github.com/dl-archive/article.2022-enase-downstream-mining
+      desc: Sources
     - href: https://github.com/LinqLover/downstream-repository-mining
       desc: Project Page
     - href: https://doi.org/10.5281/zenodo.6338060
-      desc: Sources
+      desc: Source Code
 
 
 - key: 2022-vinci-topicmodel-benchmark
@@ -1184,7 +1196,7 @@ publications:
   downloads:
   - href: https://doi.org/10.1007/978-3-031-25477-2_8
     desc: DOI
-  - href: https://www.researchgate.net/profile/Matthias-Trapp-2/publication/358523984/inline/jsViewer/62061c62afa8884cabd8675c
+  - href: https://www.researchgate.net/profile/Willy-Scheibel/publication/363175014/inline/jsViewer/63f5c7c4574950594534ab35
     desc: Paper
 
 
