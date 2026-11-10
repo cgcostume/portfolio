@@ -1153,8 +1153,10 @@ publications:
   downloads:
   - href: https://doi.org/10.1007/s12650-022-00874-3
     desc: DOI
-  - href: https://rdcu.be/c0o0E
+  - href: https://doi.org/10.5281/zenodo.24120828
     desc: Paper
+  - href: https://github.com/dl-archive/journal.2022-jov-changes
+    desc: Sources
 
 
 - key: 2023-ivapp-software-forest-extended
