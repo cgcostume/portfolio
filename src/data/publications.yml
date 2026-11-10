@@ -811,8 +811,10 @@ publications:
   downloads:
   - href: https://doi.org/10.1145/3481549.3481568
     desc: DOI
-  - href: https://www.researchgate.net/profile/Willy-Scheibel/publication/354332166/inline/jsViewer/61486d4e519a1a381f702692
+  - href: https://doi.org/10.5281/zenodo.24099600
     desc: Paper
+  - href: https://github.com/dl-archive/article.2021-vinci-etf-visualization
+    desc: Sources
 
 
 - key: 2021-vinci-procedural-textures
