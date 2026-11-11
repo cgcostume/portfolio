@@ -958,8 +958,12 @@ publications:
   downloads:
     - href: https://doi.org/10.5220/0010991100003124
       desc: DOI
-    - href: https://www.researchgate.net/profile/Matthias-Trapp-2/publication/358523984/inline/jsViewer/62061c62afa8884cabd8675c
+    - href: https://doi.org/10.5281/zenodo.24121993
       desc: Paper
+    - href: https://github.com/dl-archive/article.2022-ivapp-knowhow-map
+      desc: Sources
+    - href: https://www.researchgate.net/profile/Matthias-Trapp-2/publication/361585105/inline/jsViewer/62badc31056dae24e8e97d65
+      desc: Slides
 
 
 - key: 2022-enase-mining-expertise
