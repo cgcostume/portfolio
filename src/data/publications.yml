@@ -1200,8 +1200,10 @@ publications:
   downloads:
   - href: https://doi.org/10.1007/978-3-031-25477-2_8
     desc: DOI
-  - href: https://www.researchgate.net/profile/Willy-Scheibel/publication/363175014/inline/jsViewer/63f5c7c4574950594534ab35
+  - href: https://doi.org/10.5281/zenodo.24122131
     desc: Paper
+  - href: https://github.com/dl-archive/chapter.2023-ivapp-software-forest-extended
+    desc: Sources
 
 
 - key: separator
