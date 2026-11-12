@@ -545,8 +545,10 @@ publications:
   downloads:
   - href: https://doi.org/10.1145/3356422.3356444
     desc: DOI
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/335062804/inline/jsViewer/5d883828a6fdcc8fd6106c95
+  - href: https://doi.org/10.5281/zenodo.24176614
     desc: Paper
+  - href: https://github.com/dl-archive/article.2019-vinci-advanced
+    desc: Sources
 
 
 - key: 2019-hiviser-extended
