@@ -488,9 +488,11 @@ publications:
   downloads:
   - href: https://doi.org/10.1145/3231622.3231638
     desc: DOI
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/326728307/inline/jsViewer/5b72cb95a6fdcc87df79e161
+  - href: https://doi.org/10.5281/zenodo.24176593
     desc: Paper
-  - href: https://www.researchgate.net/profile/Matthias_Trapp/publication/330106559/inline/jsViewer/5c2df2f4299bf12be3aaf161
+  - href: https://github.com/dl-archive/article.2018-vinci-reference
+    desc: Sources
+  - href: https://zenodo.org/records/24176595/files/limberger2018-filtering-slides.pdf
     desc: Slides
 
 
