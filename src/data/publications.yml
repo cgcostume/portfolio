@@ -464,9 +464,11 @@ publications:
   downloads:
   - href: https://doi.org/10.1109/iV.2018.00039
     desc: DOI
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/327017928/inline/jsViewer/5b72c86845851546c902c9f1
+  - href: https://doi.org/10.5281/zenodo.24176588
     desc: Paper
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/331400327/inline/jsViewer/5c77cc29458515831f75e5e4
+  - href: https://github.com/dl-archive/article.2018-iv-open-ll
+    desc: Sources
+  - href: https://zenodo.org/records/24176589/files/limberger2018-openll-slides.pdf
     desc: Slides
 
 
