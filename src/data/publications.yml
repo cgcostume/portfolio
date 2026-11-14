@@ -87,8 +87,10 @@ publications:
   downloads:
   - href: https://doi.org/10.2312/PE/VMV/VMV12/055-062
     desc: DOI
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/287031803/inline/jsViewer/58db7a24a6fdccca1c9488b3
+  - href: https://doi.org/10.5281/zenodo.24220795
     desc: Paper
+  - href: https://github.com/dl-archive/article.2012-vmv-sky-phenomena
+    desc: Sources
   - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/331556201/inline/jsViewer/5c7feeb5299bf1268d403c6d
     desc: Slides
   - href: https://www.youtube.com/watch?v=t8ibsEl0kAI
@@ -116,8 +118,10 @@ publications:
   downloads:
   - href: https://doi.org/10.1145/2466533.2466550
     desc: DOI
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/262408378/inline/jsViewer/589dbde3aca272046aa8ffa7
+  - href: https://doi.org/10.5281/zenodo.24220771
     desc: Paper
+  - href: https://github.com/dl-archive/article.2013-web3d-web-based-swmaps
+    desc: Sources
   - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/331556350/inline/jsViewer/5c7fed69458515831f8aff6a
     desc: Slides
   - href: https://www.youtube.com/watch?v=AaHJRVQ3Z1E
@@ -262,8 +266,10 @@ publications:
   downloads:
   - href: https://doi.org/10.1109/IV.2016.61
     desc: DOI
-  - href: https://www.researchgate.net/profile/Matthias_Trapp/publication/301682636/inline/jsViewer/5addc0c7458515c60f5f7065
+  - href: https://doi.org/10.5281/zenodo.24220782
     desc: Paper
+  - href: https://github.com/dl-archive/article.2016-iv-sketchiness-treemaps
+    desc: Sources
 
 
 - key: 2016-siggraph-multi-frame-sampling
@@ -310,9 +316,11 @@ publications:
   downloads:
   - href: https://doi.org/10.1145/2945292.2945313
     desc: DOI
-  - href: https://www.researchgate.net/profile/Willy_Scheibel/publication/305420771/inline/jsViewer/5b2cb47b4585150d23c1f3ea
+  - href: https://doi.org/10.5281/zenodo.24220758
     desc: Paper
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/331407662/inline/jsViewer/5c77e4fa299bf1268d2c7e74
+  - href: https://github.com/dl-archive/article.2016-web3d-declarative-treemaps
+    desc: Sources
+  - href: https://zenodo.org/records/24220759/files/limberger2016-declarative3d-slides.pdf
     desc: Slides
   - href: https://github.com/cgcostume/web3d-treemaps
     desc: Source Code
@@ -394,9 +402,11 @@ publications:
   downloads:
   - href: https://doi.org/10.1109/iV.2017.67
     desc: DOI
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/316999964/inline/jsViewer/5ab28be2aca272171001b92a
+  - href: https://doi.org/10.5281/zenodo.24220715
     desc: Paper
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/330106367/inline/jsViewer/5c77be80458515831f75e32b
+  - href: https://github.com/dl-archive/article.2017-iv-mixed-projection
+    desc: Sources
+  - href: https://zenodo.org/records/24220716/files/limberger2017-mixed-slides-hq.pdf
     desc: Slides
 
 
