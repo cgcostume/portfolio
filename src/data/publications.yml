@@ -195,8 +195,10 @@ publications:
   downloads:
   - href: https://doi.org/10.2312/cgvc.20151246
     desc: DOI
-  - href: https://www.researchgate.net/profile/Matthias_Trapp/publication/281347949/inline/jsViewer/55ffbd6508aeafc8ac8ba169
+  - href: https://doi.org/10.5281/zenodo.24221663
     desc: Paper
+  - href: https://github.com/dl-archive/article.2015-cgvc-natural-metaphors
+    desc: Sources
 
 
 - key: 2016-cgf-oilpaint-stylization
@@ -378,8 +380,10 @@ publications:
   downloads:
   - href: https://doi.org/10.1145/3055624.3075951
     desc: DOI
-  - href: https://www.researchgate.net/profile/Daniel_Limberger/publication/316999882/inline/jsViewer/5b72cc00a6fdcc87df79e788
+  - href: https://doi.org/10.5281/zenodo.24221699
     desc: Paper
+  - href: https://github.com/dl-archive/article.2017-web3d-progressive
+    desc: Sources
 
 
 - key: 2017-iv-mixed-projection
